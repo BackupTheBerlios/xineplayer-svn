@@ -195,7 +195,13 @@ NSString *XineVideoViewFrameSizeDidChangeNotification = @"XineVideoViewFrameSize
 	{
 		_notificationWindow = [[[NSWindow alloc] autorelease] initWithContentRect:[self notificationRect] styleMask:NSBorderlessWindowMask backing:NSBackingStoreBuffered defer:NO];
 		[_notificationWindow retain];
-		[[self window] addChildWindow:_notificationWindow ordered:NSWindowAbove];
+		if([self isFullScreen]) 
+		{
+			[_fullScreenWindow addChildWindow:_notificationWindow ordered:NSWindowAbove];
+			[_notificationWindow setLevel: CGShieldingWindowLevel()];
+		} else {
+			[[self window] addChildWindow:_notificationWindow ordered:NSWindowAbove];
+		}
 		[_notificationWindow setBackgroundColor: [NSColor clearColor]];
 		[_notificationWindow setOpaque:NO];
 		[_notificationWindow setIgnoresMouseEvents: YES];
@@ -616,9 +622,9 @@ void _event_listener_cb(void *user_data, const xine_event_t *event) {
 	if(![self window])
 		return NSMakeRect(0,0,0,0);
 	
-	NSRect desiredRect = [_videoView frame];
-	NSRect contentRect = [self convertRect: desiredRect toView: nil];
-	contentRect.origin = [[self window] convertBaseToScreen: contentRect.origin];
+	NSRect desiredRect = [_videoView bounds];
+	NSRect contentRect = [_videoView convertRect: desiredRect toView: nil];
+	contentRect.origin = [[_videoView window] convertBaseToScreen: contentRect.origin];
 	
 	/* NSLog(@"frame: %f,%f", contentRect.size.width, contentRect.size.height); */
 	
