@@ -1,6 +1,7 @@
 18 Mar 2004; Rich Wareham <richwareham@users.sourceforg.net> :
 	
 	* 0.2 release.
+        * Can automatically resize window on movie size change.
         * Display a little notification in the video window
           when state changes (e.g. deinterlace is toggled, etc).
         * Attempt to open any type of file passed (i.e. no longer
