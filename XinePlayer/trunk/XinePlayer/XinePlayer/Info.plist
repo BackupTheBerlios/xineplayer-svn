@@ -46,7 +46,7 @@
 	<key>CFBundleIconFile</key>
 	<string>xineplayer</string>
 	<key>CFBundleIdentifier</key>
-	<string>net.sf.xine.xineplayer</string>
+	<string>de.berlios.xineplayer</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>

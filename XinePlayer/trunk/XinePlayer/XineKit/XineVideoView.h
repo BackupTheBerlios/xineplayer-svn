@@ -19,7 +19,7 @@
 #import <Cocoa/Cocoa.h>
 
 @interface XineVideoView : NSView {
-	xine_stream_t *_associatedStream;
+	void *_associatedStream;
 	NSSize _videoSize;
 	float _aspectRatio;
 	NSQuickDrawView *_videoView;
@@ -35,8 +35,8 @@
 
 - (NSRect) contentFrame;
 
-- (void) didAssociateWithStream: (xine_stream_t*) stream;
-- (void) didDisassociateWithStream: (xine_stream_t*) stream;
+- (void) didAssociateWithStream: (void*) stream;
+- (void) didDisassociateWithStream: (void*) stream;
 - (NSRect) idealParentWindowFrame: (float) ratio;
 - (void) resizeParentWindowToFit: (float) ratio;
 

@@ -1,10 +1,13 @@
 18 Mar 2004; Rich Wareham <richwareham@users.sourceforg.net> :
 	
 	* Pre 0.2 release.
+        * Implement preferences dialogue.
+        * Audio visualisation support.
+	* Support post-processing plugins.
 	* Only use one xine engine instance per app.
 	* Fix frame corruption bug whereby colours appeared
 	  'streaky' with certain movies.
 
 17 Mar 2004; Rich Wareham <richwareham@users.sourceforg.net> :
 	
-	* Initialy public release (0.1).
+	* Initial public release (0.1).

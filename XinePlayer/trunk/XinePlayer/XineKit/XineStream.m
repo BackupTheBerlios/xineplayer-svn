@@ -17,6 +17,7 @@
 */
 
 #import <XineKit.h>
+#import <xine.h>
 
 NSString *XineStreamFrameFormatDidChangeNotification = @"XineStreamFrameFormatDidChangeNotification";
 NSString *XineStreamPlaybackDidFinishNotification = @"XineStreamPlaybackDidFinishNotification";
@@ -69,6 +70,16 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 - (bool) eject
 {
 	return xine_eject(_stream);
+}
+
+- (void) wireAudioToPort: (XineAudioPort*) port
+{
+	xine_post_wire_audio_port(xine_get_audio_source(_stream),[port handle]);
+}
+
+- (void) wireVideoToPort: (XineVideoPort*) port
+{
+	xine_post_wire_video_port(xine_get_video_source(_stream),[port handle]);
 }
 
 - (void) setValue: (int) value ofParameter: (int) param

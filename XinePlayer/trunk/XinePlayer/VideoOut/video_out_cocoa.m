@@ -129,20 +129,21 @@ static void deinterlace_linearblend_yuv( uint8_t *pdst, uint8_t *psrc[],
 	/* Copy the last line */
 	xine_fast_memcpy(l0, l1, width);
 }
-
+ 
 static void free_framedata(cocoa_frame_t* frame) 
 {
-	if(frame->vo_frame.format == XINE_IMGFMT_YV12) {
-		if(frame->yuv_pixmap && [((cocoa_driver_t*)frame->vo_frame.driver)->videoView respondsToSelector: @selector(freedYUVFrame:)]) {
+	if(frame->yuv_pixmap) {
+		if([((cocoa_driver_t*)frame->vo_frame.driver)->videoView respondsToSelector: @selector(freedYUVFrame:)]) 
+		{
 			[((cocoa_driver_t*)frame->vo_frame.driver)->videoView freedFrame: frame->yuv_pixmap];
-			freePixmap(frame->yuv_pixmap);
-			frame->yuv_pixmap = NULL;
 		}
-	} else if((frame->vo_frame.format == XINE_IMGFMT_YUY2) && (frame->vo_frame.base[0])) 
+		freePixmap(frame->yuv_pixmap);
+	} else if(frame->vo_frame.base[0])
 	{
 		free(frame->vo_frame.base[0]);
 	}
 	
+	frame->yuv_pixmap = NULL;
 	frame->vo_frame.base[0] = NULL;
 	frame->vo_frame.base[1] = NULL;
 	frame->vo_frame.base[2] = NULL;

@@ -19,6 +19,8 @@
 @class XineEngine;
 @class XineStream;
 @class XinePostProcessor;
+@class XineAudioPort;
+@class XineVideoPort;
 
 extern NSString *XineStreamFrameFormatDidChangeNotification;
 extern NSString *XineStreamPlaybackDidFinishNotification;
@@ -57,10 +59,8 @@ typedef enum {
 - (void) close;
 - (bool) eject;
 
-/*
-- (XinePostOutputPort*) videoSourceForPostProcessor: (XinePostProcessor*) post;
-- (XinePostOutputPort*) audioSourceForPostProcessor: (XinePostProcessor*) post;
-*/
+- (void) wireAudioToPort: (XineAudioPort*) port;
+- (void) wireVideoToPort: (XineVideoPort*) port;
 
 - (void) seekToPosition: (int) position;
 

@@ -23,6 +23,13 @@
             SUPERCLASS = NSObject; 
         }, 
         {
+            ACTIONS = {showPreferences = id; }; 
+            CLASS = PreferencesController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {prefsWindow = NSWindow; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
             ACTIONS = {openFirstDisc = id; }; 
             CLASS = XPController; 
             LANGUAGE = ObjC; 
@@ -40,6 +47,14 @@
             CLASS = XPDocumentController; 
             LANGUAGE = ObjC; 
             SUPERCLASS = NSDocumentController; 
+        }, 
+        {CLASS = XPPreferencePane; LANGUAGE = ObjC; }, 
+        {
+            ACTIONS = {showPreferences = id; }; 
+            CLASS = XPPreferencesController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {prefsWindow = NSWindow; }; 
+            SUPERCLASS = NSObject; 
         }
     ); 
     IBVersion = 1; 

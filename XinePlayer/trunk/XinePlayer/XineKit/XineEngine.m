@@ -18,6 +18,7 @@
 
 #import <XineKit.h>
 #import <stdlib.h>
+#import <xine.h>
 
 @interface XineEngine (Private)
 

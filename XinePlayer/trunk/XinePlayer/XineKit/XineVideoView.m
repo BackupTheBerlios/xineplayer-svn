@@ -172,7 +172,7 @@
 	}
 	
 	NSDrawTiledRects(NSInsetRect([self contentFrame], -2, -2), rect, mySides, myGrays, 8);
-	[[NSColor whiteColor] set];
+	[[NSColor blackColor] set];
 	NSRectFill([self contentFrame]);
 	[super drawRect: rect];
 }
@@ -187,7 +187,7 @@
 	return _aspectRatio;
 }
 
-- (void) didDisassociateWithStream: (xine_stream_t*) stream
+- (void) didDisassociateWithStream: (void*) stream
 {
 	_associatedStream = nil;
 	/*
@@ -223,7 +223,7 @@ void _event_listener_cb(void *user_data, const xine_event_t *event) {
 }
 */
 
-- (void) didAssociateWithStream: (xine_stream_t*) stream
+- (void) didAssociateWithStream: (void*) stream
 {
 	_associatedStream = stream;
 	/*

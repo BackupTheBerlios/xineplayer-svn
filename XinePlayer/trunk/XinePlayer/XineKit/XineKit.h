@@ -16,8 +16,6 @@
  * Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#import <xine.h>
-
 #import <XineVideoView.h>
 #import <XinePorts.h>
 #import <XineStream.h>

@@ -19,6 +19,8 @@
 #import "XPDVDDocument.h"
 #import "XPController.h"
 
+#import <xine.h>
+
 @implementation XPDVDDocument
 
 - (BOOL) isDVDPlayer

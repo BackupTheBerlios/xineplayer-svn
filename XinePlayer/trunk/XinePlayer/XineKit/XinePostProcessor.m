@@ -17,6 +17,7 @@
 */
 
 #import "XineKit.h"
+#import "xine.h"
 
 @implementation XinePostProcessor
 
@@ -49,10 +50,8 @@
 		
 		_post = xine_post_init([_engine handle], [name cString], inputs, audio_targets, video_targets);
 		
-		/*
 		free(audio_targets);
 		free(video_targets);
-		 */
 		
 		if(!_post) {
 			[_engine release];

@@ -18,6 +18,9 @@
 
 #import "XPDocument.h"
 #import "XPController.h"
+#import "../Preferences/XPPreferencesController.h"
+
+#import <xine.h>
 
 @interface XPDocument (Private)
 
@@ -48,11 +51,8 @@
 
 - (void) close
 {
-
-	if(_post) 
-	{
-		xine_post_wire_audio_port(xine_get_audio_source([_stream handle]), [_audioPort handle]);
-	}
+	if([_stream isPlaying])
+		[_stream wireAudioToPort: _audioPort];
 
 	if(_guiTimer)
 		[_guiTimer invalidate];
@@ -109,10 +109,6 @@
 	_videoPort = [[_engine createVideoPortFromVideoView: videoView] retain];
 	_audioPort = [[_engine createAudioPort] retain];
 	
-	XineAudioPort *streamAPort = _audioPort;
-	
-	_post = [[XinePostProcessor postProcessorNamed: @"fftscope" fromEngine: _engine inputs:0 audioPorts: [NSArray arrayWithObject: _audioPort] videoPorts: [NSArray arrayWithObject: _videoPort]] retain];
-
 	_stream = [[_engine createStreamWithAudioPort:_audioPort videoPort:_videoPort] retain];
 	 	
 	[[self documentWindow] makeFirstResponder: videoView];
@@ -206,10 +202,22 @@
 	
 	if([_stream openMRL: mrl])
 	{		
+		if(![_stream getStreamInformationForKey: XINE_STREAM_INFO_HAS_VIDEO] && ([[[XPPreferencesController defaultController] audioVisualisation] isNotEqualTo: @"none"]))
+		{
+			[_stream wireAudioToPort: _audioPort];
+			if(_post)
+				[_post release];
+			_post = [[XinePostProcessor postProcessorNamed: [[XPPreferencesController defaultController] audioVisualisation] fromEngine: _engine inputs:0 audioPorts: [NSArray arrayWithObject: _audioPort] videoPorts: [NSArray arrayWithObject: _videoPort]] retain];
+			[_stream wireAudioToPort: [[_post audioInputs] objectAtIndex: 0]];
+		} else {
+			[_stream wireAudioToPort: _audioPort];
+			if(_post) {
+				[_post release];
+				_post = nil;
+			}
+		}
+		
 		[_stream play];
-		/*
-		 xine_post_wire_audio_port(xine_get_audio_source([_stream handle]), [[[_post audioInputs] objectAtIndex: 0] handle]);
-		 */
 		[(NSWindowController*) [[self windowControllers] objectAtIndex: 0] synchronizeWindowTitleWithDocumentName];
 		
 		_isPlaying = YES;
