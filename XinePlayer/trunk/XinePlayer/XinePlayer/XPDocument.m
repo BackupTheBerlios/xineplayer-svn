@@ -658,7 +658,7 @@
 		nil]];
 	[notificationLabel setAttributedStringValue: aString];
 	[notificationLabel sizeToFit];
-	[notificationLabel setFrameOrigin:NSMakePoint(0,[notificationView bounds].size.height - [notificationLabel frame].size.height)];
+	[notificationLabel setFrameOrigin:NSMakePoint(15,[notificationView bounds].size.height - [notificationLabel frame].size.height - 10)];
 }
 
 - (void) synchroniseGUIAndStream: (NSTimer*) timer
