@@ -175,7 +175,7 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	[[aController window] center];
 	[[aController window] setAcceptsMouseMovedEvents: YES];
 	
-	_engine = [[XineEngine defaultEngine] retain];
+	_engine = [[[XineEngine alloc] init] retain];
 		
 	// Create the default stream and video/audio ports.
 	_videoPort = [[_engine createVideoPortFromVideoView: videoView] retain];
