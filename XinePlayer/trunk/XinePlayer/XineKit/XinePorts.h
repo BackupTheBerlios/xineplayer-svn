@@ -40,6 +40,7 @@
 	XineVideoView *_view;
 }
 + (XineVideoPort*) videoPortForDriver: (NSString*) driver fromEngine: (XineEngine*) engine forView: (XineVideoView*) view;
++ (XineVideoPort*) videoPortForDriver: (NSString*) driver fromEngine: (XineEngine*) engine forView: (XineVideoView*) view type: (int) type;
 - (id) initWithHandle: (void*) handle fromEngine: (XineEngine*) engine shouldClose: (BOOL) shouldClose forView: (XineVideoView*) view;
 - (XineVideoView*) videoView;
 @end

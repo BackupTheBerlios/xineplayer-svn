@@ -84,7 +84,12 @@
 
 + (XineVideoPort*) videoPortForDriver: (NSString*) driver fromEngine: (XineEngine*) engine forView: (XineVideoView*) view
 {
-	xine_video_port_t *port = xine_open_video_driver([engine handle], [driver cString], XINE_VISUAL_TYPE_MACOSX, view);
+	return [XineVideoPort videoPortForDriver:driver fromEngine:engine forView:view type:XINE_VISUAL_TYPE_MACOSX];
+}
+
++ (XineVideoPort*) videoPortForDriver: (NSString*) driver fromEngine: (XineEngine*) engine forView: (XineVideoView*) view type: (int) type
+{
+	xine_video_port_t *port = xine_open_video_driver([engine handle], [driver cString], type, view);
 	if(!port)
 		return nil;
 	return [[[XineVideoPort alloc] initWithHandle: port fromEngine: engine shouldClose: YES forView: view] autorelease];
@@ -103,7 +108,9 @@
 {
 	id mySelf = [self initWithHandle: handle fromEngine: engine shouldClose: shouldClose];
 	if(mySelf) {
-		_view = [view retain];
+		_view = view;
+		if(_view)
+			[_view retain];
 	}
 	return mySelf;
 }

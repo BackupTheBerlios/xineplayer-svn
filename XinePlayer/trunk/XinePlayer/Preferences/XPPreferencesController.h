@@ -42,6 +42,9 @@
 - (NSArray*) audioVisualisationNames;
 - (NSString*) audioVisualisation;
 - (void) setAudioVisualisation: (NSString*) visualisation;
+- (NSArray*) deinterlaceAlgorithms;
+- (NSString*) deinterlaceAlgorithm;
+- (void) setDeinterlaceAlgorithm: (id) value;
 
 @end
 

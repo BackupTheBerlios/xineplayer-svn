@@ -20,12 +20,54 @@
 #import "XPPreferencesController.h"
 #import <PreferencePanes/NSPreferencePane.h>
 #import "../XineKit/XineKit.h"
+#import "xine.h"
 
 #define XP_PREF_AUDIO_VISUALISATION @"AudioVisualisation"
+#define XP_PREF_DEINTERLACE_METHOD @"DeinterlaceMethod"
 
 static XPPreferencesController *_defaultController = nil;
 
 @implementation XPPreferencesController
+
+- (NSArray*) deinterlaceAlgorithms
+{
+	XineAudioPort *audioPort = [XineAudioPort audioPortForDriver:@"none" fromEngine:[XineEngine defaultEngine] userData:NULL];
+	XineVideoPort *videoPort = [XineVideoPort videoPortForDriver:@"none" fromEngine:[XineEngine defaultEngine] forView:NULL type: XINE_VISUAL_TYPE_NONE];
+	/* NSLog(@"ap %i, vp %i", audioPort, videoPort); */
+	XinePostProcessor *post = [XinePostProcessor postProcessorNamed:@"tvtime" fromEngine:[XineEngine defaultEngine] inputs:0 audioPorts:[NSArray arrayWithObject:audioPort] videoPorts:[NSArray arrayWithObject: videoPort]];
+	if(!post)
+		return [NSArray array];
+	
+	NSMutableArray *array = [NSMutableArray array];
+	NSEnumerator *objectEnumerator = [[post enumeratedValuesForProperty: @"method"] objectEnumerator];
+	NSString *method;
+	while(method = [objectEnumerator nextObject])
+	{
+		if([method isNotEqualTo: @"use_vo_driver"]) 
+		{
+			[array addObject: method];
+		}
+	}
+	return array;
+}
+
+- (NSString*) deinterlaceAlgorithm
+{
+	id retVal = [[NSUserDefaults standardUserDefaults] objectForKey: XP_PREF_DEINTERLACE_METHOD];
+	if(retVal && [[self deinterlaceAlgorithms] containsObject: retVal])
+		return retVal;
+	
+	return @"LinearBlend";
+}
+
+- (void) setDeinterlaceAlgorithm: (id) value
+{
+	if(![[self deinterlaceAlgorithms] containsObject: value])
+		return;
+	
+	[[NSUserDefaults standardUserDefaults] setObject:value forKey: XP_PREF_DEINTERLACE_METHOD];
+	[[NSUserDefaults standardUserDefaults] synchronize];
+}
 
 - (NSArray*) audioVisualisationNames
 {	
@@ -48,6 +90,7 @@ static XPPreferencesController *_defaultController = nil;
 		return;
 	
 	[[NSUserDefaults standardUserDefaults] setObject:value forKey: XP_PREF_AUDIO_VISUALISATION];
+	[[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 + (XPPreferencesController*) defaultController

@@ -30,6 +30,7 @@
 {
 	id mySelf = [self init];
 	if(mySelf) {
+		_name = [[NSString stringWithString:name] retain];
 		_engine = [engine retain];
 		xine_audio_port_t **audio_targets = malloc(([audioPorts count] + 1) * sizeof(xine_audio_port_t*));
 		xine_video_port_t **video_targets = malloc(([videoPorts count] + 1) * sizeof(xine_video_port_t*));
@@ -102,6 +103,8 @@
 
 - (void) dealloc
 {
+	if(_name)
+		[_name release];
 	if(_param_data)
 		free(_param_data);
 	if(_properties_names)
@@ -111,6 +114,11 @@
 	if(_engine)
 		[_engine release];
 	[super dealloc];
+}
+
+- (NSString*) name
+{
+	return _name;
 }
 
 - (NSArray*) propertyNames;

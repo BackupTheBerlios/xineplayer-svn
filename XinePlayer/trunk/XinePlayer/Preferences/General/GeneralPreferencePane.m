@@ -25,6 +25,21 @@
 
 @implementation GeneralPreferencePane
 
+- (NSArray*) deinterlaceAlgorithms
+{
+	return [[XPPreferencesController defaultController] deinterlaceAlgorithms];
+}
+
+- (NSString*) deinterlaceAlgorithm
+{
+	return [[XPPreferencesController defaultController] deinterlaceAlgorithm];
+}
+
+- (void) setDeinterlaceAlgorithm: (id) value
+{
+	[[XPPreferencesController defaultController] setDeinterlaceAlgorithm: value];
+}
+
 - (NSArray*) audioVisualisationNames
 {	
 	return [[XPPreferencesController defaultController] audioVisualisationNames];

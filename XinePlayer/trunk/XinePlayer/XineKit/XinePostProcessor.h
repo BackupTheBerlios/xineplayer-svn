@@ -28,6 +28,7 @@
 	void *_param_data;
 	char **_properties_names;
 	
+	NSString *_name;
 	XineEngine *_engine;
 }
 
@@ -37,6 +38,7 @@
 - (XinePostProcessorType) type;
 - (NSArray*) audioInputs;
 - (NSArray*) videoInputs;
+- (NSString*) name;
 
 - (NSArray*) propertyNames;
 - (void) setValue: (id) value forProperty: (NSString*) name;

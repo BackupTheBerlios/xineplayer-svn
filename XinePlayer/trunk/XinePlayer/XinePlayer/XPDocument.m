@@ -102,34 +102,11 @@
 	return @"XPDocument";
 }
 
-- (void)windowControllerDidLoadNib:(NSWindowController *) aController
+- (void) prefsChanged: (NSNotification*) notification
 {
-    [super windowControllerDidLoadNib:aController];
-	
-	[[aController window] center];
-	[[aController window] setAcceptsMouseMovedEvents: YES];
-	
-	_engine = [[XineEngine defaultEngine] retain];
-	
-	// Create the default stream and video/audio ports.
-	_videoPort = [[_engine createVideoPortFromVideoView: videoView] retain];
-	_audioPort = [[_engine createAudioPort] retain];
-	
-	_stream = [[_engine createStreamWithAudioPort:_audioPort videoPort:_videoPort] retain];
-	 	
-	_deinterlaceFilter = [XinePostProcessor postProcessorNamed: @"tvtime" fromEngine: _engine inputs:0 audioPorts: [NSArray arrayWithObject: _audioPort] videoPorts: [NSArray arrayWithObject: _videoPort]];
-	if(_deinterlaceFilter) 
-		[_deinterlaceFilter retain];
-	
-	if([[[XPPreferencesController defaultController] audioVisualisation] isNotEqualTo: @"none"]) 
-	{
-		_audioVisualisationFilter = [XinePostProcessor postProcessorNamed: [[XPPreferencesController defaultController] audioVisualisation] fromEngine: _engine inputs:0 audioPorts: [NSArray arrayWithObject: _audioPort] videoPorts: [NSArray arrayWithObject: _videoPort]];
-		if(_audioVisualisationFilter) 
-			[_audioVisualisationFilter retain];
-	}
-	
+	XPPreferencesController *prefController = [XPPreferencesController defaultController];
 	if(_deinterlaceFilter) {
-		[_deinterlaceFilter setValue: @"LinearBlend" forProperty: @"method"];
+		[_deinterlaceFilter setValue: [prefController deinterlaceAlgorithm] forProperty: @"method"];
 		[_deinterlaceFilter setValue: [NSNumber numberWithBool: YES] forProperty: @"cheap_mode"];
 		[_deinterlaceFilter setValue: [NSNumber numberWithBool: NO] forProperty: @"pulldown"];
 		[_deinterlaceFilter setValue: [NSNumber numberWithBool: YES] forProperty: @"use_progressive_frame_flag"];
@@ -152,6 +129,54 @@
 		}
 #endif
 	}
+	
+	/* This isn't very stable yet */
+#if 0
+	if(_audioVisualisationFilter && [[_audioVisualisationFilter name] isNotEqualTo: [prefController audioVisualisation]]) 
+	{
+		[_stream wireAudioToPort: _audioPort];
+		[_audioVisualisationFilter release];
+		_audioVisualisationFilter = nil;
+	}
+	
+	if(!_audioVisualisationFilter && [[prefController audioVisualisation] isNotEqualTo: @"none"]) 
+	{
+		_audioVisualisationFilter = [XinePostProcessor postProcessorNamed: [[XPPreferencesController defaultController] audioVisualisation] fromEngine: _engine inputs:0 audioPorts: [NSArray arrayWithObject: _audioPort] videoPorts: [NSArray arrayWithObject: _videoPort]];
+		if(_audioVisualisationFilter) 
+			[_audioVisualisationFilter retain];
+	}
+
+	if(![_stream getStreamInformationForKey: XINE_STREAM_INFO_HAS_VIDEO] && _audioVisualisationFilter)
+	{
+		[_stream wireAudioToPort: _audioPort];
+		[_stream wireAudioToPort: [[_audioVisualisationFilter audioInputs] objectAtIndex: 0]];
+	} else {
+		[_stream wireAudioToPort: _audioPort];
+	}
+#endif
+}
+
+- (void)windowControllerDidLoadNib:(NSWindowController *) aController
+{
+    [super windowControllerDidLoadNib:aController];
+	
+	[[aController window] center];
+	[[aController window] setAcceptsMouseMovedEvents: YES];
+	
+	_engine = [[XineEngine defaultEngine] retain];
+	
+	// Create the default stream and video/audio ports.
+	_videoPort = [[_engine createVideoPortFromVideoView: videoView] retain];
+	_audioPort = [[_engine createAudioPort] retain];
+	
+	_stream = [[_engine createStreamWithAudioPort:_audioPort videoPort:_videoPort] retain];
+	 	
+	_deinterlaceFilter = [XinePostProcessor postProcessorNamed: @"tvtime" fromEngine: _engine inputs:0 audioPorts: [NSArray arrayWithObject: _audioPort] videoPorts: [NSArray arrayWithObject: _videoPort]];
+	if(_deinterlaceFilter) 
+		[_deinterlaceFilter retain];
+		
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(prefsChanged:) name:NSUserDefaultsDidChangeNotification object:nil];
+	[self prefsChanged: nil];
 	
 	[[self documentWindow] makeFirstResponder: videoView];
 	
