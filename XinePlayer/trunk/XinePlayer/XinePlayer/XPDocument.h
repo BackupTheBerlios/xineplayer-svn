@@ -23,7 +23,6 @@
 @interface XPDocument : NSDocument
 {
 	IBOutlet XineVideoView *videoView;
-	IBOutlet NSButton *muteButton;
 	IBOutlet NSButton *playPauseButton;
 	IBOutlet NSButton *nextButton;
 	IBOutlet NSButton *previousButton;
@@ -83,8 +82,6 @@
 - (IBAction) doubleSize: (id) sender;
 
 - (IBAction) togglePlayAndPause: (id) sender;
-- (IBAction) toggleMute: (id) sender;
-- (IBAction) volumeChanged: (id) sender;
 - (IBAction) openNextMRL: (id) sender;
 - (IBAction) openPreviousMRL: (id) sender;
 

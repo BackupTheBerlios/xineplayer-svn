@@ -300,7 +300,7 @@
 										<key>PBXProjectModuleLabel</key>
 										<string>XPDocument.m</string>
 										<key>bookmark</key>
-										<string>A4822E9507F9E9D800578954</string>
+										<string>A4822EAC07F9EB3500578954</string>
 										<key>history</key>
 										<array>
 											<string>A409340207ED001100837FB7</string>
@@ -345,8 +345,8 @@
 											<string>A4822E2007F86E0C00578954</string>
 											<string>A4822E6407F871D600578954</string>
 											<string>A4822E8307F9E6C600578954</string>
-											<string>A4822E8C07F9E80E00578954</string>
-											<string>A4822E8D07F9E80E00578954</string>
+											<string>A4822EA907F9EB3500578954</string>
+											<string>A4822EAA07F9EB3500578954</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -476,6 +476,12 @@
 											<string>A4822E8407F9E6C600578954</string>
 											<string>A4822E8907F9E71C00578954</string>
 											<string>A4822E8E07F9E80E00578954</string>
+											<string>A4822E9907F9E9FE00578954</string>
+											<string>A4822E9A07F9E9FE00578954</string>
+											<string>A4822EA107F9EAFE00578954</string>
+											<string>A4822EA207F9EAFE00578954</string>
+											<string>A4822EA307F9EAFE00578954</string>
+											<string>A4822EAB07F9EB3500578954</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -590,7 +596,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>XineStream.m</string>
+								<string>XPDocument.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -598,21 +604,23 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CD052900623707200166675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>XineStream.m</string>
+										<string>XPDocument.m</string>
 										<key>bookmark</key>
-										<string>A4822E9607F9E9D800578954</string>
+										<string>A4822EAD07F9EB3500578954</string>
 										<key>history</key>
 										<array>
 											<string>A415E8C407F20D8500FFA8BD</string>
 											<string>A415E94807F2148D00FFA8BD</string>
 											<string>A4822C9E07F8461700578954</string>
-											<string>A4822D2107F8572100578954</string>
+											<string>A4822EA507F9EAFE00578954</string>
+											<string>A4822EA607F9EAFE00578954</string>
 										</array>
 										<key>prevStack</key>
 										<array>
 											<string>A415E8C607F20D8500FFA8BD</string>
 											<string>A415E94A07F2148D00FFA8BD</string>
 											<string>A4822CA007F8461700578954</string>
+											<string>A4822EA707F9EAFE00578954</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -634,8 +642,6 @@
 							<string>278pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

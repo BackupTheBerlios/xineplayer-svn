@@ -377,6 +377,7 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	[self willChangeValueForKey:@"streamIsValid"];
 	[self willChangeValueForKey:@"hasAudio"];
 	[self willChangeValueForKey:@"volume"];
+	[self willChangeValueForKey:@"isMuted"];
 
 	/* Actually stop the stream and wait until it has taken effect. */
 	if([_stream isPlaying]) {
@@ -408,6 +409,7 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	[self didChangeValueForKey:@"streamIsValid"];
 	[self didChangeValueForKey:@"hasAudio"];
 	[self didChangeValueForKey:@"volume"];
+	[self didChangeValueForKey:@"isMuted"];
 	
 	return _isPlaying;
 }
@@ -595,32 +597,6 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 		[videoView goFullScreen: sender];
 }
 
-- (IBAction) toggleMute: (id) sender
-{
-	if(!_stream)
-		return;
-	if(_isSynchingGUI)
-		return;
-	
-	if([muteButton state] == NSOnState)
-	{
-		[_stream setValue: 1 ofParameter:XINE_PARAM_AUDIO_MUTE];
-	} else {
-		[_stream setValue: 0 ofParameter:XINE_PARAM_AUDIO_MUTE];
-	}
-	
-	[self synchroniseGUIAndStream: nil];
-}
-
-- (IBAction) volumeChanged: (id) sender
-{
-	if(_isSynchingGUI)
-		return;
-	
-	// [_stream setValue: [volumeSlider intValue] ofParameter:XINE_PARAM_AUDIO_VOLUME];
-	[self synchroniseGUIAndStream: nil];
-}
-
 - (IBAction) togglePlayAndPause: (id) sender
 {
 	if(!_stream)
@@ -776,6 +752,21 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	[_stream setValue:[value intValue] ofParameter:XINE_PARAM_AUDIO_VOLUME];
 }
 
+- (id) isMuted
+{
+	if(!_stream)
+		return nil;
+	
+	return [NSNumber numberWithBool:[_stream valueOfParameter:XINE_PARAM_AUDIO_MUTE]];
+}
+
+- (void) setIsMuted: (id) value
+{
+	if(!_stream)
+		return;
+	[_stream setValue:[value boolValue] ofParameter:XINE_PARAM_AUDIO_MUTE];
+}
+
 @end
 
 @implementation XPDocument (TableViewDataSource)
@@ -927,10 +918,7 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	
 	[self willChangeValueForKey:@"streamPosition"];
 	[self willChangeValueForKey:@"hasPositionInformation"];
-	
-	BOOL isMuted = [_stream valueOfParameter:XINE_PARAM_AUDIO_MUTE];
-	
-	[muteButton setState: isMuted ? NSOnState : NSOffState];
+
 		
 	//NSLog(@"Has audio: %i", [_stream getStreamInformationForKey: XINE_STREAM_INFO_HAS_AUDIO]);
 	//NSLog(@"Slider: %i", [volumeSlider intValue]);

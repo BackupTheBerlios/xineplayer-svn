@@ -11,17 +11,14 @@
                 openPreviousMRL = id; 
                 toggleDeinterlace = id; 
                 toggleFullScreen = id; 
-                toggleMute = id; 
                 togglePlayAndPause = id; 
                 togglePlaylist = id; 
                 toggleStreamInfo = id; 
-                volumeChanged = id; 
             }; 
             CLASS = XPDocument; 
             LANGUAGE = ObjC; 
             OUTLETS = {
                 "_documentWindow" = NSWindow; 
-                muteButton = NSButton; 
                 nextButton = NSButton; 
                 notificationLabel = NSTextField; 
                 notificationView = NSView; 
