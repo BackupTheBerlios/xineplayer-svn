@@ -50,6 +50,8 @@
     the stable and mature <a href="http://xinehq.de/">xine</a> multimedia
     playback engine. It is designed to be a free replacement for QuickTime
     Player and DVD Player.</p>
+    <h2>Latest News</h2>
+    <p>Version 0.2 has been released with loads of new features!</p>
     <h2>Features</h2>
     <ul>
     <li>Support for many popular formats including MPEG 1/2, QuickTime (MOV),
