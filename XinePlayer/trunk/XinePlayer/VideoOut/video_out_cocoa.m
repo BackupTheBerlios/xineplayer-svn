@@ -72,7 +72,6 @@ typedef struct {
   xine_t               *xine;
   NSView<VideoDriver>  *videoView;
   alphablend_t          alphablend_extra_data;
-  int					deinterlace;
 } cocoa_driver_t;
 
 typedef struct {
@@ -80,55 +79,6 @@ typedef struct {
   config_values_t      *config;
   xine_t               *xine;
 } cocoa_class_t;
-
-/* This is borrowed from xine */
-
-/* Linear Blend filter - C version contributed by Rogerio Brito.
-This algorithm has the same interface as the other functions.
-
-The destination "screen" (pdst) is constructed from the source
-screen (psrc[0]) line by line.
-
-The i-th line of the destination screen is the average of 3 lines
-from the source screen: the (i-1)-th, i-th and (i+1)-th lines, with
-the i-th line having weight 2 in the computation.
-
-Remarks:
-* each line on pdst doesn't depend on previous lines;
-* due to the way the algorithm is defined, the first & last lines of the
-screen aren't deinterlaced.
-
-*/
-static void deinterlace_linearblend_yuv( uint8_t *pdst, uint8_t *psrc[],
-                                         int width, int height )
-{
-	register int x, y;
-	register uint8_t *l0, *l1, *l2, *l3;
-	
-	l0 = pdst;		/* target line */
-	l1 = psrc[0];		/* 1st source line */
-	l2 = l1 + width;	/* 2nd source line = line that follows l1 */
-	l3 = l2 + width;	/* 3rd source line = line that follows l2 */
-	
-	/* Copy the first line */
-	xine_fast_memcpy(l0, l1, width);
-	l0 += width;
-	
-	for (y = 1; y < height-1; ++y) { 
-		/* computes avg of: l1 + 2*l2 + l3 */
-		
-		for (x = 0; x < width; ++x) {
-			l0[x] = (l1[x] + (l2[x]<<1) + l3[x]) >> 2;
-		}
-		
-		/* updates the line pointers */
-		l1 = l2; l2 = l3; l3 += width;
-		l0 += width;
-	}
-	
-	/* Copy the last line */
-	xine_fast_memcpy(l0, l1, width);
-}
  
 static void free_framedata(cocoa_frame_t* frame) 
 {
@@ -242,11 +192,6 @@ static void cocoa_display_frame(vo_driver_t *vo_driver, vo_frame_t *vo_frame) {
 	  if([driver->videoView respondsToSelector: @selector(displayFrame:size:aspectRatio:format:)]) {
 		  /* We have a YUV pixmap ready for display. */
 	  
-		  /* Attempt to auto de-interlace if we're not progressive. */
-		  if(driver->deinterlace) {
-			  deinterlace_linearblend_yuv(vo_frame->base[0], &(vo_frame->base[0]), vo_frame->width, vo_frame->height);
-		  }
-	  
 		  [driver->videoView displayFrame: frame->yuv_pixmap size: NSMakeSize(frame->width, frame->height) aspectRatio: frame->ratio format: XINE_IMGFMT_YV12];
 	  } 
   } else if(frame->format == XINE_IMGFMT_YUY2) {
@@ -290,10 +235,6 @@ static int cocoa_get_property(vo_driver_t *vo_driver, int property) {
     return driver->ratio;
     break;
 	  
-  case VO_PROP_INTERLACED:
-	return driver->deinterlace;
-	break;
-	  
   default:
     break;
   }
@@ -312,10 +253,6 @@ static int cocoa_set_property(vo_driver_t *vo_driver, int property, int value) {
 
     driver->ratio = value;
     break;
-	  
-  case VO_PROP_INTERLACED:
-	driver->deinterlace = value;
-	break;
 	  
   default:
     break;
@@ -433,7 +370,6 @@ static vo_driver_t *open_plugin(video_driver_class_t *driver_class, const void *
   driver->xine   = class->xine;
   driver->ratio  = XINE_VO_ASPECT_AUTO;
   driver->videoView = view;
-  driver->deinterlace = 0;
   
   driver->vo_driver.get_capabilities     = cocoa_get_capabilities;
   driver->vo_driver.alloc_frame          = cocoa_alloc_frame;

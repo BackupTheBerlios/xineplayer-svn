@@ -21,6 +21,13 @@
 
 @interface XinePostProcessor : NSObject {
 	void *_post;
+	void *_api;
+	void *_descr;
+	void *_param;
+	
+	void *_param_data;
+	char **_properties_names;
+	
 	XineEngine *_engine;
 }
 
@@ -30,5 +37,13 @@
 - (XinePostProcessorType) type;
 - (NSArray*) audioInputs;
 - (NSArray*) videoInputs;
+
+- (NSArray*) propertyNames;
+- (void) setValue: (id) value forParameter: (NSString*) name;
+- (NSString*) descriptionForParameter: (NSString*) name;
+- (NSArray*) enumeratedValuesForParameter: (NSString*) name;
+- (BOOL) isEnumeratedParameter: (NSString*) name;
+- (BOOL) isReadOnlyParameter: (NSString*) name;
+- (id) valueForParameter: (NSString*) name;
 
 @end

@@ -106,13 +106,6 @@ static XineEngine *_defaultEngine = nil;
 			
 			section --;
 		}
-		
-		NSArray *postList = [self postProcessorNamesForType: XinePostAudioVisualization];
-		NSEnumerator *postEnum = [postList objectEnumerator];
-		NSString *name;
-		while(name = [postEnum nextObject]) {
-			NSLog(@"Post processor: %@", name);
-		}
 	}
 	
 	return mySelf;

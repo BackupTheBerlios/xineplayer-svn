@@ -44,9 +44,12 @@
 	
 	XineVideoPort *_videoPort;
 	XineAudioPort *_audioPort;
-	XinePostProcessor *_post;
+	XinePostProcessor *_deinterlaceFilter;
+	XinePostProcessor *_audioVisualisationFilter;
 	XineStream *_stream;
 	XineEngine *_engine;
+	
+	BOOL _deinterlace;
 	
 	NSTimer *_guiTimer;
 }

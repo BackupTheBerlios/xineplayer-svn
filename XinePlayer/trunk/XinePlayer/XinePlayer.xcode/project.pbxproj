@@ -562,7 +562,6 @@
 				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)";
 				INFOPLIST_FILE = Preferences/General/Info.plist;
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				OPTIMIZATION_CFLAGS = "";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-framework Foundation -framework AppKit";
 				OTHER_REZFLAGS = "";

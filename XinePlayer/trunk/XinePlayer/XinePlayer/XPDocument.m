@@ -44,15 +44,19 @@
 		_isSynchingGUI = NO;
 		_guiTimer = nil;
 		_isPlaying = NO;
-		_post = nil;
+		_audioVisualisationFilter = nil;
+		_deinterlaceFilter = nil;
+		_deinterlace = NO;
     }
     return self;
 }
 
 - (void) close
 {
-	if([_stream isPlaying])
+	if([_stream isPlaying]) {
 		[_stream wireAudioToPort: _audioPort];
+		[_stream wireVideoToPort: _videoPort];
+	}
 
 	if(_guiTimer)
 		[_guiTimer invalidate];
@@ -62,11 +66,13 @@
 		[_stream release];
 	_stream = nil;
 
-	if(_post) {
-		[_post release];
-	}
-	_post = nil;
-
+	if(_audioVisualisationFilter) 
+		[_audioVisualisationFilter release];
+	_audioVisualisationFilter = nil;
+	if(_deinterlaceFilter) 
+		[_deinterlaceFilter release];
+	_deinterlaceFilter = nil;
+	
 	if(_videoPort)
 		[_videoPort release];
 	_videoPort = nil;
@@ -111,6 +117,42 @@
 	
 	_stream = [[_engine createStreamWithAudioPort:_audioPort videoPort:_videoPort] retain];
 	 	
+	_deinterlaceFilter = [XinePostProcessor postProcessorNamed: @"tvtime" fromEngine: _engine inputs:0 audioPorts: [NSArray arrayWithObject: _audioPort] videoPorts: [NSArray arrayWithObject: _videoPort]];
+	if(_deinterlaceFilter) 
+		[_deinterlaceFilter retain];
+	
+	if([[[XPPreferencesController defaultController] audioVisualisation] isNotEqualTo: @"none"]) 
+	{
+		_audioVisualisationFilter = [XinePostProcessor postProcessorNamed: [[XPPreferencesController defaultController] audioVisualisation] fromEngine: _engine inputs:0 audioPorts: [NSArray arrayWithObject: _audioPort] videoPorts: [NSArray arrayWithObject: _videoPort]];
+		if(_audioVisualisationFilter) 
+			[_audioVisualisationFilter retain];
+	}
+	
+	if(_deinterlaceFilter) {
+		[_deinterlaceFilter setValue: @"LinearBlend" forParameter: @"method"];
+		[_deinterlaceFilter setValue: [NSNumber numberWithBool: YES] forParameter: @"cheap_mode"];
+		[_deinterlaceFilter setValue: [NSNumber numberWithBool: NO] forParameter: @"pulldown"];
+		[_deinterlaceFilter setValue: [NSNumber numberWithBool: YES] forParameter: @"use_progressive_frame_flag"];
+		
+		/*
+		NSArray *properties = [_deinterlaceFilter propertyNames];
+		NSEnumerator *objEnum = [properties objectEnumerator];
+		NSString *name;
+		while(name = [objEnum nextObject]) {
+			NSLog(@"Property: %@ (%@)", name, [_deinterlaceFilter valueForParameter: name]);
+			NSLog(@"  - %@", [_deinterlaceFilter descriptionForParameter: name]);
+			if([_deinterlaceFilter isEnumeratedParameter: name]) {
+				NSEnumerator *enumEnum = [[_deinterlaceFilter enumeratedValuesForParameter: name] objectEnumerator];
+				NSString *value;
+				while(value = [enumEnum nextObject]) 
+				{
+					NSLog(@"    + %@", value);
+				}
+			}
+		}
+		 */
+	}
+	
 	[[self documentWindow] makeFirstResponder: videoView];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(formatChanged:) name:XineStreamFrameFormatDidChangeNotification object:_stream];
@@ -173,6 +215,7 @@
 			[item setTitle: [[NSBundle mainBundle] localizedStringForKey:@"ShowPlaylist" value:@"Show Playlist" table:nil]];
 		}
 	} else if([itemSelector isEqualToString: @"toggleDeinterlace:"]) {
+		[item setEnabled: (_deinterlaceFilter != nil)];
 		[item setState: [self isDeinterlacing] ? NSOnState : NSOffState];
 	}
 
@@ -202,19 +245,12 @@
 	
 	if([_stream openMRL: mrl])
 	{		
-		if(![_stream getStreamInformationForKey: XINE_STREAM_INFO_HAS_VIDEO] && ([[[XPPreferencesController defaultController] audioVisualisation] isNotEqualTo: @"none"]))
+		if(![_stream getStreamInformationForKey: XINE_STREAM_INFO_HAS_VIDEO] && _audioVisualisationFilter)
 		{
 			[_stream wireAudioToPort: _audioPort];
-			if(_post)
-				[_post release];
-			_post = [[XinePostProcessor postProcessorNamed: [[XPPreferencesController defaultController] audioVisualisation] fromEngine: _engine inputs:0 audioPorts: [NSArray arrayWithObject: _audioPort] videoPorts: [NSArray arrayWithObject: _videoPort]] retain];
-			[_stream wireAudioToPort: [[_post audioInputs] objectAtIndex: 0]];
+			[_stream wireAudioToPort: [[_audioVisualisationFilter audioInputs] objectAtIndex: 0]];
 		} else {
 			[_stream wireAudioToPort: _audioPort];
-			if(_post) {
-				[_post release];
-				_post = nil;
-			}
 		}
 		
 		[_stream play];
@@ -253,12 +289,18 @@
 - (BOOL) isDVDPlayer { return NO; }
 
 - (BOOL) isDeinterlacing { 
-	return [_stream valueOfParameter: XINE_PARAM_VO_DEINTERLACE]; 
+	return _deinterlace; 
 }
 
 - (void) setDeinterlace: (BOOL) interlace
 {
-	[_stream setValue:interlace ofParameter:XINE_PARAM_VO_DEINTERLACE];
+	_deinterlace = interlace;
+	if(_deinterlace && _deinterlaceFilter) 
+	{
+		[_stream wireVideoToPort: [[_deinterlaceFilter videoInputs] objectAtIndex: 0]];
+	} else {
+		[_stream wireVideoToPort: _videoPort];
+	}
 }
 
 @end
