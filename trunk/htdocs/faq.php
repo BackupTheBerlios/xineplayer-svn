@@ -13,7 +13,7 @@
        maintained separately. It is a testament to the good design of the
        xine engine that such frontends may be developed like this.</p>
     <h2>Can I play DVDs with XinePlayer?</h2>
-    <p>Yes. Xineplayer uses the VideoLan
+    <p>Yes. XinePlayer uses the VideoLan
    <a href="http://videolan.org/libdvdcss/">libdvdcss</a> library to access
   all DVDs.</p>
     <h2>Does XinePlayer support DVD menus?</h2>
