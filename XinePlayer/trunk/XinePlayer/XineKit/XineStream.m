@@ -165,6 +165,7 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 - (void*) handle { return _stream; }
 - (XineEngine*) engine { return _engine; }
 
+/*
 - (XinePostOutputPort*) videoSourceForPostProcessor: (XinePostProcessor*) post
 {
 	return [[[XinePostOutputPort alloc] initWithOutput: xine_get_video_source(_stream) post:[post handle]] autorelease];
@@ -174,6 +175,7 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 {
 	return [[[XinePostOutputPort alloc] initWithOutput: xine_get_audio_source(_stream) post:[post handle]] autorelease];
 }
+*/
 
 - (void) sendInputButtonEvent: (int) buttonEventType
 {

@@ -17,6 +17,7 @@
 */
 
 #import <XineKit.h>
+#import <QuickTime/QuickTime.h>
 #import "QuartzYUVOutput.h"
 #import <ApplicationServices/ApplicationServices.h>
 
@@ -142,6 +143,7 @@
 		_aspectRatio = 4.0 / 3.0;
 		_videoSize = NSMakeSize(320,240);
 		_lastFrame = NULL;
+		_lastFormat = XINE_IMGFMT_YV12;
 		_yuvDisplay = NULL;
 		_cursorHideTimer = nil;
 		/* _eventQueue = nil; */
@@ -165,7 +167,7 @@
 	
 	if(_lastFrame && ![self isFullScreen]) {
 		if([self ensureDisplay]) {
-			displayYUVPixmapOnView(_yuvDisplay, _lastFrame);
+			displayImageOnView(_yuvDisplay, _lastFrame);
 		}
 	}
 	
@@ -383,7 +385,7 @@ void _event_listener_cb(void *user_data, const xine_event_t *event) {
 	
 	if(_lastFrame) {
 		if([self ensureDisplay]) {
-			displayYUVPixmapOnView(_yuvDisplay, _lastFrame);
+			displayImageOnView(_yuvDisplay, _lastFrame);
 		}
 	}
 	
@@ -477,36 +479,37 @@ void _event_listener_cb(void *user_data, const xine_event_t *event) {
 	[self setNeedsDisplay: YES];
 }
 
-- (void) displayYUVFrame: (PlanarPixmapInfoYUV420*) pixmap size: (NSSize) frameSize aspectRatio: (float) ratio
+- (void) displayFrame: (void*) pixmap size: (NSSize) frameSize aspectRatio: (float) ratio format: (int) format;
 {
 	_lastFrame = pixmap;
 	
-	if((ratio != _aspectRatio) || (!NSEqualSizes(_videoSize, frameSize)))
+	if((format != _lastFormat) || (ratio != _aspectRatio) || (!NSEqualSizes(_videoSize, frameSize)))
 	{
 		_aspectRatio = ratio;
 		_videoSize = frameSize;
+		_lastFormat = format;
 		
 		[_displayLock lock];		
-		if(_yuvDisplay && !NSEqualSizes(_videoSize,_yuvDisplay->movieSize)) {
+		if(_yuvDisplay && (!NSEqualSizes(_videoSize,((yuv_display_t*)_yuvDisplay)->movieSize) || (format != ((yuv_display_t*)_yuvDisplay)->format))) {
 			/* Mostly because resizeYUVDisplay doesn't seem to work. */
 			disposeYUVDisplay(_yuvDisplay);
 			_yuvDisplay = NULL;
 		}
 		[_displayLock unlock];
-		   
+		
 		/* Do this on the main thread because we are resizing views. */
 		[self performSelectorOnMainThread:@selector(resizeVideoView:) withObject:nil waitUntilDone:NO];
 	} 
 	
 	if(_lastFrame) {
 		if([self ensureDisplay] && [_videoView lockFocusIfCanDraw]) {
-			displayYUVPixmapOnView(_yuvDisplay, _lastFrame);
+			displayImageOnView(_yuvDisplay, _lastFrame);
 			[_videoView unlockFocus];
 		}
 	}
 }
 
-- (void) freedYUVFrame: (PlanarPixmapInfoYUV420*) pixmap
+- (void) freedFrame: (void*) pixmap
 {
 	if(_lastFrame == pixmap)
 		_lastFrame = NULL;
@@ -534,20 +537,13 @@ void _event_listener_cb(void *user_data, const xine_event_t *event) {
 	}
 	
 	if(!_yuvDisplay) {
-		_yuvDisplay = createYUVDisplayOnView(_videoView, _videoSize);
+		_yuvDisplay = createYUVDisplayOnView(_videoView, _videoSize, _lastFormat);
 	}
 	
 	if(!_yuvDisplay) {
 		[_displayLock unlock];
 		return NO;
 	}
-	
-	/*
-	if(!NSEqualSizes(_yuvDisplay->movieSize, _videoSize))
-	{
-		resizeYUVDisplay(_yuvDisplay, _videoSize);
-	}
-	 */
 	
 	[_displayLock unlock];
 	

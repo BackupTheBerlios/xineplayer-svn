@@ -46,7 +46,7 @@
 
 - (id) initWithHandle: (void*) handle fromEngine: (XineEngine*) engine
 {
-	return [self initWithHandle:handle fromEngine:engine];
+	return [self initWithHandle:handle fromEngine:engine shouldClose: NO];
 }
 
 - (void) dealloc

@@ -48,10 +48,12 @@
 
 - (void) close
 {
+
 	if(_post) 
-		[_post release];
-	_post = nil;
-	
+	{
+		xine_post_wire_audio_port(xine_get_audio_source([_stream handle]), [_audioPort handle]);
+	}
+
 	if(_guiTimer)
 		[_guiTimer invalidate];
 	_guiTimer = nil;
@@ -59,7 +61,12 @@
 	if(_stream)
 		[_stream release];
 	_stream = nil;
-	
+
+	if(_post) {
+		[_post release];
+	}
+	_post = nil;
+
 	if(_videoPort)
 		[_videoPort release];
 	_videoPort = nil;
@@ -104,42 +111,10 @@
 	
 	XineAudioPort *streamAPort = _audioPort;
 	
-	_post = nil;
-	
-	/*
-	_post = [[XinePostProcessor postProcessorNamed:@"goom" forEngine:_engine inputs:0 audioPorts:[NSArray arrayWithObject: _audioPort] videoPorts:[NSArray arrayWithObject:_videoPort]] retain];
-	XinePostInputPort *ainput = nil;
-	if(!_post) {
-		NSLog(@"Poo");
-	} else {
-		NSLog(@"Woohoo");
-		NSArray *inputs = [_post inputNames];
-		NSArray *inputPorts = [_post inputAudioPorts];
-		NSLog(@"Plugin has %i audio inputs.", [inputPorts count]);
-		
-		if([inputPorts count] > 0) {
-			streamAPort = [inputPorts objectAtIndex: 0];
-		}
-		
-		inputPorts = [_post inputVideoPorts];
-		NSLog(@"Plugin has %i video inputs.", [inputPorts count]);
-		
-		NSString *inputName;
-		NSEnumerator *objEnum = [inputs objectEnumerator];
-		while(inputName = [objEnum nextObject]) {
-			NSLog(@"Input: %@", inputName);
-			XinePostInputPort *input = [_post inputPortNamed: inputName];
-			NSLog(@"Name: %@", [input name]);
-			NSLog(@"Type: %i", [input type]);
-			if([input type] == XinePostAudioPort) {
-				ainput = input;
-			}
-		}
-	}
-	*/
-	 
+	_post = [[XinePostProcessor postProcessorNamed: @"fftscope" fromEngine: _engine inputs:0 audioPorts: [NSArray arrayWithObject: _audioPort] videoPorts: [NSArray arrayWithObject: _videoPort]] retain];
+
 	_stream = [[_engine createStreamWithAudioPort:_audioPort videoPort:_videoPort] retain];
-	
+	 	
 	[[self documentWindow] makeFirstResponder: videoView];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(formatChanged:) name:XineStreamFrameFormatDidChangeNotification object:_stream];
@@ -232,7 +207,11 @@
 	if([_stream openMRL: mrl])
 	{		
 		[_stream play];
+		/*
+		 xine_post_wire_audio_port(xine_get_audio_source([_stream handle]), [[[_post audioInputs] objectAtIndex: 0] handle]);
+		 */
 		[(NSWindowController*) [[self windowControllers] objectAtIndex: 0] synchronizeWindowTitleWithDocumentName];
+		
 		_isPlaying = YES;
 	}
 	

@@ -19,7 +19,7 @@
 #include "QuartzYUVOutput.h"
 #include "xine/xineutils.h"
 
-yuv_display_t* createYUVDisplayOnView(NSQuickDrawView *targetView, NSSize size)
+yuv_display_t* createYUVDisplayOnView(NSQuickDrawView *targetView, NSSize size, int format)
 {
 	OSStatus err;
 	UInt32 codec;
@@ -36,7 +36,6 @@ yuv_display_t* createYUVDisplayOnView(NSQuickDrawView *targetView, NSSize size)
 		return NULL;
 	}
 	
-	codec = kYUV420CodecType;
 	display->idh = (ImageDescriptionHandle) NewHandleClear(sizeof(ImageDescription));
 	display->matrix = (MatrixRecordPtr) malloc(sizeof(MatrixRecord));
 	
@@ -46,13 +45,20 @@ yuv_display_t* createYUVDisplayOnView(NSQuickDrawView *targetView, NSSize size)
 		return NULL;
 	}
 	
+	if(format == XINE_IMGFMT_YV12) {
+		codec = kYUV420CodecType;
+	} else {
+		codec = kComponentVideoCodecType;
+	}
+	display->format = format;
+	
 	err = FindCodec(codec, bestSpeedCodec, nil, &(display->codec));
 	if(err != noErr) {
 		NSLog(@"Could not find a suitable YUV codec!");
 		free(display);
 		return NULL;
 	}
-	
+		
 	SetIdentityMatrix(display->matrix);
 	
 	display->movieSize = NSMakeSize(width, height);
@@ -68,6 +74,7 @@ yuv_display_t* createYUVDisplayOnView(NSQuickDrawView *targetView, NSSize size)
 	(**(display->idh)).height = height;
 	(**(display->idh)).hRes = Long2Fix(72);
 	(**(display->idh)).vRes = Long2Fix(72);
+	(**(display->idh)).dataSize = 0;
 	(**(display->idh)).spatialQuality = codecLosslessQuality;
 	(**(display->idh)).frameCount = 1;
 	(**(display->idh)).clutID = -1;
@@ -122,20 +129,21 @@ void disposeYUVDisplay(yuv_display_t *display)
 	free(display);
 }
 
-void displayYUVPixmapOnView(yuv_display_t *display, PlanarPixmapInfoYUV420 *pixmap)
+void displayImageOnView(yuv_display_t *display, void *image)
 {
 	if(!display)
 		return;
 	
-	if(!pixmap) {
-		NSLog(@"Passed a NULL pixmap.");
+	if(!image) {
+		NSLog(@"Passed a NULL image.");
 		return;
 	}
 	
 	[display->lock lock];
 	
-	if(![display->qdView qdPort])
+	if(![display->qdView qdPort]) {
 		return;
+	}
 	
 	OSErr err;
 	CodecFlags flags = 0;
@@ -147,7 +155,7 @@ void displayYUVPixmapOnView(yuv_display_t *display, PlanarPixmapInfoYUV420 *pixm
 		
 		/* NSLog(@"qdPort: %i", [display->qdView qdPort]); */
 		err = DecompressSequenceBeginS(&(display->seq), display->idh, NULL, 0, [display->qdView qdPort], NULL, NULL, display->matrix, 0, NULL, codecFlagUseImageBuffer, codecLosslessQuality, display->codec);
-	
+		
 		if(err != noErr) {
 			NSLog(@"Error trying to start the YUV codec.");
 			return;
@@ -171,13 +179,38 @@ void displayYUVPixmapOnView(yuv_display_t *display, PlanarPixmapInfoYUV420 *pixm
 		display->yuv_frame = contentFrame;
 	}
 	
+	if(display->format == XINE_IMGFMT_YUY2) {
+		uint8_t *data = (uint8_t*)image;
+		long i = 0;
+		long size = display->movieSize.width * display->movieSize.height;
+		for(i=0; i<(size << 1); i+=4) {
+			data[i+1] += 128;
+			data[i+3] += 128;
+		}
+	}
+	
 	if([display->qdView lockFocusIfCanDraw]) {
-		if( ( err = DecompressSequenceFrameS(display->seq, (void*)pixmap, sizeof(PlanarPixmapInfoYUV420), codecFlagUseImageBuffer, &flags, nil) != noErr ) )
+		long dataSize = 0;
+		if(display->format == XINE_IMGFMT_YV12) {
+			dataSize = sizeof(PlanarPixmapInfoYUV420);
+		}
+
+		if( ( err = DecompressSequenceFrameS(display->seq, (void*)image, dataSize, codecFlagUseImageBuffer, &flags, nil) != noErr ) )
 		{
 			NSLog(@"DecompressSequenceFrameS failed.");
 		}
 		QDFlushPortBuffer([display->qdView qdPort], NULL);
 		[display->qdView unlockFocus];
+		
+		if(display->format == XINE_IMGFMT_YUY2) {
+			uint8_t *data = (uint8_t*)image;
+			long i = 0;
+			long size = display->movieSize.width * display->movieSize.height;
+			for(i=0; i<(size << 1); i+=4) {
+				data[i+1] += 128;
+				data[i+3] += 128;
+			}
+		}
 	}
 	
 	[display->lock unlock];

@@ -47,7 +47,7 @@
 
 #import <QuickTime/QuickTime.h>
 
-PlanarPixmapInfoYUV420* createPixmapAndUpdateFrame(vo_frame_t *frame);
+void* createPixmapAndUpdateFrame(vo_frame_t *frame);
 void freePixmap(PlanarPixmapInfoYUV420* pixmap);
 
 typedef struct {
@@ -61,8 +61,8 @@ typedef struct {
 } cocoa_frame_t;
 
 @protocol VideoDriver
-- (void) displayYUVFrame: (PlanarPixmapInfoYUV420*) frame size: (NSSize) frameSize aspectRatio: (float) ratio;
-- (void) freedYUVFrame: (PlanarPixmapInfoYUV420*) frame;
+- (void) displayFrame: (void*) frame size: (NSSize) frameSize aspectRatio: (float) ratio format: (int) format;
+- (void) freedFrame: (void*) frame;
 @end
 
 typedef struct {
@@ -130,18 +130,22 @@ static void deinterlace_linearblend_yuv( uint8_t *pdst, uint8_t *psrc[],
 	xine_fast_memcpy(l0, l1, width);
 }
 
-static void free_framedata(cocoa_frame_t* frame) {
-	if(frame->yuv_pixmap && [((cocoa_driver_t*)frame->vo_frame.driver)->videoView respondsToSelector: @selector(freedYUVFrame:)]) {
-	  [((cocoa_driver_t*)frame->vo_frame.driver)->videoView freedYUVFrame: frame->yuv_pixmap];
-    freePixmap(frame->yuv_pixmap);
-	frame->yuv_pixmap = NULL;
-  } else if(frame->vo_frame.base[0]) {
-	free(frame->vo_frame.base[0]);
-  }
+static void free_framedata(cocoa_frame_t* frame) 
+{
+	if(frame->vo_frame.format == XINE_IMGFMT_YV12) {
+		if(frame->yuv_pixmap && [((cocoa_driver_t*)frame->vo_frame.driver)->videoView respondsToSelector: @selector(freedYUVFrame:)]) {
+			[((cocoa_driver_t*)frame->vo_frame.driver)->videoView freedFrame: frame->yuv_pixmap];
+			freePixmap(frame->yuv_pixmap);
+			frame->yuv_pixmap = NULL;
+		}
+	} else if((frame->vo_frame.format == XINE_IMGFMT_YUY2) && (frame->vo_frame.base[0])) 
+	{
+		free(frame->vo_frame.base[0]);
+	}
 	
-  frame->vo_frame.base[0] = NULL;
-  frame->vo_frame.base[1] = NULL;
-  frame->vo_frame.base[2] = NULL;
+	frame->vo_frame.base[0] = NULL;
+	frame->vo_frame.base[1] = NULL;
+	frame->vo_frame.base[2] = NULL;
 }
 
 static void cocoa_frame_dispose(vo_frame_t *vo_frame) {
@@ -155,8 +159,7 @@ static void cocoa_frame_field(vo_frame_t *vo_frame, int which_field) {
 }
 
 static uint32_t cocoa_get_capabilities(vo_driver_t *vo_driver) {
-  /* both styles, country and western */
-  return VO_CAP_YV12 | VO_CAP_YUY2 | VO_CAP_UNSCALED_OVERLAY;
+  return VO_CAP_YV12 | VO_CAP_YUY2;
 }
 
 static vo_frame_t *cocoa_alloc_frame(vo_driver_t *vo_driver) {
@@ -204,22 +207,25 @@ static void cocoa_update_frame_format(vo_driver_t *vo_driver, vo_frame_t *vo_fra
 
     case XINE_IMGFMT_YV12: 
       {
-		frame->yuv_pixmap = createPixmapAndUpdateFrame(vo_frame);
+		  frame->yuv_pixmap = createPixmapAndUpdateFrame(vo_frame);
       }
       break;
 
-		/*
-    case XINE_IMGFMT_YUY2:
-      frame->vo_frame.pitches[0] = 8*((width + 3) / 4);
-      frame->vo_frame.base[0] = malloc(frame->vo_frame.pitches[0] * height);
-      frame->vo_frame.base[1] = NULL;
-      frame->vo_frame.base[2] = NULL;
-      break;
-*/
+	case XINE_IMGFMT_YUY2:
+	  {
+		  frame->vo_frame.pitches[0] = 8*((width + 3) / 4);
+		  frame->vo_frame.pitches[1] = 0;
+		  frame->vo_frame.pitches[2] = 0;
+		  frame->vo_frame.base[0] = malloc(frame->vo_frame.pitches[0] * height);
+		  frame->vo_frame.base[1] = NULL;
+		  frame->vo_frame.base[2] = NULL;
+		  break;
+	  }
 		
     default:
-      xprintf (this->xine, XINE_VERBOSITY_DEBUG, "video_out_cocoa: unknown frame format %04x)\n", format);
-      break;
+		NSLog(@"Oh dear.");
+		xprintf (this->xine, XINE_VERBOSITY_DEBUG, "video_out_cocoa: unknown frame format %04x)\n", format);
+		break;
 
     }
   }
@@ -231,15 +237,23 @@ static void cocoa_display_frame(vo_driver_t *vo_driver, vo_frame_t *vo_frame) {
   cocoa_driver_t  *driver = (cocoa_driver_t *)vo_driver;
   cocoa_frame_t   *frame = (cocoa_frame_t *)vo_frame;
   
-  if([driver->videoView respondsToSelector: @selector(displayYUVFrame:size:aspectRatio:)] && frame->yuv_pixmap) {
-	  /* We have a YUV pixmap ready for display. */
+  if(frame->format == XINE_IMGFMT_YV12) {
+	  if([driver->videoView respondsToSelector: @selector(displayFrame:size:aspectRatio:format:)]) {
+		  /* We have a YUV pixmap ready for display. */
 	  
-	  /* Attempt to auto de-interlace if we're not progressive. */
-	  if(driver->deinterlace) {
-		  deinterlace_linearblend_yuv(vo_frame->base[0], &(vo_frame->base[0]), vo_frame->width, vo_frame->height);
+		  /* Attempt to auto de-interlace if we're not progressive. */
+		  if(driver->deinterlace) {
+			  deinterlace_linearblend_yuv(vo_frame->base[0], &(vo_frame->base[0]), vo_frame->width, vo_frame->height);
+		  }
+	  
+		  [driver->videoView displayFrame: frame->yuv_pixmap size: NSMakeSize(frame->width, frame->height) aspectRatio: frame->ratio format: XINE_IMGFMT_YV12];
+	  } 
+  } else if(frame->format == XINE_IMGFMT_YUY2) {
+	  if([driver->videoView respondsToSelector: @selector(displayFrame:size:aspectRatio:format:)] && vo_frame->base[0]) {
+		  /* We have an image ready for display. */
+		  		  
+		  [driver->videoView displayFrame: vo_frame->base[0] size: NSMakeSize(frame->width, frame->height) aspectRatio: frame->ratio format: XINE_IMGFMT_YUY2];
 	  }
-	  
-	  [driver->videoView displayYUVFrame: frame->yuv_pixmap size: NSMakeSize(frame->width, frame->height) aspectRatio: frame->ratio];
   }
   
   frame->vo_frame.free(&frame->vo_frame);
@@ -343,7 +357,7 @@ static int cocoa_redraw_needed(vo_driver_t *vo_driver) {
   return 0;
 }
 
-PlanarPixmapInfoYUV420* createPixmapAndUpdateFrame(vo_frame_t *frame)
+void* createPixmapAndUpdateFrame(vo_frame_t *frame)
 {
 	PlanarPixmapInfoYUV420 *pixmap = NULL;
 	int width = frame->width;

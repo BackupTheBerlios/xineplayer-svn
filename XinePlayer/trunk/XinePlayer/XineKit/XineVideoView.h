@@ -17,8 +17,6 @@
 */
 
 #import <Cocoa/Cocoa.h>
-#import <QuickTime/QuickTime.h>
-#import <QuartzYUVOutput.h>
 
 @interface XineVideoView : NSView {
 	xine_stream_t *_associatedStream;
@@ -26,14 +24,13 @@
 	float _aspectRatio;
 	NSQuickDrawView *_videoView;
 
-	PlanarPixmapInfoYUV420 *_lastFrame;
-	yuv_display_t *_yuvDisplay;
+	void *_lastFrame;
+	int _lastFormat;
+	void *_yuvDisplay;
 	
 	NSLock *_displayLock;
 	NSWindow *_fullScreenWindow;
 	NSTimer *_cursorHideTimer;
-	
-/*	xine_event_queue_t *_eventQueue; */
 }
 
 - (NSRect) contentFrame;
@@ -54,8 +51,8 @@
 
 @interface XineVideoView (Internal)
 
-- (void) displayYUVFrame: (PlanarPixmapInfoYUV420*) pixmap size: (NSSize) frameSize aspectRatio: (float) ratio;
-- (void) freedYUVFrame: (PlanarPixmapInfoYUV420*) pixmap;
+- (void) displayFrame: (void*) pixmap size: (NSSize) frameSize aspectRatio: (float) ratio format: (int) format;
+- (void) freedFrame: (void*) pixmap;
 - (void*) videoPort;
 
 @end

@@ -36,15 +36,16 @@ struct yuv_display_s {
 	DecompressorComponent	 codec;
 	ImageSequence			 seq;
 	BOOL					 sequence_started;
+	int						 format;
 	
 	NSLock					*lock;
 };
 
 typedef struct yuv_display_s yuv_display_t;
 
-yuv_display_t* createYUVDisplayOnView(NSQuickDrawView *targetView, NSSize size);
+yuv_display_t* createYUVDisplayOnView(NSQuickDrawView *targetView, NSSize size, int format);
 void disposeYUVDisplay(yuv_display_t *display);
 void resizeYUVDisplay(yuv_display_t *display, NSSize newSize);
-void displayYUVPixmapOnView(yuv_display_t *display, PlanarPixmapInfoYUV420* pixmap);
+void displayImageOnView(yuv_display_t *display, void* image);
 
 #endif /* _YUV_OUTPUT_H */
