@@ -1,0 +1,9 @@
+18 Mar 2004; Rich Wareham <richwareham@users.sourceforg.net> :
+	
+	* Pre 0.2 release.
+	* Fix frame corruption bug whereby colours appeared
+	  'streaky' with certain movies.
+
+17 Mar 2004; Rich Wareham <richwareham@users.sourceforg.net> :
+	
+	* Initialy public release (0.1).
