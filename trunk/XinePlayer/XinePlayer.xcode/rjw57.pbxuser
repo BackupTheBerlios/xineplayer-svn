@@ -82,6 +82,22 @@
 					PBXFindDataSource_LocationID,
 				);
 			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXSymbolsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXSymbolsDataSource_SymbolNameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					16,
+					154.8008,
+					182.0356,
+					159.2085,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXSymbolsDataSource_SymbolTypeIconID,
+					PBXSymbolsDataSource_SymbolNameID,
+					PBXSymbolsDataSource_SymbolTypeID,
+					PBXSymbolsDataSource_ReferenceNameID,
+				);
+			};
 			PBXConfiguration.PBXFileTableDataSource3.XCSCMDataSource = {
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
@@ -128,7 +144,7 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 132670175;
+			PBXPerProjectTemplateStateSaveDate = 132711805;
 			PBXPrepackagedSmartGroups_v2 = (
 				{
 					PBXTransientLocationAtTop = bottom;
@@ -305,11 +321,10 @@
 					};
 				},
 			);
-			PBXWorkspaceStateSaveDate = 132670175;
+			PBXWorkspaceStateSaveDate = 132711805;
 		};
 		perUserProjectItems = {
 			A495A5CE07E866730010074B = A495A5CE07E866730010074B;
-			A495A5CF07E866730010074B = A495A5CF07E866730010074B;
 			A495A5D007E866730010074B = A495A5D007E866730010074B;
 			A495A5D107E866730010074B = A495A5D107E866730010074B;
 			A4A3D21D07E6330100AAC902 = A4A3D21D07E6330100AAC902;
@@ -321,6 +336,7 @@
 			A4A3D26007E6509200AAC902 = A4A3D26007E6509200AAC902;
 			A4C7E12B07E79E1B004B7340 = A4C7E12B07E79E1B004B7340;
 			A4C7E14007E79EB3004B7340 = A4C7E14007E79EB3004B7340;
+			A4D7CD9907E905C20074C189 = A4D7CD9907E905C20074C189;
 		};
 		sourceControlManager = A4AA161007BE4770000DDE36;
 		userBookmarkGroup = A4A3D17A07E6048300AAC902;
@@ -381,9 +397,9 @@
 	};
 	A42D7ABF07E38F2700955C78 = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {498, 352}}";
-			sepNavSelRange = "{395, 0}";
-			sepNavVisRect = "{{0, 0}, {498, 352}}";
+			sepNavIntBoundsRect = "{{0, 0}, {498, 531}}";
+			sepNavSelRange = "{818, 0}";
+			sepNavVisRect = "{{0, 56}, {498, 379}}";
 		};
 	};
 	A42D7B7607E39AC200955C78 = {
@@ -620,16 +636,6 @@
 		vrLen = 638;
 		vrLoc = 2563;
 	};
-	A495A5CF07E866730010074B = {
-		fRef = A466E99507E3485F000B6585;
-		isa = PBXTextBookmark;
-		name = "FixInstallName.sh: 13";
-		rLen = 0;
-		rLoc = 396;
-		rType = 0;
-		vrLen = 566;
-		vrLoc = 0;
-	};
 	A495A5D007E866730010074B = {
 		fRef = A466E7D207E34684000B6585;
 		isa = PBXTextBookmark;
@@ -787,6 +793,16 @@
 	A4C7E14007E79EB3004B7340 = {
 		fRef = 2A37F4B5FDCFA73011CA2CEA;
 		isa = PBXBookmark;
+	};
+	A4D7CD9907E905C20074C189 = {
+		fRef = A42D7ABF07E38F2700955C78;
+		isa = PBXTextBookmark;
+		name = "FixInstallName.sh: 23";
+		rLen = 0;
+		rLoc = 818;
+		rType = 0;
+		vrLen = 899;
+		vrLoc = 41;
 	};
 	A4D80DDD07E6011000B775A2 = {
 		uiCtxt = {

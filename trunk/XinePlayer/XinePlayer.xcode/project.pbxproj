@@ -341,7 +341,7 @@
 				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/../xine-build/include/";
 				INFOPLIST_FILE = XinePlayer/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
-				LIBRARY_SEARCH_PATHS = "\"$(BUILD_ROOT)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/\" /Users/rjw57/Developer/xine-build/lib";
+				LIBRARY_SEARCH_PATHS = "$(BUILD_ROOT)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/ $(SOURCE_ROOT)/../xine-build/lib";
 				OTHER_LDFLAGS = "-bind_at_load -lxine";
 				PREBINDING = NO;
 				PRODUCT_NAME = XinePlayer;
