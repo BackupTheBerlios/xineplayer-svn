@@ -203,8 +203,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -250,16 +248,23 @@
 								<string>A409388207ED9FCC00837FB7</string>
 								<string>2A37F4ABFDCFA73011CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
+								<string>A415E9D307F21EE000FFA8BD</string>
+								<string>A415E9D407F21EE000FFA8BD</string>
+								<string>A409388807ED9FF100837FB7</string>
+								<string>A409388B07EDA00100837FB7</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>60</integer>
+									<integer>59</integer>
+									<integer>41</integer>
 									<integer>40</integer>
 									<integer>39</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 316}, {259, 551}}</string>
+							<string>{{0, 537}, {259, 551}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -292,7 +297,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MainMenu.nib</string>
+								<string>InfoPlist.strings</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -300,9 +305,9 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MainMenu.nib</string>
+										<string>InfoPlist.strings</string>
 										<key>bookmark</key>
-										<string>A415E9CF07F21E8500FFA8BD</string>
+										<string>A415E9DF07F21EE000FFA8BD</string>
 										<key>history</key>
 										<array>
 											<string>A4D7CEA807EAD2820074C189</string>
@@ -322,9 +327,6 @@
 											<string>A457E83007EFAAA10026933F</string>
 											<string>A457E84407EFB2280026933F</string>
 											<string>A45A618607F0AABB00639167</string>
-											<string>A45A618707F0AABB00639167</string>
-											<string>A45A618807F0AABB00639167</string>
-											<string>A45A618907F0AABB00639167</string>
 											<string>A45A618A07F0AABB00639167</string>
 											<string>A45A618B07F0AABB00639167</string>
 											<string>A415E83507F2048D00FFA8BD</string>
@@ -346,7 +348,10 @@
 											<string>A415E95E07F2170B00FFA8BD</string>
 											<string>A415E96607F2188800FFA8BD</string>
 											<string>A415E98107F21B6000FFA8BD</string>
-											<string>A415E98607F21B8D00FFA8BD</string>
+											<string>A415E9D507F21EE000FFA8BD</string>
+											<string>A415E9D607F21EE000FFA8BD</string>
+											<string>A415E9D707F21EE000FFA8BD</string>
+											<string>A415E9D807F21EE000FFA8BD</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -434,6 +439,12 @@
 											<string>A415E96807F2188800FFA8BD</string>
 											<string>A415E96907F2188800FFA8BD</string>
 											<string>A415E98307F21B6000FFA8BD</string>
+											<string>A415E9D907F21EE000FFA8BD</string>
+											<string>A415E9DA07F21EE000FFA8BD</string>
+											<string>A415E9DB07F21EE000FFA8BD</string>
+											<string>A415E9DC07F21EE000FFA8BD</string>
+											<string>A415E9DD07F21EE000FFA8BD</string>
+											<string>A415E9DE07F21EE000FFA8BD</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -557,7 +568,7 @@
 										<key>PBXProjectModuleLabel</key>
 										<string>XPController.m</string>
 										<key>bookmark</key>
-										<string>A415E9D007F21E8500FFA8BD</string>
+										<string>A415E9E007F21EE000FFA8BD</string>
 										<key>history</key>
 										<array>
 											<string>A415E8C407F20D8500FFA8BD</string>
