@@ -46,6 +46,7 @@
 		_audioVisualisationFilter = nil;
 		_deinterlaceFilter = nil;
 		_deinterlace = NO;
+		_resizeOnFrameChange = NO;
     }
     return self;
 }
@@ -104,6 +105,9 @@
 - (void) prefsChanged: (NSNotification*) notification
 {
 	XPPreferencesController *prefController = [XPPreferencesController defaultController];
+	
+	_resizeOnFrameChange = [prefController resizeWindowOnFrameChange];
+	
 	if(_deinterlaceFilter) {
 		[_deinterlaceFilter setValue: [prefController deinterlaceAlgorithm] forProperty: @"method"];
 		[_deinterlaceFilter setValue: [NSNumber numberWithBool: YES] forProperty: @"cheap_mode"];
@@ -196,7 +200,7 @@
 - (void) frameChanged: (NSNotification*) notification
 {
 	/* NSLog(@"Frame change!"); */
-	if([[XPPreferencesController defaultController] resizeWindowOnFrameChange] && ![videoView isFullScreen])
+	if(_resizeOnFrameChange && ![videoView isFullScreen])
 	{
 		[self performSelectorOnMainThread:@selector(normalSize:) withObject:nil waitUntilDone:NO];
 	}

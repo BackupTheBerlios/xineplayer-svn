@@ -248,7 +248,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>4</integer>
+									<integer>16</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -286,7 +286,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>XineVideoView.m</string>
+								<string>XPDocument.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -294,9 +294,9 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>XineVideoView.m</string>
+										<string>XPDocument.m</string>
 										<key>bookmark</key>
-										<string>A409398C07EDE21700837FB7</string>
+										<string>A409399E07EDE2E500837FB7</string>
 										<key>history</key>
 										<array>
 											<string>A4D7CEA807EAD2820074C189</string>
@@ -319,13 +319,13 @@
 											<string>A409394E07EDDDB400837FB7</string>
 											<string>A409394F07EDDDB400837FB7</string>
 											<string>A409395107EDDDB400837FB7</string>
-											<string>A409395407EDDDB400837FB7</string>
 											<string>A409395507EDDDB400837FB7</string>
 											<string>A409397007EDDE8A00837FB7</string>
 											<string>A409397107EDDE8A00837FB7</string>
-											<string>A409397A07EDDED700837FB7</string>
-											<string>A409398307EDE10700837FB7</string>
-											<string>A409398407EDE10700837FB7</string>
+											<string>A409399207EDE2D800837FB7</string>
+											<string>A409399307EDE2D800837FB7</string>
+											<string>A409399407EDE2D800837FB7</string>
+											<string>A409399507EDE2D800837FB7</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -408,6 +408,12 @@
 											<string>A409397607EDDE8A00837FB7</string>
 											<string>A409397C07EDDED700837FB7</string>
 											<string>A409398507EDE10700837FB7</string>
+											<string>A409399607EDE2D800837FB7</string>
+											<string>A409399707EDE2D800837FB7</string>
+											<string>A409399807EDE2D800837FB7</string>
+											<string>A409399907EDE2D800837FB7</string>
+											<string>A409399A07EDE2D800837FB7</string>
+											<string>A409399B07EDE2D800837FB7</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -499,8 +505,8 @@
 		<string>A409393207EDD7B200837FB7</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>A4C2A8B907BE5D7500628752</string>
-		<string>1C0AD2B3069F1EA900FABCE6</string>
 		<string>/Users/rjw57/Developer/XinePlayer/XinePlayer.xcode</string>
+		<string>1C0AD2B3069F1EA900FABCE6</string>
 	</array>
 	<key>WindowString</key>
 	<string>293 391 887 611 0 0 1280 1002 </string>
@@ -532,7 +538,7 @@
 										<key>PBXProjectModuleLabel</key>
 										<string>XPDocument.m</string>
 										<key>bookmark</key>
-										<string>A409398D07EDE21700837FB7</string>
+										<string>A409399F07EDE2E500837FB7</string>
 										<key>history</key>
 										<array>
 											<string>A40938FC07EDCE0B00837FB7</string>

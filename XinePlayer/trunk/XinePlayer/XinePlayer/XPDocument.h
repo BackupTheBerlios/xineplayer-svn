@@ -48,6 +48,7 @@
 	XineEngine *_engine;
 	
 	BOOL _deinterlace;
+	BOOL _resizeOnFrameChange;
 	
 	NSTimer *_guiTimer;
 }
