@@ -90,6 +90,7 @@ static void free_framedata(cocoa_frame_t* frame)
 		freePixmap(frame->yuv_pixmap);
 	} else if(frame->vo_frame.base[0])
 	{
+		[((cocoa_driver_t*)frame->vo_frame.driver)->videoView freedFrame: frame->vo_frame.base[0]];
 		free(frame->vo_frame.base[0]);
 	}
 	

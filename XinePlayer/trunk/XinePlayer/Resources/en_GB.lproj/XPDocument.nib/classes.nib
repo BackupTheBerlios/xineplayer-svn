@@ -21,6 +21,7 @@
             CLASS = XPDocument; 
             LANGUAGE = ObjC; 
             OUTLETS = {
+                "_documentWindow" = NSWindow; 
                 muteButton = NSButton; 
                 nextButton = NSButton; 
                 notificationLabel = NSTextField; 

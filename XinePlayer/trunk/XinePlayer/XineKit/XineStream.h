@@ -34,6 +34,15 @@ typedef enum {
 	XineQuadrupleSpeed	= 16
 } XineSpeed;
 
+typedef enum {
+	XineErrorNone			= 0,
+	XineErrorNoInputPlugIn	= 1,
+	XineErrorNoDemuxPlugIn	= 2,
+	XineErrorDemuxFailed	= 3,
+	XineErrorMalformedMRL	= 4,
+	XineErrorInputFailed	= 5,
+} XineStreamError;
+
 @interface XineStream : NSObject {
 	void *_stream;
 	XineEngine *_engine;
@@ -57,6 +66,8 @@ typedef enum {
 - (void) stop: (BOOL) waitUntilDone;
 - (void) close;
 - (bool) eject;
+
+- (XineStreamError) lastError;
 
 - (void) wireAudioToPort: (XineAudioPort*) port;
 - (void) wireVideoToPort: (XineVideoPort*) port;

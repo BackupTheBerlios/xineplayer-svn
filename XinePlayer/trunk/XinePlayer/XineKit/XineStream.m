@@ -71,6 +71,11 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 	return xine_eject(_stream);
 }
 
+- (XineStreamError) lastError
+{
+	return xine_get_error(_stream);
+}
+
 - (void) wireAudioToPort: (XineAudioPort*) port
 {
 	xine_post_wire_audio_port(xine_get_audio_source(_stream),[port handle]);

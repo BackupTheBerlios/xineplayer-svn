@@ -37,11 +37,14 @@
 	IBOutlet NSView *notificationView;
 	IBOutlet NSTextField *notificationLabel;
 	
+	IBOutlet NSWindow *_documentWindow;
+	
 	NSMutableArray *_playlist;
 	int _playlistIndex;
 	BOOL _isPlaying;
 	
 	BOOL _isSynchingGUI;
+	BOOL _haveInitialisedWindow;
 	
 	XineVideoPort *_videoPort;
 	XineAudioPort *_audioPort;

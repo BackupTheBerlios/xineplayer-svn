@@ -23,6 +23,8 @@
 
 #import <xine.h>
 
+NSString* XPDisplayNameFromPlaylistEntry(id mrl);
+
 @interface XPDocument (Private)
 
 // Make the document window reflect the current status.
@@ -49,6 +51,7 @@
 		_deinterlaceFilter = nil;
 		_deinterlace = NO;
 		_resizeOnFrameChange = NO;
+		_haveInitialisedWindow = NO;
     }
     return self;
 }
@@ -194,12 +197,28 @@
 	_guiTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(synchroniseGUIAndStream:) userInfo:nil repeats:YES];
 	
 	[[self documentWindow] registerForDraggedTypes: [NSArray arrayWithObjects: NSFilenamesPboardType, NSURLPboardType, nil]];
+}
+
+- (void) windowDidUpdate: (NSNotification*) notification 
+{
+	if([notification object] != [self documentWindow])
+		return;
 	
-	if([_playlist count]) {
+	if(![[self documentWindow] isVisible])
+		return;
+	
+	if(_haveInitialisedWindow)
+		return;
+	
+	if([_playlist count] == 0)
+	{
+		// Load the logo and play it.
+		[self openMRL: [[NSBundle mainBundle] pathForResource:@"logo" ofType:@"mpv"]];
+	} else {
 		[self openPlaylistItemAtIndex: 0];
 	}
 	
-	[self performSelectorOnMainThread:@selector(windowsShown:) withObject:nil waitUntilDone:NO];
+	_haveInitialisedWindow = YES;
 }
 
 - (void) frameChanged: (NSNotification*) notification
@@ -208,15 +227,6 @@
 	if(_resizeOnFrameChange && ![videoView isFullScreen])
 	{
 		[self performSelectorOnMainThread:@selector(normalSize:) withObject:nil waitUntilDone:NO];
-	}
-}
-
-- (void) windowsShown: (void*) data
-{	
-	if([_playlist count] == 0)
-	{
-		// Load the logo and play it.
-		[self openMRL: [[NSBundle mainBundle] pathForResource:@"logo" ofType:@"mpv"]];
 	}
 }
 
@@ -269,6 +279,12 @@
 	return YES;
 }
 
+- (void)modalErrorSheetEnded:(NSAlert *)alert returnCode:(int)returnCode contextInfo:(void *)contextInfo
+{
+	[[alert window] orderOut:nil];
+	[self openNextMRL:nil];
+}
+
 - (BOOL) openMRL: (NSString*) mrl
 {
 	_isPlaying = NO;
@@ -292,6 +308,30 @@
 		[(NSWindowController*) [[self windowControllers] objectAtIndex: 0] synchronizeWindowTitleWithDocumentName];
 		
 		_isPlaying = YES;
+	} else {
+		/* An error happened */
+		XineStreamError error = [_stream lastError];
+		NSAlert *alert = [[[NSAlert alloc] init] autorelease];
+		
+		[alert setAlertStyle: NSInformationalAlertStyle];
+		[alert addButtonWithTitle: NSLocalizedString(@"Skip movie", @"Button text when there is an error opening a movie")];
+		
+		[alert setMessageText: [NSString stringWithFormat:NSLocalizedString(@"XinePlayer cannot open '%@'.", @"Error displayed when XP can't open a movie"), XPDisplayNameFromPlaylistEntry(mrl)]];
+		
+		switch(error)
+		{
+			case XineErrorNoDemuxPlugIn:
+				[alert setInformativeText: NSLocalizedString(@"XinePlayer did not recognise the file as a movie or audio file.", @"Description of no demux plugin")];
+				break;
+			case XineErrorNoInputPlugIn:
+				[alert setInformativeText: NSLocalizedString(@"XinePlayer could not read any data from the movie. If this is a DVD you may not have a player with support for encrypted discs.", @"Description of no input plugin")];
+				break;
+			default:
+				[alert setInformativeText: [NSString stringWithFormat: NSLocalizedString(@"An unknown error happened within the xine engine (type %i).", @"Description of strange and unknown error"), error]];
+				break;
+		}
+		
+		[alert beginSheetModalForWindow:[self documentWindow] modalDelegate:self didEndSelector:@selector(modalErrorSheetEnded:returnCode:contextInfo:) contextInfo:nil];
 	}
 	
 	[self synchroniseGUIAndStream: nil];
@@ -302,23 +342,15 @@
 
 - (NSString*) displayName
 {
-	if([_playlist count] > 0) 
-	{
-		if([[_playlist objectAtIndex: _playlistIndex] isKindOfClass: [NSString class]])
-		{
-			NSArray *pathComponents = [[self currentMRL] pathComponents];
-			return [pathComponents lastObject];
-		} else if([[_playlist objectAtIndex: _playlistIndex] isKindOfClass: [NSURL class]])
-		{
-			return [(NSURL*) [_playlist objectAtIndex: _playlistIndex] absoluteString];
-		}
+	if((_playlistIndex >= 0) && ([_playlist count] > 0))
+	{	
+		return XPDisplayNameFromPlaylistEntry([_playlist objectAtIndex:_playlistIndex]);
 	}
 	
 	return [[NSBundle mainBundle] localizedStringForKey:@"MoviePlayerName" value:@"Movie Player" table:nil];
 }
 
-// Somehow a lot easier than I'd expect...
-- (NSWindow*) documentWindow { return [videoView window]; }
+- (NSWindow*) documentWindow { return _documentWindow; }
 
 // We let XPDVDDocument handle DVD stuff
 - (BOOL) isDVDPlayer { return NO; }
@@ -379,6 +411,9 @@
 
 - (NSString*) currentMRL
 {
+	if(_playlistIndex < 0)
+		return @"";
+	
 	if([[_playlist objectAtIndex: _playlistIndex] isKindOfClass: [NSString class]])
 	{
 		return [_playlist objectAtIndex: _playlistIndex];
@@ -402,24 +437,20 @@
 
 - (IBAction) openNextMRL: (id) sender
 {
-	_playlistIndex ++;
-	while(_playlistIndex < [_playlist count]) 
+	if(_playlistIndex < [_playlist count] - 1) 
 	{
-		if([self openPlaylistItemAtIndex: _playlistIndex]) { return; }
 		_playlistIndex ++;
+		[self openPlaylistItemAtIndex: _playlistIndex];
 	}
-	
-	return;
 }
 
 - (IBAction) openPreviousMRL: (id) sender
 {
-	_playlistIndex --;
-	while(_playlistIndex >= 0) 
+	if(_playlistIndex > 0) 
 	{
-		if([self openPlaylistItemAtIndex: _playlistIndex]) { return; }
 		_playlistIndex --;
-	}
+		[self openPlaylistItemAtIndex: _playlistIndex];
+	}	
 	
 	return;
 }
@@ -616,7 +647,7 @@
 				return [NSImage imageNamed: @"volume"];
 		} else if([[aTableColumn identifier] isEqualToString: @"mrl"])
 		{
-			return [[_playlist objectAtIndex: rowIndex] description];
+			return XPDisplayNameFromPlaylistEntry([_playlist objectAtIndex: rowIndex]);
 		}
 	}
 	
@@ -714,3 +745,23 @@
 }
 
 @end
+
+NSString* XPDisplayNameFromPlaylistEntry(id mrl)
+{
+	if(!mrl)
+		return @"";
+	
+	if([mrl isKindOfClass: [NSString class]])
+	{
+		NSArray *pathComponents = [mrl pathComponents];
+		return [pathComponents lastObject];
+	} else if([mrl isKindOfClass: [NSURL class]])
+	{
+		return [mrl absoluteString];
+	} else if([mrl respondsToSelector: @selector(stringValue:)])
+	{
+		return [mrl stringValue];
+	}
+	
+	return @"";
+}
