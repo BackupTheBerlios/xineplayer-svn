@@ -16,7 +16,7 @@
 * Mass Ave, Cambridge, MA 02139, USA.
 */
 
-#import <XineKitIntl.h>
+#import <XineKit.h>
 #import "QuartzYUVOutput.h"
 #import <ApplicationServices/ApplicationServices.h>
 

@@ -16,20 +16,30 @@
 * Mass Ave, Cambridge, MA 02139, USA.
 */
 
-#import <Cocoa/Cocoa.h>
-#import <xine.h>
-
 @class XineEngine;
+@class XineVideoView;
 
-@interface XineVideoPort : NSObject {
-	xine_t *xine;
-	xine_video_port_t *port;
-	XineVideoView *_view;
+@interface XinePort : NSObject {
+	void *_port;
+	XineEngine *_engine;
+	BOOL _needsClosing;
 }
 
-- (id) initWithDriver: (NSString*) driver view: (XineVideoView*) view engine: (XineEngine*) xine;
-- (xine_t*) engine;
-- (xine_video_port_t*) port;
-- (XineVideoView*) videoView;
+- (id) initWithHandle: (void*) handle fromEngine: (XineEngine*) engine shouldClose: (BOOL) shouldClose;
+- (id) initWithHandle: (void*) handle fromEngine: (XineEngine*) engine;
+- (XineEngine*) engine;
+- (void*) handle;
+@end
 
+@interface XineAudioPort : XinePort {
+}
++ (XineAudioPort*) audioPortForDriver: (NSString*) driver fromEngine: (XineEngine*) engine userData: (void*) data;
+@end
+
+@interface XineVideoPort : XinePort {
+	XineVideoView *_view;
+}
++ (XineVideoPort*) videoPortForDriver: (NSString*) driver fromEngine: (XineEngine*) engine forView: (XineVideoView*) view;
+- (id) initWithHandle: (void*) handle fromEngine: (XineEngine*) engine shouldClose: (BOOL) shouldClose forView: (XineVideoView*) view;
+- (XineVideoView*) videoView;
 @end

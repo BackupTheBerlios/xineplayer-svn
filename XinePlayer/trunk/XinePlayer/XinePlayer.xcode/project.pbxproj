@@ -377,6 +377,8 @@
 				A493D84E07BFB6EC00F4FC04,
 				A493D84F07BFB6EC00F4FC04,
 				A4948C9C07C0F1E50094CBF9,
+				A4D7CEB807EAEA440074C189,
+				A4D7D17707EB73EA0074C189,
 			);
 			isa = PBXResourcesBuildPhase;
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,12 +415,12 @@
 				A489FD0207BE61AD00DE41B2,
 				A493D69D07BF7FAE00F4FC04,
 				A4948CD007C160C00094CBF9,
-				A466E7DC07E34684000B6585,
 				A466E7DE07E34684000B6585,
 				A466E7E207E34684000B6585,
-				A466E7E407E34684000B6585,
 				A466E7E607E34684000B6585,
 				A42D7F3A07E3CD8200955C78,
+				A4D7CEB907EAEA440074C189,
+				A4D7D17807EB73EA0074C189,
 			);
 			isa = PBXSourcesBuildPhase;
 			runOnlyForDeploymentPostprocessing = 0;
@@ -608,6 +610,7 @@
 				PRODUCT_NAME = xineplug_vo_out_cocoa;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				ZERO_LINK = YES;
 			};
 			dependencies = (
 			);
@@ -1092,39 +1095,22 @@
 		};
 		A466E7CE07E34623000B6585 = {
 			children = (
+				A4D7D17507EB73EA0074C189,
+				A4D7D17607EB73EA0074C189,
+				A4D7CEB607EAEA440074C189,
+				A4D7CEB707EAEA440074C189,
 				A42D7B7607E39AC200955C78,
 				A42D7B7707E39AC200955C78,
-				A466E7CF07E34684000B6585,
-				A466E7D007E34684000B6585,
 				A466E7D107E34684000B6585,
 				A466E7D207E34684000B6585,
 				A466E7D307E34684000B6585,
-				A466E7D407E34684000B6585,
 				A466E7D507E34684000B6585,
 				A466E7D607E34684000B6585,
-				A466E7D707E34684000B6585,
-				A466E7D807E34684000B6585,
 				A466E7D907E34684000B6585,
 				A466E7DA07E34684000B6585,
 			);
 			isa = PBXGroup;
 			path = XineKit;
-			refType = 4;
-			sourceTree = "<group>";
-		};
-		A466E7CF07E34684000B6585 = {
-			fileEncoding = 30;
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.h;
-			path = XineAudioPort.h;
-			refType = 4;
-			sourceTree = "<group>";
-		};
-		A466E7D007E34684000B6585 = {
-			fileEncoding = 30;
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.objc;
-			path = XineAudioPort.m;
 			refType = 4;
 			sourceTree = "<group>";
 		};
@@ -1152,14 +1138,6 @@
 			refType = 4;
 			sourceTree = "<group>";
 		};
-		A466E7D407E34684000B6585 = {
-			fileEncoding = 30;
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.h;
-			path = XineKitIntl.h;
-			refType = 4;
-			sourceTree = "<group>";
-		};
 		A466E7D507E34684000B6585 = {
 			fileEncoding = 30;
 			isa = PBXFileReference;
@@ -1173,22 +1151,6 @@
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.c.objc;
 			path = XineStream.m;
-			refType = 4;
-			sourceTree = "<group>";
-		};
-		A466E7D707E34684000B6585 = {
-			fileEncoding = 30;
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.h;
-			path = XineVideoPort.h;
-			refType = 4;
-			sourceTree = "<group>";
-		};
-		A466E7D807E34684000B6585 = {
-			fileEncoding = 30;
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.objc;
-			path = XineVideoPort.m;
 			refType = 4;
 			sourceTree = "<group>";
 		};
@@ -1208,12 +1170,6 @@
 			refType = 4;
 			sourceTree = "<group>";
 		};
-		A466E7DC07E34684000B6585 = {
-			fileRef = A466E7D007E34684000B6585;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
 		A466E7DE07E34684000B6585 = {
 			fileRef = A466E7D207E34684000B6585;
 			isa = PBXBuildFile;
@@ -1222,12 +1178,6 @@
 		};
 		A466E7E207E34684000B6585 = {
 			fileRef = A466E7D607E34684000B6585;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		A466E7E407E34684000B6585 = {
-			fileRef = A466E7D807E34684000B6585;
 			isa = PBXBuildFile;
 			settings = {
 			};
@@ -1501,6 +1451,62 @@
 		};
 		A4C2A86707BE50D800628752 = {
 			fileRef = A4C2A86607BE50D800628752;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A4D7CEB607EAEA440074C189 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = XinePostProcessor.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A4D7CEB707EAEA440074C189 = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = XinePostProcessor.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A4D7CEB807EAEA440074C189 = {
+			fileRef = A4D7CEB607EAEA440074C189;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A4D7CEB907EAEA440074C189 = {
+			fileRef = A4D7CEB707EAEA440074C189;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A4D7D17507EB73EA0074C189 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = XinePorts.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A4D7D17607EB73EA0074C189 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = XinePorts.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A4D7D17707EB73EA0074C189 = {
+			fileRef = A4D7D17507EB73EA0074C189;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A4D7D17807EB73EA0074C189 = {
+			fileRef = A4D7D17607EB73EA0074C189;
 			isa = PBXBuildFile;
 			settings = {
 			};

@@ -16,32 +16,41 @@
 * Mass Ave, Cambridge, MA 02139, USA.
 */
 
+@class XineStream;
+@class XineVideoPort;
+@class XineAudioPort;
+
+typedef enum {
+	XinePostVideoFilter			= 0x010000,
+	XinePostVideoVisualization	= 0x010001,
+	XinePostVideoComposer		= 0x010002,
+	XinePostAudioFilter			= 0x020000,
+	XinePostAudioVisualization	= 0x020001,
+} XinePostProcessorType;
+
 @interface XineEngine : NSObject {
-	xine_t *xine;
+	void *xine;
 }
-
 + (XineEngine*) defaultEngine;
-- (xine_t*) handle;
+- (void*) handle;
+@end
 
+@interface XineEngine (PostProcessors)
+- (NSArray*) postProcessorNames;
+- (NSArray*) postProcessorNamesForType: (XinePostProcessorType) type;
 @end
 
 @interface XineEngine (Streams)
-
 - (XineStream*) createStreamWithAudioPort: (XineAudioPort*) ao videoPort: (XineVideoPort*) vo;
-
 @end
 
 @interface XineEngine (Ports)
-
 - (XineVideoPort*) createVideoPortFromVideoView: (XineVideoView*) view;
 - (XineAudioPort*) createAudioPort;
-
 @end
 
 @interface XineEngine (Configuration)
-
 - (void) loadConfiguration;
 - (void) saveConfiguration;
 - (void) resetConfiguration;
-
 @end

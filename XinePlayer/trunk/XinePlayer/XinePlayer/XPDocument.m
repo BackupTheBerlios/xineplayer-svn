@@ -41,12 +41,17 @@
 		_isSynchingGUI = NO;
 		_guiTimer = nil;
 		_isPlaying = NO;
+		_post = nil;
     }
     return self;
 }
 
 - (void) close
 {
+	if(_post) 
+		[_post release];
+	_post = nil;
+	
 	if(_guiTimer)
 		[_guiTimer invalidate];
 	_guiTimer = nil;
@@ -91,12 +96,48 @@
 	[[aController window] center];
 	[[aController window] setAcceptsMouseMovedEvents: YES];
 	
-	// For some reason we need one engine per playback, I think it is perhaps a bug?
-	_engine = [[XineEngine alloc] init];
+	_engine = [[XineEngine defaultEngine] retain];
 	
 	// Create the default stream and video/audio ports.
 	_videoPort = [[_engine createVideoPortFromVideoView: videoView] retain];
 	_audioPort = [[_engine createAudioPort] retain];
+	
+	XineAudioPort *streamAPort = _audioPort;
+	
+	_post = nil;
+	
+	/*
+	_post = [[XinePostProcessor postProcessorNamed:@"goom" forEngine:_engine inputs:0 audioPorts:[NSArray arrayWithObject: _audioPort] videoPorts:[NSArray arrayWithObject:_videoPort]] retain];
+	XinePostInputPort *ainput = nil;
+	if(!_post) {
+		NSLog(@"Poo");
+	} else {
+		NSLog(@"Woohoo");
+		NSArray *inputs = [_post inputNames];
+		NSArray *inputPorts = [_post inputAudioPorts];
+		NSLog(@"Plugin has %i audio inputs.", [inputPorts count]);
+		
+		if([inputPorts count] > 0) {
+			streamAPort = [inputPorts objectAtIndex: 0];
+		}
+		
+		inputPorts = [_post inputVideoPorts];
+		NSLog(@"Plugin has %i video inputs.", [inputPorts count]);
+		
+		NSString *inputName;
+		NSEnumerator *objEnum = [inputs objectEnumerator];
+		while(inputName = [objEnum nextObject]) {
+			NSLog(@"Input: %@", inputName);
+			XinePostInputPort *input = [_post inputPortNamed: inputName];
+			NSLog(@"Name: %@", [input name]);
+			NSLog(@"Type: %i", [input type]);
+			if([input type] == XinePostAudioPort) {
+				ainput = input;
+			}
+		}
+	}
+	*/
+	 
 	_stream = [[_engine createStreamWithAudioPort:_audioPort videoPort:_videoPort] retain];
 	
 	[[self documentWindow] makeFirstResponder: videoView];

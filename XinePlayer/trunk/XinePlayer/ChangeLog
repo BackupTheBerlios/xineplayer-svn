@@ -1,6 +1,7 @@
 18 Mar 2004; Rich Wareham <richwareham@users.sourceforg.net> :
 	
 	* Pre 0.2 release.
+	* Only use one xine engine instance per app.
 	* Fix frame corruption bug whereby colours appeared
 	  'streaky' with certain movies.
 

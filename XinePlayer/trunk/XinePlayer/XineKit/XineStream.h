@@ -16,8 +16,12 @@
 * Mass Ave, Cambridge, MA 02139, USA.
 */
 
+#import "xine.h"
+
 @class XineEngine;
 @class XineStream;
+@class XinePostProcessor;
+@class XinePostOutputPort;
 
 extern NSString *XineStreamFrameFormatDidChangeNotification;
 extern NSString *XineStreamPlaybackDidFinishNotification;
@@ -33,8 +37,8 @@ typedef enum {
 } XineSpeed;
 
 @interface XineStream : NSObject {
-	xine_stream_t *stream;
-	xine_t *xine;
+	xine_stream_t *_stream;
+	XineEngine *_engine;
 	XineVideoView *_videoView;
 	
 	xine_event_queue_t *_queue;
@@ -42,9 +46,10 @@ typedef enum {
 	NSLock *_eventLock;
 }
 
++ (XineStream*) streamWithEngine: (XineEngine*) engine audioPort: (XineAudioPort*) ao videoPort: (XineVideoPort*) vo;
 - (id) initWithEngine: (XineEngine*) engine audioPort: (XineAudioPort*) ao videoPort: (XineVideoPort*) vo;
-- (xine_stream_t*) stream;
-- (xine_t*) engine;
+- (void*) handle;
+- (XineEngine*) engine;
 
 - (bool) openMRL: (NSString*) mrl;
 - (void) play;
@@ -54,6 +59,9 @@ typedef enum {
 - (void) stop: (BOOL) waitUntilDone;
 - (void) close;
 - (bool) eject;
+
+- (XinePostOutputPort*) videoSourceForPostProcessor: (XinePostProcessor*) post;
+- (XinePostOutputPort*) audioSourceForPostProcessor: (XinePostProcessor*) post;
 
 - (void) seekToPosition: (int) position;
 

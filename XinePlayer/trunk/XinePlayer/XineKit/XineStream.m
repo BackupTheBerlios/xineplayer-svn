@@ -16,7 +16,7 @@
 * Mass Ave, Cambridge, MA 02139, USA.
 */
 
-#import <XineKitIntl.h>
+#import <XineKit.h>
 
 NSString *XineStreamFrameFormatDidChangeNotification = @"XineStreamFrameFormatDidChangeNotification";
 NSString *XineStreamPlaybackDidFinishNotification = @"XineStreamPlaybackDidFinishNotification";
@@ -28,27 +28,27 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 
 - (bool) openMRL: (NSString*) mrl
 {
-	return xine_open(stream,[mrl cString]);
+	return xine_open(_stream,[mrl cString]);
 }
 
 - (void) play
 {
-	xine_play(stream,0,0);
+	xine_play(_stream,0,0);
 }
 
 - (void) playFromPosition: (int) pos
 {
-	xine_play(stream,pos,0);
+	xine_play(_stream,pos,0);
 }
 
 - (void) playFromTime: (int) time
 {
-	xine_play(stream,0,time);
+	xine_play(_stream,0,time);
 }
 
 - (void) stop
 {
-	xine_stop(stream);
+	xine_stop(_stream);
 }
 
 - (void) stop: (BOOL) waitUntilDone
@@ -63,22 +63,22 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 
 - (void) close
 {
-	xine_close(stream);
+	xine_close(_stream);
 }
 
 - (bool) eject
 {
-	return xine_eject(stream);
+	return xine_eject(_stream);
 }
 
 - (void) setValue: (int) value ofParameter: (int) param
 {
-	xine_set_param(stream,param,value);
+	xine_set_param(_stream,param,value);
 }
 
 - (int) valueOfParameter: (int) param
 {
-	return xine_get_param(stream,param);
+	return xine_get_param(_stream,param);
 }
 
 - (XineSpeed) speed
@@ -93,40 +93,44 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 
 - (void) seekToPosition: (int) position
 {
-	xine_trick_mode(stream,XINE_TRICK_MODE_SEEK_TO_POSITION,position);
+	xine_trick_mode(_stream,XINE_TRICK_MODE_SEEK_TO_POSITION,position);
 }
 
 - (BOOL) hasPositionInformation
 {
 	int a,b,c;
-	return xine_get_pos_length(stream,&a,&b,&c);
+	return xine_get_pos_length(_stream,&a,&b,&c);
 }
 
 - (int) getStreamInformationForKey: (int) key
 {
-	return xine_get_stream_info(stream, key);
+	return xine_get_stream_info(_stream, key);
 }
 
 - (void) getPosition: (int*) position time: (int*) time length: (int*) length
 {
-	xine_get_pos_length(stream,position,time,length);
+	xine_get_pos_length(_stream,position,time,length);
 }
+
++ (XineStream*) streamWithEngine: (XineEngine*) engine audioPort: (XineAudioPort*) ao videoPort: (XineVideoPort*) vo
+{
+	return [[[XineStream alloc] autorelease] initWithEngine:engine audioPort:ao videoPort:vo];
+}	
 
 - (id) initWithEngine: (XineEngine*) engine audioPort: (XineAudioPort*) ao videoPort: (XineVideoPort*) vo
 {
 	id mySelf = [super init];
 	if(mySelf) 
 	{
-		xine = [engine handle];
-		stream = xine_stream_new(xine,[ao port],[vo port]);
-		if(!stream) { return nil; }
+		_engine = [engine retain];
+		_stream = xine_stream_new([_engine handle],[ao handle],[vo handle]);
+		if(!_stream) { return nil; }
 		_videoView = [[vo videoView] retain];
-		// [[_videoView openGLView] setDelegate: self];
-		[_videoView didAssociateWithStream: stream];
+		[_videoView didAssociateWithStream: _stream];
 		
 		_eventLock = [[NSLock alloc] init];
 		
-		_queue = xine_event_new_queue(stream);
+		_queue = xine_event_new_queue(_stream);
 		xine_event_create_listener_thread(_queue,event_listener_cb,self);
 	}
 	return mySelf;
@@ -140,25 +144,36 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 		[_eventLock release];
 	if(_videoView)
 	{
-		// [[_videoView openGLView] setDelegate: nil];
-		[_videoView didDisassociateWithStream: stream];
+		[_videoView didDisassociateWithStream: _stream];
 		[_videoView release];
 	}
-	if(stream) { xine_dispose(stream); }
+	if(_stream) { xine_dispose(_stream); }
+	if(_engine) 
+		[_engine release];
 	[super dealloc];
 }
 
 - (NSString*) getMetaInfoForKey: (int) key
 {
-	const char *cStr = xine_get_meta_info(stream,key);
+	const char *cStr = xine_get_meta_info(_stream,key);
 	
 	if(!cStr) { return [NSString stringWithString:@""]; }
 	
 	return [NSString stringWithUTF8String: cStr];
 }
 
-- (xine_stream_t*) stream { return stream; }
-- (xine_t*) engine { return xine; }
+- (void*) handle { return _stream; }
+- (XineEngine*) engine { return _engine; }
+
+- (XinePostOutputPort*) videoSourceForPostProcessor: (XinePostProcessor*) post
+{
+	return [[[XinePostOutputPort alloc] initWithOutput: xine_get_video_source(_stream) post:[post handle]] autorelease];
+}
+
+- (XinePostOutputPort*) audioSourceForPostProcessor: (XinePostProcessor*) post
+{
+	return [[[XinePostOutputPort alloc] initWithOutput: xine_get_audio_source(_stream) post:[post handle]] autorelease];
+}
 
 - (void) sendInputButtonEvent: (int) buttonEventType
 {
@@ -166,16 +181,16 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 	event.type = buttonEventType;
 	event.data = 0;
 	event.data_length = 0;
-	event.stream = stream;
-	xine_event_send(stream,&event);
+	event.stream = _stream;
+	xine_event_send(_stream,&event);
 }
 
 - (BOOL) isPlaying
 {
-	if(!stream)
+	if(!_stream)
 		return NO;
 	
-	return (xine_get_status(stream) == XINE_STATUS_PLAY);
+	return (xine_get_status(_stream) == XINE_STATUS_PLAY);
 }
 
 - (void) processEvent: (id) sender;

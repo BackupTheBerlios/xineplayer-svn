@@ -19,7 +19,7 @@
 #import <xine.h>
 
 #import <XineVideoView.h>
-#import <XineVideoPort.h>
-#import <XineAudioPort.h>
+#import <XinePorts.h>
 #import <XineStream.h>
+#import <XinePostProcessor.h>
 #import <XineEngine.h>

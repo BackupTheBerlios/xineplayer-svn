@@ -44,6 +44,7 @@
 	
 	XineVideoPort *_videoPort;
 	XineAudioPort *_audioPort;
+	XinePostProcessor *_post;
 	XineStream *_stream;
 	XineEngine *_engine;
 	

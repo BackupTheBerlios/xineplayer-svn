@@ -16,7 +16,7 @@
 * Mass Ave, Cambridge, MA 02139, USA.
 */
 
-#import <XineKitIntl.h>
+#import <XineKit.h>
 #import <stdlib.h>
 
 @interface XineEngine (Private)
@@ -29,13 +29,7 @@
 
 - (XineStream*) createStreamWithAudioPort: (XineAudioPort*) ao videoPort: (XineVideoPort*) vo
 {
-	XineStream *stream = [XineStream alloc];
-	if(![stream initWithEngine:self audioPort:ao videoPort:vo]) 
-	{
-		[stream release];
-		return nil;
-	}
-	return [stream autorelease];
+	return [XineStream streamWithEngine:self audioPort:ao videoPort:vo];
 }
 
 @end
@@ -44,26 +38,12 @@
 
 - (XineVideoPort*) createVideoPortFromVideoView: (XineVideoView*) view
 {
-	XineVideoPort *port = [XineVideoPort alloc];
-	if(![port initWithDriver: @"cocoa" view: view engine: self]) 
-	{
-		NSLog(@"Error opening video port.");
-		[port release];
-		return nil;
-	}
-	return [port autorelease];
+	return [XineVideoPort videoPortForDriver:@"cocoa" fromEngine:self forView:view];
 }
 
 - (XineAudioPort*) createAudioPort
 {
-	XineAudioPort *port = [XineAudioPort alloc];
-	if(![port initWithDriver: @"coreaudio" data: nil engine: self]) 
-	{
-		NSLog(@"Error opening audio port.");
-		[port release];
-		return nil;
-	}
-	return [port autorelease];
+	return [XineAudioPort audioPortForDriver:@"coreaudio" fromEngine:self userData:nil];
 }
 
 @end
@@ -82,7 +62,7 @@ static XineEngine *_defaultEngine = nil;
 	return _defaultEngine;
 }
 
-- (xine_t*) handle
+- (void*) handle
 {
 	return xine;
 }
@@ -125,6 +105,13 @@ static XineEngine *_defaultEngine = nil;
 			
 			section --;
 		}
+		
+		NSArray *postList = [self postProcessorNamesForType: XinePostAudioVisualization];
+		NSEnumerator *postEnum = [postList objectEnumerator];
+		NSString *name;
+		while(name = [postEnum nextObject]) {
+			NSLog(@"Post processor: %@", name);
+		}
 	}
 	
 	return mySelf;
@@ -132,7 +119,7 @@ static XineEngine *_defaultEngine = nil;
 
 - (void) dealloc
 {
-	// NSLog(@"Engine shutdown");
+	NSLog(@"Engine shutdown");
 	
 	if(xine)
 	{
@@ -164,6 +151,34 @@ static XineEngine *_defaultEngine = nil;
 		nil
 		];
 	return [NSString pathWithComponents: prefsFile];
+}
+
+@end
+
+@implementation XineEngine (PostProcessors)
+
+- (NSArray*) postProcessorNames
+{
+	NSMutableArray *array = [NSMutableArray array];
+	const char * const * plugin_list = xine_list_post_plugins([self handle]);
+	while(*plugin_list) {
+		[array addObject: [NSString stringWithCString: *plugin_list]];
+		plugin_list ++;
+	}
+	
+	return array;
+}
+
+- (NSArray*) postProcessorNamesForType: (XinePostProcessorType) type
+{
+	NSMutableArray *array = [NSMutableArray array];
+	const char * const * plugin_list = xine_list_post_plugins_typed([self handle], type);
+	while(*plugin_list) {
+		[array addObject: [NSString stringWithCString: *plugin_list]];
+		plugin_list ++;
+	}
+	
+	return array;
 }
 
 @end
