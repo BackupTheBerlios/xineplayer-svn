@@ -94,20 +94,21 @@ static XineEngine *_defaultEngine = nil;
 		[self loadConfiguration];
 		xine_init(xine);
 		
-#if 0
-		int section = xine_get_log_section_count(xine) - 1;
-		while(section >= 0) {
-			const char * const * message_list = xine_get_log(xine, section);
-			const char *section_name = xine_get_log_names(xine)[section];
-			
-			while(*message_list && strlen(*message_list)) {
-				NSLog(@"%s: %s", section_name, *message_list);
-				message_list ++;
-			}
-			
-			section --;
-		}
-#endif
+                if(getenv("XINEPLAYER_ENGINE_LOG")) 
+                {
+                  int section = xine_get_log_section_count(xine) - 1;
+                  while(section >= 0) {
+                    const char * const * message_list = xine_get_log(xine, section);
+                    const char *section_name = xine_get_log_names(xine)[section];
+                    
+                    while(*message_list && strlen(*message_list)) {
+                      NSLog(@"%s: %s", section_name, *message_list);
+                      message_list ++;
+                    }
+                    
+                    section --;
+                  }
+                }
 	}
 	
 	return mySelf;
