@@ -34,6 +34,9 @@
 	IBOutlet NSTableView *streamInfoTable;
 	IBOutlet NSTableView *playlistTable;
 	
+	IBOutlet NSView *notificationView;
+	IBOutlet NSTextField *notificationLabel;
+	
 	NSMutableArray *_playlist;
 	int _playlistIndex;
 	BOOL _isPlaying;

@@ -27,6 +27,7 @@ NSString *XineVideoViewFrameSizeDidChangeNotification = @"XineVideoViewFrameSize
 
 @interface XineVideoView (Private)
 - (BOOL) ensureDisplay;
+- (NSRect) notificationRect;
 @end
 
 @implementation XineVideoView
@@ -119,6 +120,13 @@ NSString *XineVideoViewFrameSizeDidChangeNotification = @"XineVideoViewFrameSize
 
 - (void) dealloc
 {
+	if(_notificationTimer)
+		[_notificationTimer invalidate];
+	if(_notificationWindow)
+		[_notificationWindow release];
+	if(_notificationView)
+		[_notificationView release];
+	
 	if([self isFullScreen])
 		[self exitFullScreen: nil];
 	/*
@@ -148,6 +156,9 @@ NSString *XineVideoViewFrameSizeDidChangeNotification = @"XineVideoViewFrameSize
 		_lastFormat = XINE_IMGFMT_YV12;
 		_yuvDisplay = NULL;
 		_cursorHideTimer = nil;
+		_notificationWindow = nil;
+		_notificationView = nil;
+		_notificationTimer = nil;
 		/* _eventQueue = nil; */
 		
 		_videoView = [[[NSQuickDrawView alloc] initWithFrame: [self contentFrame]] autorelease];
@@ -161,6 +172,58 @@ NSString *XineVideoViewFrameSizeDidChangeNotification = @"XineVideoViewFrameSize
 		_fullScreenWindow = nil;
 	}
     return self;
+}
+
+- (void) hideNotification: (NSTimer*) timer
+{
+	if(_notificationWindow)
+	{
+		[[self window] removeChildWindow: _notificationWindow];
+		[_notificationWindow orderOut:nil];
+		[_notificationWindow release];
+	}
+	_notificationWindow = nil;
+	_notificationTimer = nil;
+}
+
+- (void) displayNotification
+{
+	if(!_notificationView || ![self window])
+		return;
+	
+	if(!_notificationWindow) 
+	{
+		_notificationWindow = [[[NSWindow alloc] autorelease] initWithContentRect:[self notificationRect] styleMask:NSBorderlessWindowMask backing:NSBackingStoreBuffered defer:NO];
+		[_notificationWindow retain];
+		[[self window] addChildWindow:_notificationWindow ordered:NSWindowAbove];
+		[_notificationWindow setBackgroundColor: [NSColor clearColor]];
+		[_notificationWindow setOpaque:NO];
+		[_notificationWindow setIgnoresMouseEvents: YES];
+		[_notificationWindow setContentView: _notificationView];
+		[_notificationWindow setResizeIncrements:NSMakeSize(1,1)];
+		[_notificationWindow orderFront:nil];
+	}
+	
+	[[_notificationWindow contentView] setNeedsDisplay: YES];
+	
+	if(_notificationTimer)
+		[_notificationTimer invalidate];
+	_notificationTimer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(hideNotification:) userInfo:nil repeats:NO];
+}
+
+- (void) setNotficationView: (NSView*) view
+{
+	if(_notificationView)
+		[_notificationView release];
+	if(view) {
+		[view retain];
+	}
+	_notificationView = view;
+}
+
+-(NSView*) notificationView
+{
+	return _notificationView;
 }
 
 - (void)drawRect:(NSRect)rect {
@@ -466,6 +529,11 @@ void _event_listener_cb(void *user_data, const xine_event_t *event) {
 	if(_videoView) {
 		[_videoView setFrame: [self contentFrame]];
 	}
+	if(_notificationWindow) 
+	{
+		NSRect newFrame = [self notificationRect];
+		[_notificationWindow setFrame:newFrame display:YES];
+	}
 	[super resizeSubviewsWithOldSize: oldBoundsSize];
 }
 
@@ -482,6 +550,11 @@ void _event_listener_cb(void *user_data, const xine_event_t *event) {
 -(void) resizeVideoView: (void*) data
 {
 	[_videoView setFrame: [self contentFrame]];
+	if(_notificationWindow) 
+	{
+		NSRect newFrame = [self notificationRect];
+		[_notificationWindow setFrame:newFrame display:YES];
+	}
 	[self setNeedsDisplay: YES];
 }
 
@@ -537,6 +610,20 @@ void _event_listener_cb(void *user_data, const xine_event_t *event) {
 @end
 
 @implementation XineVideoView (Private)
+
+- (NSRect) notificationRect
+{
+	if(![self window])
+		return NSMakeRect(0,0,0,0);
+	
+	NSRect desiredRect = [_videoView frame];
+	NSRect contentRect = [self convertRect: desiredRect toView: nil];
+	contentRect.origin = [[self window] convertBaseToScreen: contentRect.origin];
+	
+	/* NSLog(@"frame: %f,%f", contentRect.size.width, contentRect.size.height); */
+	
+	return contentRect;
+}
 
 - (BOOL) ensureDisplay
 {

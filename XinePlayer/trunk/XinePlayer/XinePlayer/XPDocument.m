@@ -17,6 +17,7 @@
 */
 
 #import "XPDocument.h"
+#import "XPDocumentWindow.h"
 #import "XPController.h"
 #import "../Preferences/XPPreferencesController.h"
 
@@ -26,6 +27,7 @@
 
 // Make the document window reflect the current status.
 - (void) synchroniseGUIAndStream: (id) sender;
+- (void) setNotificationMessage: (NSString*) message;
 
 @end
 
@@ -167,10 +169,13 @@
 	[[aController window] setAcceptsMouseMovedEvents: YES];
 	
 	_engine = [[XineEngine defaultEngine] retain];
-	
+		
 	// Create the default stream and video/audio ports.
 	_videoPort = [[_engine createVideoPortFromVideoView: videoView] retain];
 	_audioPort = [[_engine createAudioPort] retain];
+	
+	[videoView setNotficationView: notificationView];
+	[self setNotificationMessage: @"piiiiiiing..."];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(frameChanged:) name:XineVideoViewFrameSizeDidChangeNotification object:videoView];
 	_stream = [[_engine createStreamWithAudioPort:_audioPort videoPort:_videoPort] retain];
@@ -391,6 +396,8 @@
 - (IBAction) toggleDeinterlace: (id) sender
 {
 	[self setDeinterlace: ![self isDeinterlacing]];
+	[self setNotificationMessage: [self isDeinterlacing] ? NSLocalizedString(@"Deinterlace On", @"Message displayed to user") : NSLocalizedString(@"Deinterlace Off", @"Message displayed to user")];
+	[videoView displayNotification];
 }
 
 - (IBAction) openNextMRL: (id) sender
@@ -633,6 +640,22 @@
 @end
 
 @implementation XPDocument (Private)
+
+- (void) setNotificationMessage: (NSString*) message
+{
+	NSShadow *shadow = [[[NSShadow alloc] init] autorelease];
+	[shadow setShadowOffset:NSMakeSize(0,0)];
+	[shadow setShadowBlurRadius: 3.0];
+	[shadow setShadowColor: [NSColor colorWithCalibratedWhite:0.0 alpha:0.8]];
+	NSAttributedString *aString = [[[NSAttributedString alloc] autorelease] initWithString:message attributes:[NSDictionary dictionaryWithObjectsAndKeys: 
+		[NSFont boldSystemFontOfSize: 20], NSFontAttributeName,
+		[NSColor greenColor], NSForegroundColorAttributeName,
+		shadow, NSShadowAttributeName,
+		nil]];
+	[notificationLabel setAttributedStringValue: aString];
+	[notificationLabel sizeToFit];
+	[notificationLabel setFrameOrigin:NSMakePoint(0,[notificationView bounds].size.height - [notificationLabel frame].size.height)];
+}
 
 - (void) synchroniseGUIAndStream: (NSTimer*) timer
 {

@@ -33,6 +33,10 @@ extern NSString *XineVideoViewFrameSizeDidChangeNotification;
 	NSLock *_displayLock;
 	NSWindow *_fullScreenWindow;
 	NSTimer *_cursorHideTimer;
+
+	NSWindow *_notificationWindow;
+	NSView *_notificationView;
+	NSTimer *_notificationTimer;
 }
 
 - (NSRect) contentFrame;
@@ -48,6 +52,10 @@ extern NSString *XineVideoViewFrameSizeDidChangeNotification;
 - (void) goFullScreen: (id) sender;
 - (void) exitFullScreen: (id) sender;
 - (BOOL) isFullScreen;
+
+- (void) displayNotification;
+- (void) setNotficationView: (NSView*) view;
+- (NSView*) notificationView;
 
 @end
 
