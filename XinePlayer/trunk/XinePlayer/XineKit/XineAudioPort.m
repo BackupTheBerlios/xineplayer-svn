@@ -30,12 +30,12 @@
 	return port;
 }
 
-- (id) initWithDriver: (NSString*) driver data: (id) data engine: (xine_t*) _xine
+- (id) initWithDriver: (NSString*) driver data: (id) data engine: (XineEngine*) _xine
 {
 	id mySelf = [super init];
 	if(mySelf) 
 	{
-		xine = _xine;
+		xine = [_xine handle];
 		port = xine_open_audio_driver(xine,[driver cString],data);
 		
 		if(!port) 

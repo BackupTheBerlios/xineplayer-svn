@@ -16,13 +16,14 @@
 * Mass Ave, Cambridge, MA 02139, USA.
 */
 
+@class XineEngine;
 
 @interface XineAudioPort : NSObject {
 	xine_t *xine;
 	xine_audio_port_t *port;
 }
 
-- (id) initWithDriver: (NSString*) driver data: (id) data engine: (xine_t*) xine;
+- (id) initWithDriver: (NSString*) driver data: (id) data engine: (XineEngine*) xine;
 - (xine_t*) engine;
 - (xine_audio_port_t*) port;
 

@@ -30,7 +30,7 @@
 - (XineStream*) createStreamWithAudioPort: (XineAudioPort*) ao videoPort: (XineVideoPort*) vo
 {
 	XineStream *stream = [XineStream alloc];
-	if(![stream initWithEngine:xine audioPort:ao videoPort:vo]) 
+	if(![stream initWithEngine:self audioPort:ao videoPort:vo]) 
 	{
 		[stream release];
 		return nil;
@@ -45,7 +45,7 @@
 - (XineVideoPort*) createVideoPortFromVideoView: (XineVideoView*) view
 {
 	XineVideoPort *port = [XineVideoPort alloc];
-	if(![port initWithDriver: @"cocoa" view: view engine: xine]) 
+	if(![port initWithDriver: @"cocoa" view: view engine: self]) 
 	{
 		NSLog(@"Error opening video port.");
 		[port release];
@@ -57,7 +57,7 @@
 - (XineAudioPort*) createAudioPort
 {
 	XineAudioPort *port = [XineAudioPort alloc];
-	if(![port initWithDriver: @"coreaudio" data: nil engine: xine]) 
+	if(![port initWithDriver: @"coreaudio" data: nil engine: self]) 
 	{
 		NSLog(@"Error opening audio port.");
 		[port release];

@@ -30,12 +30,12 @@
 	return port;
 }
 
-- (id) initWithDriver: (NSString*) driver view: (XineVideoView*) view engine: (xine_t*) _xine
+- (id) initWithDriver: (NSString*) driver view: (XineVideoView*) view engine: (XineEngine*) _xine
 {
 	id mySelf = [super init];
 	if(mySelf) 
 	{
-		xine = _xine;
+		xine = [_xine handle];
 		port = xine_open_video_driver(xine,[driver cString],XINE_VISUAL_TYPE_MACOSX,view);
 		_view = [view retain];
 		

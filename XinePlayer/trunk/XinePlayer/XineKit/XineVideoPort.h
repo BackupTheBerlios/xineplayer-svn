@@ -19,13 +19,15 @@
 #import <Cocoa/Cocoa.h>
 #import <xine.h>
 
+@class XineEngine;
+
 @interface XineVideoPort : NSObject {
 	xine_t *xine;
 	xine_video_port_t *port;
 	XineVideoView *_view;
 }
 
-- (id) initWithDriver: (NSString*) driver view: (XineVideoView*) view engine: (xine_t*) xine;
+- (id) initWithDriver: (NSString*) driver view: (XineVideoView*) view engine: (XineEngine*) xine;
 - (xine_t*) engine;
 - (xine_video_port_t*) port;
 - (XineVideoView*) videoView;

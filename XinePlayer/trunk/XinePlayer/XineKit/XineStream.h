@@ -16,6 +16,9 @@
 * Mass Ave, Cambridge, MA 02139, USA.
 */
 
+@class XineEngine;
+@class XineStream;
+
 extern NSString *XineStreamFrameFormatDidChangeNotification;
 extern NSString *XineStreamPlaybackDidFinishNotification;
 extern NSString *XineStreamChannelsChangedNotification;
@@ -39,7 +42,7 @@ typedef enum {
 	NSLock *_eventLock;
 }
 
-- (id) initWithEngine: (xine_t*) engine audioPort: (XineAudioPort*) ao videoPort: (XineVideoPort*) vo;
+- (id) initWithEngine: (XineEngine*) engine audioPort: (XineAudioPort*) ao videoPort: (XineVideoPort*) vo;
 - (xine_stream_t*) stream;
 - (xine_t*) engine;
 

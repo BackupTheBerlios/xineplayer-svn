@@ -112,12 +112,12 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 	xine_get_pos_length(stream,position,time,length);
 }
 
-- (id) initWithEngine: (xine_t*) engine audioPort: (XineAudioPort*) ao videoPort: (XineVideoPort*) vo
+- (id) initWithEngine: (XineEngine*) engine audioPort: (XineAudioPort*) ao videoPort: (XineVideoPort*) vo
 {
 	id mySelf = [super init];
 	if(mySelf) 
 	{
-		xine = engine;
+		xine = [engine handle];
 		stream = xine_stream_new(xine,[ao port],[vo port]);
 		if(!stream) { return nil; }
 		_videoView = [[vo videoView] retain];
@@ -177,20 +177,6 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 	
 	return (xine_get_status(stream) == XINE_STATUS_PLAY);
 }
-
-@end
-
-@implementation XineStream (XineOpenGLViewDelegate)
-/*
-- (NSPoint) convertPoint: (NSPoint) point fromOpenGLView: (XineOpenGLView*) oglView
-{
-	NSSize videoSize = [oglView videoSize];
-	NSSize rectSize = [oglView bounds].size;
-	NSPoint location = [oglView convertPoint: point fromView: nil];
-	
-	return NSMakePoint((location.x * videoSize.width) / rectSize.width, videoSize.height - ((location.y * videoSize.height) / rectSize.height));
-}
-*/
 
 - (void) processEvent: (id) sender;
 {
