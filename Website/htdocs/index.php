@@ -62,6 +62,12 @@
     <li>Fullscreen playback.</li>
     <li>Software deinterlacing.</li>
     </ul>
+    <h2>Reporting Bugs/Requesting Features</h2>
+    <p>You can either <a href="mailto:richwareham -at- users -dot- sourceforge -dot- net">e-mail me</a>
+    or use the <a href="http://developer.berlios.de/bugs/?group_id=3329">bug 
+    reporting system</a> and <a href="http://developer.berlios.de/feature/?group_id=3329">feature
+    request system</a>. Using the bug/feature tracker makes it a lot easier for you to check
+    the progress of your report.</p>
     <h2>Acknowledgements</h2>
     <p>XinePlayer is hosted by the <a href="http://berlios.de/">BerliOS project</a>.</p>
     <p>
