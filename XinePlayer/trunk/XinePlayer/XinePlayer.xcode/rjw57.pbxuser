@@ -939,6 +939,13 @@
 			A4DA331807EF7B31005B7998 = A4DA331807EF7B31005B7998;
 			A4DA331907EF7B70005B7998 = A4DA331907EF7B70005B7998;
 			A4DA331A07EF7B70005B7998 = A4DA331A07EF7B70005B7998;
+			A4DA331B07EF7C15005B7998 = A4DA331B07EF7C15005B7998;
+			A4DA331C07EF7C15005B7998 = A4DA331C07EF7C15005B7998;
+			A4DA331D07EF7C26005B7998 = A4DA331D07EF7C26005B7998;
+			A4DA331E07EF7C26005B7998 = A4DA331E07EF7C26005B7998;
+			A4DA331F07EF7C26005B7998 = A4DA331F07EF7C26005B7998;
+			A4DA332007EF7C26005B7998 = A4DA332007EF7C26005B7998;
+			A4DA332107EF7C26005B7998 = A4DA332107EF7C26005B7998;
 		};
 		sourceControlManager = A4AA161007BE4770000DDE36;
 		userBookmarkGroup = A4A3D17A07E6048300AAC902;
@@ -948,8 +955,8 @@
 	2A37F4ACFDCFA73011CA2CEA = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {558, 11732}}";
-			sepNavSelRange = "{8972, 0}";
-			sepNavVisRect = "{{0, 4271}, {558, 380}}";
+			sepNavSelRange = "{12397, 0}";
+			sepNavVisRect = "{{0, 5935}, {558, 380}}";
 			sepNavWindowFrame = "{{15, 439}, {750, 558}}";
 		};
 	};
@@ -7420,6 +7427,76 @@
 		vrLoc = 4607;
 	};
 	A4DA331A07EF7B70005B7998 = {
+		fRef = A4DA32D607EF7353005B7998;
+		isa = PBXTextBookmark;
+		name = "- (void)windowDidUpdate:(NSNotification *)notification;\n";
+		rLen = 56;
+		rLoc = 17305;
+		rType = 0;
+		vrLen = 940;
+		vrLoc = 3437;
+	};
+	A4DA331B07EF7C15005B7998 = {
+		fRef = A42D7B7707E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "QuartzYUVOutput.m: 208";
+		rLen = 0;
+		rLoc = 5510;
+		rType = 0;
+		vrLen = 745;
+		vrLoc = 4607;
+	};
+	A4DA331C07EF7C15005B7998 = {
+		fRef = A4DA32D607EF7353005B7998;
+		isa = PBXTextBookmark;
+		name = "- (void)windowDidUpdate:(NSNotification *)notification;\n";
+		rLen = 56;
+		rLoc = 17305;
+		rType = 0;
+		vrLen = 940;
+		vrLoc = 3437;
+	};
+	A4DA331D07EF7C26005B7998 = {
+		fRef = A42D7B7707E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "QuartzYUVOutput.m: 208";
+		rLen = 0;
+		rLoc = 5510;
+		rType = 0;
+		vrLen = 745;
+		vrLoc = 4607;
+	};
+	A4DA331E07EF7C26005B7998 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 284";
+		rLen = 0;
+		rLoc = 8972;
+		rType = 0;
+		vrLen = 594;
+		vrLoc = 8720;
+	};
+	A4DA331F07EF7C26005B7998 = {
+		fRef = A42D7B7707E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "QuartzYUVOutput.m: 208";
+		rLen = 0;
+		rLoc = 5510;
+		rType = 0;
+		vrLen = 745;
+		vrLoc = 4607;
+	};
+	A4DA332007EF7C26005B7998 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 386";
+		rLen = 0;
+		rLoc = 12397;
+		rType = 0;
+		vrLen = 544;
+		vrLoc = 12108;
+	};
+	A4DA332107EF7C26005B7998 = {
 		fRef = A4DA32D607EF7353005B7998;
 		isa = PBXTextBookmark;
 		name = "- (void)windowDidUpdate:(NSNotification *)notification;\n";

@@ -383,7 +383,7 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	
 	_playlistIndex = index;
 	NSString *MRL = [self currentMRL];
-	NSLog(@"Opening: %@", MRL);
+	/* NSLog(@"Opening: %@", MRL); */
 	return [self openMRL: MRL];
 }
 
