@@ -53,8 +53,17 @@ static XPController *_sharedController = nil;
 	if(mySelf)
 	{
 		_sharedController = mySelf;
+		
+		/* Create the default xine engine */
+		_defaultEngine = [[XineEngine defaultEngine] retain];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(terminate:) name:NSApplicationWillTerminateNotification object:nil];
 	}
 	return mySelf;
+}
+
+- (void) terminate: (NSNotification*) notification;
+{
+	[_defaultEngine release];
 }
 
 - (void) openURL: (id) sender

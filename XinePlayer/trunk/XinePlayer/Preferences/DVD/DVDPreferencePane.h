@@ -1,6 +1,7 @@
-/* XinePlayer - Cocoa-based GUI frontend to Xine.
-*
-* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>
+/* DesktopManager -- A virtual desktop provider for OS X
+* Adapted for XinePlayer -- A OS X multimedia player
+* 
+* Copyright (C) 2003, 2004, 2005 Richard J Wareham <richwareham@users.sourceforge.net>
 * This program is free software; you can redistribute it and/or modify it 
 * under the terms of the GNU General Public License as published by the Free 
 * Software Foundation; either version 2 of the License, or (at your option)
@@ -16,30 +17,11 @@
 * Mass Ave, Cambridge, MA 02139, USA.
 */
 
-
 #import <Cocoa/Cocoa.h>
+#import <PreferencePanes/PreferencePanes.h>
 
-@class XineEngine;
+@interface DVDPreferencePane : NSPreferencePane {
 
-@interface XPController : NSObject {
-	IBOutlet NSPanel *dvdControlsPanel;
-	IBOutlet NSWindow *_openURLDialogue;
-	IBOutlet NSComboBox *_openURLComboBox;
-	XineEngine *_defaultEngine;
 }
-
-+ (XPController*) sharedController;
-
-- (void) openDisc: (NSString*) devicePath;
-
-- (BOOL) isDVDPanelOpen;
-
-- (IBAction) openFirstDisc: (id) sender;
-- (IBAction) openURL: (id) sender;
-- (IBAction) openDVDPanel: (id) sender;
-- (IBAction) closeDVDPanel: (id) sender;
-
-- (IBAction) openURLClicked: (id) sender;
-- (IBAction) cancelOpenURLClicked: (id) sender;
 
 @end

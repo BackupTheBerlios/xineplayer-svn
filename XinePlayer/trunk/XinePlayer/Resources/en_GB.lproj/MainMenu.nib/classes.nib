@@ -67,7 +67,8 @@
             LANGUAGE = ObjC; 
             OUTLETS = {prefsWindow = NSWindow; }; 
             SUPERCLASS = NSObject; 
-        }
+        }, 
+        {CLASS = XineEngine; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
     ); 
     IBVersion = 1; 
 }

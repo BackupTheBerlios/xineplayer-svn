@@ -53,4 +53,7 @@ typedef enum {
 - (void) loadConfiguration;
 - (void) saveConfiguration;
 - (void) resetConfiguration;
+
+- (id) configurationEntryForKey: (NSString*) key;
+- (void) setConfigurationEntry: (id) value forKey: (NSString*) key;
 @end

@@ -109,6 +109,16 @@ static XPPreferencesController *_defaultController = nil;
 	[[NSUserDefaults standardUserDefaults] synchronize];
 }
 
+- (int) DVDRegion
+{
+	return [[[XineEngine defaultEngine] configurationEntryForKey:@"media.dvd.region"] intValue];
+}
+
+- (void) setDVDRegion: (int) region
+{
+	[[XineEngine defaultEngine] setConfigurationEntry:[NSNumber numberWithInt:region] forKey:@"media.dvd.region"];
+}
+
 + (XPPreferencesController*) defaultController
 {
 	if(_defaultController)

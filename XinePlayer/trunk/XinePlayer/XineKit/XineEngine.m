@@ -57,7 +57,7 @@ static XineEngine *_defaultEngine = nil;
 {
 	if(!_defaultEngine) 
 	{
-		_defaultEngine = [[[XineEngine alloc] init] autorelease];
+		return [[[XineEngine alloc] init] autorelease];
 	}
 	
 	return _defaultEngine;
@@ -110,6 +110,9 @@ static XineEngine *_defaultEngine = nil;
                   }
                 }
 	}
+
+	if(!_defaultEngine)
+		_defaultEngine = mySelf;
 	
 	return mySelf;
 }
@@ -117,6 +120,8 @@ static XineEngine *_defaultEngine = nil;
 - (void) dealloc
 {
 	NSLog(@"Engine shutdown");
+	
+	[self saveConfiguration];
 	
 	if(xine)
 	{
@@ -147,6 +152,7 @@ static XineEngine *_defaultEngine = nil;
 			],
 		nil
 		];
+	/* NSLog(@"Config file: %@", [NSString pathWithComponents: prefsFile]); */
 	return [NSString pathWithComponents: prefsFile];
 }
 
@@ -195,6 +201,88 @@ static XineEngine *_defaultEngine = nil;
 - (void) resetConfiguration
 {
 	xine_config_reset(xine);
+}
+
+- (id) configurationEntryForKey: (NSString*) key
+{
+	xine_cfg_entry_t entry;
+	
+	/* NSLog(@"Looking for '%@'", key); */
+	
+	if(!xine_config_lookup_entry(xine,[key cString],&entry))
+		return nil;
+	
+	/* NSLog(@"Found '%@'", key); */
+	
+	switch(entry.type) {
+		case XINE_CONFIG_TYPE_RANGE:
+		case XINE_CONFIG_TYPE_NUM:
+		case XINE_CONFIG_TYPE_BOOL:
+			return [NSNumber numberWithInt:entry.num_value];
+			break;
+		case XINE_CONFIG_TYPE_ENUM:
+			return [NSString stringWithCString:entry.enum_values[entry.num_value]];
+		case XINE_CONFIG_TYPE_STRING:
+			return [NSString stringWithCString:entry.str_value];
+		default:
+			NSLog(@"Unknown xine entry type: %i", entry.type);
+			break;
+	}
+	
+	return nil;
+}
+
+- (void) setConfigurationEntry: (id) value forKey: (NSString*) key
+{
+	xine_cfg_entry_t entry;
+	if(!xine_config_lookup_entry(xine,[key cString],&entry))
+	{
+		NSLog(@"Attempt to set unknown confguration key %@", key);
+		return;
+	}
+	
+	switch(entry.type)
+	{
+		case XINE_CONFIG_TYPE_RANGE:
+			if(([value intValue] > entry.range_max) || ([value intValue] < entry.range_min))
+			{
+				NSLog(@"Attempt to set %@ to out of range value %@.", key,value);
+				return;
+			}
+		case XINE_CONFIG_TYPE_NUM:
+			entry.num_value = [value intValue];
+			break;
+		case XINE_CONFIG_TYPE_BOOL:
+			entry.num_value = [value boolValue];
+		case XINE_CONFIG_TYPE_STRING:
+			entry.str_value = (char*)[[value stringValue] cString];
+			break;
+		case XINE_CONFIG_TYPE_ENUM:
+		{
+			int i=0;
+			BOOL managedIt = NO;
+			char **enum_values = entry.enum_values;
+			while(*enum_values)
+			{
+				if([[value stringValue] isEqualToString: [NSString stringWithCString:*enum_values]])
+				{
+					entry.num_value = i;
+					managedIt = YES;
+				}
+				enum_values++; i++;
+			}
+			if(!managedIt)
+			{
+				NSLog(@"Attempted to set enum value '%@' to invalud value '%@'.", key, value);
+			}
+		}
+			break;
+		default:
+			NSLog(@"Unknown xine entry type: %i", entry.type);
+			break;
+	}
+	
+	xine_config_update_entry(xine,&entry);
 }
 
 @end

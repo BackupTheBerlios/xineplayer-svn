@@ -47,6 +47,8 @@
 - (void) setDeinterlaceAlgorithm: (id) value;
 - (BOOL) resizeWindowOnFrameChange;
 - (void) setResizeWindowOnFrameChange: (BOOL) value;
+- (int) DVDRegion;
+- (void) setDVDRegion: (int) region;
 
 @end
 

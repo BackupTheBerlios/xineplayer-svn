@@ -51,6 +51,7 @@
 				8D15AC370486D014006FF6A4,
 				A42FF55D07E363AE0038B422,
 				A407D3F607EC8CFA006F11D2,
+				A415E81C07F2036C00FFA8BD,
 			);
 			isa = PBXGroup;
 			name = Products;
@@ -90,6 +91,7 @@
 				8D15AC270486D014006FF6A4,
 				A42FF55C07E363AE0038B422,
 				A407D3F507EC8CFA006F11D2,
+				A415E81B07F2036C00FFA8BD,
 			);
 		};
 		2A37F4AAFDCFA73011CA2CEA = {
@@ -281,6 +283,7 @@
 			dependencies = (
 				A42FF56007E363E60038B422,
 				A407D3FB07EC8D0A006F11D2,
+				A415E81F07F2037400FFA8BD,
 			);
 			isa = PBXNativeTarget;
 			name = XinePlayer;
@@ -528,6 +531,7 @@
 			dstPath = PreferencePanes;
 			dstSubfolderSpec = 7;
 			files = (
+				A415E83407F2047E00FFA8BD,
 				A407D3FE07EC8D41006F11D2,
 			);
 			isa = PBXCopyFilesBuildPhase;
@@ -752,6 +756,221 @@
 		};
 		A409389E07EDA03900837FB7 = {
 			fileRef = A409389C07EDA03900837FB7;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A415E81507F2033E00FFA8BD = {
+			children = (
+				A415E86107F2052500FFA8BD,
+				A415E86207F2052500FFA8BD,
+				A415E84307F204C800FFA8BD,
+				A415E83107F2043E00FFA8BD,
+				A415E82C07F2041D00FFA8BD,
+				A415E82307F203C900FFA8BD,
+			);
+			isa = PBXGroup;
+			path = DVD;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A415E81807F2036C00FFA8BD = {
+			buildActionMask = 2147483647;
+			files = (
+				A415E82E07F2041D00FFA8BD,
+				A415E83207F2043E00FFA8BD,
+				A415E84507F204C800FFA8BD,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A415E81907F2036C00FFA8BD = {
+			buildActionMask = 2147483647;
+			files = (
+				A415E86407F2052500FFA8BD,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A415E81A07F2036C00FFA8BD = {
+			buildActionMask = 2147483647;
+			files = (
+				A415E86507F2057F00FFA8BD,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A415E81B07F2036C00FFA8BD = {
+			buildPhases = (
+				A415E81807F2036C00FFA8BD,
+				A415E81907F2036C00FFA8BD,
+				A415E81A07F2036C00FFA8BD,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)";
+				INFOPLIST_FILE = Preferences/DVD/Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-framework Foundation -framework AppKit";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = DVDPreferencePane;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = DVDPreferencePane;
+			productName = DVDPreferencePane;
+			productReference = A415E81C07F2036C00FFA8BD;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>DVDPreferencePane</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.DVDPreferencePane</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.bundle";
+		};
+		A415E81C07F2036C00FFA8BD = {
+			explicitFileType = wrapper.cfbundle;
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = DVDPreferencePane.bundle;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A415E81E07F2037400FFA8BD = {
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = A415E81B07F2036C00FFA8BD;
+			remoteInfo = DVDPreferencePane;
+		};
+		A415E81F07F2037400FFA8BD = {
+			isa = PBXTargetDependency;
+			target = A415E81B07F2036C00FFA8BD;
+			targetProxy = A415E81E07F2037400FFA8BD;
+		};
+		A415E82307F203C900FFA8BD = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text.xml;
+			path = Info.plist;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A415E82C07F2041D00FFA8BD = {
+			children = (
+				A415E82D07F2041D00FFA8BD,
+			);
+			isa = PBXVariantGroup;
+			name = PrefPane.nib;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A415E82D07F2041D00FFA8BD = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
+			name = en_GB;
+			path = en_GB.lproj/PrefPane.nib;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A415E82E07F2041D00FFA8BD = {
+			fileRef = A415E82C07F2041D00FFA8BD;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A415E83107F2043E00FFA8BD = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.png;
+			path = icon.png;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A415E83207F2043E00FFA8BD = {
+			fileRef = A415E83107F2043E00FFA8BD;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A415E83407F2047E00FFA8BD = {
+			fileRef = A415E81C07F2036C00FFA8BD;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A415E84307F204C800FFA8BD = {
+			children = (
+				A415E84407F204C800FFA8BD,
+			);
+			isa = PBXVariantGroup;
+			name = InfoPlist.strings;
+			path = "";
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A415E84407F204C800FFA8BD = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.strings;
+			name = en_GB;
+			path = en_GB.lproj/InfoPlist.strings;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A415E84507F204C800FFA8BD = {
+			fileRef = A415E84307F204C800FFA8BD;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A415E86107F2052500FFA8BD = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = DVDPreferencePane.h;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A415E86207F2052500FFA8BD = {
+			fileEncoding = 4;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = DVDPreferencePane.m;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A415E86407F2052500FFA8BD = {
+			fileRef = A415E86207F2052500FFA8BD;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A415E86507F2057F00FFA8BD = {
+			fileRef = A407D3BF07EC8523006F11D2;
 			isa = PBXBuildFile;
 			settings = {
 			};
@@ -1756,6 +1975,7 @@
 		};
 		A4B2976607EC80DC00AEB13F = {
 			children = (
+				A415E81507F2033E00FFA8BD,
 				A407D3EF07EC8C87006F11D2,
 				A4B2976707EC811300AEB13F,
 				A4B2976807EC811300AEB13F,
