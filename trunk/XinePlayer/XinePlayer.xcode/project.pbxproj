@@ -128,6 +128,7 @@
 		};
 		2A37F4ABFDCFA73011CA2CEA = {
 			children = (
+				A466E99507E3485F000B6585,
 				32DBCF750370BD2300C91783,
 				2A37F4B0FDCFA73011CA2CEA,
 				A4948CCD07C160C00094CBF9,
@@ -1091,7 +1092,6 @@
 		};
 		A466E7CE07E34623000B6585 = {
 			children = (
-				A466E99507E3485F000B6585,
 				A42D7B7607E39AC200955C78,
 				A42D7B7707E39AC200955C78,
 				A466E7CF07E34684000B6585,
@@ -1242,10 +1242,9 @@
 			fileEncoding = 30;
 			isa = PBXFileReference;
 			lastKnownFileType = text.script.sh;
-			name = FixInstallName.sh;
-			path = XinePlayer/FixInstallName.sh;
-			refType = 2;
-			sourceTree = SOURCE_ROOT;
+			path = FixInstallName.sh;
+			refType = 4;
+			sourceTree = "<group>";
 		};
 		A466E99707E34866000B6585 = {
 			buildActionMask = 2147483647;
