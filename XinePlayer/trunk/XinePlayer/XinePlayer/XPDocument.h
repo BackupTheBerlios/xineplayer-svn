@@ -23,7 +23,6 @@
 @interface XPDocument : NSDocument
 {
 	IBOutlet XineVideoView *videoView;
-	IBOutlet NSSlider *volumeSlider;
 	IBOutlet NSButton *muteButton;
 	IBOutlet NSButton *playPauseButton;
 	IBOutlet NSButton *nextButton;

@@ -375,7 +375,9 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	_isPlaying = NO;
 	
 	[self willChangeValueForKey:@"streamIsValid"];
-	
+	[self willChangeValueForKey:@"hasAudio"];
+	[self willChangeValueForKey:@"volume"];
+
 	/* Actually stop the stream and wait until it has taken effect. */
 	if([_stream isPlaying]) {
 		[_stream stop: YES];
@@ -404,6 +406,8 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	[[self documentWindow] makeFirstResponder: [[self documentWindow] initialFirstResponder]];
 
 	[self didChangeValueForKey:@"streamIsValid"];
+	[self didChangeValueForKey:@"hasAudio"];
+	[self didChangeValueForKey:@"volume"];
 	
 	return _isPlaying;
 }
@@ -748,6 +752,30 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	[_stream playFromPosition: [value intValue]];
 }
 
+- (id) hasAudio
+{
+	if(![[self streamIsValid] boolValue])
+		return [NSNumber numberWithBool:NO];
+	
+	return [NSNumber numberWithBool: [_stream getStreamInformationForKey:XINE_STREAM_INFO_HAS_AUDIO]];
+}
+
+- (id) volume
+{
+	if(!_stream)
+		return nil;
+	
+	return [NSNumber numberWithInt:[_stream valueOfParameter:XINE_PARAM_AUDIO_VOLUME]];
+}
+
+- (void) setVolume: (id) value
+{
+	if(!_stream)
+		return;
+	
+	[_stream setValue:[value intValue] ofParameter:XINE_PARAM_AUDIO_VOLUME];
+}
+
 @end
 
 @implementation XPDocument (TableViewDataSource)
@@ -903,13 +931,9 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	BOOL isMuted = [_stream valueOfParameter:XINE_PARAM_AUDIO_MUTE];
 	
 	[muteButton setState: isMuted ? NSOnState : NSOffState];
-	
-	[volumeSlider setEnabled: ([_stream getStreamInformationForKey: XINE_STREAM_INFO_HAS_AUDIO] && !isMuted)];
-	
+		
 	//NSLog(@"Has audio: %i", [_stream getStreamInformationForKey: XINE_STREAM_INFO_HAS_AUDIO]);
 	//NSLog(@"Slider: %i", [volumeSlider intValue]);
-	
-	[_stream setValue: [volumeSlider intValue] ofParameter:XINE_PARAM_AUDIO_VOLUME];
 		
 	if([_stream isPlaying] && ([_stream speed] == XineNormalSpeed))
 	{

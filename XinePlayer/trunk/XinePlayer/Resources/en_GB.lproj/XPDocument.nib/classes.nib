@@ -9,7 +9,6 @@
                 normalSize = id; 
                 openNextMRL = id; 
                 openPreviousMRL = id; 
-                timeChanged = id; 
                 toggleDeinterlace = id; 
                 toggleFullScreen = id; 
                 toggleMute = id; 
@@ -33,7 +32,6 @@
                 streamInfoDrawer = NSDrawer; 
                 streamInfoTable = NSTableView; 
                 videoView = XineVideoView; 
-                volumeSlider = NSSlider; 
             }; 
             SUPERCLASS = NSDocument; 
         }, 
