@@ -1,0 +1,24 @@
+22 Mar 2004 Rich Wareham <richwareham@users.sourceforge.net>
+	
+	* 0.2 release.
+	* 'Open URL...' menu option.
+	* Support for playlist-like files (e.g. RealAudio streams from websites).
+	* Any errors opening a stream are reported.
+	* Reports progress of network operations.
+	* Uses less memory and CPU (hopefully) on lower-spec machines.
+	* Ogg vorbis support.
+	* If XinePlayer cannot open a movie it will tell you.
+	* Can automatically resize window on movie size change.
+	* Display a little notification in the video window when state changes (e.g. deinterlace is toggled, etc).
+	* Attempt to open any type of file passed (i.e. no longer
+	grey-out files in Open dialogue).
+	* Deinterlacing is now done via xine's tvtime deinterlace plugin.
+	* Implement preferences dialogue.
+	* Audio visualisation support.
+	* Support post-processing plugins.
+	* Only use one xine engine instance per app.
+	* Fix frame corruption bug whereby colours appeared 'streaky' with certain movies.
+
+17 Mar 2004 Rich Wareham <richwareham@users.sourceforge.net>
+	
+	* Initial public release (0.1).
