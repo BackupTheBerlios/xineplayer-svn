@@ -251,8 +251,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>28</integer>
-									<integer>19</integer>
+									<integer>15</integer>
+									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -290,7 +290,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>XPDocument.m</string>
+								<string>XineVideoView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -298,9 +298,9 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>XPDocument.m</string>
+										<string>XineVideoView.m</string>
 										<key>bookmark</key>
-										<string>A457E84007EFACAE0026933F</string>
+										<string>A457E84907EFB9150026933F</string>
 										<key>history</key>
 										<array>
 											<string>A4D7CEA807EAD2820074C189</string>
@@ -320,11 +320,11 @@
 											<string>A457E76D07EF962F0026933F</string>
 											<string>A457E77907EF99D90026933F</string>
 											<string>A457E78B07EF9AFE0026933F</string>
-											<string>A457E78F07EF9B670026933F</string>
 											<string>A457E7C907EFA0800026933F</string>
 											<string>A457E82107EFAA2E0026933F</string>
 											<string>A457E83007EFAAA10026933F</string>
-											<string>A457E83F07EFACAE0026933F</string>
+											<string>A457E84407EFB2280026933F</string>
+											<string>A457E84507EFB2280026933F</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -403,6 +403,7 @@
 											<string>A457E82C07EFAA2E0026933F</string>
 											<string>A457E82D07EFAA2E0026933F</string>
 											<string>A457E83207EFAAA10026933F</string>
+											<string>A457E84607EFB2280026933F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -494,8 +495,8 @@
 		<string>A457E7D607EFA1DF0026933F</string>
 		<string>A4C2A8B907BE5D7500628752</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>1C0AD2B3069F1EA900FABCE6</string>
 		<string>/Users/rjw57/Developer/XinePlayer/XinePlayer.xcode</string>
+		<string>1C0AD2B3069F1EA900FABCE6</string>
 	</array>
 	<key>WindowString</key>
 	<string>341 391 887 611 0 0 1280 1002 </string>
@@ -527,7 +528,7 @@
 										<key>PBXProjectModuleLabel</key>
 										<string>XineStream.m</string>
 										<key>bookmark</key>
-										<string>A457E84107EFACAE0026933F</string>
+										<string>A457E84A07EFB9150026933F</string>
 										<key>history</key>
 										<array>
 											<string>A4A8AE8707EE113100A44F81</string>

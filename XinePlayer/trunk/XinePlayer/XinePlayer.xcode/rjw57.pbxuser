@@ -587,6 +587,15 @@
 			A457E83F07EFACAE0026933F = A457E83F07EFACAE0026933F;
 			A457E84007EFACAE0026933F = A457E84007EFACAE0026933F;
 			A457E84107EFACAE0026933F = A457E84107EFACAE0026933F;
+			A457E84207EFB17F0026933F = A457E84207EFB17F0026933F;
+			A457E84307EFB17F0026933F = A457E84307EFB17F0026933F;
+			A457E84407EFB2280026933F = A457E84407EFB2280026933F;
+			A457E84507EFB2280026933F = A457E84507EFB2280026933F;
+			A457E84607EFB2280026933F = A457E84607EFB2280026933F;
+			A457E84707EFB2280026933F = A457E84707EFB2280026933F;
+			A457E84807EFB2280026933F = A457E84807EFB2280026933F;
+			A457E84907EFB9150026933F = A457E84907EFB9150026933F;
+			A457E84A07EFB9150026933F = A457E84A07EFB9150026933F;
 			A4A8ADA307EDFD1E00A44F81 = A4A8ADA307EDFD1E00A44F81;
 			A4A8ADA407EDFD1E00A44F81 = A4A8ADA407EDFD1E00A44F81;
 			A4A8ADBD07EDFFDF00A44F81 = A4A8ADBD07EDFFDF00A44F81;
@@ -917,7 +926,7 @@
 		isa = PBXTextBookmark;
 		name = "XineVideoView.m: 603";
 		rLen = 0;
-		rLoc = 16280;
+		rLoc = 16241;
 		rType = 0;
 		vrLen = 520;
 		vrLoc = 15666;
@@ -3481,6 +3490,96 @@
 		vrLen = 287;
 		vrLoc = 6037;
 	};
+	A457E84207EFB17F0026933F = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 261";
+		rLen = 0;
+		rLoc = 10294;
+		rType = 0;
+		vrLen = 1313;
+		vrLoc = 9243;
+	};
+	A457E84307EFB17F0026933F = {
+		fRef = A466E7D607E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineStream.m: 248";
+		rLen = 0;
+		rLoc = 6137;
+		rType = 0;
+		vrLen = 287;
+		vrLoc = 6037;
+	};
+	A457E84407EFB2280026933F = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 261";
+		rLen = 0;
+		rLoc = 10294;
+		rType = 0;
+		vrLen = 1313;
+		vrLoc = 9243;
+	};
+	A457E84507EFB2280026933F = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 45";
+		rLen = 0;
+		rLoc = 1454;
+		rType = 0;
+		vrLen = 771;
+		vrLoc = 1273;
+	};
+	A457E84607EFB2280026933F = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 261";
+		rLen = 0;
+		rLoc = 10294;
+		rType = 0;
+		vrLen = 1313;
+		vrLoc = 9243;
+	};
+	A457E84707EFB2280026933F = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 214";
+		rLen = 0;
+		rLoc = 6593;
+		rType = 0;
+		vrLen = 969;
+		vrLoc = 5731;
+	};
+	A457E84807EFB2280026933F = {
+		fRef = A466E7D607E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineStream.m: 248";
+		rLen = 0;
+		rLoc = 6137;
+		rType = 0;
+		vrLen = 287;
+		vrLoc = 6037;
+	};
+	A457E84907EFB9150026933F = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 214";
+		rLen = 0;
+		rLoc = 6593;
+		rType = 0;
+		vrLen = 969;
+		vrLoc = 5731;
+	};
+	A457E84A07EFB9150026933F = {
+		fRef = A466E7D607E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineStream.m: 248";
+		rLen = 0;
+		rLoc = 6137;
+		rType = 0;
+		vrLen = 287;
+		vrLoc = 6037;
+	};
 	A466E7D107E34684000B6585 = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {558, 811}}";
@@ -3528,8 +3627,8 @@
 	A466E7DA07E34684000B6585 = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {558, 9687}}";
-			sepNavSelRange = "{1454, 0}";
-			sepNavVisRect = "{{0, 535}, {558, 380}}";
+			sepNavSelRange = "{6593, 0}";
+			sepNavVisRect = "{{0, 2832}, {558, 380}}";
 			sepNavWindowFrame = "{{61, 397}, {750, 558}}";
 		};
 	};
@@ -3710,7 +3809,7 @@
 		isa = PBXTextBookmark;
 		name = "XineVideoView.m: 536";
 		rLen = 0;
-		rLoc = 14749;
+		rLoc = 14710;
 		rType = 0;
 		vrLen = 533;
 		vrLoc = 13798;
@@ -3720,7 +3819,7 @@
 		isa = PBXTextBookmark;
 		name = "XineVideoView.m: 536";
 		rLen = 0;
-		rLoc = 14749;
+		rLoc = 14710;
 		rType = 0;
 		vrLen = 533;
 		vrLoc = 13798;
@@ -3891,7 +3990,7 @@
 		isa = PBXTextBookmark;
 		name = "XineVideoView.m: 627";
 		rLen = 0;
-		rLoc = 16698;
+		rLoc = 16659;
 		rType = 0;
 		vrLen = 560;
 		vrLoc = 14406;
@@ -3931,7 +4030,7 @@
 		isa = PBXTextBookmark;
 		name = "XineVideoView.m: 558";
 		rLen = 0;
-		rLoc = 14895;
+		rLoc = 14856;
 		rType = 0;
 		vrLen = 694;
 		vrLoc = 14551;
@@ -4124,7 +4223,7 @@
 		isa = PBXTextBookmark;
 		name = "XineVideoView.m: resizeVideoView:";
 		rLen = 0;
-		rLoc = 15194;
+		rLoc = 15155;
 		rType = 0;
 		vrLen = 637;
 		vrLoc = 9242;
@@ -4184,7 +4283,7 @@
 		isa = PBXTextBookmark;
 		name = "XineVideoView.m: 603";
 		rLen = 0;
-		rLoc = 16280;
+		rLoc = 16241;
 		rType = 0;
 		vrLen = 523;
 		vrLoc = 15663;
@@ -4204,7 +4303,7 @@
 		isa = PBXTextBookmark;
 		name = "XineVideoView.m: 603";
 		rLen = 0;
-		rLoc = 16280;
+		rLoc = 16241;
 		rType = 0;
 		vrLen = 523;
 		vrLoc = 15663;
