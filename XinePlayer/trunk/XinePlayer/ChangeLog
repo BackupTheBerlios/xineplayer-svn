@@ -1,6 +1,10 @@
 21 Mar 2004; Rich Wareham <richwareham@users.sourceforge.net> :
 	
 	* 0.2 release.
+        * Uses less memory and CPU (hopefully) on lower-spec 
+          machines.
+        * Ogg vorbis support.
+        * If XinePlayer cannot open a movie it will tell you.
         * Can automatically resize window on movie size change.
         * Display a little notification in the video window
           when state changes (e.g. deinterlace is toggled, etc).
