@@ -261,7 +261,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 214}, {259, 551}}</string>
+							<string>{{0, 340}, {259, 551}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -304,7 +304,7 @@
 										<key>PBXProjectModuleLabel</key>
 										<string>XPController.m</string>
 										<key>bookmark</key>
-										<string>A415E95507F2154C00FFA8BD</string>
+										<string>A415E97007F2191700FFA8BD</string>
 										<key>history</key>
 										<array>
 											<string>A4D7CEA807EAD2820074C189</string>
@@ -346,8 +346,9 @@
 											<string>A415E93C07F2148D00FFA8BD</string>
 											<string>A415E93D07F2148D00FFA8BD</string>
 											<string>A415E93F07F2148D00FFA8BD</string>
-											<string>A415E94E07F214FB00FFA8BD</string>
-											<string>A415E94F07F214FB00FFA8BD</string>
+											<string>A415E95E07F2170B00FFA8BD</string>
+											<string>A415E96607F2188800FFA8BD</string>
+											<string>A415E96707F2188800FFA8BD</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -430,6 +431,10 @@
 											<string>A415E94507F2148D00FFA8BD</string>
 											<string>A415E94607F2148D00FFA8BD</string>
 											<string>A415E95007F214FB00FFA8BD</string>
+											<string>A415E96007F2170B00FFA8BD</string>
+											<string>A415E96107F2170B00FFA8BD</string>
+											<string>A415E96807F2188800FFA8BD</string>
+											<string>A415E96907F2188800FFA8BD</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -553,7 +558,7 @@
 										<key>PBXProjectModuleLabel</key>
 										<string>XPController.m</string>
 										<key>bookmark</key>
-										<string>A415E95607F2154C00FFA8BD</string>
+										<string>A415E97107F2191700FFA8BD</string>
 										<key>history</key>
 										<array>
 											<string>A415E8C407F20D8500FFA8BD</string>

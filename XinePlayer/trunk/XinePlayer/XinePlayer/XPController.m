@@ -87,12 +87,12 @@ static XPController *_sharedController = nil;
 		[errorAlert beginSheetModalForWindow:_openURLDialogue modalDelegate:nil didEndSelector:nil contextInfo:nil];
 	} else {
 		[_openURLDialogue orderOut:nil];
-		
-		NSDocument *newDocument = [[[XPDocument alloc] initWithContentsOfURL:url ofType:@"Movie"] autorelease];
+		NSDocument *newDocument = [[NSDocumentController sharedDocumentController] makeDocumentWithContentsOfURL:url ofType:@"Movie"];
 		
 		if(newDocument)
 		{
 			[[NSDocumentController sharedDocumentController] addDocument: newDocument];
+			[[NSDocumentController sharedDocumentController] noteNewRecentDocumentURL:url];
 			[newDocument makeWindowControllers];
 			[newDocument showWindows];
 		} else {

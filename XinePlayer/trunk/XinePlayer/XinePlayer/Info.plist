@@ -10,12 +10,19 @@
 			<key>CFBundleTypeExtensions</key>
 			<array>
 				<string>mov</string>
+				<string>mpv</string>
+				<string>mpa</string>
+				<string>m2v</string>
+				<string>m2a</string>
 				<string>mpg</string>
+				<string>ogm</string>
 				<string>mpeg</string>
 				<string>avi</string>
 				<string>mp3</string>
 				<string>ogg</string>
 				<string>wmv</string>
+				<string>divx</string>
+				<string>xvid</string>
 				<string>*</string>
 			</array>
 			<key>CFBundleTypeName</key>
