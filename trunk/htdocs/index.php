@@ -54,8 +54,9 @@
     <ul>
     <li>Support for many popular formats including MPEG 1/2, QuickTime (MOV),
     DivX (AVI) and some Windows Media formats (WMV).</li>
-    <li>DVD playback (when combined with the 
-        <a href="http://videolan.org/">libdvdcss</a> decoding library).</li>
+    <li>DVD playback (using the VideoLan
+        <a href="http://videolan.org/libdvdcss">libdvdcss</a> 
+        decoding library).</li>
     <li>DVD menu support for advanced navigation features.</li>
     <li>Playlists.</li>
     <li>Fullscreen playback.</li>

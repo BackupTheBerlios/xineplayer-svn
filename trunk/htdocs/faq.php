@@ -13,10 +13,9 @@
        maintained separately. It is a testament to the good design of the
        xine engine that such frontends may be developed like this.</p>
     <h2>Can I play DVDs with XinePlayer?</h2>
-    <p>Yes but by default XinePlayer can only play non-copy protected
-    DVDs due to licensing constraints and bully-boy tactics by the
-    DVD Copyright Control Agency. A plugin is available separately which
-    will allow you to play copy-protected DVDs.</p>
+    <p>Yes. Xineplayer uses the VideoLan
+   <a href="http://videolan.org/libdvdcss/">libdvdcss</a> library to access
+  all DVDs.</p>
     <h2>Does XinePlayer support DVD menus?</h2>
     <p>XinePlayer uses the <a href="http://dvd.sf.net/">libdvdnav</a> library
     to provide full support for DVD menus and advanced features such as
