@@ -24,3 +24,8 @@ install_name_tool -change $NAME @executable_path/../Resources/$NEWNAME $EXECUTAB
 done
 
 #otool -L $EXECUTABLE_NAME
+
+# Do we have libdvdcss?
+if [ -f /usr/lib/libdvdcss.2.dylib ]; then
+  cp /usr/lib/libdvdcss.2.dylib $BUILD_ROOT/$EXECUTABLE_FOLDER_PATH/../PlugIns/XinePlugins/libdvdcss.so.2
+fi
