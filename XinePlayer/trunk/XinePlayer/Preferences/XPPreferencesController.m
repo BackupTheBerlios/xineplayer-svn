@@ -24,6 +24,7 @@
 
 #define XP_PREF_AUDIO_VISUALISATION @"AudioVisualisation"
 #define XP_PREF_DEINTERLACE_METHOD @"DeinterlaceMethod"
+#define XP_PREF_RESIZE_ON_FRAME_CHANGE @"ResizeWindowOnFrameChange"
 
 static XPPreferencesController *_defaultController = nil;
 
@@ -66,6 +67,21 @@ static XPPreferencesController *_defaultController = nil;
 		return;
 	
 	[[NSUserDefaults standardUserDefaults] setObject:value forKey: XP_PREF_DEINTERLACE_METHOD];
+	[[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (BOOL) resizeWindowOnFrameChange
+{
+	id retVal = [[NSUserDefaults standardUserDefaults] objectForKey: XP_PREF_RESIZE_ON_FRAME_CHANGE];
+	if(retVal)
+		return [retVal boolValue];
+	
+	return NO;
+}
+
+- (void) setResizeWindowOnFrameChange: (BOOL) value
+{
+	[[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool: value] forKey: XP_PREF_RESIZE_ON_FRAME_CHANGE];
 	[[NSUserDefaults standardUserDefaults] synchronize];
 }
 

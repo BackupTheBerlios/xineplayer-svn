@@ -45,6 +45,8 @@
 - (NSArray*) deinterlaceAlgorithms;
 - (NSString*) deinterlaceAlgorithm;
 - (void) setDeinterlaceAlgorithm: (id) value;
+- (BOOL) resizeWindowOnFrameChange;
+- (void) setResizeWindowOnFrameChange: (BOOL) value;
 
 @end
 

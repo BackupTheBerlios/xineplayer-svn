@@ -23,6 +23,8 @@
 
 #define CURSOR_DELAY 5
 
+NSString *XineVideoViewFrameSizeDidChangeNotification = @"XineVideoViewFrameSizeDidChangeNotification";
+
 @interface XineVideoView (Private)
 - (BOOL) ensureDisplay;
 @end
@@ -141,7 +143,7 @@
     if (self) {
 		_associatedStream = nil;
 		_aspectRatio = 4.0 / 3.0;
-		_videoSize = NSMakeSize(320,240);
+		_videoSize = NSMakeSize(0,0);
 		_lastFrame = NULL;
 		_lastFormat = XINE_IMGFMT_YV12;
 		_yuvDisplay = NULL;
@@ -485,6 +487,11 @@ void _event_listener_cb(void *user_data, const xine_event_t *event) {
 	
 	if((format != _lastFormat) || (ratio != _aspectRatio) || (!NSEqualSizes(_videoSize, frameSize)))
 	{
+		if(!NSEqualSizes(_videoSize, frameSize)) 
+		{
+			[[NSNotificationCenter defaultCenter] postNotificationName:XineVideoViewFrameSizeDidChangeNotification object:self];
+		}
+		
 		_aspectRatio = ratio;
 		_videoSize = frameSize;
 		_lastFormat = format;

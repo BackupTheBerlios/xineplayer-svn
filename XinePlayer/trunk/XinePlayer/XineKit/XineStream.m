@@ -19,7 +19,6 @@
 #import <XineKit.h>
 #import <xine.h>
 
-NSString *XineStreamFrameFormatDidChangeNotification = @"XineStreamFrameFormatDidChangeNotification";
 NSString *XineStreamPlaybackDidFinishNotification = @"XineStreamPlaybackDidFinishNotification";
 NSString *XineStreamChannelsChangedNotification = @"XineStreamChannelsChangedNotification";
 
@@ -212,10 +211,10 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 		return;
 	
 	xine_event_t *event = _currentEvent;
-	// NSLog(@"Event: %i", event->type);
 	
 	switch(event->type) 
 	{
+		/*
 		case XINE_EVENT_FRAME_FORMAT_CHANGE:
 		{
 			xine_format_change_data_t *format_data = event->data;
@@ -223,6 +222,7 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 			[[NSNotificationCenter defaultCenter] postNotificationName:XineStreamFrameFormatDidChangeNotification object:self];
 		}
 			break;
+		*/
 		case XINE_EVENT_UI_PLAYBACK_FINISHED:
 		{
 			[[NSNotificationCenter defaultCenter] postNotificationName:XineStreamPlaybackDidFinishNotification object:self];		

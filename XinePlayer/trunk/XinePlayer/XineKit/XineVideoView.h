@@ -18,6 +18,8 @@
 
 #import <Cocoa/Cocoa.h>
 
+extern NSString *XineVideoViewFrameSizeDidChangeNotification;
+
 @interface XineVideoView : NSView {
 	void *_associatedStream;
 	NSSize _videoSize;

@@ -25,6 +25,16 @@
 
 @implementation GeneralPreferencePane
 
+- (id) resizeWindowOnFrameChange
+{
+	return [NSNumber numberWithBool:[[XPPreferencesController defaultController] resizeWindowOnFrameChange]];
+}
+
+- (void) setResizeWindowOnFrameChange: (id) value
+{
+	[[XPPreferencesController defaultController] setResizeWindowOnFrameChange: [value boolValue]];
+}
+
 - (NSArray*) deinterlaceAlgorithms
 {
 	return [[XPPreferencesController defaultController] deinterlaceAlgorithms];

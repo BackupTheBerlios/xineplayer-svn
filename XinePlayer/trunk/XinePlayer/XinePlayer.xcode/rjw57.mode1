@@ -243,11 +243,12 @@
 								<string>2A37F4AAFDCFA73011CA2CEA</string>
 								<string>A4B2976607EC80DC00AEB13F</string>
 								<string>A407D3EF07EC8C87006F11D2</string>
+								<string>A409388207ED9FCC00837FB7</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>15</integer>
+									<integer>16</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -269,7 +270,7 @@
 							<real>237</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>53 391 887 611 0 0 1280 1002 </string>
+						<string>293 391 887 611 0 0 1280 1002 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -295,33 +296,36 @@
 										<key>PBXProjectModuleLabel</key>
 										<string>XPDocument.m</string>
 										<key>bookmark</key>
-										<string>A409394507EDDB1D00837FB7</string>
+										<string>A409398107EDE0B000837FB7</string>
 										<key>history</key>
 										<array>
 											<string>A4D7CEA807EAD2820074C189</string>
 											<string>A4D7D4F907EBD1F90074C189</string>
 											<string>A407D43D07EC8F6F006F11D2</string>
 											<string>A407D5BF07ECACF2006F11D2</string>
-											<string>A40933DD07ECFAD700837FB7</string>
 											<string>A409340207ED001100837FB7</string>
-											<string>A409342D07ED016C00837FB7</string>
-											<string>A409349E07ED0A2300837FB7</string>
 											<string>A409349F07ED0A2300837FB7</string>
 											<string>A40934C307ED0E6900837FB7</string>
 											<string>A409389107EDA00B00837FB7</string>
 											<string>A40938B207EDA0E200837FB7</string>
 											<string>A40938C707EDCB7500837FB7</string>
-											<string>A40938DA07EDCC6400837FB7</string>
 											<string>A40938EF07EDCE0B00837FB7</string>
 											<string>A40938F007EDCE0B00837FB7</string>
 											<string>A409390307EDCED000837FB7</string>
-											<string>A409390407EDCED000837FB7</string>
-											<string>A409390507EDCED000837FB7</string>
-											<string>A409391207EDD4E400837FB7</string>
 											<string>A409392407EDD76C00837FB7</string>
 											<string>A409392507EDD76C00837FB7</string>
 											<string>A409393607EDD7F800837FB7</string>
-											<string>A409393707EDD7F800837FB7</string>
+											<string>A409394D07EDDDB400837FB7</string>
+											<string>A409394E07EDDDB400837FB7</string>
+											<string>A409394F07EDDDB400837FB7</string>
+											<string>A409395007EDDDB400837FB7</string>
+											<string>A409395107EDDDB400837FB7</string>
+											<string>A409395407EDDDB400837FB7</string>
+											<string>A409395507EDDDB400837FB7</string>
+											<string>A409397007EDDE8A00837FB7</string>
+											<string>A409397107EDDE8A00837FB7</string>
+											<string>A409397A07EDDED700837FB7</string>
+											<string>A409397B07EDDED700837FB7</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -379,6 +383,30 @@
 											<string>A409392807EDD76C00837FB7</string>
 											<string>A409392907EDD76C00837FB7</string>
 											<string>A409393807EDD7F800837FB7</string>
+											<string>A409395607EDDDB400837FB7</string>
+											<string>A409395707EDDDB400837FB7</string>
+											<string>A409395807EDDDB400837FB7</string>
+											<string>A409395907EDDDB400837FB7</string>
+											<string>A409395A07EDDDB400837FB7</string>
+											<string>A409395B07EDDDB400837FB7</string>
+											<string>A409395C07EDDDB400837FB7</string>
+											<string>A409395D07EDDDB400837FB7</string>
+											<string>A409395E07EDDDB400837FB7</string>
+											<string>A409395F07EDDDB400837FB7</string>
+											<string>A409396007EDDDB400837FB7</string>
+											<string>A409396107EDDDB400837FB7</string>
+											<string>A409396207EDDDB400837FB7</string>
+											<string>A409396307EDDDB400837FB7</string>
+											<string>A409396407EDDDB400837FB7</string>
+											<string>A409396507EDDDB400837FB7</string>
+											<string>A409396607EDDDB400837FB7</string>
+											<string>A409396707EDDDB400837FB7</string>
+											<string>A409396807EDDDB400837FB7</string>
+											<string>A409396907EDDDB400837FB7</string>
+											<string>A409397407EDDE8A00837FB7</string>
+											<string>A409397507EDDE8A00837FB7</string>
+											<string>A409397607EDDE8A00837FB7</string>
+											<string>A409397C07EDDED700837FB7</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -392,7 +420,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {605, 396}}</string>
 								<key>RubberWindowFrame</key>
-								<string>53 391 887 611 0 0 1280 1002 </string>
+								<string>293 391 887 611 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -412,7 +440,7 @@
 								<key>Frame</key>
 								<string>{{0, 403}, {605, 166}}</string>
 								<key>RubberWindowFrame</key>
-								<string>53 391 887 611 0 0 1280 1002 </string>
+								<string>293 391 887 611 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -470,11 +498,11 @@
 		<string>A409393207EDD7B200837FB7</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>A4C2A8B907BE5D7500628752</string>
-		<string>/Users/rjw57/Developer/XinePlayer/XinePlayer.xcode</string>
 		<string>1C0AD2B3069F1EA900FABCE6</string>
+		<string>/Users/rjw57/Developer/XinePlayer/XinePlayer.xcode</string>
 	</array>
 	<key>WindowString</key>
-	<string>53 391 887 611 0 0 1280 1002 </string>
+	<string>293 391 887 611 0 0 1280 1002 </string>
 	<key>WindowTools</key>
 	<array>
 		<dict>
@@ -503,12 +531,12 @@
 										<key>PBXProjectModuleLabel</key>
 										<string>XPDocument.m</string>
 										<key>bookmark</key>
-										<string>A409394607EDDB1D00837FB7</string>
+										<string>A409398207EDE0B000837FB7</string>
 										<key>history</key>
 										<array>
 											<string>A40938FC07EDCE0B00837FB7</string>
 											<string>A409391607EDD4E400837FB7</string>
-											<string>A409392F07EDD7B200837FB7</string>
+											<string>A409397807EDDE8A00837FB7</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -536,8 +564,6 @@
 							<string>278pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

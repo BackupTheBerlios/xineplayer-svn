@@ -34,8 +34,6 @@
 	IBOutlet NSTableView *streamInfoTable;
 	IBOutlet NSTableView *playlistTable;
 	
-	BOOL _resizeWindowOnFormatChange;
-	
 	NSMutableArray *_playlist;
 	int _playlistIndex;
 	BOOL _isPlaying;

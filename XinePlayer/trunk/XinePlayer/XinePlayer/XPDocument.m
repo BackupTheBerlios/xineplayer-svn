@@ -38,7 +38,6 @@
 		_stream = nil;
 		_videoPort = nil;
 		_audioPort = nil;
-		_resizeWindowOnFormatChange = NO;
 		_playlist = [[NSMutableArray array] retain];
 		_playlistIndex = -1; // Not played anything yet.
 		_isSynchingGUI = NO;
@@ -138,6 +137,7 @@
 		[_audioVisualisationFilter release];
 		_audioVisualisationFilter = nil;
 	}
+#endif
 	
 	if(!_audioVisualisationFilter && [[prefController audioVisualisation] isNotEqualTo: @"none"]) 
 	{
@@ -153,7 +153,6 @@
 	} else {
 		[_stream wireAudioToPort: _audioPort];
 	}
-#endif
 }
 
 - (void)windowControllerDidLoadNib:(NSWindowController *) aController
@@ -169,6 +168,7 @@
 	_videoPort = [[_engine createVideoPortFromVideoView: videoView] retain];
 	_audioPort = [[_engine createAudioPort] retain];
 	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(frameChanged:) name:XineVideoViewFrameSizeDidChangeNotification object:videoView];
 	_stream = [[_engine createStreamWithAudioPort:_audioPort videoPort:_videoPort] retain];
 	 	
 	_deinterlaceFilter = [XinePostProcessor postProcessorNamed: @"tvtime" fromEngine: _engine inputs:0 audioPorts: [NSArray arrayWithObject: _audioPort] videoPorts: [NSArray arrayWithObject: _videoPort]];
@@ -180,7 +180,6 @@
 	
 	[[self documentWindow] makeFirstResponder: videoView];
 	
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(formatChanged:) name:XineStreamFrameFormatDidChangeNotification object:_stream];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbackFinished:) name:XineStreamPlaybackDidFinishNotification object:_stream];
 	
 	_guiTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(synchroniseGUIAndStream:) userInfo:nil repeats:YES];
@@ -192,6 +191,15 @@
 	}
 	
 	[self performSelectorOnMainThread:@selector(windowsShown:) withObject:nil waitUntilDone:NO];
+}
+
+- (void) frameChanged: (NSNotification*) notification
+{
+	/* NSLog(@"Frame change!"); */
+	if([[XPPreferencesController defaultController] resizeWindowOnFrameChange] && ![videoView isFullScreen])
+	{
+		[self performSelectorOnMainThread:@selector(normalSize:) withObject:nil waitUntilDone:NO];
+	}
 }
 
 - (void) windowsShown: (void*) data
@@ -210,13 +218,6 @@
 	[self openNextMRL: self];
 }
 
-- (void) formatChanged: (NSNotification*) notification
-{
-	if(_resizeWindowOnFormatChange && ![videoView isFullScreen])
-	{
-		[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(normalSize:) userInfo:nil repeats:NO];
-	}
-}
 - (BOOL)validateMenuItem: (NSMenuItem*) item
 {
 	NSString *itemSelector = NSStringFromSelector([item action]);

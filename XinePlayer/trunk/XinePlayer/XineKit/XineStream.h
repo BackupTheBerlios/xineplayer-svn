@@ -22,7 +22,6 @@
 @class XineAudioPort;
 @class XineVideoPort;
 
-extern NSString *XineStreamFrameFormatDidChangeNotification;
 extern NSString *XineStreamPlaybackDidFinishNotification;
 extern NSString *XineStreamChannelsChangedNotification;
 
