@@ -1,0 +1,41 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = MyDocument; LANGUAGE = ObjC; SUPERCLASS = NSDocument; }, 
+        {
+            ACTIONS = {
+                doubleSize = id; 
+                halfSize = id; 
+                normalSize = id; 
+                openNextMRL = id; 
+                openPreviousMRL = id; 
+                timeChanged = id; 
+                toggleFullScreen = id; 
+                toggleMute = id; 
+                togglePlayAndPause = id; 
+                togglePlaylist = id; 
+                toggleStreamInfo = id; 
+                volumeChanged = id; 
+            }; 
+            CLASS = XPDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                muteButton = NSButton; 
+                nextButton = NSButton; 
+                playPauseButton = NSButton; 
+                playlistDrawer = NSDrawer; 
+                playlistTable = NSTableView; 
+                previousButton = NSButton; 
+                streamInfoDrawer = NSDrawer; 
+                streamInfoTable = NSTableView; 
+                timeSlider = NSSlider; 
+                videoView = XineVideoView; 
+                volumeSlider = NSSlider; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {CLASS = XPDocumentWindow; LANGUAGE = ObjC; SUPERCLASS = NSWindow; }, 
+        {CLASS = XineVideoView; LANGUAGE = ObjC; SUPERCLASS = NSView; }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,46 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                doubleSize = id; 
+                downArrowPressed = id; 
+                gotoDVDMenu = id; 
+                gotoDVDTitleMenu = id; 
+                halfSize = id; 
+                leftArrowPressed = id; 
+                normalSize = id; 
+                rightArrowPressed = id; 
+                selectButtonPressed = id; 
+                toggleDVDControls = id; 
+                toggleDeinterlace = id; 
+                toggleFullScreen = id; 
+                togglePlaylist = id; 
+                toggleStreamInfo = id; 
+                upArrowPressed = id; 
+            }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {openFirstDisc = id; }; 
+            CLASS = XPController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {dvdControlsPanel = NSPanel; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {normalSize = id; }; 
+            CLASS = XPDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {videoView = XineVideoView; }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {
+            CLASS = XPDocumentController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSDocumentController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,2927 @@
+// !$*UTF8*$!
+{
+	089C1660FE840EACC02AAC07 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 352}}";
+			sepNavSelRange = "{125, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	2A37F4A9FDCFA73011CA2CEA = {
+		activeBuildStyle = 4A9504D1FFE6A4CB11CA0CBA;
+		activeExecutable = A4AA160E07BE4766000DDE36;
+		activeTarget = 8D15AC270486D014006FF6A4;
+		addToTargets = (
+		);
+		breakpoints = (
+		);
+		codeSenseManager = A4AA161107BE4770000DDE36;
+		executables = (
+			A4AA160E07BE4766000DDE36,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXBookmarksDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBookmarksDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					217.2085,
+					202.5991,
+					229.5835,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBookmarksDataSource_LocationID,
+					PBXBookmarksDataSource_NameID,
+					PBXBookmarksDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					321.7974,
+					172.5835,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					297,
+					20,
+					57,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					256,
+					59,
+					20,
+					59,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 132514947;
+			PBXPrepackagedSmartGroups_v2 = (
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					activationKey = OldTargetSmartGroup;
+					clz = PBXTargetSmartGroup;
+					description = "Displays all targets of the project.";
+					globalID = 1C37FABC04509CD000000102;
+					name = Targets;
+					preferences = {
+						image = Targets;
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXTargetSmartGroup2;
+					description = "Displays all targets of the project as well as nested build phases.";
+					globalID = 1C37FBAC04509CD000000102;
+					name = Targets;
+					preferences = {
+						image = Targets;
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXExecutablesSmartGroup;
+					description = "Displays all executables of the project.";
+					globalID = 1C37FAAC04509CD000000102;
+					name = Executables;
+					preferences = {
+						image = Executable;
+					};
+				},
+				{
+					" PBXTransientLocationAtTop " = bottom;
+					absolutePathToBundle = "";
+					clz = PBXErrorsWarningsSmartGroup;
+					description = "Displays files with errors or warnings.";
+					globalID = 1C08E77C0454961000C914BD;
+					name = "Errors and Warnings";
+					preferences = {
+						fnmatch = "";
+						image = WarningsErrors;
+						recursive = 1;
+						regex = "";
+						root = "<PROJECT>";
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXFilenameSmartGroup;
+					description = "Filters items in a given group (potentially recursively) based on matching the name with the regular expression of the filter.";
+					globalID = 1CC0EA4004350EF90044410B;
+					name = "Implementation Files";
+					preferences = {
+						canSave = 1;
+						fnmatch = "";
+						image = SmartFolder;
+						isLeaf = 0;
+						recursive = 1;
+						regex = "?*\\.[mcMC]";
+						root = "<PROJECT>";
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXFilenameSmartGroup;
+					description = "This group displays Interface Builder NIB Files.";
+					globalID = 1CC0EA4004350EF90041110B;
+					name = "NIB Files";
+					preferences = {
+						canSave = 1;
+						fnmatch = "*.nib";
+						image = SmartFolder;
+						isLeaf = 0;
+						recursive = 1;
+						regex = "";
+						root = "<PROJECT>";
+					};
+				},
+				{
+					PBXTransientLocationAtTop = no;
+					absolutePathToBundle = "";
+					clz = PBXFindSmartGroup;
+					description = "Displays Find Results.";
+					globalID = 1C37FABC05509CD000000102;
+					name = "Find Results";
+					preferences = {
+						image = spyglass;
+					};
+				},
+				{
+					PBXTransientLocationAtTop = no;
+					absolutePathToBundle = "";
+					clz = PBXBookmarksSmartGroup;
+					description = "Displays Project Bookmarks.";
+					globalID = 1C37FABC05539CD112110102;
+					name = Bookmarks;
+					preferences = {
+						image = Bookmarks;
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = XCSCMSmartGroup;
+					description = "Displays files with interesting SCM status.";
+					globalID = E2644B35053B69B200211256;
+					name = SCM;
+					preferences = {
+						image = PBXRepository;
+						isLeaf = 0;
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXSymbolsSmartGroup;
+					description = "Displays all symbols for the project.";
+					globalID = 1C37FABC04509CD000100104;
+					name = "Project Symbols";
+					preferences = {
+						image = ProjectSymbols;
+						isLeaf = 1;
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXFilenameSmartGroup;
+					description = "Filters items in a given group (potentially recursively) based on matching the name with the regular expression of the filter.";
+					globalID = PBXTemplateMarker;
+					name = "Simple Filter SmartGroup";
+					preferences = {
+						canSave = 1;
+						fnmatch = "*.nib";
+						image = SmartFolder;
+						isLeaf = 0;
+						recursive = 1;
+						regex = "";
+						root = "<PROJECT>";
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					absolutePathToBundle = "";
+					clz = PBXFilenameSmartGroup;
+					description = "Filters items in a given group (potentially recursively) based on matching the name with the regular expression of the filter.";
+					globalID = PBXTemplateMarker;
+					name = "Simple Regular Expression SmartGroup";
+					preferences = {
+						canSave = 1;
+						fnmatch = "";
+						image = SmartFolder;
+						isLeaf = 0;
+						recursive = 1;
+						regex = "?*\\.[mcMC]";
+						root = "<PROJECT>";
+					};
+				},
+				{
+					PBXTransientLocationAtTop = bottom;
+					clz = XDDesignSmartGroup;
+					description = "Displays Xdesign models";
+					globalID = 2E4A936305E6979E00701470;
+					name = Design;
+					preferences = {
+						image = Design;
+						isLeaf = 0;
+					};
+				},
+			);
+			PBXWorkspaceStateSaveDate = 132514947;
+		};
+		perUserProjectItems = {
+			A42D799E07E36D2000955C78 = A42D799E07E36D2000955C78;
+			A42D79A407E36D2000955C78 = A42D79A407E36D2000955C78;
+			A42D79B807E36EB800955C78 = A42D79B807E36EB800955C78;
+			A42D79D507E36FF200955C78 = A42D79D507E36FF200955C78;
+			A42D7A8C07E38D8000955C78 = A42D7A8C07E38D8000955C78;
+			A42D7A9D07E38DE000955C78 = A42D7A9D07E38DE000955C78;
+			A42D7A9F07E38DE000955C78 = A42D7A9F07E38DE000955C78;
+			A42D7AA007E38DE000955C78 = A42D7AA007E38DE000955C78;
+			A42D7AA307E38DE000955C78 = A42D7AA307E38DE000955C78;
+			A42D7AC507E38F5300955C78 = A42D7AC507E38F5300955C78;
+			A42D7B0B07E3921E00955C78 = A42D7B0B07E3921E00955C78;
+			A42D7B0D07E3921E00955C78 = A42D7B0D07E3921E00955C78;
+			A42D7CD507E3B17500955C78 = A42D7CD507E3B17500955C78;
+			A42D7DB907E3BD0200955C78 = A42D7DB907E3BD0200955C78;
+			A42D7EF307E3CA2D00955C78 = A42D7EF307E3CA2D00955C78;
+			A42D7EF807E3CA2D00955C78 = A42D7EF807E3CA2D00955C78;
+			A42D7FC107E3D59E00955C78 = A42D7FC107E3D59E00955C78;
+			A42D807C07E3E60F00955C78 = A42D807C07E3E60F00955C78;
+			A42FF56B07E365000038B422 = A42FF56B07E365000038B422;
+			A42FF56C07E365000038B422 = A42FF56C07E365000038B422;
+			A42FF57E07E365660038B422 = A42FF57E07E365660038B422;
+			A42FF57F07E365660038B422 = A42FF57F07E365660038B422;
+			A42FF61E07E367180038B422 = A42FF61E07E367180038B422;
+			A42FF62707E367180038B422 = A42FF62707E367180038B422;
+			A42FF63607E3679A0038B422 = A42FF63607E3679A0038B422;
+			A42FF63907E3679A0038B422 = A42FF63907E3679A0038B422;
+			A42FF64B07E3688A0038B422 = A42FF64B07E3688A0038B422;
+			A42FF7A607E36A3C0038B422 = A42FF7A607E36A3C0038B422;
+			A430A66D07C4F82400B6DE7C = A430A66D07C4F82400B6DE7C;
+			A45BFF7507BE6B0300B5FCB0 = A45BFF7507BE6B0300B5FCB0;
+			A45BFF7A07BE6B0300B5FCB0 = A45BFF7A07BE6B0300B5FCB0;
+			A466E98007E3474C000B6585 = A466E98007E3474C000B6585;
+			A466F3D107E351ED000B6585 = A466F3D107E351ED000B6585;
+			A4753EA407E5075100913253 = A4753EA407E5075100913253;
+			A4753F2407E512C800913253 = A4753F2407E512C800913253;
+			A4753F2507E512C800913253 = A4753F2507E512C800913253;
+			A4753F4D07E513E700913253 = A4753F4D07E513E700913253;
+			A475402507E5C8F700913253 = A475402507E5C8F700913253;
+			A475404807E5CAB900913253 = A475404807E5CAB900913253;
+			A475404C07E5CAB900913253 = A475404C07E5CAB900913253;
+			A475404D07E5CAB900913253 = A475404D07E5CAB900913253;
+			A475405D07E5CB4300913253 = A475405D07E5CB4300913253;
+			A475406007E5CB4300913253 = A475406007E5CB4300913253;
+			A475415B07E5CDFA00913253 = A475415B07E5CDFA00913253;
+			A475415C07E5CDFA00913253 = A475415C07E5CDFA00913253;
+			A47541C907E5F73500913253 = A47541C907E5F73500913253;
+			A489FD0707BE61B300DE41B2 = A489FD0707BE61B300DE41B2;
+			A493D48007BEFB5B00F4FC04 = A493D48007BEFB5B00F4FC04;
+			A493D48607BEFB5B00F4FC04 = A493D48607BEFB5B00F4FC04;
+			A493D48907BEFB5B00F4FC04 = A493D48907BEFB5B00F4FC04;
+			A493D49507BEFB8400F4FC04 = A493D49507BEFB8400F4FC04;
+			A493D4D607BEFEDB00F4FC04 = A493D4D607BEFEDB00F4FC04;
+			A493D4D907BEFEDB00F4FC04 = A493D4D907BEFEDB00F4FC04;
+			A493D4E007BEFEEF00F4FC04 = A493D4E007BEFEEF00F4FC04;
+			A493D4E207BEFEEF00F4FC04 = A493D4E207BEFEEF00F4FC04;
+			A493D4ED07BF003E00F4FC04 = A493D4ED07BF003E00F4FC04;
+			A493D4F007BF003E00F4FC04 = A493D4F007BF003E00F4FC04;
+			A493D6A907BF807700F4FC04 = A493D6A907BF807700F4FC04;
+			A493D75407BF886C00F4FC04 = A493D75407BF886C00F4FC04;
+			A493D87307BFBA6500F4FC04 = A493D87307BFBA6500F4FC04;
+			A4948CAA07C0FC560094CBF9 = A4948CAA07C0FC560094CBF9;
+			A4948CB307C0FF960094CBF9 = A4948CB307C0FF960094CBF9;
+			A4948CD807C161660094CBF9 = A4948CD807C161660094CBF9;
+			A4948CDA07C161660094CBF9 = A4948CDA07C161660094CBF9;
+			A4A3D1C707E604DF00AAC902 = A4A3D1C707E604DF00AAC902;
+			A4A3D1C807E604DF00AAC902 = A4A3D1C807E604DF00AAC902;
+			A4A3D1C907E604DF00AAC902 = A4A3D1C907E604DF00AAC902;
+			A4A3D1CA07E604DF00AAC902 = A4A3D1CA07E604DF00AAC902;
+			A4A3D1CB07E604DF00AAC902 = A4A3D1CB07E604DF00AAC902;
+			A4A3D1CC07E604DF00AAC902 = A4A3D1CC07E604DF00AAC902;
+			A4A3D1D107E6053900AAC902 = A4A3D1D107E6053900AAC902;
+			A4A3D1D207E6059500AAC902 = A4A3D1D207E6059500AAC902;
+			A4A3D1D307E6059500AAC902 = A4A3D1D307E6059500AAC902;
+			A4A3D1D407E6059500AAC902 = A4A3D1D407E6059500AAC902;
+			A4A3D1D507E6059500AAC902 = A4A3D1D507E6059500AAC902;
+			A4A3D1E007E6274100AAC902 = A4A3D1E007E6274100AAC902;
+			A4A3D1E107E6274500AAC902 = A4A3D1E107E6274500AAC902;
+			A4A3D1E207E627A900AAC902 = A4A3D1E207E627A900AAC902;
+			A4A3D1E307E627E800AAC902 = A4A3D1E307E627E800AAC902;
+			A4A3D1E407E6287300AAC902 = A4A3D1E407E6287300AAC902;
+			A4A3D1E507E6288E00AAC902 = A4A3D1E507E6288E00AAC902;
+			A4A3D1E607E628D500AAC902 = A4A3D1E607E628D500AAC902;
+			A4A3D1E707E628ED00AAC902 = A4A3D1E707E628ED00AAC902;
+			A4A3D1E807E6290100AAC902 = A4A3D1E807E6290100AAC902;
+			A4A3D1E907E6292100AAC902 = A4A3D1E907E6292100AAC902;
+			A4A3D1EA07E6292300AAC902 = A4A3D1EA07E6292300AAC902;
+			A4A3D1EB07E6293C00AAC902 = A4A3D1EB07E6293C00AAC902;
+			A4A3D1EC07E6295600AAC902 = A4A3D1EC07E6295600AAC902;
+			A4A3D1ED07E6296F00AAC902 = A4A3D1ED07E6296F00AAC902;
+			A4A3D1EE07E6298600AAC902 = A4A3D1EE07E6298600AAC902;
+			A4A3D1EF07E629E000AAC902 = A4A3D1EF07E629E000AAC902;
+			A4A3D1F007E629EA00AAC902 = A4A3D1F007E629EA00AAC902;
+			A4A3D1F107E62A6500AAC902 = A4A3D1F107E62A6500AAC902;
+			A4A3D1F207E62A7D00AAC902 = A4A3D1F207E62A7D00AAC902;
+			A4A3D1F307E62A8100AAC902 = A4A3D1F307E62A8100AAC902;
+			A4A3D1F407E62AAD00AAC902 = A4A3D1F407E62AAD00AAC902;
+			A4A3D1FA07E62ABD00AAC902 = A4A3D1FA07E62ABD00AAC902;
+			A4A3D1FB07E62AFE00AAC902 = A4A3D1FB07E62AFE00AAC902;
+			A4A3D1FC07E62B0100AAC902 = A4A3D1FC07E62B0100AAC902;
+			A4A3D1FF07E62DD900AAC902 = A4A3D1FF07E62DD900AAC902;
+			A4A3D20007E62DD900AAC902 = A4A3D20007E62DD900AAC902;
+			A4A3D20107E62E2900AAC902 = A4A3D20107E62E2900AAC902;
+			A4A3D20307E62E4400AAC902 = A4A3D20307E62E4400AAC902;
+			A4A3D20507E62EBC00AAC902 = A4A3D20507E62EBC00AAC902;
+			A4A3D20607E62F6100AAC902 = A4A3D20607E62F6100AAC902;
+			A4A3D20707E62F6100AAC902 = A4A3D20707E62F6100AAC902;
+			A4A3D20807E62F8000AAC902 = A4A3D20807E62F8000AAC902;
+			A4A3D20907E62F9F00AAC902 = A4A3D20907E62F9F00AAC902;
+			A4A3D20A07E6317400AAC902 = A4A3D20A07E6317400AAC902;
+			A4A3D20B07E6317A00AAC902 = A4A3D20B07E6317A00AAC902;
+			A4A3D20C07E6318F00AAC902 = A4A3D20C07E6318F00AAC902;
+			A4A3D20D07E631FF00AAC902 = A4A3D20D07E631FF00AAC902;
+			A4A3D20E07E6321100AAC902 = A4A3D20E07E6321100AAC902;
+			A4A3D21007E6328300AAC902 = A4A3D21007E6328300AAC902;
+			A4A3D21107E6329300AAC902 = A4A3D21107E6329300AAC902;
+			A4A3D21207E6329E00AAC902 = A4A3D21207E6329E00AAC902;
+			A4A3D21507E632A000AAC902 = A4A3D21507E632A000AAC902;
+			A4A3D21A07E632D400AAC902 = A4A3D21A07E632D400AAC902;
+			A4A3D21B07E6330100AAC902 = A4A3D21B07E6330100AAC902;
+			A4A3D21C07E6330100AAC902 = A4A3D21C07E6330100AAC902;
+			A4A3D21D07E6330100AAC902 = A4A3D21D07E6330100AAC902;
+			A4A3D21E07E6330100AAC902 = A4A3D21E07E6330100AAC902;
+			A4A3D21F07E6330B00AAC902 = A4A3D21F07E6330B00AAC902;
+			A4A3D22007E6335D00AAC902 = A4A3D22007E6335D00AAC902;
+			A4A3D22107E634E700AAC902 = A4A3D22107E634E700AAC902;
+			A4A3D22207E634E700AAC902 = A4A3D22207E634E700AAC902;
+			A4A3D22307E634E700AAC902 = A4A3D22307E634E700AAC902;
+			A4A3D22407E634E700AAC902 = A4A3D22407E634E700AAC902;
+			A4A3D22507E634E700AAC902 = A4A3D22507E634E700AAC902;
+			A4A3D22607E634E700AAC902 = A4A3D22607E634E700AAC902;
+			A4A3D22707E634E700AAC902 = A4A3D22707E634E700AAC902;
+			A4A3D22807E634E700AAC902 = A4A3D22807E634E700AAC902;
+			A4A3D22907E634E700AAC902 = A4A3D22907E634E700AAC902;
+			A4A3D22B07E6410800AAC902 = A4A3D22B07E6410800AAC902;
+			A4A3D22C07E6410800AAC902 = A4A3D22C07E6410800AAC902;
+			A4A3D22E07E6411400AAC902 = A4A3D22E07E6411400AAC902;
+			A4A3D22F07E6418400AAC902 = A4A3D22F07E6418400AAC902;
+			A4A3D23007E641FB00AAC902 = A4A3D23007E641FB00AAC902;
+			A4A3D23307E6428900AAC902 = A4A3D23307E6428900AAC902;
+			A4A3D23407E6428900AAC902 = A4A3D23407E6428900AAC902;
+			A4A3D23507E6428900AAC902 = A4A3D23507E6428900AAC902;
+			A4A3D23607E642E000AAC902 = A4A3D23607E642E000AAC902;
+			A4A3D23807E643AF00AAC902 = A4A3D23807E643AF00AAC902;
+			A4A3D23907E643AF00AAC902 = A4A3D23907E643AF00AAC902;
+			A4A3D23A07E643AF00AAC902 = A4A3D23A07E643AF00AAC902;
+			A4A3D23B07E643AF00AAC902 = A4A3D23B07E643AF00AAC902;
+			A4A3D23C07E643E800AAC902 = A4A3D23C07E643E800AAC902;
+			A4A3D23D07E643FC00AAC902 = A4A3D23D07E643FC00AAC902;
+			A4A3D23E07E6443D00AAC902 = A4A3D23E07E6443D00AAC902;
+			A4A3D23F07E6447000AAC902 = A4A3D23F07E6447000AAC902;
+			A4A3D24007E6447000AAC902 = A4A3D24007E6447000AAC902;
+			A4A3D24107E6447000AAC902 = A4A3D24107E6447000AAC902;
+			A4A3D24207E6447000AAC902 = A4A3D24207E6447000AAC902;
+			A4A3D24307E6449E00AAC902 = A4A3D24307E6449E00AAC902;
+			A4A3D24407E6449E00AAC902 = A4A3D24407E6449E00AAC902;
+			A4A3D24507E6449E00AAC902 = A4A3D24507E6449E00AAC902;
+			A4A3D24607E6449E00AAC902 = A4A3D24607E6449E00AAC902;
+			A4A3D24907E644D000AAC902 = A4A3D24907E644D000AAC902;
+			A4A3D24A07E6478700AAC902 = A4A3D24A07E6478700AAC902;
+			A4A3D24B07E647D400AAC902 = A4A3D24B07E647D400AAC902;
+			A4A3D24C07E6486100AAC902 = A4A3D24C07E6486100AAC902;
+			A4A3D24D07E6487300AAC902 = A4A3D24D07E6487300AAC902;
+			A4A3D24E07E64AD600AAC902 = A4A3D24E07E64AD600AAC902;
+			A4A3D24F07E64B1800AAC902 = A4A3D24F07E64B1800AAC902;
+			A4A3D25007E64B1B00AAC902 = A4A3D25007E64B1B00AAC902;
+			A4A3D25107E64B3300AAC902 = A4A3D25107E64B3300AAC902;
+			A4A3D25207E64B7300AAC902 = A4A3D25207E64B7300AAC902;
+			A4A3D25307E64B8000AAC902 = A4A3D25307E64B8000AAC902;
+			A4A3D25407E64BBE00AAC902 = A4A3D25407E64BBE00AAC902;
+			A4A3D25507E64BCE00AAC902 = A4A3D25507E64BCE00AAC902;
+			A4A3D25607E64BDC00AAC902 = A4A3D25607E64BDC00AAC902;
+			A4A3D25707E64BF500AAC902 = A4A3D25707E64BF500AAC902;
+			A4A3D25807E64C0F00AAC902 = A4A3D25807E64C0F00AAC902;
+			A4A3D25907E64C2500AAC902 = A4A3D25907E64C2500AAC902;
+			A4A3D25A07E64C4400AAC902 = A4A3D25A07E64C4400AAC902;
+			A4A3D25B07E64C4400AAC902 = A4A3D25B07E64C4400AAC902;
+			A4A3D25C07E64C4400AAC902 = A4A3D25C07E64C4400AAC902;
+			A4A3D25D07E64CE100AAC902 = A4A3D25D07E64CE100AAC902;
+			A4A3D25E07E64D1900AAC902 = A4A3D25E07E64D1900AAC902;
+			A4A3D25F07E6509200AAC902 = A4A3D25F07E6509200AAC902;
+			A4A3D26007E6509200AAC902 = A4A3D26007E6509200AAC902;
+			A4A3D26107E6509200AAC902 = A4A3D26107E6509200AAC902;
+			A4A3D26207E6509200AAC902 = A4A3D26207E6509200AAC902;
+			A4A3D26307E650A800AAC902 = A4A3D26307E650A800AAC902;
+			A4A3D26407E650C500AAC902 = A4A3D26407E650C500AAC902;
+			A4A3D26707E650D600AAC902 = A4A3D26707E650D600AAC902;
+			A4A3D26807E6560700AAC902 = A4A3D26807E6560700AAC902;
+			A4A3D26907E65D1200AAC902 = A4A3D26907E65D1200AAC902;
+			A4A3D26A07E65ED900AAC902 = A4A3D26A07E65ED900AAC902;
+			A4A3D26B07E66F1F00AAC902 = A4A3D26B07E66F1F00AAC902;
+			A4A3D26C07E7103000AAC902 = A4A3D26C07E7103000AAC902;
+			A4A3D26D07E7104600AAC902 = A4A3D26D07E7104600AAC902;
+			A4A3D26E07E7104900AAC902 = A4A3D26E07E7104900AAC902;
+			A4AA162607BE47BE000DDE36 = A4AA162607BE47BE000DDE36;
+			A4AA163107BE4801000DDE36 = A4AA163107BE4801000DDE36;
+			A4AA163507BE4801000DDE36 = A4AA163507BE4801000DDE36;
+			A4AA163D07BE482A000DDE36 = A4AA163D07BE482A000DDE36;
+			A4AA16AD07BE4A26000DDE36 = A4AA16AD07BE4A26000DDE36;
+			A4C2A7AE07BE4EBC00628752 = A4C2A7AE07BE4EBC00628752;
+			A4D80DDE07E6012100B775A2 = A4D80DDE07E6012100B775A2;
+			A4D80DDF07E6012100B775A2 = A4D80DDF07E6012100B775A2;
+			A4D80DE107E6012100B775A2 = A4D80DE107E6012100B775A2;
+			A4D80DE207E6012100B775A2 = A4D80DE207E6012100B775A2;
+			A4D80DEA07E6014000B775A2 = A4D80DEA07E6014000B775A2;
+			A4D80DEC07E6023900B775A2 = A4D80DEC07E6023900B775A2;
+			A4D80DED07E6023900B775A2 = A4D80DED07E6023900B775A2;
+			A4D80DEE07E6023900B775A2 = A4D80DEE07E6023900B775A2;
+			A4D80DF107E6023C00B775A2 = A4D80DF107E6023C00B775A2;
+			A4E7748B07BEB29200288353 = A4E7748B07BEB29200288353;
+			A4E7748E07BEB29200288353 = A4E7748E07BEB29200288353;
+			A4E7767D07BED0F100288353 = A4E7767D07BED0F100288353;
+			A4E7767F07BED0F100288353 = A4E7767F07BED0F100288353;
+			A4EE881407BFCC79005B5F6D = A4EE881407BFCC79005B5F6D;
+		};
+		sourceControlManager = A4AA161007BE4770000DDE36;
+		userBookmarkGroup = A4A3D17A07E6048300AAC902;
+		userBuildSettings = {
+		};
+	};
+	2A37F4ACFDCFA73011CA2CEA = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 9029}}";
+			sepNavSelRange = "{9557, 0}";
+			sepNavVisRect = "{{0, 5419}, {498, 379}}";
+			sepNavWindowFrame = "{{15, 439}, {750, 558}}";
+		};
+	};
+	2A37F4AEFDCFA73011CA2CEA = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 1301}}";
+			sepNavSelRange = "{1710, 0}";
+			sepNavVisRect = "{{0, 837}, {498, 379}}";
+			sepNavWindowFrame = "{{84, 376}, {750, 558}}";
+		};
+	};
+	2A37F4B0FDCFA73011CA2CEA = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 352}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	2A37F4BAFDCFA73011CA2CEA = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 352}}";
+			sepNavSelRange = "{208, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+			sepNavWindowFrame = "{{61, 397}, {750, 558}}";
+		};
+	};
+	32DBCF750370BD2300C91783 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 352}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	8D15AC270486D014006FF6A4 = {
+		activeExec = 0;
+		executables = (
+			A4AA160E07BE4766000DDE36,
+		);
+	};
+	8D15AC360486D014006FF6A4 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 909}}";
+			sepNavSelRange = "{1013, 0}";
+			sepNavVisRect = "{{0, 294}, {498, 352}}";
+			sepNavWindowFrame = "{{38, 418}, {750, 558}}";
+		};
+	};
+	A42D799E07E36D2000955C78 = {
+		fRef = A466E7D107E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineEngine.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 928;
+		vrLoc = 0;
+	};
+	A42D79A407E36D2000955C78 = {
+		fRef = A42FF84607E36AD60038B422;
+		isa = PBXTextBookmark;
+		name = "xine.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1031;
+		vrLoc = 3;
+	};
+	A42D79B807E36EB800955C78 = {
+		fRef = A42FF57707E3652E0038B422;
+		isa = PBXTextBookmark;
+		name = "alphablend.h: 28";
+		rLen = 0;
+		rLoc = 943;
+		rType = 0;
+		vrLen = 551;
+		vrLoc = 803;
+	};
+	A42D79D507E36FF200955C78 = {
+		fRef = A466E7D507E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineStream.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 569;
+		vrLoc = 1578;
+	};
+	A42D7A8C07E38D8000955C78 = {
+		fRef = A466E7D907E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1007;
+		vrLoc = 0;
+	};
+	A42D7A9D07E38DE000955C78 = {
+		fRef = A493D84807BFB6EC00F4FC04;
+		isa = PBXBookmark;
+	};
+	A42D7A9F07E38DE000955C78 = {
+		fRef = A4E7748307BEB25100288353;
+		isa = PBXTextBookmark;
+		name = "English: 9";
+		rLen = 0;
+		rLoc = 314;
+		rType = 0;
+		vrLen = 314;
+		vrLoc = 0;
+	};
+	A42D7AA007E38DE000955C78 = {
+		fRef = A4948C9B07C0F1E50094CBF9;
+		isa = PBXBookmark;
+	};
+	A42D7AA307E38DE000955C78 = {
+		fRef = A493D84807BFB6EC00F4FC04;
+		isa = PBXBookmark;
+	};
+	A42D7ABF07E38F2700955C78 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 352}}";
+			sepNavSelRange = "{395, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	A42D7AC507E38F5300955C78 = {
+		fRef = A42D7ABF07E38F2700955C78;
+		isa = PBXTextBookmark;
+		name = "FixPluginInstallName.sh: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 144;
+		vrLoc = 0;
+	};
+	A42D7B0B07E3921E00955C78 = {
+		fRef = A466E7D307E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineKit.h: 20";
+		rLen = 0;
+		rLoc = 856;
+		rType = 0;
+		vrLen = 976;
+		vrLoc = 0;
+	};
+	A42D7B0D07E3921E00955C78 = {
+		fRef = A466E7D307E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineKit.h: 20";
+		rLen = 0;
+		rLoc = 856;
+		rType = 0;
+		vrLen = 976;
+		vrLoc = 0;
+	};
+	A42D7B7607E39AC200955C78 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 741}}";
+			sepNavSelRange = "{316, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	A42D7B7707E39AC200955C78 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 2716}}";
+			sepNavSelRange = "{818, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	A42D7CD507E3B17500955C78 = {
+		fRef = A466E7D807E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoPort.m: 39";
+		rLen = 0;
+		rLoc = 1192;
+		rType = 0;
+		vrLen = 378;
+		vrLoc = 909;
+	};
+	A42D7DB907E3BD0200955C78 = {
+		fRef = A466E7D007E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineAudioPort.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 911;
+		vrLoc = 0;
+	};
+	A42D7EF307E3CA2D00955C78 = {
+		fRef = A42FF84207E36AD60038B422;
+		isa = PBXTextBookmark;
+		name = "xineutils.h: 631";
+		rLen = 0;
+		rLoc = 22140;
+		rType = 0;
+		vrLen = 717;
+		vrLoc = 21596;
+	};
+	A42D7EF807E3CA2D00955C78 = {
+		fRef = A42FF84207E36AD60038B422;
+		isa = PBXTextBookmark;
+		name = "xineutils.h: 631";
+		rLen = 0;
+		rLoc = 22140;
+		rType = 0;
+		vrLen = 717;
+		vrLoc = 21596;
+	};
+	A42D7FC107E3D59E00955C78 = {
+		fRef = A466E7D607E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineStream.m: mouseDown:inXineView:";
+		rLen = 0;
+		rLoc = 4471;
+		rType = 0;
+		vrLen = 655;
+		vrLoc = 3884;
+	};
+	A42D807C07E3E60F00955C78 = {
+		fRef = A466E7D807E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoPort.m: 38";
+		rLen = 0;
+		rLoc = 1113;
+		rType = 0;
+		vrLen = 393;
+		vrLoc = 911;
+	};
+	A42FF55C07E363AE0038B422 = {
+		activeExec = 0;
+	};
+	A42FF56607E364730038B422 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 7013}}";
+			sepNavSelRange = "{8467, 0}";
+			sepNavVisRect = "{{0, 3765}, {498, 379}}";
+			sepNavWindowFrame = "{{38, 418}, {750, 558}}";
+		};
+	};
+	A42FF56B07E365000038B422 = {
+		fRef = A466E7D207E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineEngine.m: 14";
+		rLen = 0;
+		rLoc = 638;
+		rType = 0;
+		vrLen = 927;
+		vrLoc = 0;
+	};
+	A42FF56C07E365000038B422 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 381";
+		rLen = 0;
+		rLoc = 14073;
+		rType = 0;
+		vrLen = 1006;
+		vrLoc = 0;
+	};
+	A42FF57607E3652E0038B422 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 3570}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 12}, {498, 352}}";
+		};
+	};
+	A42FF57707E3652E0038B422 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 1889}}";
+			sepNavSelRange = "{943, 0}";
+			sepNavVisRect = "{{0, 266}, {498, 352}}";
+		};
+	};
+	A42FF57E07E365660038B422 = {
+		fRef = A42FF57607E3652E0038B422;
+		isa = PBXTextBookmark;
+		name = "alphablend.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1002;
+		vrLoc = 0;
+	};
+	A42FF57F07E365660038B422 = {
+		fRef = A42FF57707E3652E0038B422;
+		isa = PBXTextBookmark;
+		name = "alphablend.h: 28";
+		rLen = 0;
+		rLoc = 943;
+		rType = 0;
+		vrLen = 551;
+		vrLoc = 803;
+	};
+	A42FF61E07E367180038B422 = {
+		fRef = A42FF61F07E367180038B422;
+		isa = PBXTextBookmark;
+		name = "(null): 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 450;
+		vrLoc = 0;
+	};
+	A42FF61F07E367180038B422 = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = Cocoa.h;
+		path = /System/Library/Frameworks/Cocoa.framework/Versions/A/Headers/Cocoa.h;
+		refType = 0;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 352}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	A42FF62707E367180038B422 = {
+		fRef = A42FF62807E367180038B422;
+		isa = PBXTextBookmark;
+		name = "(null): 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 450;
+		vrLoc = 0;
+	};
+	A42FF62807E367180038B422 = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = Cocoa.h;
+		path = /System/Library/Frameworks/Cocoa.framework/Versions/A/Headers/Cocoa.h;
+		refType = 0;
+		sourceTree = "<absolute>";
+	};
+	A42FF63007E3674C0038B422 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 2645}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	A42FF63607E3679A0038B422 = {
+		fRef = A42FF63007E3674C0038B422;
+		isa = PBXTextBookmark;
+		name = "bswap.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 443;
+		vrLoc = 0;
+	};
+	A42FF63907E3679A0038B422 = {
+		fRef = A42FF63007E3674C0038B422;
+		isa = PBXTextBookmark;
+		name = "bswap.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 443;
+		vrLoc = 0;
+	};
+	A42FF64B07E3688A0038B422 = {
+		fRef = A42FF57607E3652E0038B422;
+		isa = PBXTextBookmark;
+		name = "alphablend.c: 40";
+		rLen = 0;
+		rLoc = 1209;
+		rType = 0;
+		vrLen = 608;
+		vrLoc = 1052;
+	};
+	A42FF7A607E36A3C0038B422 = {
+		fRef = A466E7D107E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineEngine.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 928;
+		vrLoc = 0;
+	};
+	A42FF82907E36AD60038B422 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 825}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	A42FF82A07E36AD60038B422 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 2967}}";
+			sepNavSelRange = "{391, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 379}}";
+		};
+	};
+	A42FF84107E36AD60038B422 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {734, 1553}}";
+			sepNavSelRange = "{2077, 61}";
+			sepNavVisRect = "{{0, 846}, {734, 89}}";
+		};
+	};
+	A42FF84207E36AD60038B422 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 14853}}";
+			sepNavSelRange = "{22140, 0}";
+			sepNavVisRect = "{{0, 8608}, {498, 352}}";
+		};
+	};
+	A42FF84307E36AD60038B422 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {734, 825}}";
+			sepNavSelRange = "{1112, 10}";
+			sepNavVisRect = "{{0, 410}, {734, 89}}";
+		};
+	};
+	A42FF84607E36AD60038B422 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 13048}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 26}, {498, 352}}";
+			sepNavWindowFrame = "{{15, 439}, {750, 558}}";
+		};
+	};
+	A430A66D07C4F82400B6DE7C = {
+		fRef = 2A37F4BAFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "English: 12";
+		rLen = 0;
+		rLoc = 208;
+		rType = 0;
+		vrLen = 208;
+		vrLoc = 0;
+	};
+	A45BFF7507BE6B0300B5FCB0 = {
+		fRef = A489FD8C07BE693100DE41B2;
+		isa = PBXTextBookmark;
+		name = "- (id)openUntitledDocumentOfType:(NSString*)type display:(BOOL)display;\n";
+		rLen = 72;
+		rLoc = 3747;
+		rType = 0;
+		vrLen = 1711;
+		vrLoc = 3007;
+	};
+	A45BFF7A07BE6B0300B5FCB0 = {
+		fRef = A489FD0007BE61AD00DE41B2;
+		isa = PBXTextBookmark;
+		name = openUntitledDocumentOfType;
+		rLen = 26;
+		rLoc = 2646;
+		rType = 0;
+		vrLen = 948;
+		vrLoc = 584;
+	};
+	A466E7CF07E34684000B6585 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 420}}";
+			sepNavSelRange = "{48, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	A466E7D007E34684000B6585 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 853}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	A466E7D107E34684000B6585 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 685}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	A466E7D207E34684000B6585 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 2674}}";
+			sepNavSelRange = "{638, 0}";
+			sepNavVisRect = "{{0, 12}, {498, 352}}";
+		};
+	};
+	A466E7D307E34684000B6585 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 363}}";
+			sepNavSelRange = "{856, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	A466E7D407E34684000B6585 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {734, 350}}";
+			sepNavSelRange = "{835, 0}";
+			sepNavVisRect = "{{0, 257}, {734, 89}}";
+		};
+	};
+	A466E7D507E34684000B6585 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 1063}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 664}, {498, 352}}";
+		};
+	};
+	A466E7D607E34684000B6585 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 3639}}";
+			sepNavSelRange = "{4471, 0}";
+			sepNavVisRect = "{{0, 2422}, {498, 352}}";
+		};
+	};
+	A466E7D707E34684000B6585 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {578, 475}}";
+			sepNavSelRange = "{851, 0}";
+			sepNavVisRect = "{{0, 148}, {578, 251}}";
+		};
+	};
+	A466E7D807E34684000B6585 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 951}}";
+			sepNavSelRange = "{1192, 0}";
+			sepNavVisRect = "{{0, 362}, {498, 352}}";
+		};
+	};
+	A466E7D907E34684000B6585 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 881}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	A466E7DA07E34684000B6585 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 8203}}";
+			sepNavSelRange = "{5252, 0}";
+			sepNavVisRect = "{{0, 2302}, {498, 379}}";
+			sepNavWindowFrame = "{{61, 397}, {750, 558}}";
+		};
+	};
+	A466E98007E3474C000B6585 = {
+		fRef = A466E7CF07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineAudioPort.h: 2";
+		rLen = 0;
+		rLoc = 48;
+		rType = 0;
+		vrLen = 1003;
+		vrLoc = 0;
+	};
+	A466E99507E3485F000B6585 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 352}}";
+			sepNavSelRange = "{0, 519}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	A466F3D007E351B3000B6585 = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSBundle.h;
+		path = /System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSBundle.h;
+		refType = 0;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 1483}}";
+			sepNavSelRange = "{253, 0}";
+			sepNavVisRect = "{{0, 546}, {498, 352}}";
+		};
+	};
+	A466F3D107E351ED000B6585 = {
+		fRef = A466F3D007E351B3000B6585;
+		isa = PBXTextBookmark;
+		name = "NSBundle.h: 10";
+		rLen = 0;
+		rLoc = 253;
+		rType = 0;
+		vrLen = 928;
+		vrLoc = 959;
+	};
+	A4753EA407E5075100913253 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 145";
+		rLen = 0;
+		rLoc = 4673;
+		rType = 0;
+		vrLen = 632;
+		vrLoc = 4212;
+	};
+	A4753F2407E512C800913253 = {
+		fRef = A466E7D607E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineStream.m: 58";
+		rLen = 0;
+		rLoc = 1609;
+		rType = 0;
+		vrLen = 330;
+		vrLoc = 1354;
+	};
+	A4753F2507E512C800913253 = {
+		fRef = A466E7D507E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineStream.h: stop:";
+		rLen = 0;
+		rLoc = 1663;
+		rType = 0;
+		vrLen = 639;
+		vrLoc = 1540;
+	};
+	A4753F4D07E513E700913253 = {
+		fRef = A466E7D207E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineEngine.m: 129";
+		rLen = 0;
+		rLoc = 3168;
+		rType = 0;
+		vrLen = 494;
+		vrLoc = 2718;
+	};
+	A475402507E5C8F700913253 = {
+		fRef = A466E7D007E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineAudioPort.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 911;
+		vrLoc = 0;
+	};
+	A475404807E5CAB900913253 = {
+		fRef = A466E7CF07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 983;
+		vrLoc = 0;
+	};
+	A475404C07E5CAB900913253 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "#import <QuickTime/QuickTime.h>\n";
+		rLen = 0;
+		rLoc = 956;
+		rType = 0;
+		vrLen = 495;
+		vrLoc = 0;
+	};
+	A475404D07E5CAB900913253 = {
+		fRef = A42D7B7707E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "QuartzYUVOutput.m: 10";
+		rLen = 0;
+		rLoc = 818;
+		rType = 0;
+		vrLen = 559;
+		vrLoc = 0;
+	};
+	A475405D07E5CB4300913253 = {
+		fRef = A466E7D907E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.h: _lastFrame";
+		rLen = 0;
+		rLoc = 1078;
+		rType = 0;
+		vrLen = 568;
+		vrLoc = 697;
+	};
+	A475406007E5CB4300913253 = {
+		fRef = A42D7B7707E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "QuartzYUVOutput.m: 18";
+		rLen = 0;
+		rLoc = 817;
+		rType = 0;
+		vrLen = 579;
+		vrLoc = 2208;
+	};
+	A475415B07E5CDFA00913253 = {
+		fRef = 8D15AC360486D014006FF6A4;
+		isa = PBXTextBookmark;
+		name = "Info.plist: 32";
+		rLen = 0;
+		rLoc = 828;
+		rType = 0;
+		vrLen = 639;
+		vrLoc = 1018;
+	};
+	A475415C07E5CDFA00913253 = {
+		fRef = 089C1660FE840EACC02AAC07;
+		isa = PBXTextBookmark;
+		name = "English: 5";
+		rLen = 0;
+		rLoc = 125;
+		rType = 0;
+		vrLen = 125;
+		vrLoc = 0;
+	};
+	A47541C907E5F73500913253 = {
+		fRef = A42D7ABF07E38F2700955C78;
+		isa = PBXTextBookmark;
+		name = "FixInstallName.sh: 14";
+		rLen = 0;
+		rLoc = 458;
+		rType = 0;
+		vrLen = 535;
+		vrLoc = 0;
+	};
+	A489FCFF07BE61AD00DE41B2 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 531}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	A489FD0007BE61AD00DE41B2 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 3556}}";
+			sepNavSelRange = "{2646, 26}";
+			sepNavVisRect = "{{0, 140}, {498, 352}}";
+		};
+	};
+	A489FD0707BE61B300DE41B2 = {
+		fRef = A489FCFF07BE61AD00DE41B2;
+		isa = PBXTextBookmark;
+		name = "XPController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 210;
+		vrLoc = 0;
+	};
+	A489FD8C07BE693100DE41B2 = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSDocumentController.h;
+		path = /System/Library/Frameworks/AppKit.framework/Versions/C/Headers/NSDocumentController.h;
+		refType = 0;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 3961}}";
+			sepNavSelRange = "{3747, 72}";
+			sepNavVisRect = "{{0, 1232}, {498, 352}}";
+		};
+	};
+	A493D48007BEFB5B00F4FC04 = {
+		fRef = A4E7766607BECECA00288353;
+		isa = PBXBookmark;
+	};
+	A493D48607BEFB5B00F4FC04 = {
+		fRef = A4E7766607BECECA00288353;
+		isa = PBXBookmark;
+	};
+	A493D48907BEFB5B00F4FC04 = {
+		fRef = 2A37F4B5FDCFA73011CA2CEA;
+		isa = PBXBookmark;
+	};
+	A493D49507BEFB8400F4FC04 = {
+		fRef = 2A37F4B7FDCFA73011CA2CEA;
+		isa = PBXBookmark;
+	};
+	A493D4D607BEFEDB00F4FC04 = {
+		fRef = A493D4CF07BEFEC900F4FC04;
+		isa = PBXBookmark;
+	};
+	A493D4D907BEFEDB00F4FC04 = {
+		fRef = A493D4CF07BEFEC900F4FC04;
+		isa = PBXBookmark;
+	};
+	A493D4E007BEFEEF00F4FC04 = {
+		fRef = A493D4CE07BEFEC900F4FC04;
+		isa = PBXBookmark;
+	};
+	A493D4E207BEFEEF00F4FC04 = {
+		fRef = A493D4CE07BEFEC900F4FC04;
+		isa = PBXBookmark;
+	};
+	A493D4ED07BF003E00F4FC04 = {
+		fRef = A493D4CD07BEFEC900F4FC04;
+		isa = PBXBookmark;
+	};
+	A493D4F007BF003E00F4FC04 = {
+		fRef = A493D4CD07BEFEC900F4FC04;
+		isa = PBXBookmark;
+	};
+	A493D69A07BF7FAE00F4FC04 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 559}}";
+			sepNavSelRange = "{1042, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	A493D69B07BF7FAE00F4FC04 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 1609}}";
+			sepNavSelRange = "{919, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	A493D6A907BF807700F4FC04 = {
+		fRef = A493D69B07BF7FAE00F4FC04;
+		isa = PBXTextBookmark;
+		name = "XPDVDDocument.m: 13";
+		rLen = 0;
+		rLoc = 919;
+		rType = 0;
+		vrLen = 203;
+		vrLoc = 0;
+	};
+	A493D75407BF886C00F4FC04 = {
+		fRef = A493D69A07BF7FAE00F4FC04;
+		isa = PBXTextBookmark;
+		name = "XPDVDDocument.h: gotoDVDMenu:";
+		rLen = 0;
+		rLoc = 1042;
+		rType = 0;
+		vrLen = 366;
+		vrLoc = 0;
+	};
+	A493D87107BFBA4B00F4FC04 = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSValue.h;
+		path = /System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSValue.h;
+		refType = 0;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 1301}}";
+			sepNavSelRange = "{779, 30}";
+			sepNavVisRect = "{{0, 308}, {498, 352}}";
+		};
+	};
+	A493D87307BFBA6500F4FC04 = {
+		fRef = A493D87107BFBA4B00F4FC04;
+		isa = PBXTextBookmark;
+		name = "@interface NSNumber : NSValue\n";
+		rLen = 30;
+		rLoc = 779;
+		rType = 0;
+		vrLen = 626;
+		vrLoc = 521;
+	};
+	A4948CAA07C0FC560094CBF9 = {
+		fRef = A4948C9B07C0F1E50094CBF9;
+		isa = PBXBookmark;
+	};
+	A4948CB307C0FF960094CBF9 = {
+		fRef = 2A37F4B5FDCFA73011CA2CEA;
+		isa = PBXBookmark;
+	};
+	A4948CCD07C160C00094CBF9 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 391}}";
+			sepNavSelRange = "{889, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	A4948CCE07C160C00094CBF9 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 1371}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+			sepNavWindowFrame = "{{38, 418}, {750, 558}}";
+		};
+	};
+	A4948CD807C161660094CBF9 = {
+		fRef = A4948CCD07C160C00094CBF9;
+		isa = PBXTextBookmark;
+		name = "XPDocumentWindow.h: 13";
+		rLen = 0;
+		rLoc = 889;
+		rType = 0;
+		vrLen = 213;
+		vrLoc = 0;
+	};
+	A4948CDA07C161660094CBF9 = {
+		fRef = A4948CCE07C160C00094CBF9;
+		isa = PBXTextBookmark;
+		name = "XPDocumentWindow.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 212;
+		vrLoc = 0;
+	};
+	A4A3D17A07E6048300AAC902 = {
+		children = (
+			A4A3D23707E6438B00AAC902,
+		);
+		isa = PBXBookmarkGroup;
+		name = Root;
+	};
+	A4A3D1C707E604DF00AAC902 = {
+		fRef = A4D80DDD07E6011000B775A2;
+		isa = PBXTextBookmark;
+		name = "BUILDING_README: 13";
+		rLen = 0;
+		rLoc = 586;
+		rType = 0;
+		vrLen = 607;
+		vrLoc = 0;
+	};
+	A4A3D1C807E604DF00AAC902 = {
+		fRef = 2A37F4BAFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "English: 12";
+		rLen = 0;
+		rLoc = 208;
+		rType = 0;
+		vrLen = 208;
+		vrLoc = 0;
+	};
+	A4A3D1C907E604DF00AAC902 = {
+		fRef = A42D7ABF07E38F2700955C78;
+		isa = PBXTextBookmark;
+		name = "FixInstallName.sh: 15";
+		rLen = 0;
+		rLoc = 435;
+		rType = 0;
+		vrLen = 566;
+		vrLoc = 0;
+	};
+	A4A3D1CA07E604DF00AAC902 = {
+		fRef = A4D80DDD07E6011000B775A2;
+		isa = PBXTextBookmark;
+		name = "BUILDING_README: 13";
+		rLen = 0;
+		rLoc = 586;
+		rType = 0;
+		vrLen = 607;
+		vrLoc = 0;
+	};
+	A4A3D1CB07E604DF00AAC902 = {
+		fRef = 2A37F4BAFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "English: 12";
+		rLen = 0;
+		rLoc = 208;
+		rType = 0;
+		vrLen = 208;
+		vrLoc = 0;
+	};
+	A4A3D1CC07E604DF00AAC902 = {
+		fRef = A42D7ABF07E38F2700955C78;
+		isa = PBXTextBookmark;
+		name = "FixInstallName.sh: 12";
+		rLen = 0;
+		rLoc = 304;
+		rType = 0;
+		vrLen = 566;
+		vrLoc = 0;
+	};
+	A4A3D1D107E6053900AAC902 = {
+		fRef = A42D7ABF07E38F2700955C78;
+		isa = PBXTextBookmark;
+		name = "FixInstallName.sh: 12";
+		rLen = 0;
+		rLoc = 304;
+		rType = 0;
+		vrLen = 566;
+		vrLoc = 0;
+	};
+	A4A3D1D207E6059500AAC902 = {
+		fRef = A42D7ABF07E38F2700955C78;
+		isa = PBXTextBookmark;
+		name = "FixInstallName.sh: 12";
+		rLen = 0;
+		rLoc = 304;
+		rType = 0;
+		vrLen = 566;
+		vrLoc = 0;
+	};
+	A4A3D1D307E6059500AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1D407E6059500AAC902 = {
+		fRef = A42D7ABF07E38F2700955C78;
+		isa = PBXTextBookmark;
+		name = "FixInstallName.sh: 12";
+		rLen = 0;
+		rLoc = 304;
+		rType = 0;
+		vrLen = 566;
+		vrLoc = 0;
+	};
+	A4A3D1D507E6059500AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1E007E6274100AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1E107E6274500AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1E207E627A900AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1E307E627E800AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1E407E6287300AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1E507E6288E00AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1E607E628D500AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1E707E628ED00AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1E807E6290100AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1E907E6292100AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1EA07E6292300AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1EB07E6293C00AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1EC07E6295600AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1ED07E6296F00AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1EE07E6298600AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1EF07E629E000AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1F007E629EA00AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1F107E62A6500AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1F207E62A7D00AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1F307E62A8100AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1F407E62AAD00AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1FA07E62ABD00AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1FB07E62AFE00AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1FC07E62B0100AAC902 = {
+		fRef = A42D7B7607E39AC200955C78;
+		isa = PBXTextBookmark;
+		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
+		rLen = 816;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 966;
+		vrLoc = 0;
+	};
+	A4A3D1FF07E62DD900AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXBookmark;
+	};
+	A4A3D20007E62DD900AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 235";
+		rLen = 0;
+		rLoc = 6975;
+		rType = 0;
+		vrLen = 903;
+		vrLoc = 2048;
+	};
+	A4A3D20107E62E2900AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 235";
+		rLen = 0;
+		rLoc = 7068;
+		rType = 0;
+		vrLen = 1080;
+		vrLoc = 6539;
+	};
+	A4A3D20307E62E4400AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 235";
+		rLen = 0;
+		rLoc = 7115;
+		rType = 0;
+		vrLen = 1083;
+		vrLoc = 6539;
+	};
+	A4A3D20507E62EBC00AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 235";
+		rLen = 0;
+		rLoc = 7115;
+		rType = 0;
+		vrLen = 614;
+		vrLoc = 5950;
+	};
+	A4A3D20607E62F6100AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 235";
+		rLen = 0;
+		rLoc = 7115;
+		rType = 0;
+		vrLen = 614;
+		vrLoc = 5950;
+	};
+	A4A3D20707E62F6100AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 240";
+		rLen = 0;
+		rLoc = 7189;
+		rType = 0;
+		vrLen = 984;
+		vrLoc = 6539;
+	};
+	A4A3D20807E62F8000AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 238";
+		rLen = 0;
+		rLoc = 7043;
+		rType = 0;
+		vrLen = 958;
+		vrLoc = 6539;
+	};
+	A4A3D20907E62F9F00AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 238";
+		rLen = 0;
+		rLoc = 7043;
+		rType = 0;
+		vrLen = 958;
+		vrLoc = 6539;
+	};
+	A4A3D20A07E6317400AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 278";
+		rLen = 0;
+		rLoc = 8439;
+		rType = 0;
+		vrLen = 562;
+		vrLoc = 8103;
+	};
+	A4A3D20B07E6317A00AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 278";
+		rLen = 0;
+		rLoc = 8439;
+		rType = 0;
+		vrLen = 562;
+		vrLoc = 8103;
+	};
+	A4A3D20C07E6318F00AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 278";
+		rLen = 0;
+		rLoc = 8439;
+		rType = 0;
+		vrLen = 582;
+		vrLoc = 8002;
+	};
+	A4A3D20D07E631FF00AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 277";
+		rLen = 0;
+		rLoc = 8439;
+		rType = 0;
+		vrLen = 713;
+		vrLoc = 5839;
+	};
+	A4A3D20E07E6321100AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 278";
+		rLen = 0;
+		rLoc = 8466;
+		rType = 0;
+		vrLen = 572;
+		vrLoc = 8103;
+	};
+	A4A3D21007E6328300AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 302";
+		rLen = 0;
+		rLoc = 8950;
+		rType = 0;
+		vrLen = 705;
+		vrLoc = 8938;
+	};
+	A4A3D21107E6329300AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 302";
+		rLen = 0;
+		rLoc = 8950;
+		rType = 0;
+		vrLen = 705;
+		vrLoc = 8938;
+	};
+	A4A3D21207E6329E00AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 302";
+		rLen = 0;
+		rLoc = 8950;
+		rType = 0;
+		vrLen = 705;
+		vrLoc = 8938;
+	};
+	A4A3D21507E632A000AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 302";
+		rLen = 0;
+		rLoc = 8950;
+		rType = 0;
+		vrLen = 705;
+		vrLoc = 8938;
+	};
+	A4A3D21A07E632D400AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 319";
+		rLen = 0;
+		rLoc = 9349;
+		rType = 0;
+		vrLen = 702;
+		vrLoc = 8942;
+	};
+	A4A3D21B07E6330100AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 319";
+		rLen = 0;
+		rLoc = 9349;
+		rType = 0;
+		vrLen = 702;
+		vrLoc = 8942;
+	};
+	A4A3D21C07E6330100AAC902 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1043;
+		vrLoc = 0;
+	};
+	A4A3D21D07E6330100AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 319";
+		rLen = 0;
+		rLoc = 9349;
+		rType = 0;
+		vrLen = 702;
+		vrLoc = 8942;
+	};
+	A4A3D21E07E6330100AAC902 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 502;
+		vrLoc = 1403;
+	};
+	A4A3D21F07E6330B00AAC902 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 721;
+		vrLoc = 1681;
+	};
+	A4A3D22007E6335D00AAC902 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 721;
+		vrLoc = 1681;
+	};
+	A4A3D22107E634E700AAC902 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 291";
+		rLen = 0;
+		rLoc = 7887;
+		rType = 0;
+		vrLen = 531;
+		vrLoc = 7437;
+	};
+	A4A3D22207E634E700AAC902 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 70";
+		rLen = 0;
+		rLoc = 2010;
+		rType = 0;
+		vrLen = 653;
+		vrLoc = 1865;
+	};
+	A4A3D22307E634E700AAC902 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "\n- (BOOL) isDeinterlaced;\n- (void) setDeinterlace: (BOOL) interlace;\n";
+		rLen = 69;
+		rLoc = 1935;
+		rType = 0;
+		vrLen = 732;
+		vrLoc = 1647;
+	};
+	A4A3D22407E634E700AAC902 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: isDeinterlaced";
+		rLen = 0;
+		rLoc = 6474;
+		rType = 0;
+		vrLen = 457;
+		vrLoc = 6516;
+	};
+	A4A3D22507E634E700AAC902 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "\n- (IBAction) toggleDeinterlace: (id) sender;\n";
+		rLen = 46;
+		rLoc = 2536;
+		rType = 0;
+		vrLen = 652;
+		vrLoc = 1865;
+	};
+	A4A3D22607E634E700AAC902 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: isDVDPlayer";
+		rLen = 0;
+		rLoc = 6458;
+		rType = 0;
+		vrLen = 545;
+		vrLoc = 6134;
+	};
+	A4A3D22707E634E700AAC902 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 70";
+		rLen = 0;
+		rLoc = 2010;
+		rType = 0;
+		vrLen = 653;
+		vrLoc = 1865;
+	};
+	A4A3D22807E634E700AAC902 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 291";
+		rLen = 0;
+		rLoc = 7887;
+		rType = 0;
+		vrLen = 531;
+		vrLoc = 7437;
+	};
+	A4A3D22907E634E700AAC902 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 59";
+		rLen = 0;
+		rLoc = 1710;
+		rType = 0;
+		vrLen = 555;
+		vrLoc = 1334;
+	};
+	A4A3D22B07E6410800AAC902 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 59";
+		rLen = 0;
+		rLoc = 1710;
+		rType = 0;
+		vrLen = 555;
+		vrLoc = 1334;
+	};
+	A4A3D22C07E6410800AAC902 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 59";
+		rLen = 0;
+		rLoc = 1710;
+		rType = 0;
+		vrLen = 555;
+		vrLoc = 1334;
+	};
+	A4A3D22E07E6411400AAC902 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 59";
+		rLen = 0;
+		rLoc = 1710;
+		rType = 0;
+		vrLen = 555;
+		vrLoc = 1334;
+	};
+	A4A3D22F07E6418400AAC902 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 59";
+		rLen = 0;
+		rLoc = 1710;
+		rType = 0;
+		vrLen = 676;
+		vrLoc = 1842;
+	};
+	A4A3D23007E641FB00AAC902 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 59";
+		rLen = 0;
+		rLoc = 1710;
+		rType = 0;
+		vrLen = 713;
+		vrLoc = 1711;
+	};
+	A4A3D23307E6428900AAC902 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 59";
+		rLen = 0;
+		rLoc = 1710;
+		rType = 0;
+		vrLen = 713;
+		vrLoc = 1711;
+	};
+	A4A3D23407E6428900AAC902 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 59";
+		rLen = 0;
+		rLoc = 1710;
+		rType = 0;
+		vrLen = 713;
+		vrLoc = 1711;
+	};
+	A4A3D23507E6428900AAC902 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 145";
+		rLen = 0;
+		rLoc = 4001;
+		rType = 0;
+		vrLen = 846;
+		vrLoc = 4432;
+	};
+	A4A3D23607E642E000AAC902 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = setDe;
+		rLen = 5;
+		rLoc = 6670;
+		rType = 0;
+		vrLen = 632;
+		vrLoc = 6273;
+	};
+	A4A3D23707E6438B00AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXBookmark;
+	};
+	A4A3D23807E643AF00AAC902 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = setDe;
+		rLen = 5;
+		rLoc = 6670;
+		rType = 0;
+		vrLen = 632;
+		vrLoc = 6273;
+	};
+	A4A3D23907E643AF00AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 319";
+		rLen = 0;
+		rLoc = 9349;
+		rType = 0;
+		vrLen = 743;
+		vrLoc = 9152;
+	};
+	A4A3D23A07E643AF00AAC902 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = setDe;
+		rLen = 5;
+		rLoc = 6670;
+		rType = 0;
+		vrLen = 632;
+		vrLoc = 6273;
+	};
+	A4A3D23B07E643AF00AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 302";
+		rLen = 0;
+		rLoc = 8930;
+		rType = 0;
+		vrLen = 551;
+		vrLoc = 8637;
+	};
+	A4A3D23C07E643E800AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 302";
+		rLen = 0;
+		rLoc = 8930;
+		rType = 0;
+		vrLen = 551;
+		vrLoc = 8637;
+	};
+	A4A3D23D07E643FC00AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 302";
+		rLen = 0;
+		rLoc = 8930;
+		rType = 0;
+		vrLen = 551;
+		vrLoc = 8637;
+	};
+	A4A3D23E07E6443D00AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8517;
+		rType = 0;
+		vrLen = 533;
+		vrLoc = 8211;
+	};
+	A4A3D23F07E6447000AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8517;
+		rType = 0;
+		vrLen = 533;
+		vrLoc = 8211;
+	};
+	A4A3D24007E6447000AAC902 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = setDe;
+		rLen = 5;
+		rLoc = 6670;
+		rType = 0;
+		vrLen = 632;
+		vrLoc = 6273;
+	};
+	A4A3D24107E6447000AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8517;
+		rType = 0;
+		vrLen = 533;
+		vrLoc = 8211;
+	};
+	A4A3D24207E6447000AAC902 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 228";
+		rLen = 0;
+		rLoc = 6655;
+		rType = 0;
+		vrLen = 659;
+		vrLoc = 6273;
+	};
+	A4A3D24307E6449E00AAC902 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 228";
+		rLen = 0;
+		rLoc = 6655;
+		rType = 0;
+		vrLen = 659;
+		vrLoc = 6275;
+	};
+	A4A3D24407E6449E00AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8517;
+		rType = 0;
+		vrLen = 533;
+		vrLoc = 8211;
+	};
+	A4A3D24507E6449E00AAC902 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 228";
+		rLen = 0;
+		rLoc = 6655;
+		rType = 0;
+		vrLen = 659;
+		vrLoc = 6275;
+	};
+	A4A3D24607E6449E00AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 304";
+		rLen = 0;
+		rLoc = 8918;
+		rType = 0;
+		vrLen = 486;
+		vrLoc = 8549;
+	};
+	A4A3D24907E644D000AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D24A07E6478700AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D24B07E647D400AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D24C07E6486100AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D24D07E6487300AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D24E07E64AD600AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D24F07E64B1800AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D25007E64B1B00AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D25107E64B3300AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D25207E64B7300AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D25307E64B8000AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D25407E64BBE00AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D25507E64BCE00AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D25607E64BDC00AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D25707E64BF500AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D25807E64C0F00AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D25907E64C2500AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D25A07E64C4400AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D25B07E64C4400AAC902 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4A3D25C07E64C4400AAC902 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 374";
+		rLen = 0;
+		rLoc = 9557;
+		rType = 0;
+		vrLen = 496;
+		vrLoc = 9178;
+	};
+	A4A3D25D07E64CE100AAC902 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 374";
+		rLen = 0;
+		rLoc = 9557;
+		rType = 0;
+		vrLen = 496;
+		vrLoc = 9178;
+	};
+	A4A3D25E07E64D1900AAC902 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 374";
+		rLen = 0;
+		rLoc = 9557;
+		rType = 0;
+		vrLen = 496;
+		vrLoc = 9178;
+	};
+	A4A3D25F07E6509200AAC902 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 374";
+		rLen = 0;
+		rLoc = 9557;
+		rType = 0;
+		vrLen = 496;
+		vrLoc = 9178;
+	};
+	A4A3D26007E6509200AAC902 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 153";
+		rLen = 0;
+		rLoc = 4673;
+		rType = 0;
+		vrLen = 728;
+		vrLoc = 4250;
+	};
+	A4A3D26107E6509200AAC902 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 374";
+		rLen = 0;
+		rLoc = 9557;
+		rType = 0;
+		vrLen = 496;
+		vrLoc = 9178;
+	};
+	A4A3D26207E6509200AAC902 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 153";
+		rLen = 0;
+		rLoc = 4673;
+		rType = 0;
+		vrLen = 658;
+		vrLoc = 4646;
+	};
+	A4A3D26307E650A800AAC902 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 163";
+		rLen = 0;
+		rLoc = 4865;
+		rType = 0;
+		vrLen = 639;
+		vrLoc = 4686;
+	};
+	A4A3D26407E650C500AAC902 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 172";
+		rLen = 0;
+		rLoc = 5252;
+		rType = 0;
+		vrLen = 681;
+		vrLoc = 4686;
+	};
+	A4A3D26707E650D600AAC902 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 172";
+		rLen = 0;
+		rLoc = 5252;
+		rType = 0;
+		vrLen = 681;
+		vrLoc = 4686;
+	};
+	A4A3D26807E6560700AAC902 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 172";
+		rLen = 0;
+		rLoc = 5252;
+		rType = 0;
+		vrLen = 681;
+		vrLoc = 4686;
+	};
+	A4A3D26907E65D1200AAC902 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 172";
+		rLen = 0;
+		rLoc = 5252;
+		rType = 0;
+		vrLen = 681;
+		vrLoc = 4686;
+	};
+	A4A3D26A07E65ED900AAC902 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 172";
+		rLen = 0;
+		rLoc = 5252;
+		rType = 0;
+		vrLen = 681;
+		vrLoc = 4686;
+	};
+	A4A3D26B07E66F1F00AAC902 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 172";
+		rLen = 0;
+		rLoc = 5252;
+		rType = 0;
+		vrLen = 681;
+		vrLoc = 4686;
+	};
+	A4A3D26C07E7103000AAC902 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 172";
+		rLen = 0;
+		rLoc = 5252;
+		rType = 0;
+		vrLen = 681;
+		vrLoc = 4686;
+	};
+	A4A3D26D07E7104600AAC902 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 172";
+		rLen = 0;
+		rLoc = 5252;
+		rType = 0;
+		vrLen = 681;
+		vrLoc = 4686;
+	};
+	A4A3D26E07E7104900AAC902 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 172";
+		rLen = 0;
+		rLoc = 5252;
+		rType = 0;
+		vrLen = 681;
+		vrLoc = 4686;
+	};
+	A4AA160E07BE4766000DDE36 = {
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		configStateDict = {
+		};
+		cppStopOnCatchEnabled = 0;
+		cppStopOnThrowEnabled = 0;
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		isa = PBXExecutable;
+		libgmallocEnabled = 0;
+		name = XinePlayer;
+		savedGlobals = {
+		};
+		shlibInfoDictList = (
+		);
+		sourceDirectories = (
+		);
+	};
+	A4AA161007BE4770000DDE36 = {
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		isa = PBXSourceControlManager;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	A4AA161107BE4770000DDE36 = {
+		indexTemplatePath = "";
+		isa = PBXCodeSenseManager;
+		usesDefaults = 1;
+		wantsCodeCompletion = 1;
+		wantsCodeCompletionAutoSuggestions = 1;
+		wantsCodeCompletionCaseSensitivity = 1;
+		wantsCodeCompletionListAlways = 1;
+		wantsCodeCompletionOnlyMatchingItems = 1;
+		wantsCodeCompletionParametersIncluded = 1;
+		wantsCodeCompletionPlaceholdersInserted = 1;
+		wantsCodeCompletionTabCompletes = 1;
+		wantsIndex = 1;
+	};
+	A4AA162607BE47BE000DDE36 = {
+		fRef = 2A37F4BAFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "English: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 157;
+		vrLoc = 0;
+	};
+	A4AA163107BE4801000DDE36 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 207;
+		vrLoc = 0;
+	};
+	A4AA163507BE4801000DDE36 = {
+		fRef = 32DBCF750370BD2300C91783;
+		isa = PBXTextBookmark;
+		name = "XinePlayer_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 151;
+		vrLoc = 0;
+	};
+	A4AA163D07BE482A000DDE36 = {
+		fRef = 2A37F4B0FDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "main.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 246;
+		vrLoc = 0;
+	};
+	A4AA16AD07BE4A26000DDE36 = {
+		fRef = 8D15AC360486D014006FF6A4;
+		isa = PBXTextBookmark;
+		name = "Info.plist: 33";
+		rLen = 0;
+		rLoc = 1013;
+		rType = 0;
+		vrLen = 665;
+		vrLoc = 585;
+	};
+	A4C2A7AE07BE4EBC00628752 = {
+		fRef = 2A37F4B7FDCFA73011CA2CEA;
+		isa = PBXBookmark;
+	};
+	A4D80DDD07E6011000B775A2 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 352}}";
+			sepNavSelRange = "{586, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	A4D80DDE07E6012100B775A2 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 44";
+		rLen = 0;
+		rLoc = 1289;
+		rType = 0;
+		vrLen = 528;
+		vrLoc = 1028;
+	};
+	A4D80DDF07E6012100B775A2 = {
+		fRef = A42FF84607E36AD60038B422;
+		isa = PBXTextBookmark;
+		name = "xine.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1031;
+		vrLoc = 3;
+	};
+	A4D80DE107E6012100B775A2 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 44";
+		rLen = 0;
+		rLoc = 1289;
+		rType = 0;
+		vrLen = 528;
+		vrLoc = 1028;
+	};
+	A4D80DE207E6012100B775A2 = {
+		fRef = A42FF84607E36AD60038B422;
+		isa = PBXTextBookmark;
+		name = "xine.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1031;
+		vrLoc = 3;
+	};
+	A4D80DEA07E6014000B775A2 = {
+		fRef = A4D80DDD07E6011000B775A2;
+		isa = PBXTextBookmark;
+		name = "BUILDING_README: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	A4D80DEC07E6023900B775A2 = {
+		fRef = A42FF82907E36AD60038B422;
+		isa = PBXTextBookmark;
+		name = "compat.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 920;
+		vrLoc = 0;
+	};
+	A4D80DED07E6023900B775A2 = {
+		fRef = A4D80DDD07E6011000B775A2;
+		isa = PBXTextBookmark;
+		name = "BUILDING_README: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 530;
+		vrLoc = 0;
+	};
+	A4D80DEE07E6023900B775A2 = {
+		fRef = A42FF82907E36AD60038B422;
+		isa = PBXTextBookmark;
+		name = "compat.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 920;
+		vrLoc = 0;
+	};
+	A4D80DF107E6023C00B775A2 = {
+		fRef = A4D80DDD07E6011000B775A2;
+		isa = PBXTextBookmark;
+		name = "BUILDING_README: 13";
+		rLen = 0;
+		rLoc = 586;
+		rType = 0;
+		vrLen = 607;
+		vrLoc = 0;
+	};
+	A4E7748307BEB25100288353 = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {498, 352}}";
+			sepNavSelRange = "{3, 0}";
+			sepNavVisRect = "{{0, 0}, {498, 352}}";
+		};
+	};
+	A4E7748B07BEB29200288353 = {
+		fRef = A4E7748307BEB25100288353;
+		isa = PBXTextBookmark;
+		name = "English: 1";
+		rLen = 0;
+		rLoc = 3;
+		rType = 0;
+		vrLen = 3;
+		vrLoc = 0;
+	};
+	A4E7748E07BEB29200288353 = {
+		fRef = 089C1660FE840EACC02AAC07;
+		isa = PBXTextBookmark;
+		name = "English: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 125;
+		vrLoc = 0;
+	};
+	A4E7767D07BED0F100288353 = {
+		fRef = A4E7765E07BECD8000288353;
+		isa = PBXBookmark;
+	};
+	A4E7767F07BED0F100288353 = {
+		fRef = A4E7765E07BECD8000288353;
+		isa = PBXBookmark;
+	};
+	A4EE881407BFCC79005B5F6D = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 158";
+		rLen = 0;
+		rLoc = 3663;
+		rType = 0;
+		vrLen = 439;
+		vrLoc = 6801;
+	};
+}
