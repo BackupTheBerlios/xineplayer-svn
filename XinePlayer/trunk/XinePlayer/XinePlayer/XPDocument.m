@@ -134,7 +134,7 @@
 		[_deinterlaceFilter setValue: [NSNumber numberWithBool: NO] forParameter: @"pulldown"];
 		[_deinterlaceFilter setValue: [NSNumber numberWithBool: YES] forParameter: @"use_progressive_frame_flag"];
 		
-		/*
+#if 0
 		NSArray *properties = [_deinterlaceFilter propertyNames];
 		NSEnumerator *objEnum = [properties objectEnumerator];
 		NSString *name;
@@ -150,7 +150,7 @@
 				}
 			}
 		}
-		 */
+#endif
 	}
 	
 	[[self documentWindow] makeFirstResponder: videoView];
