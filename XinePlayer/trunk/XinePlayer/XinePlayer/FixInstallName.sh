@@ -29,10 +29,15 @@ for PLUGIN_NAME in `find $PWD/../PlugIns/XinePlugins/ -name '*.so'`; do
         # ...and copy any dependant libraries.
         for LIBNAME in `otool -L $PLUGIN_NAME | grep "/sw/.*\.dylib " | cut -f 2 | cut -f 1 -d ' '`; do
                 if [ ! -z $LIBNAME ]; then
-                        echo Copying and changing $LIBNAME in $PLUGIN_NAME
+                        echo Changing $LIBNAME in $PLUGIN_NAME
                         NEWNAME=`basename $LIBNAME`
-                        install_name_tool -change $LIBNAME $PLUGINS_LIBPATH/$NEWNAME $PLUGIN_NAME
-                        cp $LIBNAME $PWD/../PlugIns/XinePlugins/$NEWNAME
+                        if [ "x$NEWNAME" == "xlibiconv.2.dylib" ]; then
+                                install_name_tool -change $LIBNAME /usr/lib/$NEWNAME $PLUGIN_NAME
+                        else
+                                install_name_tool -change $LIBNAME $PLUGINS_LIBPATH/$NEWNAME $PLUGIN_NAME
+                                echo ...and copying
+                                cp $LIBNAME $PWD/../PlugIns/XinePlugins/$NEWNAME
+                        fi
                 fi
         done
 done
@@ -49,11 +54,15 @@ for LIBRARY_NAME in $PWD/../PlugIns/XinePlugins/lib*; do
                 if [ ! -z $LIBNAME ]; then
                         echo Changing $LIBNAME in $LIBRARY_NAME
                         NEWNAME=`basename $LIBNAME`
-                        install_name_tool -change $LIBNAME $PLUGINS_LIBPATH/$NEWNAME $LIBRARY_NAME
+                        if [ "x$NEWNAME" == "xlibiconv.2.dylib" ]; then
+                                install_name_tool -change $LIBNAME /usr/lib/$NEWNAME $LIBRARY_NAME
+                        else
+                                install_name_tool -change $LIBNAME $PLUGINS_LIBPATH/$NEWNAME $LIBRARY_NAME
                         
-                        # We may still have some odd things. Print warnings for such
-                        if [ ! -f $PWD/../PlugIns/XinePlugins/$NEWNAME ]; then
-                                echo "WARNING: $NEWNAME has not been copied!"
+                                # We may still have some odd things. Print warnings for such
+                                if [ ! -f $PWD/../PlugIns/XinePlugins/$NEWNAME ]; then
+                                        echo "WARNING: $NEWNAME has not been copied!"
+                                fi
                         fi
                 fi
         done
