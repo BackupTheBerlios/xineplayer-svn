@@ -24,47 +24,39 @@
 
 - (void) awakeFromNib
 {
-	_displayingAdvancedPanel = YES;
 	[self disclosureChanged: nil];
 }
 
 - (IBAction) disclosureChanged: (id) sender
 {
-	NSPoint origin = [[self contentView] bounds].origin;
-	NSRect hideViewFrame = [_advancedPanel frame];
-	NSRect growViewFrame = [_growView frame];
-	NSRect windowFrame = [self frame];
-	
 	if([_advancedHideShowButton state] == NSOnState)
 	{
 		// Show advanced panel
-		if(!_displayingAdvancedPanel)
+		if([_shrinkView isHidden])
 		{
-			growViewFrame.size.height -= hideViewFrame.size.height;
-			origin.y -= hideViewFrame.size.height;
-			windowFrame.size.height += hideViewFrame.size.height;
-			windowFrame.origin.y -= hideViewFrame.size.height;
-			
-			[[self contentView] setBoundsOrigin:origin];
-			[_growView setFrame: growViewFrame];
-			[self setFrame:windowFrame display:YES animate: NO];
-			
-			_displayingAdvancedPanel = YES;
+			[_shrinkView setHidden: NO];
+			[_shrinkView setAutoresizingMask:NSViewMinYMargin];
+			[_steadyView setAutoresizingMask:NSViewMinYMargin];
+			NSRect windowFrame = [self frame];
+			windowFrame.size.height += [_shrinkView frame].size.height;
+			windowFrame.origin.y -= [_shrinkView frame].size.height;
+			[self setFrame:windowFrame display:YES animate: YES];
+			[_shrinkView setAutoresizingMask:NSViewMinXMargin | NSViewMaxYMargin | NSViewMaxXMargin];
+			[_steadyView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
 		}
 	} else {
 		// Hide advanced panel
-		if(_displayingAdvancedPanel)
+		if(![_shrinkView isHidden])
 		{
-			growViewFrame.size.height += hideViewFrame.size.height;
-			origin.y += hideViewFrame.size.height;
-			windowFrame.size.height -= hideViewFrame.size.height;
-			windowFrame.origin.y += hideViewFrame.size.height;
-			
-			[[self contentView] setBoundsOrigin:origin];
-			[_growView setFrame: growViewFrame];
-			[self setFrame:windowFrame display:YES animate: NO];
-			
-			_displayingAdvancedPanel = NO;
+			[_shrinkView setAutoresizingMask:NSViewMinYMargin];
+			[_steadyView setAutoresizingMask:NSViewMinYMargin];
+			NSRect windowFrame = [self frame];
+			windowFrame.size.height -= [_shrinkView frame].size.height;
+			windowFrame.origin.y += [_shrinkView frame].size.height;
+			[self setFrame:windowFrame display:YES animate: YES];
+			[_shrinkView setAutoresizingMask:NSViewMinXMargin | NSViewMaxYMargin | NSViewMaxXMargin];
+			[_steadyView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
+			[_shrinkView setHidden: YES];
 		}
 	}
 }

@@ -22,10 +22,8 @@
 
 @interface XPDocumentWindow : NSWindow {
 	IBOutlet NSButton* _advancedHideShowButton;
-	IBOutlet NSView* _advancedPanel;
-	IBOutlet NSView* _growView;
-	
-	BOOL _displayingAdvancedPanel;
+	IBOutlet NSView* _shrinkView;
+	IBOutlet NSView* _steadyView;
 }
 
 - (IBAction) disclosureChanged: (id) sender;

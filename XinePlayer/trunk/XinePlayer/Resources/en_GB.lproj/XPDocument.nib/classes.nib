@@ -38,8 +38,8 @@
             LANGUAGE = ObjC; 
             OUTLETS = {
                 "_advancedHideShowButton" = NSButton; 
-                "_advancedPanel" = NSView; 
-                "_growView" = NSView; 
+                "_shrinkView" = NSView; 
+                "_steadyView" = NSView; 
             }; 
             SUPERCLASS = NSWindow; 
         }, 
