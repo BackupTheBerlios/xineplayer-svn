@@ -66,6 +66,7 @@
     <p>XinePlayer is hosted by the <a href="http://berlios.de/">BerliOS project</a>.</p>
     <p>
     <a href="http://developer.berlios.de" title="BerliOS Developer"> <img src="http://developer.berlios.de/bslogo.php?group_id=3329" width="124px" height="32px" border="0" alt="BerliOS Developer Logo"></a></p>
+    <p><a href="http://macupdate.com/info.php/id/17492">MacUpdate</a> for their speedy listing.</p>
     </p>
   </div>
   <!--
