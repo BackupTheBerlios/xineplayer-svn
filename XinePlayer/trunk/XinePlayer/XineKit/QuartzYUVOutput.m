@@ -178,16 +178,18 @@ void displayImageOnView(yuv_display_t *display, void *image)
 		
 		display->yuv_frame = contentFrame;
 	}
-	
+#if 1
 	if(display->format == XINE_IMGFMT_YUY2) {
 		uint8_t *data = (uint8_t*)image;
 		long i = 0;
-		long size = display->movieSize.width * display->movieSize.height;
-		for(i=0; i<(size << 1); i+=4) {
-			data[i+1] += 128;
-			data[i+3] += 128;
+		long size = (long)(display->movieSize.width * display->movieSize.height) >> 1;
+		for(i=0; i<size; i+=1) {
+			data[1] += 128;
+			data[3] += 128;
+			data+=4;
 		}
 	}
+#endif
 	
 	if([display->qdView lockFocusIfCanDraw]) {
 		long dataSize = 0;
@@ -201,16 +203,21 @@ void displayImageOnView(yuv_display_t *display, void *image)
 		}
 		QDFlushPortBuffer([display->qdView qdPort], NULL);
 		[display->qdView unlockFocus];
-		
+
+		/* Strictly speaking we should do this although it doesn't seem to
+	     * matter if we don't */
+#if 0	
 		if(display->format == XINE_IMGFMT_YUY2) {
 			uint8_t *data = (uint8_t*)image;
 			long i = 0;
-			long size = display->movieSize.width * display->movieSize.height;
-			for(i=0; i<(size << 1); i+=4) {
-				data[i+1] += 128;
-				data[i+3] += 128;
+			long size = (long)(display->movieSize.width * display->movieSize.height) >> 1;
+			for(i=0; i<size; i+=1) {
+				data[1] += 128;
+				data[3] += 128;
+				data+=4;
 			}
 		}
+#endif
 	}
 	
 	[display->lock unlock];
