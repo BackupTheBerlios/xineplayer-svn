@@ -82,6 +82,7 @@
 				French,
 				German,
 				en_GB,
+				fr,
 			);
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA;
 			projectDirPath = "";
@@ -582,6 +583,7 @@
 		A409387C07ED9FA300837FB7 = {
 			children = (
 				A409387D07ED9FA300837FB7,
+				A45A617507F0AA9100639167,
 			);
 			isa = PBXVariantGroup;
 			name = MainMenu.nib;
@@ -606,6 +608,7 @@
 		A409387F07ED9FB100837FB7 = {
 			children = (
 				A409388007ED9FB100837FB7,
+				A45A617607F0AA9100639167,
 			);
 			isa = PBXVariantGroup;
 			name = XPDocument.nib;
@@ -679,6 +682,7 @@
 		A409388807ED9FF100837FB7 = {
 			children = (
 				A409388907ED9FF100837FB7,
+				A45A617407F0AA5E00639167,
 			);
 			isa = PBXVariantGroup;
 			name = Localizable.strings;
@@ -704,6 +708,7 @@
 		A409388B07EDA00100837FB7 = {
 			children = (
 				A409388C07EDA00100837FB7,
+				A45A617307F0AA5E00639167,
 			);
 			isa = PBXVariantGroup;
 			name = InfoPlist.strings;
@@ -729,6 +734,7 @@
 		A409389C07EDA03900837FB7 = {
 			children = (
 				A409389D07EDA03900837FB7,
+				A45A617707F0AA9F00639167,
 			);
 			isa = PBXVariantGroup;
 			name = Credits.rtf;
@@ -1358,6 +1364,46 @@
 			isa = PBXBuildFile;
 			settings = {
 			};
+		};
+		A45A617307F0AA5E00639167 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.strings;
+			name = fr;
+			path = fr.lproj/InfoPlist.strings;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A45A617407F0AA5E00639167 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.strings;
+			name = fr;
+			path = fr.lproj/Localizable.strings;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A45A617507F0AA9100639167 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
+			name = fr;
+			path = fr.lproj/MainMenu.nib;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A45A617607F0AA9100639167 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.nib;
+			name = fr;
+			path = fr.lproj/XPDocument.nib;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A45A617707F0AA9F00639167 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.rtf;
+			name = fr;
+			path = fr.lproj/Credits.rtf;
+			refType = 4;
+			sourceTree = "<group>";
 		};
 		A466E7CE07E34623000B6585 = {
 			children = (

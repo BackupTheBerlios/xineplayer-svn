@@ -10,8 +10,7 @@
 	* If XinePlayer cannot open a movie it will tell you.
 	* Can automatically resize window on movie size change.
 	* Display a little notification in the video window when state changes (e.g. deinterlace is toggled, etc).
-	* Attempt to open any type of file passed (i.e. no longer
-	grey-out files in Open dialogue).
+	* Attempt to open any type of file passed (i.e. no longer grey-out files in Open dialogue).
 	* Deinterlacing is now done via xine's tvtime deinterlace plugin.
 	* Implement preferences dialogue.
 	* Audio visualisation support.
