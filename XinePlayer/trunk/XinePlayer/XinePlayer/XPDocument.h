@@ -28,7 +28,6 @@
 	IBOutlet NSButton *playPauseButton;
 	IBOutlet NSButton *nextButton;
 	IBOutlet NSButton *previousButton;
-	IBOutlet NSSlider *timeSlider;
 	IBOutlet NSDrawer *streamInfoDrawer;
 	IBOutlet NSDrawer *playlistDrawer;
 	IBOutlet NSTableView *streamInfoTable;
@@ -87,7 +86,6 @@
 - (IBAction) togglePlayAndPause: (id) sender;
 - (IBAction) toggleMute: (id) sender;
 - (IBAction) volumeChanged: (id) sender;
-- (IBAction) timeChanged: (id) sender;
 - (IBAction) openNextMRL: (id) sender;
 - (IBAction) openPreviousMRL: (id) sender;
 

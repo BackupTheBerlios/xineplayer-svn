@@ -302,7 +302,7 @@
 										<key>PBXProjectModuleLabel</key>
 										<string>XPDocument.m</string>
 										<key>bookmark</key>
-										<string>A4822E3407F86EE100578954</string>
+										<string>A4822E6A07F8722E00578954</string>
 										<key>history</key>
 										<array>
 											<string>A409340207ED001100837FB7</string>
@@ -344,11 +344,11 @@
 											<string>A4822CFA07F8531D00578954</string>
 											<string>A4822DF307F86B6F00578954</string>
 											<string>A4822DFE07F86BE200578954</string>
-											<string>A4822E0007F86BE200578954</string>
 											<string>A4822E1E07F86E0C00578954</string>
 											<string>A4822E2007F86E0C00578954</string>
-											<string>A4822E2907F86E2000578954</string>
-											<string>A4822E3107F86EA400578954</string>
+											<string>A4822E6307F871D600578954</string>
+											<string>A4822E6407F871D600578954</string>
+											<string>A4822E6507F871D600578954</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -465,6 +465,15 @@
 											<string>A4822E2507F86E0C00578954</string>
 											<string>A4822E2607F86E0C00578954</string>
 											<string>A4822E2B07F86E2000578954</string>
+											<string>A4822E3807F86F2200578954</string>
+											<string>A4822E3F07F86FAA00578954</string>
+											<string>A4822E4407F86FDB00578954</string>
+											<string>A4822E4507F86FDB00578954</string>
+											<string>A4822E4F07F8709B00578954</string>
+											<string>A4822E5407F870A800578954</string>
+											<string>A4822E6007F8713900578954</string>
+											<string>A4822E6607F871D600578954</string>
+											<string>A4822E6707F871D600578954</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -556,8 +565,8 @@
 		<string>A4822CB407F846FB00578954</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>A4C2A8B907BE5D7500628752</string>
-		<string>1C0AD2B3069F1EA900FABCE6</string>
 		<string>/Users/rjw57/Developer/XinePlayer/XinePlayer.xcode</string>
+		<string>1C0AD2B3069F1EA900FABCE6</string>
 	</array>
 	<key>WindowString</key>
 	<string>127 360 887 611 0 0 1280 1002 </string>
@@ -589,7 +598,7 @@
 										<key>PBXProjectModuleLabel</key>
 										<string>XineStream.m</string>
 										<key>bookmark</key>
-										<string>A4822E3507F86EE200578954</string>
+										<string>A4822E6B07F8722E00578954</string>
 										<key>history</key>
 										<array>
 											<string>A415E8C407F20D8500FFA8BD</string>
@@ -623,6 +632,8 @@
 							<string>278pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

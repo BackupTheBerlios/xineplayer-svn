@@ -236,7 +236,6 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 	
 	for(i=0; i<XINE_LANG_MAX; i++) {
 		NSString *languageName = [NSString stringWithFormat:NSLocalizedString(@"Track %i", @"Default audio/spu track format"), i+1];
-		NSLog(@"-- %@ --", languageName);
 		if(xine_get_audio_lang(_stream,i,lang))
 		{
 			/* I don't know why but xine tends to add 

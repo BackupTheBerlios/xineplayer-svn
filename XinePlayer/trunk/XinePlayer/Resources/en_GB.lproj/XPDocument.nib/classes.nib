@@ -32,7 +32,6 @@
                 previousButton = NSButton; 
                 streamInfoDrawer = NSDrawer; 
                 streamInfoTable = NSTableView; 
-                timeSlider = NSSlider; 
                 videoView = XineVideoView; 
                 volumeSlider = NSSlider; 
             }; 

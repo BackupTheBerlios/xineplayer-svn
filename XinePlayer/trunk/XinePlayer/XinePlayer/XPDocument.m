@@ -374,6 +374,8 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 {
 	_isPlaying = NO;
 	
+	[self willChangeValueForKey:@"streamIsValid"];
+	
 	/* Actually stop the stream and wait until it has taken effect. */
 	if([_stream isPlaying]) {
 		[_stream stop: YES];
@@ -400,6 +402,8 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	
 	[self synchroniseGUIAndStream: nil];
 	[[self documentWindow] makeFirstResponder: [[self documentWindow] initialFirstResponder]];
+
+	[self didChangeValueForKey:@"streamIsValid"];
 	
 	return _isPlaying;
 }
@@ -634,17 +638,6 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	[self synchroniseGUIAndStream: nil];
 }
 
-- (IBAction) timeChanged: (id) sender
-{
-	if(!_stream)
-		return;
-	if(_isSynchingGUI)
-		return;
-	
-	[_stream playFromPosition: [timeSlider intValue]];
-	[self synchroniseGUIAndStream: nil];
-}
-
 @end
 
 @implementation XPDocument (KeyValue)
@@ -728,6 +721,31 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	[self addLocalisedFrom:[_stream subtitleLanguageCodes] to:channels];
 	
 	return channels;
+}
+
+- (id) hasPositionInformation
+{
+	return [NSNumber numberWithBool: [_stream isPlaying] && [_stream hasPositionInformation]];
+}
+
+- (id) streamPosition
+{
+	if(_stream && [_stream isPlaying] && [_stream hasPositionInformation])
+	{
+		int pos, time, len;
+		[_stream getPosition:&pos time:&time length:&len];
+		return [NSNumber numberWithInt:pos];
+	}
+	
+	return [NSNumber numberWithInt:0];
+}
+
+- (void) setStreamPosition: (id) value
+{
+	if(!_stream)
+		return;
+
+	[_stream playFromPosition: [value intValue]];
 }
 
 @end
@@ -879,6 +897,9 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	
 	_isSynchingGUI = YES;
 	
+	[self willChangeValueForKey:@"streamPosition"];
+	[self willChangeValueForKey:@"hasPositionInformation"];
+	
 	BOOL isMuted = [_stream valueOfParameter:XINE_PARAM_AUDIO_MUTE];
 	
 	[muteButton setState: isMuted ? NSOnState : NSOffState];
@@ -889,17 +910,7 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	//NSLog(@"Slider: %i", [volumeSlider intValue]);
 	
 	[_stream setValue: [volumeSlider intValue] ofParameter:XINE_PARAM_AUDIO_VOLUME];
-	
-	[timeSlider setEnabled: ([_stream isPlaying] && [_stream hasPositionInformation])];
-	if([timeSlider isEnabled])
-	{
-		int pos, time, len;
-		[_stream getPosition:&pos time:&time length:&len];
-		[timeSlider setIntValue: pos];
-	} else {
-		[timeSlider setIntValue: 0];
-	}
-	
+		
 	if([_stream isPlaying] && ([_stream speed] == XineNormalSpeed))
 	{
 		[playPauseButton setImage: [NSImage imageNamed:@"pause"]];
@@ -917,6 +928,8 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	[streamInfoTable reloadData];
 	[playlistTable reloadData];
 	
+	[self didChangeValueForKey:@"streamPosition"];
+	[self didChangeValueForKey:@"hasPositionInformation"];
 	_isSynchingGUI = NO;
 }
 
