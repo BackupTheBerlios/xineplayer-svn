@@ -251,8 +251,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>28</integer>
-									<integer>19</integer>
+									<integer>15</integer>
+									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -274,7 +274,7 @@
 							<real>237</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>205 391 887 611 0 0 1280 1002 </string>
+						<string>116 344 887 611 0 0 1280 1002 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -290,7 +290,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>XPDocument.m</string>
+								<string>XineVideoView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -298,9 +298,9 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>XPDocument.m</string>
+										<string>XineVideoView.m</string>
 										<key>bookmark</key>
-										<string>A4DA332007EF7C26005B7998</string>
+										<string>A457E72607EF803D0026933F</string>
 										<key>history</key>
 										<array>
 											<string>A4D7CEA807EAD2820074C189</string>
@@ -318,10 +318,10 @@
 											<string>A4DA32B707EF71FC005B7998</string>
 											<string>A4DA32C907EF72E2005B7998</string>
 											<string>A4DA32F607EF78A8005B7998</string>
-											<string>A4DA330A07EF79F1005B7998</string>
 											<string>A4DA331207EF7ABE005B7998</string>
 											<string>A4DA331D07EF7C26005B7998</string>
-											<string>A4DA331E07EF7C26005B7998</string>
+											<string>A457E72107EF7FF60026933F</string>
+											<string>A457E72207EF7FF60026933F</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -340,30 +340,11 @@
 											<string>A4A8ADE007EE038B00A44F81</string>
 											<string>A4A8ADF007EE055C00A44F81</string>
 											<string>A4A8AE4C07EE0BF700A44F81</string>
-											<string>A4DA326F07EF665D005B7998</string>
-											<string>A4DA327007EF665D005B7998</string>
-											<string>A4DA327107EF665D005B7998</string>
 											<string>A4DA328907EF6AA9005B7998</string>
-											<string>A4DA328A07EF6AA9005B7998</string>
-											<string>A4DA329107EF6B90005B7998</string>
 											<string>A4DA329207EF6B90005B7998</string>
 											<string>A4DA329307EF6B90005B7998</string>
-											<string>A4DA32B207EF71BE005B7998</string>
-											<string>A4DA32B907EF71FC005B7998</string>
-											<string>A4DA32BA07EF71FC005B7998</string>
 											<string>A4DA32BB07EF71FC005B7998</string>
-											<string>A4DA32CB07EF72E2005B7998</string>
-											<string>A4DA32CC07EF72E2005B7998</string>
-											<string>A4DA32F107EF7841005B7998</string>
-											<string>A4DA32F207EF7841005B7998</string>
-											<string>A4DA32F807EF78A8005B7998</string>
-											<string>A4DA32F907EF78A8005B7998</string>
-											<string>A4DA32FA07EF78A8005B7998</string>
-											<string>A4DA330007EF793C005B7998</string>
-											<string>A4DA330C07EF79F1005B7998</string>
-											<string>A4DA330D07EF79F1005B7998</string>
-											<string>A4DA331407EF7ABE005B7998</string>
-											<string>A4DA331F07EF7C26005B7998</string>
+											<string>A457E72307EF7FF60026933F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -377,7 +358,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {605, 397}}</string>
 								<key>RubberWindowFrame</key>
-								<string>205 391 887 611 0 0 1280 1002 </string>
+								<string>116 344 887 611 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -397,7 +378,7 @@
 								<key>Frame</key>
 								<string>{{0, 404}, {605, 165}}</string>
 								<key>RubberWindowFrame</key>
-								<string>205 391 887 611 0 0 1280 1002 </string>
+								<string>116 344 887 611 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -421,9 +402,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>A4DA326407EF5F61005B7998</string>
+				<string>A457E71D07EF7F7B0026933F</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>A4DA326507EF5F61005B7998</string>
+				<string>A457E71E07EF7F7B0026933F</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -451,12 +432,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>A4C2A8B907BE5D7500628752</string>
 		<string>1C0AD2B3069F1EA900FABCE6</string>
 		<string>/Users/rjw57/Developer/XinePlayer/XinePlayer.xcode</string>
 	</array>
 	<key>WindowString</key>
-	<string>205 391 887 611 0 0 1280 1002 </string>
+	<string>116 344 887 611 0 0 1280 1002 </string>
 	<key>WindowTools</key>
 	<array>
 		<dict>
@@ -485,7 +465,7 @@
 										<key>PBXProjectModuleLabel</key>
 										<string>NSWindow.h</string>
 										<key>bookmark</key>
-										<string>A4DA332107EF7C26005B7998</string>
+										<string>A4DA332D07EF7DEA005B7998</string>
 										<key>history</key>
 										<array>
 											<string>A4A8AE8707EE113100A44F81</string>
@@ -928,9 +908,9 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C0AD2B3069F1EA900FABCE6</string>
-				<string>A4DA326607EF5F61005B7998</string>
+				<string>A457E71F07EF7F7B0026933F</string>
 				<string>1CD0528B0623707200166675</string>
-				<string>A4DA326707EF5F61005B7998</string>
+				<string>A457E72007EF7F7B0026933F</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.run</string>

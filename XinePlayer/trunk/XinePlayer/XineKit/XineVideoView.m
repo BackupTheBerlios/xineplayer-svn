@@ -79,6 +79,11 @@ NSString *XineVideoViewFrameSizeDidChangeNotification = @"XineVideoViewFrameSize
 	windowFrame.size.width = _aspectRatio * (ratio*_videoSize.height) + delta.width + 2;
 	windowFrame.size.height = (ratio*_videoSize.height) + delta.height + 2;
 	
+	if(windowFrame.size.width < [parentWindow minSize].width)
+		windowFrame.size.width = [parentWindow minSize].width;
+	if(windowFrame.size.height < [parentWindow minSize].height)
+		windowFrame.size.height = [parentWindow minSize].height;
+	
 	windowFrame.origin.x += 0.5*(oldFrame.size.width - windowFrame.size.width);
 	windowFrame.origin.y += 0.5*(oldFrame.size.height - windowFrame.size.height);
 	
