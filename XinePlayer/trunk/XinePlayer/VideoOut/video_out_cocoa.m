@@ -371,17 +371,17 @@ PlanarPixmapInfoYUV420* createPixmapAndUpdateFrame(vo_frame_t *frame)
 			
 			frame->base[0] = data + offset;
 			pixmap->componentInfoY.offset = frame->base[0] - (UInt8*)pixmap;
-			pixmap->componentInfoY.rowBytes = width;
+			pixmap->componentInfoY.rowBytes = frame->pitches[0];
 			
 			offset += y_size;
 			frame->base[1] = data + offset;
 			pixmap->componentInfoCb.offset = frame->base[1] - (UInt8*)pixmap;
-			pixmap->componentInfoCb.rowBytes = width/2;
+			pixmap->componentInfoCb.rowBytes = frame->pitches[1];
 			
 			offset += uv_size;
 			frame->base[2] = data + offset;
 			pixmap->componentInfoCr.offset = frame->base[2] - (UInt8*)pixmap;
-			pixmap->componentInfoCr.rowBytes = width/2;
+			pixmap->componentInfoCr.rowBytes = frame->pitches[2];;
 		}
 			break;
 		default:

@@ -144,7 +144,7 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 132711805;
+			PBXPerProjectTemplateStateSaveDate = 132829679;
 			PBXPrepackagedSmartGroups_v2 = (
 				{
 					PBXTransientLocationAtTop = bottom;
@@ -321,7 +321,7 @@
 					};
 				},
 			);
-			PBXWorkspaceStateSaveDate = 132711805;
+			PBXWorkspaceStateSaveDate = 132829679;
 		};
 		perUserProjectItems = {
 			A495A5CE07E866730010074B = A495A5CE07E866730010074B;
@@ -337,6 +337,11 @@
 			A4C7E12B07E79E1B004B7340 = A4C7E12B07E79E1B004B7340;
 			A4C7E14007E79EB3004B7340 = A4C7E14007E79EB3004B7340;
 			A4D7CD9907E905C20074C189 = A4D7CD9907E905C20074C189;
+			A4D7CEA807EAD2820074C189 = A4D7CEA807EAD2820074C189;
+			A4D7CEA907EAD2820074C189 = A4D7CEA907EAD2820074C189;
+			A4D7CEAA07EAD2820074C189 = A4D7CEAA07EAD2820074C189;
+			A4D7CEAB07EAD2820074C189 = A4D7CEAB07EAD2820074C189;
+			A4D7CEB007EAD2C40074C189 = A4D7CEB007EAD2C40074C189;
 		};
 		sourceControlManager = A4AA161007BE4770000DDE36;
 		userBookmarkGroup = A4A3D17A07E6048300AAC902;
@@ -422,8 +427,8 @@
 	A42FF56607E364730038B422 = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {498, 7013}}";
-			sepNavSelRange = "{8467, 0}";
-			sepNavVisRect = "{{0, 3765}, {498, 379}}";
+			sepNavSelRange = "{11186, 0}";
+			sepNavVisRect = "{{0, 5267}, {498, 379}}";
 			sepNavWindowFrame = "{{38, 418}, {750, 558}}";
 		};
 	};
@@ -803,6 +808,56 @@
 		rType = 0;
 		vrLen = 899;
 		vrLoc = 41;
+	};
+	A4D7CEA807EAD2820074C189 = {
+		fRef = A42D7ABF07E38F2700955C78;
+		isa = PBXTextBookmark;
+		name = "FixInstallName.sh: 23";
+		rLen = 0;
+		rLoc = 818;
+		rType = 0;
+		vrLen = 899;
+		vrLoc = 41;
+	};
+	A4D7CEA907EAD2820074C189 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 279";
+		rLen = 0;
+		rLoc = 8467;
+		rType = 0;
+		vrLen = 548;
+		vrLoc = 8002;
+	};
+	A4D7CEAA07EAD2820074C189 = {
+		fRef = A42D7ABF07E38F2700955C78;
+		isa = PBXTextBookmark;
+		name = "FixInstallName.sh: 23";
+		rLen = 0;
+		rLoc = 818;
+		rType = 0;
+		vrLen = 899;
+		vrLoc = 41;
+	};
+	A4D7CEAB07EAD2820074C189 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 384";
+		rLen = 0;
+		rLoc = 11186;
+		rType = 0;
+		vrLen = 856;
+		vrLoc = 10463;
+	};
+	A4D7CEB007EAD2C40074C189 = {
+		fRef = A42FF56607E364730038B422;
+		isa = PBXTextBookmark;
+		name = "video_out_cocoa.m: 384";
+		rLen = 0;
+		rLoc = 11186;
+		rType = 0;
+		vrLen = 856;
+		vrLoc = 10463;
 	};
 	A4D80DDD07E6011000B775A2 = {
 		uiCtxt = {

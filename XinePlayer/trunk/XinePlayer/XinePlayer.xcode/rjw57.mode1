@@ -203,8 +203,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -254,12 +252,12 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>44</integer>
-									<integer>43</integer>
+									<integer>3</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 384}, {319, 551}}</string>
+							<string>{{0, 0}, {319, 551}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -292,7 +290,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>FixInstallName.sh</string>
+								<string>video_out_cocoa.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -300,18 +298,18 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>FixInstallName.sh</string>
+										<string>video_out_cocoa.m</string>
 										<key>bookmark</key>
-										<string>A4D7CD9907E905C20074C189</string>
+										<string>A4D7CEB007EAD2C40074C189</string>
 										<key>history</key>
 										<array>
 											<string>A4A3D23307E6428900AAC902</string>
-											<string>A4A3D25A07E64C4400AAC902</string>
 											<string>A4A3D25F07E6509200AAC902</string>
 											<string>A4A3D26007E6509200AAC902</string>
 											<string>A4C7E14007E79EB3004B7340</string>
 											<string>A495A5CE07E866730010074B</string>
-											<string>A495A5D107E866730010074B</string>
+											<string>A4D7CEA807EAD2820074C189</string>
+											<string>A4D7CEA907EAD2820074C189</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -320,6 +318,7 @@
 											<string>A4A3D22407E634E700AAC902</string>
 											<string>A4C7E12B07E79E1B004B7340</string>
 											<string>A495A5D007E866730010074B</string>
+											<string>A4D7CEAA07EAD2820074C189</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -377,9 +376,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>A4D7CD9A07E905C20074C189</string>
+				<string>A4D7CEAC07EAD2820074C189</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>A4D7CD9B07E905C20074C189</string>
+				<string>A4D7CEAD07EAD2820074C189</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -877,9 +876,9 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C0AD2B3069F1EA900FABCE6</string>
-				<string>A4D7CD9C07E905C20074C189</string>
+				<string>A4D7CEAE07EAD2820074C189</string>
 				<string>1CD0528B0623707200166675</string>
-				<string>A4D7CD9D07E905C20074C189</string>
+				<string>A4D7CEAF07EAD2820074C189</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.run</string>
