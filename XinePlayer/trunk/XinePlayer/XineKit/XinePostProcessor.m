@@ -171,7 +171,7 @@
 	return param;
 }
 
-- (void) setValue: (id) value forParameter: (NSString*) name
+- (void) setValue: (id) value forProperty: (NSString*) name
 {
 	xine_post_api_parameter_t *param = [self propertyNamed: name];
 	if(!param)
@@ -201,7 +201,7 @@
 				{
 					int index = 0;
 					BOOL managedIt = NO;
-					NSArray *enumValues = [self enumeratedValuesForParameter: name];
+					NSArray *enumValues = [self enumeratedValuesForProperty: name];
 					while(index < [enumValues count])
 					{
 						if([strVal isEqualToString: [enumValues objectAtIndex: index]])
@@ -276,7 +276,7 @@
 	api->get_parameters(_post, _param_data);
 }
 
-- (NSString*) descriptionForParameter: (NSString*) name
+- (NSString*) descriptionForProperty: (NSString*) name
 {
 	xine_post_api_parameter_t *param = [self propertyNamed: name];
 	if(!param)
@@ -284,7 +284,7 @@
 	return [NSString stringWithCString: param->description];
 }
 
-- (NSArray*) enumeratedValuesForParameter: (NSString*) name
+- (NSArray*) enumeratedValuesForProperty: (NSString*) name
 {
 	xine_post_api_parameter_t *param = [self propertyNamed: name];
 	if(!param)
@@ -314,7 +314,7 @@
 	return param->readonly;
 }
 
-- (id) valueForParameter: (NSString*) name
+- (id) valueForProperty: (NSString*) name
 {
 	xine_post_api_parameter_t *param = [self propertyNamed: name];
 	if(!param)
@@ -325,7 +325,7 @@
 	{
 		case POST_PARAM_TYPE_INT:
 			if([self isEnumeratedParameter: name])
-				return [[self enumeratedValuesForParameter: name] objectAtIndex: *((int*)data)];
+				return [[self enumeratedValuesForProperty: name] objectAtIndex: *((int*)data)];
 			return [NSNumber numberWithInt: *((int*)data)];
 			break;
 		case POST_PARAM_TYPE_DOUBLE:

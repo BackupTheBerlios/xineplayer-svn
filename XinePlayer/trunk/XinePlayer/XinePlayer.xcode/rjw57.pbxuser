@@ -863,6 +863,16 @@
 			A40934F607ED193200837FB7 = A40934F607ED193200837FB7;
 			A40934F707ED193200837FB7 = A40934F707ED193200837FB7;
 			A40934F807ED193200837FB7 = A40934F807ED193200837FB7;
+			A40934FB07ED1AE500837FB7 = A40934FB07ED1AE500837FB7;
+			A40934FC07ED1AE500837FB7 = A40934FC07ED1AE500837FB7;
+			A40934FF07ED1B0A00837FB7 = A40934FF07ED1B0A00837FB7;
+			A409350007ED1B0A00837FB7 = A409350007ED1B0A00837FB7;
+			A409350107ED1B1000837FB7 = A409350107ED1B1000837FB7;
+			A409350207ED1B1000837FB7 = A409350207ED1B1000837FB7;
+			A409350307ED1B1000837FB7 = A409350307ED1B1000837FB7;
+			A409350407ED1B1000837FB7 = A409350407ED1B1000837FB7;
+			A409350507ED1B1000837FB7 = A409350507ED1B1000837FB7;
+			A409350607ED1B1000837FB7 = A409350607ED1B1000837FB7;
 			A495A5D007E866730010074B = A495A5D007E866730010074B;
 			A4A3D21D07E6330100AAC902 = A4A3D21D07E6330100AAC902;
 			A4A3D22307E634E700AAC902 = A4A3D22307E634E700AAC902;
@@ -896,8 +906,8 @@
 	2A37F4ACFDCFA73011CA2CEA = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {558, 9897}}";
-			sepNavSelRange = "{4560, 0}";
-			sepNavVisRect = "{{0, 1941}, {558, 379}}";
+			sepNavSelRange = "{3543, 0}";
+			sepNavVisRect = "{{0, 1847}, {558, 379}}";
 			sepNavWindowFrame = "{{15, 439}, {750, 558}}";
 		};
 	};
@@ -2235,7 +2245,7 @@
 		isa = PBXTextBookmark;
 		name = xine_post_wire_audio_port;
 		rLen = 0;
-		rLoc = 7603;
+		rLoc = 7596;
 		rType = 0;
 		vrLen = 644;
 		vrLoc = 5849;
@@ -2265,7 +2275,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 212";
 		rLen = 0;
-		rLoc = 7321;
+		rLoc = 7314;
 		rType = 0;
 		vrLen = 641;
 		vrLoc = 5752;
@@ -2285,7 +2295,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 217";
 		rLen = 0;
-		rLoc = 7729;
+		rLoc = 7722;
 		rType = 0;
 		vrLen = 703;
 		vrLoc = 5752;
@@ -2535,7 +2545,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 209";
 		rLen = 0;
-		rLoc = 7325;
+		rLoc = 7318;
 		rType = 0;
 		vrLen = 870;
 		vrLoc = 5518;
@@ -2555,7 +2565,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 225";
 		rLen = 0;
-		rLoc = 7684;
+		rLoc = 7677;
 		rType = 0;
 		vrLen = 858;
 		vrLoc = 5693;
@@ -2845,7 +2855,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 260";
 		rLen = 0;
-		rLoc = 8541;
+		rLoc = 8534;
 		rType = 0;
 		vrLen = 659;
 		vrLoc = 7428;
@@ -2865,7 +2875,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 260";
 		rLen = 0;
-		rLoc = 8541;
+		rLoc = 8534;
 		rType = 0;
 		vrLen = 659;
 		vrLoc = 7428;
@@ -2905,7 +2915,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 133";
 		rLen = 0;
-		rLoc = 3849;
+		rLoc = 3846;
 		rType = 0;
 		vrLen = 1052;
 		vrLoc = 3199;
@@ -3015,7 +3025,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 229";
 		rLen = 0;
-		rLoc = 7512;
+		rLoc = 7505;
 		rType = 0;
 		vrLen = 424;
 		vrLoc = 6355;
@@ -3143,7 +3153,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 136";
 		rLen = 0;
-		rLoc = 3849;
+		rLoc = 3846;
 		rType = 0;
 		vrLen = 1028;
 		vrLoc = 3199;
@@ -3233,7 +3243,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.h: propertyNamed:";
 		rLen = 0;
-		rLoc = 1717;
+		rLoc = 1714;
 		rType = 0;
 		vrLen = 713;
 		vrLoc = 891;
@@ -3292,7 +3302,7 @@
 		fRef = A4D7CEB607EAEA440074C189;
 		isa = PBXTextBookmark;
 		name = "- (XinePostProcessor*) propertyNamed: (NSString*) name;\n";
-		rLen = 55;
+		rLen = 54;
 		rLoc = 1543;
 		rType = 0;
 		vrLen = 713;
@@ -3362,7 +3372,7 @@
 		fRef = A4D7CEB607EAEA440074C189;
 		isa = PBXTextBookmark;
 		name = "- (XinePostProcessor*) propertyNamed: (NSString*) name;\n";
-		rLen = 55;
+		rLen = 54;
 		rLoc = 1543;
 		rType = 0;
 		vrLen = 713;
@@ -3393,7 +3403,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 137";
 		rLen = 0;
-		rLoc = 4189;
+		rLoc = 4180;
 		rType = 0;
 		vrLen = 1036;
 		vrLoc = 3199;
@@ -3423,7 +3433,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 137";
 		rLen = 0;
-		rLoc = 3744;
+		rLoc = 3742;
 		rType = 0;
 		vrLen = 995;
 		vrLoc = 3199;
@@ -3473,7 +3483,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 144";
 		rLen = 0;
-		rLoc = 4146;
+		rLoc = 4142;
 		rType = 0;
 		vrLen = 941;
 		vrLoc = 3202;
@@ -3492,7 +3502,7 @@
 		fRef = A4D7CEB607EAEA440074C189;
 		isa = PBXTextBookmark;
 		name = "- (XinePostProcessor*) propertyNamed: (NSString*) name;\n";
-		rLen = 55;
+		rLen = 54;
 		rLoc = 1543;
 		rType = 0;
 		vrLen = 713;
@@ -3503,7 +3513,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 144";
 		rLen = 0;
-		rLoc = 4146;
+		rLoc = 4142;
 		rType = 0;
 		vrLen = 941;
 		vrLoc = 3202;
@@ -3523,7 +3533,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 137";
 		rLen = 0;
-		rLoc = 3744;
+		rLoc = 3742;
 		rType = 0;
 		vrLen = 629;
 		vrLoc = 3500;
@@ -3532,7 +3542,7 @@
 		fRef = A4D7CEB607EAEA440074C189;
 		isa = PBXTextBookmark;
 		name = "- (XinePostProperty*) propertyNamed: (NSString*) name;\n";
-		rLen = 55;
+		rLen = 54;
 		rLoc = 1543;
 		rType = 0;
 		vrLen = 591;
@@ -3560,7 +3570,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 137";
 		rLen = 0;
-		rLoc = 3744;
+		rLoc = 3742;
 		rType = 0;
 		vrLen = 629;
 		vrLoc = 3500;
@@ -3569,7 +3579,7 @@
 		fRef = A4D7CEB607EAEA440074C189;
 		isa = PBXTextBookmark;
 		name = "- (XinePostProperty*) propertyNamed: (NSString*) name;\n";
-		rLen = 55;
+		rLen = 54;
 		rLoc = 1543;
 		rType = 0;
 		vrLen = 591;
@@ -3590,7 +3600,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.h: propertyNamed:";
 		rLen = 0;
-		rLoc = 1562;
+		rLoc = 1561;
 		rType = 0;
 		vrLen = 713;
 		vrLoc = 891;
@@ -3614,7 +3624,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 139";
 		rLen = 0;
-		rLoc = 3843;
+		rLoc = 3840;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 3271;
@@ -3624,7 +3634,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 139";
 		rLen = 0;
-		rLoc = 3843;
+		rLoc = 3840;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 3271;
@@ -3634,7 +3644,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 139";
 		rLen = 0;
-		rLoc = 3843;
+		rLoc = 3840;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 3271;
@@ -3654,7 +3664,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 139";
 		rLen = 0;
-		rLoc = 3843;
+		rLoc = 3840;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 3271;
@@ -3784,7 +3794,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 139";
 		rLen = 0;
-		rLoc = 3843;
+		rLoc = 3840;
 		rType = 0;
 		vrLen = 928;
 		vrLoc = 3271;
@@ -3804,7 +3814,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 138";
 		rLen = 0;
-		rLoc = 3780;
+		rLoc = 3778;
 		rType = 0;
 		vrLen = 951;
 		vrLoc = 3271;
@@ -3814,7 +3824,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 138";
 		rLen = 0;
-		rLoc = 3780;
+		rLoc = 3778;
 		rType = 0;
 		vrLen = 951;
 		vrLoc = 3271;
@@ -3824,7 +3834,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 138";
 		rLen = 0;
-		rLoc = 3780;
+		rLoc = 3778;
 		rType = 0;
 		vrLen = 951;
 		vrLoc = 3271;
@@ -3864,7 +3874,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 138";
 		rLen = 0;
-		rLoc = 3780;
+		rLoc = 3778;
 		rType = 0;
 		vrLen = 951;
 		vrLoc = 3271;
@@ -4134,7 +4144,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 138";
 		rLen = 0;
-		rLoc = 3908;
+		rLoc = 3904;
 		rType = 0;
 		vrLen = 857;
 		vrLoc = 3467;
@@ -4144,7 +4154,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.h: 47";
 		rLen = 0;
-		rLoc = 1777;
+		rLoc = 1774;
 		rType = 0;
 		vrLen = 850;
 		vrLoc = 934;
@@ -4194,7 +4204,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 138";
 		rLen = 0;
-		rLoc = 3908;
+		rLoc = 3904;
 		rType = 0;
 		vrLen = 857;
 		vrLoc = 3467;
@@ -4224,7 +4234,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.h: 45";
 		rLen = 0;
-		rLoc = 1659;
+		rLoc = 1657;
 		rType = 0;
 		vrLen = 775;
 		vrLoc = 891;
@@ -4244,7 +4254,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.h: descriptionForParameter:";
 		rLen = 0;
-		rLoc = 1716;
+		rLoc = 1713;
 		rType = 0;
 		vrLen = 789;
 		vrLoc = 934;
@@ -4264,7 +4274,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.h: 47";
 		rLen = 0;
-		rLoc = 1777;
+		rLoc = 1774;
 		rType = 0;
 		vrLen = 850;
 		vrLoc = 934;
@@ -4307,8 +4317,8 @@
 		fRef = 2A37F4ACFDCFA73011CA2CEA;
 		isa = PBXTextBookmark;
 		name = descriptionForParameter;
-		rLen = 23;
-		rLoc = 3868;
+		rLen = 21;
+		rLoc = 3865;
 		rType = 0;
 		vrLen = 857;
 		vrLoc = 3467;
@@ -4328,7 +4338,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.h: 49";
 		rLen = 0;
-		rLoc = 1828;
+		rLoc = 1824;
 		rType = 0;
 		vrLen = 874;
 		vrLoc = 961;
@@ -4348,7 +4358,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.h: 50";
 		rLen = 0;
-		rLoc = 1876;
+		rLoc = 1872;
 		rType = 0;
 		vrLen = 917;
 		vrLoc = 961;
@@ -4368,7 +4378,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.h: 50";
 		rLen = 0;
-		rLoc = 1919;
+		rLoc = 1915;
 		rType = 0;
 		vrLen = 935;
 		vrLoc = 991;
@@ -4387,8 +4397,8 @@
 		fRef = 2A37F4ACFDCFA73011CA2CEA;
 		isa = PBXTextBookmark;
 		name = descriptionForParameter;
-		rLen = 23;
-		rLoc = 3868;
+		rLen = 21;
+		rLoc = 3865;
 		rType = 0;
 		vrLen = 857;
 		vrLoc = 3467;
@@ -4408,7 +4418,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 134";
 		rLen = 0;
-		rLoc = 3869;
+		rLoc = 3866;
 		rType = 0;
 		vrLen = 867;
 		vrLoc = 3467;
@@ -4436,7 +4446,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 134";
 		rLen = 0;
-		rLoc = 3869;
+		rLoc = 3866;
 		rType = 0;
 		vrLen = 867;
 		vrLoc = 3467;
@@ -4493,7 +4503,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 134";
 		rLen = 0;
-		rLoc = 3869;
+		rLoc = 3866;
 		rType = 0;
 		vrLen = 867;
 		vrLoc = 3467;
@@ -4513,7 +4523,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 138";
 		rLen = 0;
-		rLoc = 4081;
+		rLoc = 4077;
 		rType = 0;
 		vrLen = 547;
 		vrLoc = 11530;
@@ -4533,7 +4543,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 138";
 		rLen = 0;
-		rLoc = 4081;
+		rLoc = 4077;
 		rType = 0;
 		vrLen = 879;
 		vrLoc = 14017;
@@ -4553,7 +4563,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 138";
 		rLen = 0;
-		rLoc = 4081;
+		rLoc = 4077;
 		rType = 0;
 		vrLen = 879;
 		vrLoc = 14017;
@@ -4703,7 +4713,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 132";
 		rLen = 0;
-		rLoc = 3642;
+		rLoc = 3641;
 		rType = 0;
 		vrLen = 983;
 		vrLoc = 3199;
@@ -4723,7 +4733,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 133";
 		rLen = 0;
-		rLoc = 3732;
+		rLoc = 3730;
 		rType = 0;
 		vrLen = 1131;
 		vrLoc = 3199;
@@ -4750,7 +4760,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 133";
 		rLen = 0;
-		rLoc = 3732;
+		rLoc = 3730;
 		rType = 0;
 		vrLen = 1131;
 		vrLoc = 3199;
@@ -4770,7 +4780,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 133";
 		rLen = 0;
-		rLoc = 3732;
+		rLoc = 3730;
 		rType = 0;
 		vrLen = 1131;
 		vrLoc = 3199;
@@ -5090,7 +5100,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 133";
 		rLen = 0;
-		rLoc = 3732;
+		rLoc = 3730;
 		rType = 0;
 		vrLen = 1131;
 		vrLoc = 3199;
@@ -5110,7 +5120,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 134";
 		rLen = 0;
-		rLoc = 3771;
+		rLoc = 3769;
 		rType = 0;
 		vrLen = 1009;
 		vrLoc = 3539;
@@ -5130,7 +5140,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 144";
 		rLen = 0;
-		rLoc = 4296;
+		rLoc = 4290;
 		rType = 0;
 		vrLen = 875;
 		vrLoc = 3903;
@@ -5177,7 +5187,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 144";
 		rLen = 0;
-		rLoc = 4293;
+		rLoc = 4287;
 		rType = 0;
 		vrLen = 875;
 		vrLoc = 3903;
@@ -5207,7 +5217,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 144";
 		rLen = 0;
-		rLoc = 4293;
+		rLoc = 4287;
 		rType = 0;
 		vrLen = 875;
 		vrLoc = 3903;
@@ -5237,7 +5247,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 141";
 		rLen = 0;
-		rLoc = 4098;
+		rLoc = 4094;
 		rType = 0;
 		vrLen = 875;
 		vrLoc = 3903;
@@ -5257,7 +5267,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 141";
 		rLen = 0;
-		rLoc = 4098;
+		rLoc = 4094;
 		rType = 0;
 		vrLen = 875;
 		vrLoc = 3903;
@@ -5507,7 +5517,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 214";
 		rLen = 0;
-		rLoc = 6030;
+		rLoc = 6028;
 		rType = 0;
 		vrLen = 736;
 		vrLoc = 5537;
@@ -5517,7 +5527,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -5537,7 +5547,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 214";
 		rLen = 0;
-		rLoc = 6030;
+		rLoc = 6028;
 		rType = 0;
 		vrLen = 736;
 		vrLoc = 5537;
@@ -5547,7 +5557,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 214";
 		rLen = 0;
-		rLoc = 6030;
+		rLoc = 6028;
 		rType = 0;
 		vrLen = 736;
 		vrLoc = 5537;
@@ -5557,7 +5567,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -5577,7 +5587,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 214";
 		rLen = 0;
-		rLoc = 6030;
+		rLoc = 6028;
 		rType = 0;
 		vrLen = 736;
 		vrLoc = 5537;
@@ -5607,7 +5617,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 214";
 		rLen = 0;
-		rLoc = 6030;
+		rLoc = 6028;
 		rType = 0;
 		vrLen = 736;
 		vrLoc = 5537;
@@ -5637,7 +5647,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 626";
 		rLen = 0;
-		rLoc = 16453;
+		rLoc = 16446;
 		rType = 0;
 		vrLen = 833;
 		vrLoc = 16041;
@@ -5647,7 +5657,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -5667,7 +5677,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 626";
 		rLen = 0;
-		rLoc = 16453;
+		rLoc = 16446;
 		rType = 0;
 		vrLen = 833;
 		vrLoc = 16041;
@@ -5677,7 +5687,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 626";
 		rLen = 0;
-		rLoc = 16453;
+		rLoc = 16446;
 		rType = 0;
 		vrLen = 833;
 		vrLoc = 16041;
@@ -5687,7 +5697,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -5707,7 +5717,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 626";
 		rLen = 0;
-		rLoc = 16453;
+		rLoc = 16446;
 		rType = 0;
 		vrLen = 833;
 		vrLoc = 16041;
@@ -5717,7 +5727,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -5737,7 +5747,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 626";
 		rLen = 0;
-		rLoc = 16453;
+		rLoc = 16446;
 		rType = 0;
 		vrLen = 833;
 		vrLoc = 16041;
@@ -5757,7 +5767,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 626";
 		rLen = 0;
-		rLoc = 16453;
+		rLoc = 16446;
 		rType = 0;
 		vrLen = 833;
 		vrLoc = 16041;
@@ -5777,7 +5787,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -5807,7 +5817,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -5837,7 +5847,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -5867,7 +5877,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -5897,7 +5907,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -5951,7 +5961,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -5981,7 +5991,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -6011,7 +6021,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -6051,7 +6061,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -6081,7 +6091,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -6121,7 +6131,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -6151,7 +6161,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 626";
 		rLen = 0;
-		rLoc = 16453;
+		rLoc = 16446;
 		rType = 0;
 		vrLen = 833;
 		vrLoc = 16041;
@@ -6171,7 +6181,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 153";
 		rLen = 0;
-		rLoc = 4560;
+		rLoc = 4553;
 		rType = 0;
 		vrLen = 994;
 		vrLoc = 3570;
@@ -6181,7 +6191,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -6201,7 +6211,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 153";
 		rLen = 0;
-		rLoc = 4560;
+		rLoc = 4553;
 		rType = 0;
 		vrLen = 994;
 		vrLoc = 3570;
@@ -6211,7 +6221,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -6231,7 +6241,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 153";
 		rLen = 0;
-		rLoc = 4560;
+		rLoc = 4553;
 		rType = 0;
 		vrLen = 994;
 		vrLoc = 3570;
@@ -6241,7 +6251,7 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
@@ -6261,7 +6271,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 137";
 		rLen = 0;
-		rLoc = 3943;
+		rLoc = 3939;
 		rType = 0;
 		vrLen = 994;
 		vrLoc = 3570;
@@ -6281,7 +6291,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 137";
 		rLen = 0;
-		rLoc = 3943;
+		rLoc = 3939;
 		rType = 0;
 		vrLen = 994;
 		vrLoc = 3570;
@@ -6311,12 +6321,112 @@
 		isa = PBXTextBookmark;
 		name = "XinePostProcessor.m: 254";
 		rLen = 0;
-		rLoc = 7114;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 551;
 		vrLoc = 6550;
 	};
 	A40934F807ED193200837FB7 = {
+		fRef = A466E7D207E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineEngine.m: 108";
+		rLen = 0;
+		rLoc = 2801;
+		rType = 0;
+		vrLen = 60;
+		vrLoc = 2783;
+	};
+	A40934FB07ED1AE500837FB7 = {
+		fRef = A4D7CEB707EAEA440074C189;
+		isa = PBXTextBookmark;
+		name = "XinePostProcessor.m: 328";
+		rLen = 0;
+		rLoc = 8999;
+		rType = 0;
+		vrLen = 551;
+		vrLoc = 6548;
+	};
+	A40934FC07ED1AE500837FB7 = {
+		fRef = A466E7D207E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineEngine.m: 108";
+		rLen = 0;
+		rLoc = 2801;
+		rType = 0;
+		vrLen = 60;
+		vrLoc = 2783;
+	};
+	A40934FF07ED1B0A00837FB7 = {
+		fRef = A4D7CEB707EAEA440074C189;
+		isa = PBXTextBookmark;
+		name = "XinePostProcessor.m: 328";
+		rLen = 0;
+		rLoc = 8999;
+		rType = 0;
+		vrLen = 551;
+		vrLoc = 6548;
+	};
+	A409350007ED1B0A00837FB7 = {
+		fRef = A466E7D207E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineEngine.m: 108";
+		rLen = 0;
+		rLoc = 2801;
+		rType = 0;
+		vrLen = 60;
+		vrLoc = 2783;
+	};
+	A409350107ED1B1000837FB7 = {
+		fRef = 8D15AC360486D014006FF6A4;
+		isa = PBXTextBookmark;
+		name = "Info.plist: 45";
+		rLen = 0;
+		rLoc = 1167;
+		rType = 0;
+		vrLen = 695;
+		vrLoc = 984;
+	};
+	A409350207ED1B1000837FB7 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 137";
+		rLen = 0;
+		rLoc = 3939;
+		rType = 0;
+		vrLen = 987;
+		vrLoc = 3570;
+	};
+	A409350307ED1B1000837FB7 = {
+		fRef = 8D15AC360486D014006FF6A4;
+		isa = PBXTextBookmark;
+		name = "Info.plist: 45";
+		rLen = 0;
+		rLoc = 1167;
+		rType = 0;
+		vrLen = 695;
+		vrLoc = 984;
+	};
+	A409350407ED1B1000837FB7 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 130";
+		rLen = 0;
+		rLoc = 3543;
+		rType = 0;
+		vrLen = 1146;
+		vrLoc = 3348;
+	};
+	A409350507ED1B1000837FB7 = {
+		fRef = A4D7CEB707EAEA440074C189;
+		isa = PBXTextBookmark;
+		name = "XinePostProcessor.m: 328";
+		rLen = 0;
+		rLoc = 8999;
+		rType = 0;
+		vrLen = 551;
+		vrLoc = 6548;
+	};
+	A409350607ED1B1000837FB7 = {
 		fRef = A466E7D207E34684000B6585;
 		isa = PBXTextBookmark;
 		name = "XineEngine.m: 108";
@@ -6567,7 +6677,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: isDeinterlaced";
 		rLen = 0;
-		rLoc = 8167;
+		rLoc = 8160;
 		rType = 0;
 		vrLen = 457;
 		vrLoc = 6516;
@@ -6677,7 +6787,7 @@
 	A4D7CEB707EAEA440074C189 = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {654, 5235}}";
-			sepNavSelRange = "{7114, 0}";
+			sepNavSelRange = "{8999, 0}";
 			sepNavVisRect = "{{0, 3365}, {654, 261}}";
 			sepNavWindowFrame = "{{38, 418}, {750, 558}}";
 		};

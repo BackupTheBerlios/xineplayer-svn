@@ -39,11 +39,11 @@
 - (NSArray*) videoInputs;
 
 - (NSArray*) propertyNames;
-- (void) setValue: (id) value forParameter: (NSString*) name;
-- (NSString*) descriptionForParameter: (NSString*) name;
-- (NSArray*) enumeratedValuesForParameter: (NSString*) name;
+- (void) setValue: (id) value forProperty: (NSString*) name;
+- (NSString*) descriptionForProperty: (NSString*) name;
+- (NSArray*) enumeratedValuesForProperty: (NSString*) name;
 - (BOOL) isEnumeratedParameter: (NSString*) name;
 - (BOOL) isReadOnlyParameter: (NSString*) name;
-- (id) valueForParameter: (NSString*) name;
+- (id) valueForProperty: (NSString*) name;
 
 @end

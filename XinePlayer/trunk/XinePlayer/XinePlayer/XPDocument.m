@@ -129,20 +129,20 @@
 	}
 	
 	if(_deinterlaceFilter) {
-		[_deinterlaceFilter setValue: @"LinearBlend" forParameter: @"method"];
-		[_deinterlaceFilter setValue: [NSNumber numberWithBool: YES] forParameter: @"cheap_mode"];
-		[_deinterlaceFilter setValue: [NSNumber numberWithBool: NO] forParameter: @"pulldown"];
-		[_deinterlaceFilter setValue: [NSNumber numberWithBool: YES] forParameter: @"use_progressive_frame_flag"];
+		[_deinterlaceFilter setValue: @"LinearBlend" forProperty: @"method"];
+		[_deinterlaceFilter setValue: [NSNumber numberWithBool: YES] forProperty: @"cheap_mode"];
+		[_deinterlaceFilter setValue: [NSNumber numberWithBool: NO] forProperty: @"pulldown"];
+		[_deinterlaceFilter setValue: [NSNumber numberWithBool: YES] forProperty: @"use_progressive_frame_flag"];
 		
 #if 0
 		NSArray *properties = [_deinterlaceFilter propertyNames];
 		NSEnumerator *objEnum = [properties objectEnumerator];
 		NSString *name;
 		while(name = [objEnum nextObject]) {
-			NSLog(@"Property: %@ (%@)", name, [_deinterlaceFilter valueForParameter: name]);
-			NSLog(@"  - %@", [_deinterlaceFilter descriptionForParameter: name]);
+			NSLog(@"Property: %@ (%@)", name, [_deinterlaceFilter valueForProperty: name]);
+			NSLog(@"  - %@", [_deinterlaceFilter descriptionForProperty: name]);
 			if([_deinterlaceFilter isEnumeratedParameter: name]) {
-				NSEnumerator *enumEnum = [[_deinterlaceFilter enumeratedValuesForParameter: name] objectEnumerator];
+				NSEnumerator *enumEnum = [[_deinterlaceFilter enumeratedValuesForProperty: name] objectEnumerator];
 				NSString *value;
 				while(value = [enumEnum nextObject]) 
 				{
