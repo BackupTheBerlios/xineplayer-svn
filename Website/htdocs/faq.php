@@ -42,6 +42,12 @@
     <p>The XCode project assumes that xine has already been downloaded and built. See the
     <a href="http://svn.berlios.de/viewcvs/xineplayer/XinePlayer/trunk/XinePlayer/BUILDING_README?view=markup">BUILDING_README</a> 
     file  for more details.</p>
+    <h2>I don't want to wait for a release &mdash; how about nightly builds</h2>
+    <p>As part of my automated build process fresh builds are often uploaded to
+    the <a href="ftp://ftp.berlios.de/pub/xineplayer/">BerliOS FTP server</a>. When
+    I'm developing these are actually updated more often than nightly and as such they
+    represent the true bleeding edge of development. Note that I make no promises about
+    the stability of these builds though!</p>
   </div>
 </div>
 <!-- end main content -->
