@@ -86,7 +86,7 @@ static XineEngine *_defaultEngine = nil;
 					@"XinePlugins", nil]]
 		];
 		
-		NSLog(@"Plugin path: %@", pluginPath);
+		/* NSLog(@"Plugin path: %@", pluginPath); */
 		setenv("XINE_PLUGIN_PATH", [pluginPath cString], 1);
 		setenv("DYLD_LIBRARY_PATH", [pluginPath cString], 1);
 		
@@ -94,6 +94,7 @@ static XineEngine *_defaultEngine = nil;
 		[self loadConfiguration];
 		xine_init(xine);
 		
+#if 0
 		int section = xine_get_log_section_count(xine) - 1;
 		while(section >= 0) {
 			const char * const * message_list = xine_get_log(xine, section);
@@ -106,6 +107,7 @@ static XineEngine *_defaultEngine = nil;
 			
 			section --;
 		}
+#endif
 	}
 	
 	return mySelf;
