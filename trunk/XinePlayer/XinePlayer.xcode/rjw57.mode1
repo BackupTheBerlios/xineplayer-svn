@@ -248,12 +248,11 @@
 								<string>2A37F4B4FDCFA73011CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05539CD112110102</string>
-								<string>E2644B35053B69B200211256</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>0</integer>
+									<integer>26</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -274,7 +273,7 @@
 							<real>297</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>158 391 887 611 0 0 1280 1002 </string>
+						<string>69 344 887 611 0 0 1280 1002 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -300,7 +299,7 @@
 										<key>PBXProjectModuleLabel</key>
 										<string>XPDocument.nib</string>
 										<key>bookmark</key>
-										<string>A4C7E14607E79EC2004B7340</string>
+										<string>A4C7E15307E7B1A6004B7340</string>
 										<key>history</key>
 										<array>
 											<string>A4A3D23307E6428900AAC902</string>
@@ -330,7 +329,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {545, 396}}</string>
 								<key>RubberWindowFrame</key>
-								<string>158 391 887 611 0 0 1280 1002 </string>
+								<string>69 344 887 611 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -350,7 +349,7 @@
 								<key>Frame</key>
 								<string>{{0, 403}, {545, 166}}</string>
 								<key>RubberWindowFrame</key>
-								<string>158 391 887 611 0 0 1280 1002 </string>
+								<string>69 344 887 611 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -409,7 +408,7 @@
 		<string>/Users/rjw57/Developer/XinePlayer/XinePlayer.xcode</string>
 	</array>
 	<key>WindowString</key>
-	<string>158 391 887 611 0 0 1280 1002 </string>
+	<string>69 344 887 611 0 0 1280 1002 </string>
 	<key>WindowTools</key>
 	<array>
 		<dict>

@@ -70,6 +70,18 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					258.2974,
+					261.2085,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
 			PBXConfiguration.PBXFileTableDataSource3.XCSCMDataSource = {
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
@@ -322,6 +334,11 @@
 			A4C7E14107E79EB3004B7340 = A4C7E14107E79EB3004B7340;
 			A4C7E14307E79EB3004B7340 = A4C7E14307E79EB3004B7340;
 			A4C7E14607E79EC2004B7340 = A4C7E14607E79EC2004B7340;
+			A4C7E14A07E79FBF004B7340 = A4C7E14A07E79FBF004B7340;
+			A4C7E14C07E7A43F004B7340 = A4C7E14C07E7A43F004B7340;
+			A4C7E14F07E7B17D004B7340 = A4C7E14F07E7B17D004B7340;
+			A4C7E15107E7B19D004B7340 = A4C7E15107E7B19D004B7340;
+			A4C7E15307E7B1A6004B7340 = A4C7E15307E7B1A6004B7340;
 		};
 		sourceControlManager = A4AA161007BE4770000DDE36;
 		userBookmarkGroup = A4A3D17A07E6048300AAC902;
@@ -912,6 +929,51 @@
 		isa = PBXBookmark;
 	};
 	A4C7E14707E79EC2004B7340 = {
+		isa = PBXFileReference;
+		refType = 4;
+		sourceTree = "<group>";
+	};
+	A4C7E14A07E79FBF004B7340 = {
+		fRef = A4C7E14B07E79FBF004B7340;
+		isa = PBXBookmark;
+	};
+	A4C7E14B07E79FBF004B7340 = {
+		isa = PBXFileReference;
+		refType = 4;
+		sourceTree = "<group>";
+	};
+	A4C7E14C07E7A43F004B7340 = {
+		fRef = A4C7E14D07E7A43F004B7340;
+		isa = PBXBookmark;
+	};
+	A4C7E14D07E7A43F004B7340 = {
+		isa = PBXFileReference;
+		refType = 4;
+		sourceTree = "<group>";
+	};
+	A4C7E14F07E7B17D004B7340 = {
+		fRef = A4C7E15007E7B17D004B7340;
+		isa = PBXBookmark;
+	};
+	A4C7E15007E7B17D004B7340 = {
+		isa = PBXFileReference;
+		refType = 4;
+		sourceTree = "<group>";
+	};
+	A4C7E15107E7B19D004B7340 = {
+		fRef = A4C7E15207E7B19D004B7340;
+		isa = PBXBookmark;
+	};
+	A4C7E15207E7B19D004B7340 = {
+		isa = PBXFileReference;
+		refType = 4;
+		sourceTree = "<group>";
+	};
+	A4C7E15307E7B1A6004B7340 = {
+		fRef = A4C7E15407E7B1A6004B7340;
+		isa = PBXBookmark;
+	};
+	A4C7E15407E7B1A6004B7340 = {
 		isa = PBXFileReference;
 		refType = 4;
 		sourceTree = "<group>";
