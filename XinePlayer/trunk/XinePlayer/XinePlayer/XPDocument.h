@@ -50,6 +50,8 @@
 	XineStream *_stream;
 	XineEngine *_engine;
 	
+	NSString *_streamTitle;
+	
 	BOOL _deinterlace;
 	BOOL _resizeOnFrameChange;
 	

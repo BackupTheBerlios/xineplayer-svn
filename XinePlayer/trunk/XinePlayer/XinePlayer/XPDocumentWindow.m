@@ -41,8 +41,8 @@
 			windowFrame.size.height += [_shrinkView frame].size.height;
 			windowFrame.origin.y -= [_shrinkView frame].size.height;
 			[self setFrame:windowFrame display:YES animate: YES];
-			[_shrinkView setAutoresizingMask:NSViewMinXMargin | NSViewMaxYMargin | NSViewMaxXMargin];
-			[_steadyView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
+			[_shrinkView setAutoresizingMask:NSViewWidthSizable | NSViewMaxYMargin ];
+			[_steadyView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable ];
 		}
 	} else {
 		// Hide advanced panel
@@ -54,8 +54,8 @@
 			windowFrame.size.height -= [_shrinkView frame].size.height;
 			windowFrame.origin.y += [_shrinkView frame].size.height;
 			[self setFrame:windowFrame display:YES animate: YES];
-			[_shrinkView setAutoresizingMask:NSViewMinXMargin | NSViewMaxYMargin | NSViewMaxXMargin];
-			[_steadyView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
+			[_shrinkView setAutoresizingMask:NSViewWidthSizable | NSViewMaxYMargin ];
+			[_steadyView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable ];
 			[_shrinkView setHidden: YES];
 		}
 	}

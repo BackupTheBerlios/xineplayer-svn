@@ -24,6 +24,7 @@ NSString *XineStreamChannelsChangedNotification = @"XineStreamChannelsChangedNot
 NSString *XineStreamMadeProgressNotification = @"XineStreamMadeProgressNotification";
 NSString *XineStreamGUIMessageNotification = @"XineStreamGUIMessageNotification";
 NSString *XineStreamMRLIsReferenceNotification = @"XineStreamMRLIsReferenceNotification";
+NSString *XineStreamTitleName = @"XineStreamTitleName";
 
 NSString *XineProgressPercentName = @"XineProgressPercentName";
 NSString *XineProgressDescriptionName = @"XineProgressDescriptionName";
@@ -31,6 +32,7 @@ NSString *XineMessageTypeName = @"XineMessageTypeName";
 NSString *XineMessageParametersName = @"XineMessageParametersName";
 NSString *XineMRLReferenceName = @"XineMRLReferenceName";
 NSString *XineMRLReferenceIsAlternateName = @"XineMRLReferenceIsAlternateName";
+NSString *XineStreamTitleChangedNotification = @"XineStreamTitleChangedNotification";
 
 void event_listener_cb(void *user_data, const xine_event_t* event);
 
@@ -315,6 +317,15 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 		 }
 			 break;
 			 */
+		case XINE_EVENT_UI_SET_TITLE:
+		{
+			xine_ui_data_t *ui_data = event->data;
+			[[NSNotificationCenter defaultCenter] postNotificationName:XineStreamTitleChangedNotification object:self userInfo: [NSDictionary dictionaryWithObjectsAndKeys:
+					[NSString stringWithCString:ui_data->str length:ui_data->str_len],
+					XineStreamTitleName,
+				nil]];				
+			break;
+		}
 		case XINE_EVENT_MRL_REFERENCE:
 		{
 			xine_mrl_reference_data_t *mrl_data = event->data;

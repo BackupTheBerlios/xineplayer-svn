@@ -26,6 +26,7 @@ extern NSString *XineStreamPlaybackDidFinishNotification;
 extern NSString *XineStreamChannelsChangedNotification;
 extern NSString *XineStreamMadeProgressNotification;
 extern NSString *XineStreamMRLIsReferenceNotification;
+extern NSString *XineStreamTitleChangedNotification;
 
 extern NSString *XineProgressPercentName;
 extern NSString *XineProgressDescriptionName;
@@ -34,6 +35,7 @@ extern NSString *XineMessageTypeName;
 extern NSString *XineMessageParametersName;
 extern NSString *XineMRLReferenceName;
 extern NSString *XineMRLReferenceIsAlternateName;
+extern NSString *XineStreamTitleName;
 
 typedef enum {
 	XinePause			= 0,

@@ -52,6 +52,7 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 		_deinterlace = NO;
 		_resizeOnFrameChange = NO;
 		_haveInitialisedWindow = NO;
+		_streamTitle = [NSString stringWithString:@""];
     }
     return self;
 }
@@ -89,6 +90,9 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	if(_engine)
 		[_engine release];
 	_engine = nil;
+	
+	if(_streamTitle)
+		[_streamTitle release];
 	
 	if(_playlist)
 		[_playlist release];
@@ -192,6 +196,7 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(messageToUser:) name:XineStreamGUIMessageNotification object:_stream];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(MRLIsReference:) name:XineStreamMRLIsReferenceNotification object:_stream];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(channelsChanged:) name:XineStreamChannelsChangedNotification object:_stream];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(titleChanged:) name:XineStreamTitleChangedNotification object:_stream];
 	[self prefsChanged: nil];
 	
 	[[self documentWindow] makeFirstResponder: videoView];
@@ -201,6 +206,17 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	_guiTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(synchroniseGUIAndStream:) userInfo:nil repeats:YES];
 	
 	[[self documentWindow] registerForDraggedTypes: [NSArray arrayWithObjects: NSFilenamesPboardType, NSURLPboardType, nil]];
+}
+
+- (void) titleChanged: (NSNotification*) notification
+{
+	[self willChangeValueForKey:@"streamTitle"];
+	if(_streamTitle)
+		[_streamTitle release];
+	
+	_streamTitle = [[notification userInfo] objectForKey:XineStreamTitleName];
+	[_streamTitle retain];
+	[self didChangeValueForKey:@"streamTitle"];
 }
 
 - (void) MRLIsReference: (NSNotification*) notification
@@ -378,6 +394,7 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	[self willChangeValueForKey:@"hasAudio"];
 	[self willChangeValueForKey:@"volume"];
 	[self willChangeValueForKey:@"isMuted"];
+	[self willChangeValueForKey:@"streamTitle"];
 
 	/* Actually stop the stream and wait until it has taken effect. */
 	if([_stream isPlaying]) {
@@ -386,6 +403,9 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	
 	if([_stream openMRL: mrl])
 	{		
+		if(_streamTitle)
+			[_streamTitle release];
+		
 		if(![_stream getStreamInformationForKey: XINE_STREAM_INFO_HAS_VIDEO] && _audioVisualisationFilter)
 		{
 			[_stream wireAudioToPort: _audioPort];
@@ -395,6 +415,7 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 		}
 		
 		[_stream play];
+		_streamTitle = [[self displayName] retain];
 		[(NSWindowController*) [[self windowControllers] objectAtIndex: 0] synchronizeWindowTitleWithDocumentName];
 		
 		_isPlaying = YES;
@@ -410,6 +431,7 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	[self didChangeValueForKey:@"hasAudio"];
 	[self didChangeValueForKey:@"volume"];
 	[self didChangeValueForKey:@"isMuted"];
+	[self didChangeValueForKey:@"streamTitle"];
 	
 	return _isPlaying;
 }
@@ -767,6 +789,11 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	[_stream setValue:[value boolValue] ofParameter:XINE_PARAM_AUDIO_MUTE];
 }
 
+- (id) streamTitle
+{
+	return _streamTitle;
+}
+
 @end
 
 @implementation XPDocument (TableViewDataSource)
@@ -918,6 +945,8 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	
 	[self willChangeValueForKey:@"streamPosition"];
 	[self willChangeValueForKey:@"hasPositionInformation"];
+	[self willChangeValueForKey:@"hasAudio"];
+	[self willChangeValueForKey:@"volume"];
 
 		
 	//NSLog(@"Has audio: %i", [_stream getStreamInformationForKey: XINE_STREAM_INFO_HAS_AUDIO]);
@@ -942,6 +971,8 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	
 	[self didChangeValueForKey:@"streamPosition"];
 	[self didChangeValueForKey:@"hasPositionInformation"];
+	[self didChangeValueForKey:@"hasAudio"];
+	[self didChangeValueForKey:@"volume"];
 	_isSynchingGUI = NO;
 }
 
