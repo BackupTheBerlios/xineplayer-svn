@@ -29,6 +29,19 @@
     a particular file won't play it is likely that xine itself doesn't
     support that codec. Try filing a bug on <a href="http://xinehq.de/">the
     xine website</a>.
+    <h2>I want the source code!</h2>
+    <p>You can <a href="http://svn.berlios.de/viewcvs/xineplayer/">browse the source-code</a> or
+    <a href="http://developer.berlios.de/svn/?group_id=3329">check it out of the Subversion
+    repository</a>. The source code to xine is available from the
+    <a href="http://sourceforge.net/cvs/?group_id=9655">xine CVS repository</a> and the
+    source code to libdvdcss can be checked out of the 
+    <a href="http://developers.videolan.org/svn.html">VideoLan subversion repository</a>.
+    The Subversion repository should be considered definitive but from time-to-time
+    releases might be accompanied with snapshot source tarballs.</p>
+    <h2>Your source won't build!</h2>
+    <p>The XCode project assumes that xine has already been downloaded and built. See the
+    <a href="http://svn.berlios.de/viewcvs/xineplayer/trunk/XinePlayer/BUILDING_README?view=markup">BUILDING_README</a> 
+    file  for more details.</p>
   </div>
 </div>
 <!-- end main content -->
