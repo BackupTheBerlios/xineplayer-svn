@@ -40,7 +40,7 @@
     releases might be accompanied with snapshot source tarballs.</p>
     <h2>Your source won't build!</h2>
     <p>The XCode project assumes that xine has already been downloaded and built. See the
-    <a href="http://svn.berlios.de/viewcvs/xineplayer/trunk/XinePlayer/BUILDING_README?view=markup">BUILDING_README</a> 
+    <a href="http://svn.berlios.de/viewcvs/xineplayer/XinePlayer/trunk/XinePlayer/BUILDING_README?view=markup">BUILDING_README</a> 
     file  for more details.</p>
   </div>
 </div>
