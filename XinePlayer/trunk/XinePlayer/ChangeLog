@@ -1,8 +1,10 @@
 18 Mar 2004; Rich Wareham <richwareham@users.sourceforg.net> :
 	
-	* Pre 0.2 release.
+	* 0.2 release.
+        * Display a little notification in the video window
+          when state changes (e.g. deinterlace is toggled, etc).
         * Attempt to open any type of file passed (i.e. no longer
-          grey-out files in Open doalogue).
+          grey-out files in Open dialogue).
         * Deinterlacing is now done via xine's tvtime 
           deinterlace plugin.
         * Implement preferences dialogue.
