@@ -128,7 +128,7 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 132618511;
+			PBXPerProjectTemplateStateSaveDate = 132670175;
 			PBXPrepackagedSmartGroups_v2 = (
 				{
 					PBXTransientLocationAtTop = bottom;
@@ -305,9 +305,12 @@
 					};
 				},
 			);
-			PBXWorkspaceStateSaveDate = 132618511;
+			PBXWorkspaceStateSaveDate = 132670175;
 		};
 		perUserProjectItems = {
+			A495A5C707E863250010074B = A495A5C707E863250010074B;
+			A495A5C807E863250010074B = A495A5C807E863250010074B;
+			A495A5C907E863410010074B = A495A5C907E863410010074B;
 			A4A3D21D07E6330100AAC902 = A4A3D21D07E6330100AAC902;
 			A4A3D22307E634E700AAC902 = A4A3D22307E634E700AAC902;
 			A4A3D22407E634E700AAC902 = A4A3D22407E634E700AAC902;
@@ -315,30 +318,8 @@
 			A4A3D25A07E64C4400AAC902 = A4A3D25A07E64C4400AAC902;
 			A4A3D25F07E6509200AAC902 = A4A3D25F07E6509200AAC902;
 			A4A3D26007E6509200AAC902 = A4A3D26007E6509200AAC902;
-			A4C7E11D07E79D8A004B7340 = A4C7E11D07E79D8A004B7340;
-			A4C7E11E07E79D8A004B7340 = A4C7E11E07E79D8A004B7340;
-			A4C7E11F07E79D8F004B7340 = A4C7E11F07E79D8F004B7340;
-			A4C7E12007E79D94004B7340 = A4C7E12007E79D94004B7340;
-			A4C7E12107E79D9A004B7340 = A4C7E12107E79D9A004B7340;
-			A4C7E12207E79DAC004B7340 = A4C7E12207E79DAC004B7340;
-			A4C7E12807E79E1B004B7340 = A4C7E12807E79E1B004B7340;
-			A4C7E12907E79E1B004B7340 = A4C7E12907E79E1B004B7340;
 			A4C7E12B07E79E1B004B7340 = A4C7E12B07E79E1B004B7340;
-			A4C7E12C07E79E1B004B7340 = A4C7E12C07E79E1B004B7340;
-			A4C7E12F07E79E2A004B7340 = A4C7E12F07E79E2A004B7340;
-			A4C7E13107E79E33004B7340 = A4C7E13107E79E33004B7340;
-			A4C7E13507E79E3B004B7340 = A4C7E13507E79E3B004B7340;
-			A4C7E13807E79E65004B7340 = A4C7E13807E79E65004B7340;
-			A4C7E13E07E79EB3004B7340 = A4C7E13E07E79EB3004B7340;
 			A4C7E14007E79EB3004B7340 = A4C7E14007E79EB3004B7340;
-			A4C7E14107E79EB3004B7340 = A4C7E14107E79EB3004B7340;
-			A4C7E14307E79EB3004B7340 = A4C7E14307E79EB3004B7340;
-			A4C7E14607E79EC2004B7340 = A4C7E14607E79EC2004B7340;
-			A4C7E14A07E79FBF004B7340 = A4C7E14A07E79FBF004B7340;
-			A4C7E14C07E7A43F004B7340 = A4C7E14C07E7A43F004B7340;
-			A4C7E14F07E7B17D004B7340 = A4C7E14F07E7B17D004B7340;
-			A4C7E15107E7B19D004B7340 = A4C7E15107E7B19D004B7340;
-			A4C7E15307E7B1A6004B7340 = A4C7E15307E7B1A6004B7340;
 		};
 		sourceControlManager = A4AA161007BE4770000DDE36;
 		userBookmarkGroup = A4A3D17A07E6048300AAC902;
@@ -516,9 +497,9 @@
 	};
 	A466E7D207E34684000B6585 = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {498, 2674}}";
-			sepNavSelRange = "{638, 0}";
-			sepNavVisRect = "{{0, 12}, {498, 352}}";
+			sepNavIntBoundsRect = "{{0, 0}, {498, 2646}}";
+			sepNavSelRange = "{3157, 0}";
+			sepNavVisRect = "{{0, 1499}, {498, 379}}";
 		};
 	};
 	A466E7D307E34684000B6585 = {
@@ -627,6 +608,36 @@
 			sepNavVisRect = "{{0, 0}, {498, 352}}";
 			sepNavWindowFrame = "{{38, 418}, {750, 558}}";
 		};
+	};
+	A495A5C707E863250010074B = {
+		fRef = A466E7D207E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineEngine.m: 14";
+		rLen = 0;
+		rLoc = 638;
+		rType = 0;
+		vrLen = 965;
+		vrLoc = 0;
+	};
+	A495A5C807E863250010074B = {
+		fRef = A466E7D207E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineEngine.m: 127";
+		rLen = 0;
+		rLoc = 3157;
+		rType = 0;
+		vrLen = 638;
+		vrLoc = 2563;
+	};
+	A495A5C907E863410010074B = {
+		fRef = A466E7D207E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineEngine.m: 127";
+		rLen = 0;
+		rLoc = 3157;
+		rType = 0;
+		vrLen = 638;
+		vrLoc = 2563;
 	};
 	A4A3D17A07E6048300AAC902 = {
 		children = (
@@ -758,225 +769,13 @@
 		wantsCodeCompletionTabCompletes = 1;
 		wantsIndex = 1;
 	};
-	A4C7E11D07E79D8A004B7340 = {
-		fRef = 2A37F4B5FDCFA73011CA2CEA;
-		isa = PBXBookmark;
-	};
-	A4C7E11E07E79D8A004B7340 = {
-		fRef = 2A37F4B5FDCFA73011CA2CEA;
-		isa = PBXBookmark;
-	};
-	A4C7E11F07E79D8F004B7340 = {
-		fRef = 2A37F4B5FDCFA73011CA2CEA;
-		isa = PBXBookmark;
-	};
-	A4C7E12007E79D94004B7340 = {
-		fRef = 2A37F4B5FDCFA73011CA2CEA;
-		isa = PBXBookmark;
-	};
-	A4C7E12107E79D9A004B7340 = {
-		fRef = 2A37F4B5FDCFA73011CA2CEA;
-		isa = PBXBookmark;
-	};
-	A4C7E12207E79DAC004B7340 = {
-		fRef = 2A37F4B5FDCFA73011CA2CEA;
-		isa = PBXBookmark;
-	};
-	A4C7E12807E79E1B004B7340 = {
-		fRef = 2A37F4B5FDCFA73011CA2CEA;
-		isa = PBXBookmark;
-	};
-	A4C7E12907E79E1B004B7340 = {
-		fRef = A4C7E12A07E79E1B004B7340;
-		isa = PBXTextBookmark;
-		rLen = 0;
-		rLoc = 2147483647;
-		rType = 0;
-	};
-	A4C7E12A07E79E1B004B7340 = {
-		isa = PBXFileReference;
-		lastKnownFileType = file;
-		path = "Annotations for Resources";
-		refType = 4;
-		sourceTree = "<group>";
-	};
 	A4C7E12B07E79E1B004B7340 = {
 		fRef = 2A37F4B5FDCFA73011CA2CEA;
 		isa = PBXBookmark;
 	};
-	A4C7E12C07E79E1B004B7340 = {
-		fRef = A4C7E12D07E79E1B004B7340;
-		isa = PBXTextBookmark;
-		name = "(null): 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 110;
-		vrLoc = 0;
-	};
-	A4C7E12D07E79E1B004B7340 = {
-		isa = PBXFileReference;
-		path = "Annotations for Resources";
-		refType = 4;
-		sourceTree = "<group>";
-	};
-	A4C7E12F07E79E2A004B7340 = {
-		fRef = A4C7E13007E79E2A004B7340;
-		isa = PBXTextBookmark;
-		name = "(null): 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 110;
-		vrLoc = 0;
-	};
-	A4C7E13007E79E2A004B7340 = {
-		isa = PBXFileReference;
-		path = "Annotations for Resources";
-		refType = 4;
-		sourceTree = "<group>";
-	};
-	A4C7E13107E79E33004B7340 = {
-		fRef = A4C7E13207E79E33004B7340;
-		isa = PBXTextBookmark;
-		name = "(null): 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 110;
-		vrLoc = 0;
-	};
-	A4C7E13207E79E33004B7340 = {
-		isa = PBXFileReference;
-		path = "Annotations for Resources";
-		refType = 4;
-		sourceTree = "<group>";
-	};
-	A4C7E13507E79E3B004B7340 = {
-		fRef = A4C7E13607E79E3B004B7340;
-		isa = PBXTextBookmark;
-		name = "(null): 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 110;
-		vrLoc = 0;
-	};
-	A4C7E13607E79E3B004B7340 = {
-		isa = PBXFileReference;
-		path = "Annotations for Resources";
-		refType = 4;
-		sourceTree = "<group>";
-	};
-	A4C7E13807E79E65004B7340 = {
-		fRef = A4C7E13907E79E65004B7340;
-		isa = PBXTextBookmark;
-		name = "(null): 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 110;
-		vrLoc = 0;
-	};
-	A4C7E13907E79E65004B7340 = {
-		isa = PBXFileReference;
-		path = "Annotations for Resources";
-		refType = 4;
-		sourceTree = "<group>";
-	};
-	A4C7E13E07E79EB3004B7340 = {
-		fRef = A4C7E13F07E79EB3004B7340;
-		isa = PBXTextBookmark;
-		name = "(null): 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 110;
-		vrLoc = 0;
-	};
-	A4C7E13F07E79EB3004B7340 = {
-		isa = PBXFileReference;
-		path = "Annotations for Resources";
-		refType = 4;
-		sourceTree = "<group>";
-	};
 	A4C7E14007E79EB3004B7340 = {
 		fRef = 2A37F4B5FDCFA73011CA2CEA;
 		isa = PBXBookmark;
-	};
-	A4C7E14107E79EB3004B7340 = {
-		fRef = A4C7E14207E79EB3004B7340;
-		isa = PBXTextBookmark;
-		name = "(null): 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 110;
-		vrLoc = 0;
-	};
-	A4C7E14207E79EB3004B7340 = {
-		isa = PBXFileReference;
-		path = "Annotations for Resources";
-		refType = 4;
-		sourceTree = "<group>";
-	};
-	A4C7E14307E79EB3004B7340 = {
-		fRef = 2A37F4B5FDCFA73011CA2CEA;
-		isa = PBXBookmark;
-	};
-	A4C7E14607E79EC2004B7340 = {
-		fRef = A4C7E14707E79EC2004B7340;
-		isa = PBXBookmark;
-	};
-	A4C7E14707E79EC2004B7340 = {
-		isa = PBXFileReference;
-		refType = 4;
-		sourceTree = "<group>";
-	};
-	A4C7E14A07E79FBF004B7340 = {
-		fRef = A4C7E14B07E79FBF004B7340;
-		isa = PBXBookmark;
-	};
-	A4C7E14B07E79FBF004B7340 = {
-		isa = PBXFileReference;
-		refType = 4;
-		sourceTree = "<group>";
-	};
-	A4C7E14C07E7A43F004B7340 = {
-		fRef = A4C7E14D07E7A43F004B7340;
-		isa = PBXBookmark;
-	};
-	A4C7E14D07E7A43F004B7340 = {
-		isa = PBXFileReference;
-		refType = 4;
-		sourceTree = "<group>";
-	};
-	A4C7E14F07E7B17D004B7340 = {
-		fRef = A4C7E15007E7B17D004B7340;
-		isa = PBXBookmark;
-	};
-	A4C7E15007E7B17D004B7340 = {
-		isa = PBXFileReference;
-		refType = 4;
-		sourceTree = "<group>";
-	};
-	A4C7E15107E7B19D004B7340 = {
-		fRef = A4C7E15207E7B19D004B7340;
-		isa = PBXBookmark;
-	};
-	A4C7E15207E7B19D004B7340 = {
-		isa = PBXFileReference;
-		refType = 4;
-		sourceTree = "<group>";
-	};
-	A4C7E15307E7B1A6004B7340 = {
-		fRef = A4C7E15407E7B1A6004B7340;
-		isa = PBXBookmark;
-	};
-	A4C7E15407E7B1A6004B7340 = {
-		isa = PBXFileReference;
-		refType = 4;
-		sourceTree = "<group>";
 	};
 	A4D80DDD07E6011000B775A2 = {
 		uiCtxt = {

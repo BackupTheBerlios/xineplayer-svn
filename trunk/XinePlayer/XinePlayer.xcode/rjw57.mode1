@@ -203,8 +203,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -252,7 +250,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>26</integer>
+									<integer>4</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -289,7 +288,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>XPDocument.nib</string>
+								<string>XineEngine.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -297,17 +296,17 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>XPDocument.nib</string>
+										<string>XineEngine.m</string>
 										<key>bookmark</key>
-										<string>A4C7E15307E7B1A6004B7340</string>
+										<string>A495A5C907E863410010074B</string>
 										<key>history</key>
 										<array>
 											<string>A4A3D23307E6428900AAC902</string>
 											<string>A4A3D25A07E64C4400AAC902</string>
 											<string>A4A3D25F07E6509200AAC902</string>
 											<string>A4A3D26007E6509200AAC902</string>
-											<string>A4C7E13E07E79EB3004B7340</string>
 											<string>A4C7E14007E79EB3004B7340</string>
+											<string>A495A5C707E863250010074B</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -315,7 +314,6 @@
 											<string>A4A3D22307E634E700AAC902</string>
 											<string>A4A3D22407E634E700AAC902</string>
 											<string>A4C7E12B07E79E1B004B7340</string>
-											<string>A4C7E14107E79EB3004B7340</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -373,9 +371,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>A4C7E0F907E7992A004B7340</string>
+				<string>A495A5C307E862EA0010074B</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>A4C7E0FA07E7992A004B7340</string>
+				<string>A495A5C407E862EA0010074B</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -403,9 +401,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>A40FF34507E796AF004A06C9</string>
-		<string>1C0AD2B3069F1EA900FABCE6</string>
 		<string>/Users/rjw57/Developer/XinePlayer/XinePlayer.xcode</string>
+		<string>1C0AD2B3069F1EA900FABCE6</string>
 	</array>
 	<key>WindowString</key>
 	<string>69 344 887 611 0 0 1280 1002 </string>
@@ -874,9 +871,9 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C0AD2B3069F1EA900FABCE6</string>
-				<string>A4C7E0FB07E7992A004B7340</string>
+				<string>A495A5C507E862EA0010074B</string>
 				<string>1CD0528B0623707200166675</string>
-				<string>A4C7E0FC07E7992A004B7340</string>
+				<string>A495A5C607E862EA0010074B</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.run</string>
