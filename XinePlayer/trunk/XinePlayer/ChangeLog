@@ -1,6 +1,8 @@
 18 Mar 2004; Rich Wareham <richwareham@users.sourceforg.net> :
 	
 	* Pre 0.2 release.
+        * Attempt to open any type of file passed (i.e. no longer
+          grey-out files in Open doalogue).
         * Deinterlacing is now done via xine's tvtime 
           deinterlace plugin.
         * Implement preferences dialogue.

@@ -16,6 +16,7 @@
 				<string>mp3</string>
 				<string>ogg</string>
 				<string>wmv</string>
+				<string>*</string>
 			</array>
 			<key>CFBundleTypeName</key>
 			<string>Movie</string>
