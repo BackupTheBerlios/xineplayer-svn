@@ -20,6 +20,10 @@
     <p>XinePlayer uses the <a href="http://dvd.sf.net/">libdvdnav</a> library
     to provide full support for DVD menus and advanced features such as
     multiple angles, audio tracks or subtitles.</p>
+    <h2>XinePlayer crashes when I try to open a file or open a new window!</h2>
+    <p>Make sure you have downloaded the correct version of XinePlayer for
+    your processor. There are different G3 (without Altivec) and
+    G4/G5 (with Altivec) builds.</p>
     <h2>Why doesn't XinePlayer play this particular file?</h2>
     <p>XinePlayer supports all the codecs that the xine library supports. If
     a particular file won't play it is likely that xine itself doesn't
