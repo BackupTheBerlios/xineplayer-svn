@@ -21,6 +21,16 @@
 
 NSString *XineStreamPlaybackDidFinishNotification = @"XineStreamPlaybackDidFinishNotification";
 NSString *XineStreamChannelsChangedNotification = @"XineStreamChannelsChangedNotification";
+NSString *XineStreamMadeProgressNotification = @"XineStreamMadeProgressNotification";
+NSString *XineStreamGUIMessageNotification = @"XineStreamGUIMessageNotification";
+NSString *XineStreamMRLIsReferenceNotification = @"XineStreamMRLIsReferenceNotification";
+
+NSString *XineProgressPercentName = @"XineProgressPercentName";
+NSString *XineProgressDescriptionName = @"XineProgressDescriptionName";
+NSString *XineMessageTypeName = @"XineMessageTypeName";
+NSString *XineMessageParametersName = @"XineMessageParametersName";
+NSString *XineMRLReferenceName = @"XineMRLReferenceName";
+NSString *XineMRLReferenceIsAlternateName = @"XineMRLReferenceIsAlternateName";
 
 void event_listener_cb(void *user_data, const xine_event_t* event);
 
@@ -210,6 +220,33 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 	return (xine_get_status(_stream) == XINE_STATUS_PLAY);
 }
 
+- (void) setCurrentEvent: (const xine_event_t*) event
+{
+	[_eventLock lock];
+	xine_event_t *currentEvent = (xine_event_t*) malloc(sizeof(xine_event_t));
+	*(currentEvent) = *event;
+	currentEvent->data = NULL;
+	if(event->data_length > 0) 
+	{
+		currentEvent->data = malloc(event->data_length);
+		memcpy(currentEvent->data,event->data,event->data_length);
+	}
+	_currentEvent = currentEvent;
+}
+
+- (void) unsetCurrentEvent
+{
+	if(_currentEvent)
+	{
+		xine_event_t *currentEvent = _currentEvent;
+		if(currentEvent->data)
+			free(currentEvent->data);
+		free(currentEvent);
+	}
+	_currentEvent = NULL;
+	[_eventLock unlock];
+}
+
 - (void) processEvent: (id) sender;
 {
 	if(!_currentEvent)
@@ -220,32 +257,61 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 	switch(event->type) 
 	{
 		/*
-		case XINE_EVENT_FRAME_FORMAT_CHANGE:
+		 case XINE_EVENT_FRAME_FORMAT_CHANGE:
+		 {
+			 xine_format_change_data_t *format_data = event->data;
+			 
+			 [[NSNotificationCenter defaultCenter] postNotificationName:XineStreamFrameFormatDidChangeNotification object:self];
+		 }
+			 break;
+			 */
+		case XINE_EVENT_MRL_REFERENCE:
 		{
-			xine_format_change_data_t *format_data = event->data;
-
-			[[NSNotificationCenter defaultCenter] postNotificationName:XineStreamFrameFormatDidChangeNotification object:self];
+			xine_mrl_reference_data_t *mrl_data = event->data;
+			[[NSNotificationCenter defaultCenter] postNotificationName:XineStreamMRLIsReferenceNotification object:self userInfo: [NSDictionary dictionaryWithObjectsAndKeys:
+				[NSNumber numberWithInt: mrl_data->alternative], XineMRLReferenceIsAlternateName,
+				[NSString stringWithCString:mrl_data->mrl], XineMRLReferenceName,
+				nil]];				
 		}
 			break;
-		*/
-		case XINE_EVENT_UI_PLAYBACK_FINISHED:
+			case XINE_EVENT_UI_MESSAGE:
 		{
+			xine_ui_message_data_t *message_data = event->data;
+			NSMutableArray *parameters = [NSMutableArray array];
+			int params = message_data->num_parameters;
+			/* NSLog(@"Expecting %i parameters", params); */
+			uint8_t *param_str = (message_data->messages) + strlen(message_data->messages) + 1;
+			while(params > 0) {
+				/* NSLog(@"param: %s", param_str); */
+				[parameters addObject: [NSString stringWithCString:param_str]];
+				param_str += strlen(param_str) + 1;
+				params--;
+			}
+			[[NSNotificationCenter defaultCenter] postNotificationName:XineStreamGUIMessageNotification object:self userInfo: [NSDictionary dictionaryWithObjectsAndKeys:
+				[NSNumber numberWithInt: message_data->type], XineMessageTypeName,
+				parameters, XineMessageParametersName,
+				nil]];				
+		}
+			break;
+		case XINE_EVENT_PROGRESS:
+		{
+			/* NSLog(@"Hello..."); */
+			xine_progress_data_t *progress_data = event->data;
+			[[NSNotificationCenter defaultCenter] postNotificationName:XineStreamMadeProgressNotification object:self userInfo: [NSDictionary dictionaryWithObjectsAndKeys:
+				[NSNumber numberWithInt: progress_data->percent], XineProgressPercentName,
+				[NSString stringWithCString: progress_data->description], XineProgressDescriptionName,
+				nil]];					
+		}
+			break;
+		case XINE_EVENT_UI_PLAYBACK_FINISHED:
 			[[NSNotificationCenter defaultCenter] postNotificationName:XineStreamPlaybackDidFinishNotification object:self];		
 			break;
-		}
+		case XINE_EVENT_UI_CHANNELS_CHANGED:
+			[[NSNotificationCenter defaultCenter] postNotificationName:XineStreamChannelsChangedNotification object:self];		
+			break;
 	}
-}
-
-- (void) setCurrentEvent: (const xine_event_t*) event
-{
-	[_eventLock lock];
-	_currentEvent = (xine_event_t*) event;
-}
-
-- (void) unsetCurrentEvent
-{
-	_currentEvent = nil;
-	[_eventLock unlock];
+	
+	[self unsetCurrentEvent];
 }
 
 void event_listener_cb(void *user_data, const xine_event_t* event)
@@ -256,8 +322,7 @@ void event_listener_cb(void *user_data, const xine_event_t* event)
 	if(event->type != XINE_EVENT_QUIT)
 	{
 		[stream setCurrentEvent: event];
-		[stream performSelectorOnMainThread:@selector(processEvent:) withObject:nil waitUntilDone:YES];
-		[stream unsetCurrentEvent];
+		[stream performSelectorOnMainThread:@selector(processEvent:) withObject:nil waitUntilDone:NO];
 	}
 }
 

@@ -57,6 +57,91 @@ static XPController *_sharedController = nil;
 	return mySelf;
 }
 
+- (void) openURL: (id) sender
+{
+	if(![_openURLDialogue isVisible])
+	{
+		[_openURLDialogue center];
+		[_openURLDialogue makeKeyAndOrderFront:nil];
+	}
+}
+
+- (IBAction) openURLClicked: (id) sender
+{
+	NSURL *url = [NSURL URLWithString:[_openURLComboBox stringValue]];
+	/* NSLog(@"URL: %@", url); */
+	if(!url)
+	{
+		NSAlert *errorAlert = [[[NSAlert alloc] init] autorelease];
+		[errorAlert addButtonWithTitle: NSLocalizedString(@"OK", @"Canonical dialogue box button.")];
+		[errorAlert setMessageText: [NSString stringWithFormat:NSLocalizedString(@"'%@' is not a valid URL.", @"Error shown when user attempts to open an invalid URL."), [_openURLComboBox stringValue]]];
+		[errorAlert beginSheetModalForWindow:_openURLDialogue modalDelegate:nil didEndSelector:nil contextInfo:nil];
+	} else {
+		[_openURLDialogue orderOut:nil];
+		
+		NSDocument *newDocument = [[[XPDocument alloc] initWithContentsOfURL:url ofType:@"Movie"] autorelease];
+		
+		if(newDocument)
+		{
+			[[NSDocumentController sharedDocumentController] addDocument: newDocument];
+			[newDocument makeWindowControllers];
+			[newDocument showWindows];
+		} else {
+			NSLog(@"Error creating document.");
+		}
+	}
+}
+
+- (IBAction) cancelOpenURLClicked: (id) sender
+{
+	[_openURLDialogue orderOut:nil];
+}
+
+- (NSString *)comboBox:(NSComboBox *)aComboBox completedString:(NSString *)uncompletedString
+{
+	if(aComboBox != _openURLComboBox)
+		return nil;
+	NSArray *recentURLs = [[NSDocumentController sharedDocumentController] recentDocumentURLs];
+	NSEnumerator *recentEnum = [recentURLs objectEnumerator];
+	NSURL *urlStr;
+	while(urlStr = [recentEnum nextObject]) 
+	{
+		if([[urlStr absoluteString] hasPrefix:uncompletedString])
+			return [urlStr absoluteString];
+	}
+}
+
+- (unsigned int)comboBox:(NSComboBox *)aComboBox indexOfItemWithStringValue:(NSString *)aString
+{
+	if(aComboBox != _openURLComboBox)
+		return nil;
+	NSArray *recentURLs = [[NSDocumentController sharedDocumentController] recentDocumentURLs];
+	NSEnumerator *recentEnum = [recentURLs objectEnumerator];
+	NSURL *urlStr; unsigned int i = 0;
+	while(urlStr = [recentEnum nextObject]) 
+	{
+		if([urlStr isEqualTo: [NSURL URLWithString:aString]])
+			return i;
+		i++;
+	}
+}
+
+- (id)comboBox:(NSComboBox *)aComboBox objectValueForItemAtIndex:(int)index
+{
+	if(aComboBox != _openURLComboBox)
+		return nil;
+	
+	return [[[NSDocumentController sharedDocumentController] recentDocumentURLs] objectAtIndex: index];
+}
+
+- (int)numberOfItemsInComboBox:(NSComboBox *)aComboBox
+{
+	if(aComboBox != _openURLComboBox)
+		return 0;
+	
+	return [[[NSDocumentController sharedDocumentController] recentDocumentURLs] count];
+}
+
 - (void) openDisc: (NSString*) devicePath
 {
 	NSLog(@"openDisc: %@", devicePath);

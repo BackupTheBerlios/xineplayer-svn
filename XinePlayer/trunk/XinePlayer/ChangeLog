@@ -1,6 +1,11 @@
 21 Mar 2004; Rich Wareham <richwareham@users.sourceforge.net> :
 	
 	* 0.2 release.
+        * 'Open URL...' menu option.
+        * Support for playlist-like files (e.g. RealAudio streams 
+          from websites).
+        * Any errors opening a stream are reported.
+        * Reports progress of network operations.
         * Uses less memory and CPU (hopefully) on lower-spec 
           machines.
         * Ogg vorbis support.

@@ -9,6 +9,7 @@
                 halfSize = id; 
                 leftArrowPressed = id; 
                 normalSize = id; 
+                openURL = id; 
                 rightArrowPressed = id; 
                 selectButtonPressed = id; 
                 toggleDVDControls = id; 
@@ -30,10 +31,21 @@
             SUPERCLASS = NSObject; 
         }, 
         {
-            ACTIONS = {openFirstDisc = id; }; 
+            ACTIONS = {
+                cancelOpenURLClicked = id; 
+                closeDVDPanel = id; 
+                openDVDPanel = id; 
+                openFirstDisc = id; 
+                openURL = id; 
+                openURLClicked = id; 
+            }; 
             CLASS = XPController; 
             LANGUAGE = ObjC; 
-            OUTLETS = {dvdControlsPanel = NSPanel; }; 
+            OUTLETS = {
+                "_openURLComboBox" = NSComboBox; 
+                "_openURLDialogue" = NSWindow; 
+                dvdControlsPanel = NSPanel; 
+            }; 
             SUPERCLASS = NSObject; 
         }, 
         {

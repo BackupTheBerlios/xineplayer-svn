@@ -24,6 +24,16 @@
 
 extern NSString *XineStreamPlaybackDidFinishNotification;
 extern NSString *XineStreamChannelsChangedNotification;
+extern NSString *XineStreamMadeProgressNotification;
+extern NSString *XineStreamMRLIsReferenceNotification;
+
+extern NSString *XineProgressPercentName;
+extern NSString *XineProgressDescriptionName;
+extern NSString *XineStreamGUIMessageNotification;
+extern NSString *XineMessageTypeName;
+extern NSString *XineMessageParametersName;
+extern NSString *XineMRLReferenceName;
+extern NSString *XineMRLReferenceIsAlternateName;
 
 typedef enum {
 	XinePause			= 0,
@@ -33,6 +43,22 @@ typedef enum {
 	XineDoubleSpeed		= 8,
 	XineQuadrupleSpeed	= 16
 } XineSpeed;
+
+typedef enum {
+	XineMessageNoError				= 0,
+	XineMessageGeneralWarning		= 1,
+	XineMessageUnknownHost			= 2,
+	XineMessageUnknownDevice		= 3,
+	XineMessageNetworkUnreachable	= 4,
+	XineMessageConnectionRefused	= 5,
+	XineMessageFileNotFound			= 6,
+	XineMessageReadError			= 7,
+	XineMessageLibraryLoadError		= 8,
+	XineMessageEncryptedSource		= 9,
+	XineMessageSecurity				= 10,
+	XineMessageAudioOutUnavailable	= 11,
+	XineMessagePermissionError		= 12,
+} XineMessageType;
 
 typedef enum {
 	XineErrorNone			= 0,

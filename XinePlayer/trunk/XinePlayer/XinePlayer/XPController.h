@@ -22,6 +22,8 @@
 
 @interface XPController : NSObject {
 	IBOutlet NSPanel *dvdControlsPanel;
+	IBOutlet NSWindow *_openURLDialogue;
+	IBOutlet NSComboBox *_openURLComboBox;
 }
 
 + (XPController*) sharedController;
@@ -31,7 +33,11 @@
 - (BOOL) isDVDPanelOpen;
 
 - (IBAction) openFirstDisc: (id) sender;
+- (IBAction) openURL: (id) sender;
 - (IBAction) openDVDPanel: (id) sender;
 - (IBAction) closeDVDPanel: (id) sender;
+
+- (IBAction) openURLClicked: (id) sender;
+- (IBAction) cancelOpenURLClicked: (id) sender;
 
 @end

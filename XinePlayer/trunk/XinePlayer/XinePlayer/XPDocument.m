@@ -178,7 +178,7 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	_audioPort = [[_engine createAudioPort] retain];
 	
 	[videoView setNotficationView: notificationView];
-	[self setNotificationMessage: @"piiiiiiing..."];
+	[self setNotificationMessage: @""];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(frameChanged:) name:XineVideoViewFrameSizeDidChangeNotification object:videoView];
 	_stream = [[_engine createStreamWithAudioPort:_audioPort videoPort:_videoPort] retain];
@@ -188,6 +188,9 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 		[_deinterlaceFilter retain];
 		
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(prefsChanged:) name:NSUserDefaultsDidChangeNotification object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(progressChanged:) name:XineStreamMadeProgressNotification object:_stream];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(messageToUser:) name:XineStreamGUIMessageNotification object:_stream];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(MRLIsReference:) name:XineStreamMRLIsReferenceNotification object:_stream];
 	[self prefsChanged: nil];
 	
 	[[self documentWindow] makeFirstResponder: videoView];
@@ -197,6 +200,87 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	_guiTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(synchroniseGUIAndStream:) userInfo:nil repeats:YES];
 	
 	[[self documentWindow] registerForDraggedTypes: [NSArray arrayWithObjects: NSFilenamesPboardType, NSURLPboardType, nil]];
+}
+
+- (void) MRLIsReference: (NSNotification*) notification
+{
+	NSDictionary *userInfo = [notification userInfo];
+	if(!userInfo)
+		return;
+	
+	if(![[userInfo objectForKey: XineMRLReferenceIsAlternateName] boolValue])
+	{
+		[_playlist replaceObjectAtIndex:_playlistIndex withObject:[userInfo objectForKey:XineMRLReferenceName]];
+		[self openMRL: [_playlist objectAtIndex:_playlistIndex]];
+	}
+}
+
+- (void) messageToUser: (NSNotification*) notification
+{
+	NSDictionary *userInfo = [notification userInfo];
+	if(!userInfo)
+		return;
+
+	XineMessageType type = [[userInfo objectForKey: XineMessageTypeName] intValue];
+	/* NSLog(@"GUIMessage: %i", type); */
+	NSAlert *alert = [[[NSAlert alloc] init] autorelease];
+	NSArray *params = [userInfo objectForKey:XineMessageParametersName];
+	[alert setMessageText: [NSString stringWithFormat: NSLocalizedString(@"XinePlayer could not open '%@'.", @"When we get a GUI message type we don't understand (usually a failure) this is displayed to user"), [self currentMRL]]];
+	NSString *skipTitle = NSLocalizedString(@"Skip movie", @"Button text when there is an error opening a movie");
+	NSString *okTitle = NSLocalizedString(@"OK", @"Generic button text.");
+
+	switch(type)
+	{
+		case XineMessageGeneralWarning:
+			[alert setInformativeText: [params objectAtIndex: 0]];
+			[alert addButtonWithTitle: okTitle];
+			/* No skipping since this is just a warning. */
+			[alert beginSheetModalForWindow:[self documentWindow] modalDelegate:nil didEndSelector:nil contextInfo:nil];
+			break;
+		case XineMessageUnknownHost:
+			[alert setInformativeText: [NSString stringWithFormat:NSLocalizedString(@"The host '%@' could not be located.", @"Host not found error."), [params objectAtIndex: 1]]];
+			[alert addButtonWithTitle: skipTitle];
+			[alert beginSheetModalForWindow:[self documentWindow] modalDelegate:self didEndSelector:@selector(modalErrorSheetEnded:returnCode:contextInfo:) contextInfo:nil];
+			break;
+		case XineMessageUnknownDevice:
+			[alert setInformativeText: [NSString stringWithFormat:NSLocalizedString(@"XinePlayer could not access the device '%@'.", @"Unknwon device error."), [params objectAtIndex: 0]]];
+			[alert addButtonWithTitle: skipTitle];
+			[alert beginSheetModalForWindow:[self documentWindow] modalDelegate:self didEndSelector:@selector(modalErrorSheetEnded:returnCode:contextInfo:) contextInfo:nil];
+			break;
+		case XineMessageNetworkUnreachable:
+			[alert setInformativeText: NSLocalizedString(@"XinePlayer could not access the Internet or your local network.", @"Network unreachable message")];
+			[alert addButtonWithTitle: skipTitle];
+			[alert beginSheetModalForWindow:[self documentWindow] modalDelegate:self didEndSelector:@selector(modalErrorSheetEnded:returnCode:contextInfo:) contextInfo:nil];
+			break;
+		case XineMessageConnectionRefused:
+			[alert setInformativeText: [NSString stringWithFormat:NSLocalizedString(@"The host '%@' would not send us any data.", @"Connection refused error."), [params objectAtIndex: 1]]];
+			[alert addButtonWithTitle: skipTitle];
+			[alert beginSheetModalForWindow:[self documentWindow] modalDelegate:self didEndSelector:@selector(modalErrorSheetEnded:returnCode:contextInfo:) contextInfo:nil];
+		break;
+		case XineMessageLibraryLoadError:
+			[alert setInformativeText: [NSString stringWithFormat:NSLocalizedString(@"XinePlayer could not find the codec (%@) suitable for displaying this movie.", @"Library load error."), [params objectAtIndex: 0]]];
+			[alert addButtonWithTitle: skipTitle];
+			[alert beginSheetModalForWindow:[self documentWindow] modalDelegate:self didEndSelector:@selector(modalErrorSheetEnded:returnCode:contextInfo:) contextInfo:nil];
+			break;
+		default:
+		{
+			[alert setInformativeText: [NSString stringWithFormat:NSLocalizedString(@"The error reported was error number %i.", @"Help diagnose which internal error was reported."), type]];
+			[alert addButtonWithTitle: skipTitle];
+			[alert beginSheetModalForWindow:[self documentWindow] modalDelegate:self didEndSelector:@selector(modalErrorSheetEnded:returnCode:contextInfo:) contextInfo:nil];
+		}
+			break;
+	}
+}
+	
+- (void) progressChanged: (NSNotification*) notification
+{
+	NSDictionary *userInfo = [notification userInfo];
+	if(!userInfo)
+		return;
+	
+	NSString *notificationMessage = [NSString stringWithFormat:@"%@ %@%%", [userInfo objectForKey: XineProgressDescriptionName], [userInfo objectForKey: XineProgressPercentName]];
+	[self setNotificationMessage: notificationMessage];
+	[videoView displayNotification];
 }
 
 - (void) windowDidUpdate: (NSNotification*) notification 
@@ -309,35 +393,41 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 		
 		_isPlaying = YES;
 	} else {
-		/* An error happened */
-		XineStreamError error = [_stream lastError];
-		NSAlert *alert = [[[NSAlert alloc] init] autorelease];
-		
-		[alert setAlertStyle: NSInformationalAlertStyle];
-		[alert addButtonWithTitle: NSLocalizedString(@"Skip movie", @"Button text when there is an error opening a movie")];
-		
-		[alert setMessageText: [NSString stringWithFormat:NSLocalizedString(@"XinePlayer cannot open '%@'.", @"Error displayed when XP can't open a movie"), XPDisplayNameFromPlaylistEntry(mrl)]];
-		
-		switch(error)
-		{
-			case XineErrorNoDemuxPlugIn:
-				[alert setInformativeText: NSLocalizedString(@"XinePlayer did not recognise the file as a movie or audio file.", @"Description of no demux plugin")];
-				break;
-			case XineErrorNoInputPlugIn:
-				[alert setInformativeText: NSLocalizedString(@"XinePlayer could not read any data from the movie. If this is a DVD you may not have a player with support for encrypted discs.", @"Description of no input plugin")];
-				break;
-			default:
-				[alert setInformativeText: [NSString stringWithFormat: NSLocalizedString(@"An unknown error happened within the xine engine (type %i).", @"Description of strange and unknown error"), error]];
-				break;
-		}
-		
-		[alert beginSheetModalForWindow:[self documentWindow] modalDelegate:self didEndSelector:@selector(modalErrorSheetEnded:returnCode:contextInfo:) contextInfo:nil];
+		/* We do this so GUIMessage notifications have a chance to arrive */
+		[self performSelectorOnMainThread:@selector(openMRLError:) withObject:nil waitUntilDone:NO];
 	}
 	
 	[self synchroniseGUIAndStream: nil];
 	[[self documentWindow] makeFirstResponder: [[self documentWindow] initialFirstResponder]];
 	
 	return _isPlaying;
+}
+
+- (void) openMRLError: (id) data
+{
+	/* An error happened */
+	XineStreamError error = [_stream lastError];
+	NSAlert *alert = [[[NSAlert alloc] init] autorelease];
+	
+	[alert setAlertStyle: NSInformationalAlertStyle];
+	[alert addButtonWithTitle: NSLocalizedString(@"Skip movie", @"Button text when there is an error opening a movie")];
+	
+	[alert setMessageText: [NSString stringWithFormat:NSLocalizedString(@"XinePlayer cannot open '%@'.", @"Error displayed when XP can't open a movie"), XPDisplayNameFromPlaylistEntry([self currentMRL])]];
+	
+	switch(error)
+	{
+		case XineErrorNoDemuxPlugIn:
+			[alert setInformativeText: NSLocalizedString(@"XinePlayer did not recognise the file as a movie or audio file.", @"Description of no demux plugin")];
+			break;
+		case XineErrorNoInputPlugIn:
+			[alert setInformativeText: NSLocalizedString(@"XinePlayer could not read any data from the movie. Check that the file exists and is readable. If you are trying to play a DVD you may not have a player with support for encrypted discs.", @"Description of no input plugin")];
+			break;
+		default:
+			[alert setInformativeText: [NSString stringWithFormat: NSLocalizedString(@"An unknown error happened within the xine engine (type %i).", @"Description of strange and unknown error"), error]];
+			break;
+	}
+	
+	[alert beginSheetModalForWindow:[self documentWindow] modalDelegate:self didEndSelector:@selector(modalErrorSheetEnded:returnCode:contextInfo:) contextInfo:nil];	
 }
 
 - (NSString*) displayName
