@@ -19,6 +19,10 @@
     <div class="screenShot"><img 
       src="http://developer.berlios.de/dbimage.php?id=1410" 
       alt="Deinterlace menu" /></div>
+    <h2>Use visualisation plugins when playing audio-only streams</h2>
+    <div class="screenShot"><img 
+      src="http://developer.berlios.de/dbimage.php?id=1427"
+      alt="Audio visualisation" /></div>
     <h2>Open multiple movies</h2>
     <div class="screenShot"><img 
       src="http://developer.berlios.de/dbimage.php?id=1409" 
