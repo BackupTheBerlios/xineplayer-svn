@@ -1,10 +1,12 @@
-22 Mar 2004 Rich Wareham <richwareham@users.sourceforge.net>
+01 Apr 2005 Rich Wareham <richwareham@users.sourceforge.net>
 
-        * pre 0.3.
+        * 0.3 release.
         * Can now set DVD region for RCE discs.
         * Audio and subtitle language selection.
+        * Default audio level is lower.
+        * Some internal fixes.
 
-22 Mar 2004 Rich Wareham <richwareham@users.sourceforge.net>
+22 Mar 2005 Rich Wareham <richwareham@users.sourceforge.net>
 	
 	* 0.2 release.
 	* 'Open URL...' menu option.
@@ -24,6 +26,6 @@
 	* Only use one xine engine instance per app.
 	* Fix frame corruption bug whereby colours appeared 'streaky' with certain movies.
 
-17 Mar 2004 Rich Wareham <richwareham@users.sourceforge.net>
+17 Mar 2005 Rich Wareham <richwareham@users.sourceforge.net>
 	
 	* Initial public release (0.1).
