@@ -714,6 +714,13 @@
 			A4A8AEC407EE1AEC00A44F81 = A4A8AEC407EE1AEC00A44F81;
 			A4A8AEC507EE1E3B00A44F81 = A4A8AEC507EE1E3B00A44F81;
 			A4A8AEC607EE1E3B00A44F81 = A4A8AEC607EE1E3B00A44F81;
+			A4A8AEC707EE1ECD00A44F81 = A4A8AEC707EE1ECD00A44F81;
+			A4A8AEC807EE1ECD00A44F81 = A4A8AEC807EE1ECD00A44F81;
+			A4A8AEC907EE1ECD00A44F81 = A4A8AEC907EE1ECD00A44F81;
+			A4A8AECA07EE1ECD00A44F81 = A4A8AECA07EE1ECD00A44F81;
+			A4A8AECB07EE1ECD00A44F81 = A4A8AECB07EE1ECD00A44F81;
+			A4A8AECC07EE1F5800A44F81 = A4A8AECC07EE1F5800A44F81;
+			A4A8AECD07EE1F5800A44F81 = A4A8AECD07EE1F5800A44F81;
 			A4D7CEA807EAD2820074C189 = A4D7CEA807EAD2820074C189;
 			A4D7CEAA07EAD2820074C189 = A4D7CEAA07EAD2820074C189;
 			A4D7CEBF07EAEA580074C189 = A4D7CEBF07EAEA580074C189;
@@ -727,8 +734,8 @@
 	};
 	2A37F4ACFDCFA73011CA2CEA = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {654, 10415}}";
-			sepNavSelRange = "{11803, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {654, 10471}}";
+			sepNavSelRange = "{11901, 0}";
 			sepNavVisRect = "{{0, 5960}, {654, 261}}";
 			sepNavWindowFrame = "{{15, 439}, {750, 558}}";
 		};
@@ -2440,7 +2447,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 396";
 		rLen = 0;
-		rLoc = 12445;
+		rLoc = 12664;
 		rType = 0;
 		vrLen = 700;
 		vrLoc = 11141;
@@ -2449,7 +2456,7 @@
 		fRef = 2A37F4ACFDCFA73011CA2CEA;
 		isa = PBXTextBookmark;
 		rLen = 1;
-		rLoc = 408;
+		rLoc = 410;
 		rType = 1;
 	};
 	A4A8ADC307EDFFDF00A44F81 = {
@@ -2457,7 +2464,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 395";
 		rLen = 0;
-		rLoc = 12291;
+		rLoc = 12510;
 		rType = 0;
 		vrLen = 458;
 		vrLoc = 11383;
@@ -2467,7 +2474,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 396";
 		rLen = 0;
-		rLoc = 12465;
+		rLoc = 12684;
 		rType = 0;
 		vrLen = 700;
 		vrLoc = 11141;
@@ -2477,7 +2484,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 395";
 		rLen = 0;
-		rLoc = 12291;
+		rLoc = 12510;
 		rType = 0;
 		vrLen = 458;
 		vrLoc = 11383;
@@ -2487,7 +2494,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 396";
 		rLen = 0;
-		rLoc = 12465;
+		rLoc = 12684;
 		rType = 0;
 		vrLen = 700;
 		vrLoc = 11141;
@@ -2497,7 +2504,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 395";
 		rLen = 0;
-		rLoc = 12291;
+		rLoc = 12510;
 		rType = 0;
 		vrLen = 458;
 		vrLoc = 11383;
@@ -2507,7 +2514,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 396";
 		rLen = 0;
-		rLoc = 12465;
+		rLoc = 12684;
 		rType = 0;
 		vrLen = 700;
 		vrLoc = 11141;
@@ -2517,7 +2524,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 395";
 		rLen = 0;
-		rLoc = 12291;
+		rLoc = 12510;
 		rType = 0;
 		vrLen = 458;
 		vrLoc = 11383;
@@ -2550,7 +2557,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 396";
 		rLen = 0;
-		rLoc = 12463;
+		rLoc = 12682;
 		rType = 0;
 		vrLen = 666;
 		vrLoc = 11391;
@@ -2580,7 +2587,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 396";
 		rLen = 0;
-		rLoc = 12465;
+		rLoc = 12684;
 		rType = 0;
 		vrLen = 700;
 		vrLoc = 11141;
@@ -2600,7 +2607,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 396";
 		rLen = 0;
-		rLoc = 12463;
+		rLoc = 12682;
 		rType = 0;
 		vrLen = 666;
 		vrLoc = 11391;
@@ -2630,7 +2637,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 395";
 		rLen = 0;
-		rLoc = 12291;
+		rLoc = 12510;
 		rType = 0;
 		vrLen = 475;
 		vrLoc = 11383;
@@ -2680,7 +2687,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 393";
 		rLen = 0;
-		rLoc = 12190;
+		rLoc = 12409;
 		rType = 0;
 		vrLen = 650;
 		vrLoc = 10980;
@@ -2780,7 +2787,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 393";
 		rLen = 0;
-		rLoc = 12190;
+		rLoc = 12409;
 		rType = 0;
 		vrLen = 650;
 		vrLoc = 10980;
@@ -2800,7 +2807,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 395";
 		rLen = 0;
-		rLoc = 12291;
+		rLoc = 12510;
 		rType = 0;
 		vrLen = 391;
 		vrLoc = 11383;
@@ -2838,7 +2845,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 395";
 		rLen = 0;
-		rLoc = 12291;
+		rLoc = 12510;
 		rType = 0;
 		vrLen = 391;
 		vrLoc = 11383;
@@ -2926,7 +2933,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 397";
 		rLen = 0;
-		rLoc = 12340;
+		rLoc = 12559;
 		rType = 0;
 		vrLen = 362;
 		vrLoc = 11418;
@@ -2946,7 +2953,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 397";
 		rLen = 0;
-		rLoc = 12340;
+		rLoc = 12559;
 		rType = 0;
 		vrLen = 362;
 		vrLoc = 11418;
@@ -2966,7 +2973,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 397";
 		rLen = 0;
-		rLoc = 12340;
+		rLoc = 12559;
 		rType = 0;
 		vrLen = 362;
 		vrLoc = 11418;
@@ -2983,7 +2990,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 397";
 		rLen = 0;
-		rLoc = 12340;
+		rLoc = 12559;
 		rType = 0;
 		vrLen = 362;
 		vrLoc = 11418;
@@ -4278,7 +4285,7 @@
 		fRef = 2A37F4ACFDCFA73011CA2CEA;
 		isa = PBXTextBookmark;
 		rLen = 1;
-		rLoc = 414;
+		rLoc = 416;
 		rType = 1;
 	};
 	A4A8AE8907EE113100A44F81 = {
@@ -4296,7 +4303,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 12022;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4306,7 +4313,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 655";
 		rLen = 0;
-		rLoc = 17909;
+		rLoc = 18382;
 		rType = 0;
 		vrLen = 934;
 		vrLoc = 17238;
@@ -4316,7 +4323,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 12022;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4326,7 +4333,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 655";
 		rLen = 0;
-		rLoc = 17909;
+		rLoc = 18382;
 		rType = 0;
 		vrLen = 934;
 		vrLoc = 17238;
@@ -4336,7 +4343,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 12022;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4346,7 +4353,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 655";
 		rLen = 0;
-		rLoc = 17909;
+		rLoc = 18382;
 		rType = 0;
 		vrLen = 934;
 		vrLoc = 17238;
@@ -4360,7 +4367,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 655";
 		rLen = 0;
-		rLoc = 17909;
+		rLoc = 18382;
 		rType = 0;
 		vrLen = 934;
 		vrLoc = 17238;
@@ -4374,7 +4381,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 12022;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4462,7 +4469,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 12022;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4482,7 +4489,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 12022;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4502,7 +4509,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 12022;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4522,7 +4529,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 12022;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4542,7 +4549,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 12022;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4562,7 +4569,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 12022;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4582,7 +4589,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 12022;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4602,7 +4609,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 655";
 		rLen = 0;
-		rLoc = 17909;
+		rLoc = 18382;
 		rType = 0;
 		vrLen = 924;
 		vrLoc = 17238;
@@ -4622,7 +4629,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 647";
 		rLen = 0;
-		rLoc = 17450;
+		rLoc = 17923;
 		rType = 0;
 		vrLen = 922;
 		vrLoc = 17250;
@@ -4632,7 +4639,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 12022;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4642,7 +4649,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 648";
 		rLen = 0;
-		rLoc = 17485;
+		rLoc = 17729;
 		rType = 0;
 		vrLen = 922;
 		vrLoc = 17250;
@@ -4652,7 +4659,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 11901;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4662,7 +4669,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 648";
 		rLen = 0;
-		rLoc = 17485;
+		rLoc = 17729;
 		rType = 0;
 		vrLen = 922;
 		vrLoc = 17250;
@@ -4672,7 +4679,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 11901;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4682,7 +4689,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 648";
 		rLen = 0;
-		rLoc = 17485;
+		rLoc = 17729;
 		rType = 0;
 		vrLen = 922;
 		vrLoc = 17250;
@@ -4692,7 +4699,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 11901;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4702,7 +4709,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 652";
 		rLen = 0;
-		rLoc = 17800;
+		rLoc = 18044;
 		rType = 0;
 		vrLen = 922;
 		vrLoc = 17250;
@@ -4722,7 +4729,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 652";
 		rLen = 0;
-		rLoc = 17800;
+		rLoc = 18044;
 		rType = 0;
 		vrLen = 922;
 		vrLoc = 17250;
@@ -4742,7 +4749,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 11901;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4762,7 +4769,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 11901;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4782,7 +4789,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 11901;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4802,7 +4809,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 11901;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4822,7 +4829,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 11901;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4842,7 +4849,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 11901;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
@@ -4862,10 +4869,80 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.m: 399";
 		rLen = 0;
-		rLoc = 11803;
+		rLoc = 11901;
 		rType = 0;
 		vrLen = 348;
 		vrLoc = 11974;
+	};
+	A4A8AEC707EE1ECD00A44F81 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 627";
+		rLen = 0;
+		rLoc = 16460;
+		rType = 0;
+		vrLen = 588;
+		vrLoc = 16005;
+	};
+	A4A8AEC807EE1ECD00A44F81 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 652";
+		rLen = 0;
+		rLoc = 18044;
+		rType = 0;
+		vrLen = 922;
+		vrLoc = 17250;
+	};
+	A4A8AEC907EE1ECD00A44F81 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 627";
+		rLen = 0;
+		rLoc = 16460;
+		rType = 0;
+		vrLen = 588;
+		vrLoc = 16005;
+	};
+	A4A8AECA07EE1ECD00A44F81 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 504";
+		rLen = 0;
+		rLoc = 13988;
+		rType = 0;
+		vrLen = 657;
+		vrLoc = 13618;
+	};
+	A4A8AECB07EE1ECD00A44F81 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 401";
+		rLen = 0;
+		rLoc = 11901;
+		rType = 0;
+		vrLen = 348;
+		vrLoc = 11964;
+	};
+	A4A8AECC07EE1F5800A44F81 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 504";
+		rLen = 0;
+		rLoc = 13988;
+		rType = 0;
+		vrLen = 657;
+		vrLoc = 13618;
+	};
+	A4A8AECD07EE1F5800A44F81 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 401";
+		rLen = 0;
+		rLoc = 11901;
+		rType = 0;
+		vrLen = 348;
+		vrLoc = 11964;
 	};
 	A4AA160E07BE4766000DDE36 = {
 		activeArgIndex = 2147483647;

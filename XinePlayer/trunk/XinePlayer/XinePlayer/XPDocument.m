@@ -336,6 +336,8 @@
 	} else {
 		[_stream wireVideoToPort: _videoPort];
 	}
+	[self setNotificationMessage: _deinterlace ? NSLocalizedString(@"Deinterlace On", @"Message displayed to user") : NSLocalizedString(@"Deinterlace Off", @"Message displayed to user")];
+	[videoView displayNotification];
 }
 
 @end
@@ -396,8 +398,6 @@
 - (IBAction) toggleDeinterlace: (id) sender
 {
 	[self setDeinterlace: ![self isDeinterlacing]];
-	[self setNotificationMessage: [self isDeinterlacing] ? NSLocalizedString(@"Deinterlace On", @"Message displayed to user") : NSLocalizedString(@"Deinterlace Off", @"Message displayed to user")];
-	[videoView displayNotification];
 }
 
 - (IBAction) openNextMRL: (id) sender
@@ -501,8 +501,12 @@
 	if([_stream speed] != XineNormalSpeed) 
 	{
 		[_stream setSpeed: XineNormalSpeed];
+		[self setNotificationMessage: NSLocalizedString(@"Play", @"Message displayed to user")];
+		[videoView displayNotification];
 	} else {
 		[_stream setSpeed: XinePause];
+		[self setNotificationMessage: NSLocalizedString(@"Paused", @"Message displayed to user")];
+		[videoView displayNotification];
 	}
 	
 	[self synchroniseGUIAndStream: nil];
