@@ -6,7 +6,7 @@ $pages = array(
   'news' => array( 'News', 'Project News', 'news.php' ),
   'download' => array( 'Download', 'Project Downloads', 'http://developer.berlios.de/project/showfiles.php?group_id=3329' ),
   'svn' => array( 'Browse Source', 'Subversion Repository', 'http://svn.berlios.de/viewcvs/xineplayer/' ),
-  'screenshots' => array( 'Screenshots', 'Screenshots', 'http://developer.berlios.de/screenshots/?group_id=3329' ),
+  'screenshots' => array( 'Screenshots', 'Screenshots', 'screenshots.php' ),
   'faq' => array( 'FAQ', 'Frequently Asked Questions', 'faq.php' ),
 /*  'wiki' => array( 'Wiki', 'Project Wiki Page', 'http://openfacts.berlios.de/index-en.phtml?title=XinePlayer' ), */
   'project' => array( 'Project Page', '', 'http://developer.berlios.de/projects/xineplayer/' ),
