@@ -381,6 +381,8 @@ void _event_listener_cb(void *user_data, const xine_event_t *event) {
 	[_fullScreenWindow makeKeyAndOrderFront: nil];
 	[_displayLock lock];
 	[tempView addSubview: _videoView];
+	if([self menu])
+		[_videoView setMenu: nil];
 	[_videoView setFrame: [self contentFrame]];
 	[_videoView setNextResponder: self];
 	[_displayLock unlock];
@@ -415,6 +417,8 @@ void _event_listener_cb(void *user_data, const xine_event_t *event) {
 	[_fullScreenWindow release];
 	_fullScreenWindow = nil;
 
+	if([self menu])
+		[_videoView setMenu: [self menu]];
 	[_videoView setFrame: [self contentFrame]];
 	[_displayLock unlock];
 	[self setNeedsDisplay: YES];

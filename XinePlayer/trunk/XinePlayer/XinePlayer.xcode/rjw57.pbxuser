@@ -548,6 +548,17 @@
 			A409398007EDE06700837FB7 = A409398007EDE06700837FB7;
 			A409398107EDE0B000837FB7 = A409398107EDE0B000837FB7;
 			A409398207EDE0B000837FB7 = A409398207EDE0B000837FB7;
+			A409398307EDE10700837FB7 = A409398307EDE10700837FB7;
+			A409398407EDE10700837FB7 = A409398407EDE10700837FB7;
+			A409398507EDE10700837FB7 = A409398507EDE10700837FB7;
+			A409398607EDE10700837FB7 = A409398607EDE10700837FB7;
+			A409398707EDE10700837FB7 = A409398707EDE10700837FB7;
+			A409398807EDE18300837FB7 = A409398807EDE18300837FB7;
+			A409398907EDE18300837FB7 = A409398907EDE18300837FB7;
+			A409398A07EDE1E700837FB7 = A409398A07EDE1E700837FB7;
+			A409398B07EDE1E700837FB7 = A409398B07EDE1E700837FB7;
+			A409398C07EDE21700837FB7 = A409398C07EDE21700837FB7;
+			A409398D07EDE21700837FB7 = A409398D07EDE21700837FB7;
 			A4D7CEA807EAD2820074C189 = A4D7CEA807EAD2820074C189;
 			A4D7CEAA07EAD2820074C189 = A4D7CEAA07EAD2820074C189;
 			A4D7CEBF07EAEA580074C189 = A4D7CEBF07EAEA580074C189;
@@ -2388,7 +2399,7 @@
 		isa = PBXTextBookmark;
 		name = "XineVideoView.m: 494";
 		rLen = 0;
-		rLoc = 12956;
+		rLoc = 12998;
 		rType = 0;
 		vrLen = 768;
 		vrLoc = 12655;
@@ -2578,7 +2589,7 @@
 		isa = PBXTextBookmark;
 		name = "XineVideoView.m: 494";
 		rLen = 0;
-		rLoc = 12956;
+		rLoc = 12998;
 		rType = 0;
 		vrLen = 768;
 		vrLoc = 12655;
@@ -2877,6 +2888,116 @@
 		vrLen = 502;
 		vrLoc = 6111;
 	};
+	A409398307EDE10700837FB7 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 150";
+		rLen = 0;
+		rLoc = 4283;
+		rType = 0;
+		vrLen = 890;
+		vrLoc = 3739;
+	};
+	A409398407EDE10700837FB7 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 494";
+		rLen = 0;
+		rLoc = 13059;
+		rType = 0;
+		vrLen = 768;
+		vrLoc = 12655;
+	};
+	A409398507EDE10700837FB7 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 150";
+		rLen = 0;
+		rLoc = 4283;
+		rType = 0;
+		vrLen = 890;
+		vrLoc = 3739;
+	};
+	A409398607EDE10700837FB7 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 385";
+		rLen = 0;
+		rLoc = 10596;
+		rType = 0;
+		vrLen = 991;
+		vrLoc = 9833;
+	};
+	A409398707EDE10700837FB7 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 201";
+		rLen = 0;
+		rLoc = 6539;
+		rType = 0;
+		vrLen = 502;
+		vrLoc = 6111;
+	};
+	A409398807EDE18300837FB7 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 378";
+		rLen = 0;
+		rLoc = 10240;
+		rType = 0;
+		vrLen = 1034;
+		vrLoc = 9870;
+	};
+	A409398907EDE18300837FB7 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 201";
+		rLen = 0;
+		rLoc = 6539;
+		rType = 0;
+		vrLen = 502;
+		vrLoc = 6111;
+	};
+	A409398A07EDE1E700837FB7 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 421";
+		rLen = 0;
+		rLoc = 11430;
+		rType = 0;
+		vrLen = 565;
+		vrLoc = 11075;
+	};
+	A409398B07EDE1E700837FB7 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 201";
+		rLen = 0;
+		rLoc = 6539;
+		rType = 0;
+		vrLen = 502;
+		vrLoc = 6111;
+	};
+	A409398C07EDE21700837FB7 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 421";
+		rLen = 0;
+		rLoc = 11430;
+		rType = 0;
+		vrLen = 565;
+		vrLoc = 11075;
+	};
+	A409398D07EDE21700837FB7 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 201";
+		rLen = 0;
+		rLoc = 6539;
+		rType = 0;
+		vrLen = 502;
+		vrLoc = 6111;
+	};
 	A42D7ABF07E38F2700955C78 = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {498, 531}}";
@@ -3019,9 +3140,9 @@
 	};
 	A466E7DA07E34684000B6585 = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {558, 8217}}";
-			sepNavSelRange = "{12956, 0}";
-			sepNavVisRect = "{{0, 7057}, {558, 379}}";
+			sepNavIntBoundsRect = "{{0, 0}, {558, 8273}}";
+			sepNavSelRange = "{11430, 0}";
+			sepNavVisRect = "{{0, 5931}, {558, 379}}";
 			sepNavWindowFrame = "{{61, 397}, {750, 558}}";
 		};
 	};
