@@ -105,6 +105,14 @@ typedef enum {
 
 - (int) getStreamInformationForKey: (int) key;
 
+- (NSArray*) audioLanguageCodes;
+- (NSArray*) subtitleLanguageCodes;
+
+- (int) audioChannel;
+- (void) setAudioChannel: (int) channel;
+- (int) SPUChannel;
+- (void) setSPUChannel: (int) channel;
+
 - (void) sendInputButtonEvent: (int) buttonEventType;
 
 - (XineSpeed) speed;

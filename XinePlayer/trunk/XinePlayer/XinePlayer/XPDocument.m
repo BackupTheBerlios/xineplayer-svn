@@ -191,6 +191,7 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(progressChanged:) name:XineStreamMadeProgressNotification object:_stream];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(messageToUser:) name:XineStreamGUIMessageNotification object:_stream];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(MRLIsReference:) name:XineStreamMRLIsReferenceNotification object:_stream];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(channelsChanged:) name:XineStreamChannelsChangedNotification object:_stream];
 	[self prefsChanged: nil];
 	
 	[[self documentWindow] makeFirstResponder: videoView];
@@ -642,6 +643,91 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	
 	[_stream playFromPosition: [timeSlider intValue]];
 	[self synchroniseGUIAndStream: nil];
+}
+
+@end
+
+@implementation XPDocument (KeyValue)
+
+- (id) streamIsValid
+{
+	return [NSNumber numberWithBool: (_stream != nil)];
+}
+
+- (id) audioChannel
+{
+	if(!_stream)
+		return [NSNumber numberWithInt: 0];
+	
+	return [NSNumber numberWithInt:[_stream audioChannel]+2];
+}
+
+- (void) setAudioChannel: (id) value
+{
+	[_stream setAudioChannel:[value intValue]-2];
+}
+
+- (id) SPUChannel
+{
+	if(!_stream)
+		return [NSNumber numberWithInt: 0];
+	
+	return [NSNumber numberWithInt:[_stream SPUChannel]+1];
+}
+
+- (void) setSPUChannel: (id) value
+{
+	[_stream setSPUChannel:[value intValue]-1];
+}
+
+- (void) channelsChanged: (NSNotification*) notification
+{
+	[self willChangeValueForKey:@"audioChannelNames"];
+	[self willChangeValueForKey:@"audioChannel"];
+	[self willChangeValueForKey:@"SPUChannelNames"];
+	[self willChangeValueForKey:@"SPUChannel"];
+
+	[self didChangeValueForKey:@"audioChannelNames"];
+	[self didChangeValueForKey:@"audioChannel"];
+	[self didChangeValueForKey:@"SPUChannelNames"];
+	[self didChangeValueForKey:@"SPUChannel"];
+}
+
+- (void) addLocalisedFrom: (NSArray*) languages to: (NSMutableArray*) channels
+{
+	int i=0;
+	for(i=0; i<[languages count]; i++) {
+		NSString *languageName = NSLocalizedStringFromTable([languages objectAtIndex:i], @"languages", @"Convert ISO 639 string to local name");
+		if([channels containsObject: languageName])
+		{
+			languageName = [NSString stringWithFormat:@"%@ (%i)", languageName, i+1];
+		}
+		
+		[channels addObject:languageName];
+	}
+}
+
+- (id) audioChannelNames
+{
+	NSMutableArray *channels = [NSMutableArray arrayWithObjects:
+		NSLocalizedString(@"No Audio", @"Disable audio channel."),
+		NSLocalizedString(@"Automatic", @"Automatic audio/SPU channel."),
+		nil];
+	
+	[self addLocalisedFrom:[_stream audioLanguageCodes] to:channels];
+	
+	return channels;
+}
+
+- (id) SPUChannelNames
+{
+	NSMutableArray *channels = [NSMutableArray arrayWithObjects:
+		NSLocalizedString(@"Automatic", @"Automatic audio/SPU channel."),
+		nil];
+	
+	[self addLocalisedFrom:[_stream subtitleLanguageCodes] to:channels];
+	
+	return channels;
 }
 
 @end

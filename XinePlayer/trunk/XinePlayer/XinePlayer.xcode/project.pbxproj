@@ -157,6 +157,7 @@
 		};
 		2A37F4B8FDCFA73011CA2CEA = {
 			children = (
+				A4822CE407F8511D00578954,
 				A409388B07EDA00100837FB7,
 				A409388807ED9FF100837FB7,
 				A466F45207E35842000B6585,
@@ -312,6 +313,7 @@
 				A409388A07ED9FF100837FB7,
 				A409388D07EDA00100837FB7,
 				A409389E07EDA03900837FB7,
+				A4822CE507F8511D00578954,
 			);
 			isa = PBXResourcesBuildPhase;
 			runOnlyForDeploymentPostprocessing = 0;
@@ -814,7 +816,6 @@
 				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)";
 				INFOPLIST_FILE = Preferences/DVD/Info.plist;
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				OPTIMIZATION_CFLAGS = "";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "-framework Foundation -framework AppKit";
 				OTHER_REZFLAGS = "";
@@ -1756,6 +1757,29 @@
 			);
 			isa = PBXGroup;
 			name = XinePlugins;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A4822CE407F8511D00578954 = {
+			children = (
+				A4822CE607F8512D00578954,
+			);
+			isa = PBXVariantGroup;
+			name = languages.strings;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		A4822CE507F8511D00578954 = {
+			fileRef = A4822CE407F8511D00578954;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		A4822CE607F8512D00578954 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.strings;
+			name = en_GB;
+			path = en_GB.lproj/languages.strings;
 			refType = 4;
 			sourceTree = "<group>";
 		};

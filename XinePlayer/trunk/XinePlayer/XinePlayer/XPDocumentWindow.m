@@ -22,6 +22,53 @@
 
 @implementation XPDocumentWindow
 
+- (void) awakeFromNib
+{
+	_displayingAdvancedPanel = YES;
+	[self disclosureChanged: nil];
+}
+
+- (IBAction) disclosureChanged: (id) sender
+{
+	NSPoint origin = [[self contentView] bounds].origin;
+	NSRect hideViewFrame = [_advancedPanel frame];
+	NSRect growViewFrame = [_growView frame];
+	NSRect windowFrame = [self frame];
+	
+	if([_advancedHideShowButton state] == NSOnState)
+	{
+		// Show advanced panel
+		if(!_displayingAdvancedPanel)
+		{
+			growViewFrame.size.height -= hideViewFrame.size.height;
+			origin.y -= hideViewFrame.size.height;
+			windowFrame.size.height += hideViewFrame.size.height;
+			windowFrame.origin.y -= hideViewFrame.size.height;
+			
+			[[self contentView] setBoundsOrigin:origin];
+			[_growView setFrame: growViewFrame];
+			[self setFrame:windowFrame display:YES animate: NO];
+			
+			_displayingAdvancedPanel = YES;
+		}
+	} else {
+		// Hide advanced panel
+		if(_displayingAdvancedPanel)
+		{
+			growViewFrame.size.height += hideViewFrame.size.height;
+			origin.y += hideViewFrame.size.height;
+			windowFrame.size.height -= hideViewFrame.size.height;
+			windowFrame.origin.y += hideViewFrame.size.height;
+			
+			[[self contentView] setBoundsOrigin:origin];
+			[_growView setFrame: growViewFrame];
+			[self setFrame:windowFrame display:YES animate: NO];
+			
+			_displayingAdvancedPanel = NO;
+		}
+	}
+}
+
 - (NSDragOperation)draggingEntered:(id <NSDraggingInfo>)sender
 {
 	// Make sure that we hace an XPDocument managing us.

@@ -190,18 +190,6 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 - (void*) handle { return _stream; }
 - (XineEngine*) engine { return _engine; }
 
-/*
-- (XinePostOutputPort*) videoSourceForPostProcessor: (XinePostProcessor*) post
-{
-	return [[[XinePostOutputPort alloc] initWithOutput: xine_get_video_source(_stream) post:[post handle]] autorelease];
-}
-
-- (XinePostOutputPort*) audioSourceForPostProcessor: (XinePostProcessor*) post
-{
-	return [[[XinePostOutputPort alloc] initWithOutput: xine_get_audio_source(_stream) post:[post handle]] autorelease];
-}
-*/
-
 - (void) sendInputButtonEvent: (int) buttonEventType
 {
 	xine_event_t event;
@@ -218,6 +206,69 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 		return NO;
 	
 	return (xine_get_status(_stream) == XINE_STATUS_PLAY);
+}
+
+- (int) audioChannel
+{
+	return [self valueOfParameter:XINE_PARAM_AUDIO_CHANNEL_LOGICAL];
+}
+
+- (void) setAudioChannel: (int) channel
+{
+	[self setValue:channel ofParameter:XINE_PARAM_AUDIO_CHANNEL_LOGICAL];
+}
+
+- (int) SPUChannel
+{
+	return [self valueOfParameter:XINE_PARAM_SPU_CHANNEL];
+}
+
+- (void) setSPUChannel: (int) channel
+{
+	[self setValue:channel ofParameter:XINE_PARAM_SPU_CHANNEL];
+}
+
+- (NSArray*) audioLanguageCodes
+{
+	NSMutableArray *langArray = [NSMutableArray array];
+	int i;
+	char lang[50];
+	
+	for(i=0; i<XINE_LANG_MAX; i++) {
+		NSString *languageName = [NSString stringWithFormat:NSLocalizedString(@"Track %i", @"Default audio/spu track format"), i+1];
+		NSLog(@"-- %@ --", languageName);
+		if(xine_get_audio_lang(_stream,i,lang))
+		{
+			/* I don't know why but xine tends to add 
+			 * a space to the beginning sometimes. */
+			char *mylang = lang;
+			while(*mylang == ' ') { mylang++; }
+			languageName = [NSString stringWithCString:mylang];
+		} 
+		[langArray addObject: languageName];
+	}
+	return langArray;
+}
+
+- (NSArray*) subtitleLanguageCodes
+{
+	NSMutableArray *langArray = [NSMutableArray array];
+	int i;
+	char lang[50];
+	
+	for(i=0; i<XINE_LANG_MAX; i++) {
+		NSString *languageName = [NSString stringWithFormat:NSLocalizedString(@"Track %i", @"Default audio/spu track format"), i];
+		if(xine_get_spu_lang(_stream,i,lang))
+		{
+			/* I don't know why but xine tends to add 
+			* a space to the beginning sometimes. */
+			char *mylang = lang;
+			while(*mylang == ' ') { mylang++; }
+			languageName = [NSString stringWithCString:mylang];
+		} 
+		[langArray addObject: languageName];
+	}
+	return langArray;
 }
 
 - (void) setCurrentEvent: (const xine_event_t*) event
@@ -307,7 +358,7 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 			[[NSNotificationCenter defaultCenter] postNotificationName:XineStreamPlaybackDidFinishNotification object:self];		
 			break;
 		case XINE_EVENT_UI_CHANNELS_CHANGED:
-			[[NSNotificationCenter defaultCenter] postNotificationName:XineStreamChannelsChangedNotification object:self];		
+			[[NSNotificationCenter defaultCenter] postNotificationName:XineStreamChannelsChangedNotification object:self];
 			break;
 	}
 	

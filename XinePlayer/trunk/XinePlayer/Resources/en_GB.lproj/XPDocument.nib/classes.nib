@@ -38,7 +38,17 @@
             }; 
             SUPERCLASS = NSDocument; 
         }, 
-        {CLASS = XPDocumentWindow; LANGUAGE = ObjC; SUPERCLASS = NSWindow; }, 
+        {
+            ACTIONS = {disclosureChanged = id; }; 
+            CLASS = XPDocumentWindow; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_advancedHideShowButton" = NSButton; 
+                "_advancedPanel" = NSView; 
+                "_growView" = NSView; 
+            }; 
+            SUPERCLASS = NSWindow; 
+        }, 
         {CLASS = XineVideoView; LANGUAGE = ObjC; SUPERCLASS = NSView; }
     ); 
     IBVersion = 1; 
