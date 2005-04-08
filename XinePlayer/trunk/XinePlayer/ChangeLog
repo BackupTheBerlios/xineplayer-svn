@@ -1,10 +1,12 @@
-01 Apr 2005 Rich Wareham <richwareham@users.sourceforge.net>
+08 Apr 2005 Rich Wareham <richwareham@users.sourceforge.net>
 
         * 0.3 release.
-        * Can now set DVD region for RCE discs.
-        * Audio and subtitle language selection.
-        * Default audio level is lower.
-        * Some internal fixes.
+        * [BUGFIX] trying to pause stream with multiple files open used to pause all streams.
+        * [BUGFIX] control/right-clicking during fill-screen would sometimes steal mouse.
+        * [BUGFIX] Some internal stability fixes.
+        * [NEW] Can now set DVD region to get around some RCE discs.
+        * [NEW] Audio and subtitle language selection.
+        * [ENHANCE] Default audio level is lower.
 
 22 Mar 2005 Rich Wareham <richwareham@users.sourceforge.net>
 	
