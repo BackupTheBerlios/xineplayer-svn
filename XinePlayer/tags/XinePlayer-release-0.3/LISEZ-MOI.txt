@@ -1,0 +1,23 @@
+XinePlayer
+==========
+
+Introduction
+~~~~~~~~~~~~
+
+  XinePlayer est un lecteur multimédia pour OS X basé sur le moteur d'affichage multimédia xine. Il se destine a être un remplaçant du lecteur QuickTime et du Lecteur DVD en offrant un certain nombre de fonctionnalités manquantes a ces applications telles que le support du mode plein écran, (ou plus important pour moi :] ) la possibilité de passer certaines portions non passables des DVD ainsi que le désentrelacement des films pour une meilleur qualité lorsque visualisés sur un moniteur au rafraîchissement progressif.
+
+  XinePlayer est à un stage peu avancé de son développement et il est très probable qu'il contienne des bogues et des fonctionnalités manquantes. Si vous souhaitez nous signaler un bogue ou demander une fonctionnalité veuillez le faire à l'aide du Traqueur de bogues[1] ou le Traqueur de fonctionnalités (en anglais).
+
+[1] http://developer.berlios.de/bugs/?group_id=3329
+[2] http://developer.berlios.de/feature/?group_id=3329
+
+Remerciements
+~~~~~~~~~~~~~~~~
+
+Il faut remercier ces personnes/équipes :
+
+ + Toute l'équipe de xine pour avoir créé un excellent environnement multimédia.
+ + Andre Pang pour tous ses efforts pour faire que xine se compile et fonctionne bien sous OS X.
+ + BerliOS pour l'hébergement du projet.
+
+-- Rich Wareham <richwareham -arobase- users -point- sourceforge -point- net>

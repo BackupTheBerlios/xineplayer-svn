@@ -1,0 +1,8 @@
+DVDPlayerName = "DVD Player";
+MoviePlayerName = "Xine Multimedia Player";
+ShowMovieInformation = "Show Movie Information";
+HideMovieInformation = "Hide Movie Information";
+ShowDVDControls = "Show DVD Controls";
+HideDVDControls = "Hide DVD Controls";
+ShowPlaylist = "Show Playlist";
+HidePlaylist = "Hide Playlist";
