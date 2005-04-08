@@ -270,7 +270,7 @@
 							<real>237</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>186 305 887 611 0 0 1280 1002 </string>
+						<string>281 391 887 611 0 0 1280 1002 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -296,7 +296,7 @@
 										<key>PBXProjectModuleLabel</key>
 										<string>XPController.m</string>
 										<key>bookmark</key>
-										<string>A48FA66807FDBC6900C4EDC5</string>
+										<string>A48FA66B07FE0FD800C4EDC5</string>
 										<key>history</key>
 										<array>
 											<string>A409340207ED001100837FB7</string>
@@ -411,7 +411,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {605, 383}}</string>
 								<key>RubberWindowFrame</key>
-								<string>186 305 887 611 0 0 1280 1002 </string>
+								<string>281 391 887 611 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -431,7 +431,7 @@
 								<key>Frame</key>
 								<string>{{0, 390}, {605, 179}}</string>
 								<key>RubberWindowFrame</key>
-								<string>186 305 887 611 0 0 1280 1002 </string>
+								<string>281 391 887 611 0 0 1280 1002 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -489,7 +489,7 @@
 		<string>/Users/rjw57/Developer/XinePlayer/XinePlayer.xcode</string>
 	</array>
 	<key>WindowString</key>
-	<string>186 305 887 611 0 0 1280 1002 </string>
+	<string>281 391 887 611 0 0 1280 1002 </string>
 	<key>WindowTools</key>
 	<array>
 		<dict>
