@@ -2,6 +2,16 @@
 global $newsItems;
 
 $newsItems = array(
+  array( 'date' => '8-Apr-05', 'title' => 'Version 0.3 releases',
+          'contents' => '<p>Version 0.3 has been <a href="http://developer.berlios.de/project/showfiles.php?group_id=3329">released</a>. New features are below:</p>
+          <ul>
+          <li>[BUGFIX] trying to pause stream with multiple files open used to pause all streams.</li>
+          <li>[BUGFIX] control/right-clicking during fill-screen would sometimes steal mouse.</li>
+          <li>[BUGFIX] Some internal stability fixes.</li>
+          <li>[NEW] Can now set DVD region to get around some RCE discs.</li>
+          <li>[NEW] Audio and subtitle language selection.</li>
+          <li>[ENHANCE] Default audio level is lower.</li>
+          </ul>') ,
   array( 'date' => '22-Mar-05', 'title' => 'Version 0.2 released',
   'contents' => '<p>Version 0.2 has been <a href="http://developer.berlios.de/project/showfiles.php?group_id=3329">released</a>. New features are below:</p>
 <ul>
