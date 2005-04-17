@@ -62,7 +62,7 @@
 	<key>CFBundleSignature</key>
 	<string>xine</string>
 	<key>CFBundleVersion</key>
-	<string>0.3</string>
+	<string>0.4</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
