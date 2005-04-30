@@ -138,7 +138,7 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 135428236;
+			PBXPerProjectTemplateStateSaveDate = 136564213;
 			PBXPrepackagedSmartGroups_v2 = (
 				{
 					PBXTransientLocationAtTop = bottom;
@@ -315,7 +315,7 @@
 					};
 				},
 			);
-			PBXWorkspaceStateSaveDate = 135428236;
+			PBXWorkspaceStateSaveDate = 136564213;
 		};
 		perUserProjectItems = {
 			A407D5C507ECAD17006F11D2 = A407D5C507ECAD17006F11D2;
@@ -373,16 +373,14 @@
 			A4822EFA07F9F56100578954 = A4822EFA07F9F56100578954;
 			A48FA51407FD82EE00C4EDC5 = A48FA51407FD82EE00C4EDC5;
 			A48FA51707FD837500C4EDC5 = A48FA51707FD837500C4EDC5;
-			A48FA51B07FD841500C4EDC5 = A48FA51B07FD841500C4EDC5;
 			A48FA53907FD87F300C4EDC5 = A48FA53907FD87F300C4EDC5;
 			A48FA53A07FD87F300C4EDC5 = A48FA53A07FD87F300C4EDC5;
 			A48FA64807FDA13700C4EDC5 = A48FA64807FDA13700C4EDC5;
-			A48FA65007FDBB0D00C4EDC5 = A48FA65007FDBB0D00C4EDC5;
 			A48FA65107FDBB0D00C4EDC5 = A48FA65107FDBB0D00C4EDC5;
 			A48FA66507FDBB8900C4EDC5 = A48FA66507FDBB8900C4EDC5;
 			A49469A7081278B100F4C312 = A49469A7081278B100F4C312;
 			A49469A8081278B100F4C312 = A49469A8081278B100F4C312;
-			A49469A9081278B100F4C312 = A49469A9081278B100F4C312;
+			A4946AAA08127B1D00F4C312 = A4946AAA08127B1D00F4C312;
 			A4A8ADA307EDFD1E00A44F81 = A4A8ADA307EDFD1E00A44F81;
 			A4A8ADA407EDFD1E00A44F81 = A4A8ADA407EDFD1E00A44F81;
 			A4A8ADBD07EDFFDF00A44F81 = A4A8ADBD07EDFFDF00A44F81;
@@ -392,10 +390,9 @@
 			A4A8ADE007EE038B00A44F81 = A4A8ADE007EE038B00A44F81;
 			A4A8ADF007EE055C00A44F81 = A4A8ADF007EE055C00A44F81;
 			A4A8AE4C07EE0BF700A44F81 = A4A8AE4C07EE0BF700A44F81;
+			A4B0657F081EFE88001BCF4F = A4B0657F081EFE88001BCF4F;
+			A4B0659908222BD4001BCF4F = A4B0659908222BD4001BCF4F;
 			A4C06F2E0806BD8F002A3382 = A4C06F2E0806BD8F002A3382;
-			A4C06F2F0806BD8F002A3382 = A4C06F2F0806BD8F002A3382;
-			A4C06F300806BD8F002A3382 = A4C06F300806BD8F002A3382;
-			A4C06F310806BD8F002A3382 = A4C06F310806BD8F002A3382;
 			A4D7CEAA07EAD2820074C189 = A4D7CEAA07EAD2820074C189;
 			A4D7CEBF07EAEA580074C189 = A4D7CEBF07EAEA580074C189;
 			A4DA328907EF6AA9005B7998 = A4DA328907EF6AA9005B7998;
@@ -413,16 +410,16 @@
 	2A37F4ACFDCFA73011CA2CEA = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {558, 15596}}";
-			sepNavSelRange = "{5120, 0}";
-			sepNavVisRect = "{{0, 2541}, {558, 366}}";
+			sepNavSelRange = "{20957, 0}";
+			sepNavVisRect = "{{0, 9816}, {558, 366}}";
 			sepNavWindowFrame = "{{15, 439}, {750, 558}}";
 		};
 	};
 	2A37F4AEFDCFA73011CA2CEA = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {558, 1371}}";
-			sepNavSelRange = "{1654, 0}";
-			sepNavVisRect = "{{0, 465}, {558, 366}}";
+			sepNavIntBoundsRect = "{{0, 0}, {558, 1385}}";
+			sepNavSelRange = "{1767, 0}";
+			sepNavVisRect = "{{0, 588}, {558, 366}}";
 			sepNavWindowFrame = "{{84, 376}, {750, 558}}";
 		};
 	};
@@ -1222,16 +1219,6 @@
 		vrLen = 711;
 		vrLoc = 356;
 	};
-	A48FA51B07FD841500C4EDC5 = {
-		fRef = 2A37F4AEFDCFA73011CA2CEA;
-		isa = PBXTextBookmark;
-		name = "XPDocument.h: _streamTitle";
-		rLen = 0;
-		rLoc = 1654;
-		rType = 0;
-		vrLen = 532;
-		vrLoc = 1199;
-	};
 	A48FA53907FD87F300C4EDC5 = {
 		fRef = A466E7D507E34684000B6585;
 		isa = PBXTextBookmark;
@@ -1261,16 +1248,6 @@
 		rType = 0;
 		vrLen = 355;
 		vrLoc = 1701;
-	};
-	A48FA65007FDBB0D00C4EDC5 = {
-		fRef = 2A37F4ACFDCFA73011CA2CEA;
-		isa = PBXTextBookmark;
-		name = "XPDocument.m: 179";
-		rLen = 0;
-		rLoc = 5120;
-		rType = 0;
-		vrLen = 900;
-		vrLoc = 4827;
 	};
 	A48FA65107FDBB0D00C4EDC5 = {
 		fRef = 8D15AC360486D014006FF6A4;
@@ -1314,15 +1291,15 @@
 		fRef = A4948C9B07C0F1E50094CBF9;
 		isa = PBXBookmark;
 	};
-	A49469A9081278B100F4C312 = {
-		fRef = 8D15AC360486D014006FF6A4;
+	A4946AAA08127B1D00F4C312 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
 		isa = PBXTextBookmark;
-		name = "Info.plist: 65";
+		name = "XPDocument.m: 618";
 		rLen = 0;
-		rLoc = 1715;
+		rLoc = 20957;
 		rType = 0;
-		vrLen = 668;
-		vrLoc = 1188;
+		vrLen = 490;
+		vrLoc = 20736;
 	};
 	A4948CCD07C160C00094CBF9 = {
 		uiCtxt = {
@@ -1366,7 +1343,7 @@
 		isa = PBXTextBookmark;
 		name = "XPDocument.h: _noficiationWindow";
 		rLen = 0;
-		rLoc = 1686;
+		rLoc = 1725;
 		rType = 0;
 		vrLen = 642;
 		vrLoc = 1043;
@@ -1454,12 +1431,16 @@
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
 		isa = PBXExecutable;
 		libgmallocEnabled = 0;
 		name = XinePlayer;
 		savedGlobals = {
 		};
 		shlibInfoDictList = (
+		);
+		shlibInfoDictList_v2 = (
 		);
 		sourceDirectories = (
 		);
@@ -1475,16 +1456,26 @@
 	A4AA161107BE4770000DDE36 = {
 		indexTemplatePath = "";
 		isa = PBXCodeSenseManager;
-		usesDefaults = 1;
-		wantsCodeCompletion = 1;
-		wantsCodeCompletionAutoSuggestions = 1;
-		wantsCodeCompletionCaseSensitivity = 1;
-		wantsCodeCompletionListAlways = 1;
-		wantsCodeCompletionOnlyMatchingItems = 1;
-		wantsCodeCompletionParametersIncluded = 1;
-		wantsCodeCompletionPlaceholdersInserted = 1;
-		wantsCodeCompletionTabCompletes = 1;
-		wantsIndex = 1;
+	};
+	A4B0657F081EFE88001BCF4F = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 60";
+		rLen = 0;
+		rLoc = 1767;
+		rType = 0;
+		vrLen = 509;
+		vrLoc = 1424;
+	};
+	A4B0659908222BD4001BCF4F = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 60";
+		rLen = 0;
+		rLoc = 1767;
+		rType = 0;
+		vrLen = 509;
+		vrLoc = 1424;
 	};
 	A4B2976707EC811300AEB13F = {
 		uiCtxt = {
@@ -1509,24 +1500,6 @@
 		rType = 0;
 		vrLen = 895;
 		vrLoc = 2376;
-	};
-	A4C06F2F0806BD8F002A3382 = {
-		fRef = A4948C9B07C0F1E50094CBF9;
-		isa = PBXBookmark;
-	};
-	A4C06F300806BD8F002A3382 = {
-		fRef = A489FD0007BE61AD00DE41B2;
-		isa = PBXTextBookmark;
-		name = "XPController.m: 90";
-		rLen = 0;
-		rLoc = 2742;
-		rType = 0;
-		vrLen = 895;
-		vrLoc = 2376;
-	};
-	A4C06F310806BD8F002A3382 = {
-		fRef = A4948C9B07C0F1E50094CBF9;
-		isa = PBXBookmark;
 	};
 	A4D7CEAA07EAD2820074C189 = {
 		fRef = A42D7ABF07E38F2700955C78;

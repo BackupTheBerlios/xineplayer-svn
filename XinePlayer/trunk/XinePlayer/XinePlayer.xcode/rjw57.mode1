@@ -203,6 +203,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -241,28 +243,19 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>2A37F4AAFDCFA73011CA2CEA</string>
-								<string>2A37F4B8FDCFA73011CA2CEA</string>
-								<string>A4822CE407F8511D00578954</string>
-								<string>A409388B07EDA00100837FB7</string>
-								<string>A409388807ED9FF100837FB7</string>
-								<string>A466F45207E35842000B6585</string>
-								<string>A493D47E07BEFB4700F4FC04</string>
-								<string>A409387F07ED9FB100837FB7</string>
-								<string>A409387C07ED9FA300837FB7</string>
-								<string>A493D47D07BEFB1400F4FC04</string>
-								<string>A409389C07EDA03900837FB7</string>
+								<string>2A37F4ABFDCFA73011CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>36</integer>
-									<integer>7</integer>
+									<integer>14</integer>
+									<integer>6</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 136}, {259, 551}}</string>
+							<string>{{0, 0}, {259, 551}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -295,7 +288,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Info.plist</string>
+								<string>XPDocument.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -303,9 +296,9 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Info.plist</string>
+										<string>XPDocument.h</string>
 										<key>bookmark</key>
-										<string>A49469A9081278B100F4C312</string>
+										<string>A4B0659908222BD4001BCF4F</string>
 										<key>history</key>
 										<array>
 											<string>A409340207ED001100837FB7</string>
@@ -340,15 +333,15 @@
 											<string>A4822EFA07F9F56100578954</string>
 											<string>A48FA51407FD82EE00C4EDC5</string>
 											<string>A48FA51707FD837500C4EDC5</string>
-											<string>A48FA51B07FD841500C4EDC5</string>
 											<string>A48FA53907FD87F300C4EDC5</string>
 											<string>A48FA53A07FD87F300C4EDC5</string>
 											<string>A48FA64807FDA13700C4EDC5</string>
-											<string>A48FA65007FDBB0D00C4EDC5</string>
 											<string>A48FA66507FDBB8900C4EDC5</string>
 											<string>A4C06F2E0806BD8F002A3382</string>
 											<string>A49469A7081278B100F4C312</string>
 											<string>A48FA65107FDBB0D00C4EDC5</string>
+											<string>A4946AAA08127B1D00F4C312</string>
+											<string>A4B0657F081EFE88001BCF4F</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -450,9 +443,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>A49469AA081278B100F4C312</string>
+				<string>A4B06581081EFE88001BCF4F</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>A49469AB081278B100F4C312</string>
+				<string>A4B06582081EFE88001BCF4F</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -905,8 +898,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {491, 167}}</string>
-											<string>{{0, 176}, {491, 267}}</string>
+											<string>{{0, 0}, {363, 167}}</string>
+											<string>{{0, 176}, {363, 267}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -955,9 +948,9 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C0AD2B3069F1EA900FABCE6</string>
-				<string>A49469AC081278B100F4C312</string>
+				<string>A4B06583081EFE88001BCF4F</string>
 				<string>1CD0528B0623707200166675</string>
-				<string>A49469AD081278B100F4C312</string>
+				<string>A4B06584081EFE88001BCF4F</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.run</string>

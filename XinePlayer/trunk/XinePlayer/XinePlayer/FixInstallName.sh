@@ -12,7 +12,7 @@ cd $BUILD_ROOT/$EXECUTABLE_FOLDER_PATH
 PLUGINS_LIBPATH=@executable_path/../PlugIns/XinePlugins/
 
 # Fix the actual XinePlayer binary
-NAME=`otool -L $EXECUTABLE_NAME | grep "xine.*\.dylib " | cut -f 2 | cut -f 1 -d ' '`
+NAME=`otool -L $EXECUTABLE_NAME | grep "^[^@]*xine.*\.dylib " | cut -f 2 | cut -f 1 -d ' '`
 NEWNAME=`basename $NAME`
 echo Changing $NAME in $EXECUTABLE_NAME ... 
 install_name_tool -change $NAME $PLUGINS_LIBPATH/$NEWNAME $EXECUTABLE_NAME
@@ -21,13 +21,13 @@ cp $NAME $PWD/../PlugIns/XinePlugins/$NEWNAME
 # Now fix each plugin...
 for PLUGIN_NAME in `find $PWD/../PlugIns/XinePlugins/ -name '*.so'`; do
         #  ...firstly fix the libxine reference.
-        NAME=`otool -L $PLUGIN_NAME | grep "xine.*\.dylib " | cut -f 2 | cut -f 1 -d ' '`
+        NAME=`otool -L $PLUGIN_NAME | grep "^[^@]*xine.*\.dylib " | cut -f 2 | cut -f 1 -d ' '`
         NEWNAME=`basename $NAME`
         echo Changing $NAME in $PLUGIN_NAME ... 
         install_name_tool -change $NAME $PLUGINS_LIBPATH/$NEWNAME $PLUGIN_NAME
 
         # ...and copy any dependant libraries.
-        for LIBNAME in `otool -L $PLUGIN_NAME | grep "/sw/.*\.dylib " | cut -f 2 | cut -f 1 -d ' '`; do
+        for LIBNAME in `otool -L $PLUGIN_NAME | grep "/sw/[^@]*\.dylib " | cut -f 2 | cut -f 1 -d ' '`; do
                 if [ ! -z $LIBNAME ]; then
                         echo Changing $LIBNAME in $PLUGIN_NAME
                         NEWNAME=`basename $LIBNAME`

@@ -35,6 +35,7 @@
 	IBOutlet NSTextField *notificationLabel;
 	
 	IBOutlet NSWindow *_documentWindow;
+	IBOutlet NSWindow *_fullScreenWindow;
 	
 	NSMutableArray *_playlist;
 	int _playlistIndex;
