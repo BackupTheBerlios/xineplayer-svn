@@ -303,7 +303,7 @@ static NSArray *GetEjectableMediaOfClass( const char *psz_class )
     p_list = [NSMutableArray arrayWithCapacity: 1];
     
     next_media = IOIteratorNext( media_iterator );
-    if( next_media != NULL )
+    if( next_media != 0 )
     {
         char psz_buf[0x32];
         size_t dev_path_length;
@@ -336,7 +336,7 @@ static NSArray *GetEjectableMediaOfClass( const char *psz_class )
             
             IOObjectRelease( next_media );
             
-        } while( ( next_media = IOIteratorNext( media_iterator ) ) != NULL );
+        } while( ( next_media = IOIteratorNext( media_iterator ) ) != 0 );
     }
     
     IOObjectRelease( media_iterator );

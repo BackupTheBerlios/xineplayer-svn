@@ -28,7 +28,7 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 @interface XPDocument (Private)
 
 // Make the document window reflect the current status.
-- (void) synchroniseGUIAndStream: (id) sender;
+- (void) synchroniseGUIAndStream: (NSTimer*) timer;
 - (void) setNotificationMessage: (NSString*) message;
 
 @end

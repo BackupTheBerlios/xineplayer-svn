@@ -341,7 +341,7 @@ void event_listener_cb(void *user_data, const xine_event_t* event);
 			NSMutableArray *parameters = [NSMutableArray array];
 			int params = message_data->num_parameters;
 			/* NSLog(@"Expecting %i parameters", params); */
-			uint8_t *param_str = (message_data->messages) + strlen(message_data->messages) + 1;
+			char *param_str = (message_data->messages) + strlen(message_data->messages) + 1;
 			while(params > 0) {
 				/* NSLog(@"param: %s", param_str); */
 				[parameters addObject: [NSString stringWithCString:param_str]];
