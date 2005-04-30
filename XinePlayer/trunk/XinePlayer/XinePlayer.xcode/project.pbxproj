@@ -1205,7 +1205,7 @@
 		};
 		A42FF64307E367F70038B422 = {
 			buildActionMask = 2147483647;
-			dstPath = XinePlugins/plugins/1.0.0;
+			dstPath = XinePlugins/plugins/1.0.1;
 			dstSubfolderSpec = 13;
 			files = (
 				A42FF64607E3680C0038B422,
