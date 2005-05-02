@@ -1,4 +1,4 @@
 /* Localized versions of Info.plist keys */
 
 CFBundleName = "XinePlayer";
-NSHumanReadableCopyright = "© Rich Wareham, 2005";
+NSHumanReadableCopyright = "(C) Rich Wareham, 2005";
