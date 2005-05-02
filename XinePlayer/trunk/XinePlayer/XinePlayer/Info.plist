@@ -28,7 +28,7 @@
 			<key>CFBundleTypeName</key>
 			<string>Movie</string>
 			<key>CFBundleTypeRole</key>
-			<string>Viewer</string>
+			<string>Editor</string>
 			<key>LSTypeIsPackage</key>
 			<false/>
 			<key>NSDocumentClass</key>
@@ -40,7 +40,7 @@
 			<key>CFBundleTypeName</key>
 			<string>DVD</string>
 			<key>CFBundleTypeRole</key>
-			<string>Viewer</string>
+			<string>Editor</string>
 			<key>LSTypeIsPackage</key>
 			<false/>
 			<key>NSDocumentClass</key>
