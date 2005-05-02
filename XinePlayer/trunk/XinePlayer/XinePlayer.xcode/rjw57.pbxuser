@@ -343,6 +343,13 @@
 			A41F26FE08266347009DC990 = A41F26FE08266347009DC990;
 			A41F26FF08266347009DC990 = A41F26FF08266347009DC990;
 			A41F270008266382009DC990 = A41F270008266382009DC990;
+			A41F2707082664D9009DC990 = A41F2707082664D9009DC990;
+			A41F2708082664D9009DC990 = A41F2708082664D9009DC990;
+			A41F2709082664D9009DC990 = A41F2709082664D9009DC990;
+			A41F270A082664D9009DC990 = A41F270A082664D9009DC990;
+			A41F270B082664D9009DC990 = A41F270B082664D9009DC990;
+			A41F270C082664D9009DC990 = A41F270C082664D9009DC990;
+			A41F270F082664E5009DC990 = A41F270F082664E5009DC990;
 			A451F1060825B485007BD225 = A451F1060825B485007BD225;
 			A451F1070825B485007BD225 = A451F1070825B485007BD225;
 			A451F10B0825B485007BD225 = A451F10B0825B485007BD225;
@@ -768,6 +775,76 @@
 		vrLen = 936;
 		vrLoc = 5040;
 	};
+	A41F2707082664D9009DC990 = {
+		fRef = A489FD0007BE61AD00DE41B2;
+		isa = PBXTextBookmark;
+		name = "XPController.m: 214";
+		rLen = 0;
+		rLoc = 6479;
+		rType = 0;
+		vrLen = 1238;
+		vrLoc = 5975;
+	};
+	A41F2708082664D9009DC990 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 214";
+		rLen = 0;
+		rLoc = 6593;
+		rType = 0;
+		vrLen = 1218;
+		vrLoc = 5730;
+	};
+	A41F2709082664D9009DC990 = {
+		fRef = A466E7D207E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineEngine.m: 91";
+		rLen = 0;
+		rLoc = 2311;
+		rType = 0;
+		vrLen = 1142;
+		vrLoc = 1725;
+	};
+	A41F270A082664D9009DC990 = {
+		fRef = A489FD0007BE61AD00DE41B2;
+		isa = PBXTextBookmark;
+		name = "XPController.m: 214";
+		rLen = 0;
+		rLoc = 6479;
+		rType = 0;
+		vrLen = 1238;
+		vrLoc = 5975;
+	};
+	A41F270B082664D9009DC990 = {
+		fRef = A466E7DA07E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineVideoView.m: 214";
+		rLen = 0;
+		rLoc = 6593;
+		rType = 0;
+		vrLen = 1218;
+		vrLoc = 5730;
+	};
+	A41F270C082664D9009DC990 = {
+		fRef = A466E7D207E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineEngine.m: 91";
+		rLen = 0;
+		rLoc = 2311;
+		rType = 0;
+		vrLen = 1142;
+		vrLoc = 1725;
+	};
+	A41F270F082664E5009DC990 = {
+		fRef = A466E7D207E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineEngine.m: 91";
+		rLen = 0;
+		rLoc = 2312;
+		rType = 0;
+		vrLen = 1144;
+		vrLoc = 1725;
+	};
 	A42D7B7607E39AC200955C78 = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {697, 728}}";
@@ -1074,8 +1151,8 @@
 	A466E7D207E34684000B6585 = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {793, 4046}}";
-			sepNavSelRange = "{2092, 0}";
-			sepNavVisRect = "{{0, 1020}, {793, 474}}";
+			sepNavSelRange = "{2316, 0}";
+			sepNavVisRect = "{{0, 975}, {793, 474}}";
 			sepNavWindowFrame = "{{15, 439}, {750, 558}}";
 		};
 	};
@@ -1110,9 +1187,9 @@
 	};
 	A466E7DA07E34684000B6585 = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {558, 9687}}";
+			sepNavIntBoundsRect = "{{0, 0}, {793, 9394}}";
 			sepNavSelRange = "{6593, 0}";
-			sepNavVisRect = "{{0, 2840}, {558, 366}}";
+			sepNavVisRect = "{{0, 2714}, {793, 474}}";
 			sepNavWindowFrame = "{{61, 397}, {750, 558}}";
 		};
 	};
@@ -1140,8 +1217,8 @@
 	A489FD0007BE61AD00DE41B2 = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {793, 4970}}";
-			sepNavSelRange = "{6541, 0}";
-			sepNavVisRect = "{{0, 2333}, {793, 474}}";
+			sepNavSelRange = "{6479, 0}";
+			sepNavVisRect = "{{0, 2808}, {793, 474}}";
 		};
 	};
 	A493D69A07BF7FAE00F4FC04 = {

@@ -47,7 +47,7 @@ done
 
 # Do we have libdvdcss? If so, copy it.
 if [ -f /usr/lib/libdvdcss.2.dylib ]; then
-  cp /usr/lib/libdvdcss.2.dylib $BUILD_ROOT/$EXECUTABLE_FOLDER_PATH/../PlugIns/XinePlugins/libdvdcss.so.2
+  cp /usr/lib/libdvdcss.2.dylib $BUILD_ROOT/$EXECUTABLE_FOLDER_PATH/../PlugIns/XinePlugins/
 fi
 
 # Now let's try fixing the copied libraries

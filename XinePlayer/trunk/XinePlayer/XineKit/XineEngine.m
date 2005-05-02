@@ -88,7 +88,9 @@ static XineEngine *_defaultEngine = nil;
 		
 		/* NSLog(@"Plugin path: %@", pluginPath); */
 		setenv("XINE_PLUGIN_PATH", [pluginPath cString], 1);
-		setenv("DYLD_LIBRARY_PATH", [pluginPath cString], 1);
+		setenv("DVDCSS_LIBRARY", [[NSString pathWithComponents:[NSArray arrayWithObjects:
+			pluginPath, @"libdvdcss.2.dylib",
+			nil]] cString], 1);
 		
 		xine = xine_new();
 		[self loadConfiguration];
