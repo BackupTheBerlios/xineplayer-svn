@@ -181,7 +181,10 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	// Create the default stream and video/audio ports.
 	_videoPort = [[_engine createVideoPortFromVideoView: videoView] retain];
 	_audioPort = [[_engine createAudioPort] retain];
-	
+	if(!_videoPort)
+		NSLog(@"Error creating video port.");
+	if(!_audioPort)
+		NSLog(@"Error creating audio port.");
 	[videoView setNotficationView: notificationView];
 	[self setNotificationMessage: @""];
 	
@@ -191,7 +194,7 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	_deinterlaceFilter = [XinePostProcessor postProcessorNamed: @"tvtime" fromEngine: _engine inputs:0 audioPorts: [NSArray arrayWithObject: _audioPort] videoPorts: [NSArray arrayWithObject: _videoPort]];
 	if(_deinterlaceFilter) 
 		[_deinterlaceFilter retain];
-		
+	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(prefsChanged:) name:NSUserDefaultsDidChangeNotification object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(progressChanged:) name:XineStreamMadeProgressNotification object:_stream];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(messageToUser:) name:XineStreamGUIMessageNotification object:_stream];
@@ -207,6 +210,7 @@ NSString* XPDisplayNameFromPlaylistEntry(id mrl);
 	_guiTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(synchroniseGUIAndStream:) userInfo:nil repeats:YES];
 	
 	[[self documentWindow] registerForDraggedTypes: [NSArray arrayWithObjects: NSFilenamesPboardType, NSURLPboardType, nil]];
+
 }
 
 - (void) titleChanged: (NSNotification*) notification

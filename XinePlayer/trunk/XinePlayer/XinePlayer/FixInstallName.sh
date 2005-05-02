@@ -12,16 +12,16 @@ cd $BUILD_ROOT/$EXECUTABLE_FOLDER_PATH
 PLUGINS_LIBPATH=@executable_path/../PlugIns/XinePlugins/
 
 # Fix the actual XinePlayer binary
-NAME=`otool -L $EXECUTABLE_NAME | grep "^[^@]*xine.*\.dylib " | cut -f 2 | cut -f 1 -d ' '`
+NAME=`otool -L $EXECUTABLE_NAME | grep "^[^@]*xine.* " | cut -f 2 | cut -f 1 -d ' '`
 NEWNAME=`basename $NAME`
 echo Changing $NAME in $EXECUTABLE_NAME ... 
 install_name_tool -change $NAME $PLUGINS_LIBPATH/$NEWNAME $EXECUTABLE_NAME
 cp $NAME $PWD/../PlugIns/XinePlugins/$NEWNAME
 
 # Now fix each plugin...
-for PLUGIN_NAME in `find $PWD/../PlugIns/XinePlugins/ -name '*.so'`; do
+for PLUGIN_NAME in `find $PWD/../PlugIns/XinePlugins/plugins -name 'xineplug*'`; do
         #  ...firstly fix the libxine reference.
-        NAME=`otool -L $PLUGIN_NAME | grep "^[^@]*xine.*\.dylib " | cut -f 2 | cut -f 1 -d ' '`
+        NAME=`otool -L $PLUGIN_NAME | grep "^[^@]*xine.* " | cut -f 2 | cut -f 1 -d ' '`
         NEWNAME=`basename $NAME`
         echo Changing $NAME in $PLUGIN_NAME ... 
         install_name_tool -change $NAME $PLUGINS_LIBPATH/$NEWNAME $PLUGIN_NAME
@@ -40,6 +40,9 @@ for PLUGIN_NAME in `find $PWD/../PlugIns/XinePlugins/ -name '*.so'`; do
                         fi
                 fi
         done
+		
+		# ...and fix the name.
+		mv $PLUGIN_NAME $PLUGIN_NAME.so
 done
 
 # Do we have libdvdcss? If so, copy it.

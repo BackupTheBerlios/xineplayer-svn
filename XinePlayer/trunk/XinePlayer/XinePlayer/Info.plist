@@ -35,12 +35,10 @@
 			<string>XPDocument</string>
 		</dict>
 		<dict>
-			<key>CFBundleTypeExtensions</key>
-			<array/>
 			<key>CFBundleTypeIconFile</key>
 			<string></string>
 			<key>CFBundleTypeName</key>
-			<string>DVD</string>
+			<string>DVD</string>
 			<key>CFBundleTypeRole</key>
 			<string>Viewer</string>
 			<key>LSTypeIsPackage</key>

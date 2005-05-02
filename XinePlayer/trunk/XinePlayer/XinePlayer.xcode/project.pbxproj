@@ -9,7 +9,6 @@
 			children = (
 				A407D3BF07EC8523006F11D2,
 				A42D7BCB07E39E3A00955C78,
-				A42D7A9507E38DC400955C78,
 				A430A6A107C4FB7800B6DE7C,
 				1058C7A7FEA54F5311CA2CBB,
 			);
@@ -49,7 +48,6 @@
 		19C28FB0FE9D524F11CA2CBB = {
 			children = (
 				8D15AC370486D014006FF6A4,
-				A42FF55D07E363AE0038B422,
 				A407D3F607EC8CFA006F11D2,
 				A415E81C07F2036C00FFA8BD,
 			);
@@ -70,8 +68,6 @@
 //2A4
 		2A37F4A9FDCFA73011CA2CEA = {
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.3;
-				SDKROOT = /Developer/SDKs/MacOSX10.3.9.sdk;
 			};
 			buildStyles = (
 				4A9504D0FFE6A4CB11CA0CBA,
@@ -91,7 +87,6 @@
 			projectDirPath = "";
 			targets = (
 				8D15AC270486D014006FF6A4,
-				A42FF55C07E363AE0038B422,
 				A407D3F507EC8CFA006F11D2,
 				A415E81B07F2036C00FFA8BD,
 			);
@@ -100,7 +95,6 @@
 			children = (
 				A4D80DDD07E6011000B775A2,
 				A42FF82207E36AD60038B422,
-				A42FF56307E364180038B422,
 				A466E7CE07E34623000B6585,
 				A4B2976607EC80DC00AEB13F,
 				2A37F4ABFDCFA73011CA2CEA,
@@ -234,6 +228,7 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
 			};
 			isa = PBXBuildStyle;
 			name = Development;
@@ -262,9 +257,8 @@
 			buildPhases = (
 				8D15AC2B0486D014006FF6A4,
 				8D15AC300486D014006FF6A4,
-				A466F22407E35072000B6585,
-				A42FF64307E367F70038B422,
 				8D15AC330486D014006FF6A4,
+				A466F22407E35072000B6585,
 				A466E99707E34866000B6585,
 				A407D3FC07EC8D19006F11D2,
 			);
@@ -278,13 +272,12 @@
 				INFOPLIST_FILE = XinePlayer/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "$(BUILD_ROOT)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/ $(SOURCE_ROOT)/../xine-build/lib";
-				OTHER_LDFLAGS = "-bind_at_load -lxine";
+				OTHER_LDFLAGS = "$(SOURCE_ROOT)/../xine-build/lib/libxine.1";
 				PREBINDING = NO;
 				PRODUCT_NAME = XinePlayer;
 				WRAPPER_EXTENSION = app;
 			};
 			dependencies = (
-				A42FF56007E363E60038B422,
 				A407D3FB07EC8D0A006F11D2,
 				A415E81F07F2037400FFA8BD,
 			);
@@ -973,36 +966,6 @@
 			settings = {
 			};
 		};
-		A42D7A9507E38DC400955C78 = {
-			isa = PBXFileReference;
-			lastKnownFileType = "compiled.mach-o.dylib";
-			name = libxine.dylib;
-			path = "../xine-build/lib/libxine.1.11.1.dylib";
-			refType = 2;
-			sourceTree = SOURCE_ROOT;
-		};
-		A42D7ABF07E38F2700955C78 = {
-			fileEncoding = 4;
-			isa = PBXFileReference;
-			lastKnownFileType = text.script.sh;
-			name = FixInstallName.sh;
-			path = XinePlayer/FixInstallName.sh;
-			refType = 2;
-			sourceTree = SOURCE_ROOT;
-		};
-		A42D7AC107E38F4B00955C78 = {
-			buildActionMask = 12;
-			files = (
-			);
-			inputPaths = (
-			);
-			isa = PBXShellScriptBuildPhase;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "source VideoOut/FixPluginInstallName.sh\n";
-		};
 		A42D7B7607E39AC200955C78 = {
 			fileEncoding = 4;
 			isa = PBXFileReference;
@@ -1029,12 +992,6 @@
 			refType = 0;
 			sourceTree = "<absolute>";
 		};
-		A42D7BCC07E39E3A00955C78 = {
-			fileRef = A42D7BCB07E39E3A00955C78;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
 		A42D7F3A07E3CD8200955C78 = {
 			fileRef = A42D7B7707E39AC200955C78;
 			isa = PBXBuildFile;
@@ -1043,180 +1000,6 @@
 		};
 		A42D7F3B07E3CDAA00955C78 = {
 			fileRef = A42D7BCB07E39E3A00955C78;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		A42FF55907E363AE0038B422 = {
-			buildActionMask = 2147483647;
-			files = (
-				A42FF57907E3652E0038B422,
-				A42FF63107E3674C0038B422,
-			);
-			isa = PBXHeadersBuildPhase;
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A42FF55A07E363AE0038B422 = {
-			buildActionMask = 2147483647;
-			files = (
-				A42FF56707E364730038B422,
-				A42FF57807E3652E0038B422,
-			);
-			isa = PBXSourcesBuildPhase;
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A42FF55B07E363AE0038B422 = {
-			buildActionMask = 2147483647;
-			files = (
-				A42FF61A07E366490038B422,
-				A42D7BCC07E39E3A00955C78,
-			);
-			isa = PBXFrameworksBuildPhase;
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A42FF55C07E363AE0038B422 = {
-			buildPhases = (
-				A42FF55907E363AE0038B422,
-				A42FF55A07E363AE0038B422,
-				A42FF55B07E363AE0038B422,
-				A42D7AC107E38F4B00955C78,
-			);
-			buildRules = (
-			);
-			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				EXECUTABLE_EXTENSION = so;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/../xine-build/include";
-				INSTALL_PATH = /usr/local/lib;
-				LIBRARY_SEARCH_PATHS = "$(SOURCE_ROOT)/../xine-build/lib/";
-				LIBRARY_STYLE = BUNDLE;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "-lxine";
-				OTHER_REZFLAGS = "";
-				PREBINDING = YES;
-				PRODUCT_NAME = xineplug_vo_out_cocoa;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
-				ZERO_LINK = YES;
-			};
-			dependencies = (
-			);
-			isa = PBXNativeTarget;
-			name = CocoaVideoOutput;
-			productName = CocoaVideoOutput;
-			productReference = A42FF55D07E363AE0038B422;
-			productType = "com.apple.product-type.library.dynamic";
-		};
-		A42FF55D07E363AE0038B422 = {
-			explicitFileType = "compiled.mach-o.dylib";
-			includeInIndex = 0;
-			isa = PBXFileReference;
-			path = xineplug_vo_out_cocoa.so;
-			refType = 3;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A42FF55F07E363E60038B422 = {
-			containerPortal = 2A37F4A9FDCFA73011CA2CEA;
-			isa = PBXContainerItemProxy;
-			proxyType = 1;
-			remoteGlobalIDString = A42FF55C07E363AE0038B422;
-			remoteInfo = CocoaVideoOutput;
-		};
-		A42FF56007E363E60038B422 = {
-			isa = PBXTargetDependency;
-			target = A42FF55C07E363AE0038B422;
-			targetProxy = A42FF55F07E363E60038B422;
-		};
-		A42FF56307E364180038B422 = {
-			children = (
-				A42D7ABF07E38F2700955C78,
-				A42FF63007E3674C0038B422,
-				A42FF57607E3652E0038B422,
-				A42FF57707E3652E0038B422,
-				A42FF56607E364730038B422,
-			);
-			isa = PBXGroup;
-			name = "Video Output PlugIn";
-			path = VideoOut;
-			refType = 4;
-			sourceTree = "<group>";
-		};
-		A42FF56607E364730038B422 = {
-			fileEncoding = 30;
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.objc;
-			path = video_out_cocoa.m;
-			refType = 4;
-			sourceTree = "<group>";
-		};
-		A42FF56707E364730038B422 = {
-			fileRef = A42FF56607E364730038B422;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		A42FF57607E3652E0038B422 = {
-			fileEncoding = 30;
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.c;
-			path = alphablend.c;
-			refType = 4;
-			sourceTree = "<group>";
-		};
-		A42FF57707E3652E0038B422 = {
-			fileEncoding = 30;
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.h;
-			path = alphablend.h;
-			refType = 4;
-			sourceTree = "<group>";
-		};
-		A42FF57807E3652E0038B422 = {
-			fileRef = A42FF57607E3652E0038B422;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		A42FF57907E3652E0038B422 = {
-			fileRef = A42FF57707E3652E0038B422;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		A42FF61A07E366490038B422 = {
-			fileRef = 1058C7A7FEA54F5311CA2CBB;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		A42FF63007E3674C0038B422 = {
-			fileEncoding = 30;
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.c.h;
-			path = bswap.h;
-			refType = 4;
-			sourceTree = "<group>";
-		};
-		A42FF63107E3674C0038B422 = {
-			fileRef = A42FF63007E3674C0038B422;
-			isa = PBXBuildFile;
-			settings = {
-			};
-		};
-		A42FF64307E367F70038B422 = {
-			buildActionMask = 2147483647;
-			dstPath = XinePlugins/plugins/1.0.1;
-			dstSubfolderSpec = 13;
-			files = (
-				A42FF64607E3680C0038B422,
-			);
-			isa = PBXCopyFilesBuildPhase;
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A42FF64607E3680C0038B422 = {
-			fileRef = A42FF55D07E363AE0038B422;
 			isa = PBXBuildFile;
 			settings = {
 			};

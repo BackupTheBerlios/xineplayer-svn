@@ -224,7 +224,6 @@ static XPPreferencesController *_defaultController = nil;
 
 - (id) valueForKey: (NSString*) key
 {
-	NSLog(@"Hello %@", key);
 	return [super valueForKey: key];
 }
 

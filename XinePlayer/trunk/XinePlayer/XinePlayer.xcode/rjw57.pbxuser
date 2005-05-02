@@ -47,7 +47,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					487,
+					583,
 					20,
 					66,
 					43,
@@ -122,7 +122,7 @@
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
 					300,
-					67,
+					302,
 					20,
 					67,
 					43,
@@ -138,7 +138,7 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 136564213;
+			PBXPerProjectTemplateStateSaveDate = 136732659;
 			PBXPrepackagedSmartGroups_v2 = (
 				{
 					PBXTransientLocationAtTop = bottom;
@@ -315,97 +315,50 @@
 					};
 				},
 			);
-			PBXWorkspaceStateSaveDate = 136564213;
+			PBXWorkspaceStateSaveDate = 136732659;
 		};
 		perUserProjectItems = {
-			A407D5C507ECAD17006F11D2 = A407D5C507ECAD17006F11D2;
-			A409340207ED001100837FB7 = A409340207ED001100837FB7;
-			A409340707ED001100837FB7 = A409340707ED001100837FB7;
-			A40934A207ED0A2300837FB7 = A40934A207ED0A2300837FB7;
-			A40934C507ED0E6900837FB7 = A40934C507ED0E6900837FB7;
-			A40938C707EDCB7500837FB7 = A40938C707EDCB7500837FB7;
-			A40938CD07EDCB7500837FB7 = A40938CD07EDCB7500837FB7;
-			A415E83507F2048D00FFA8BD = A415E83507F2048D00FFA8BD;
-			A415E83607F2048D00FFA8BD = A415E83607F2048D00FFA8BD;
-			A415E83807F2048D00FFA8BD = A415E83807F2048D00FFA8BD;
-			A415E83907F2048D00FFA8BD = A415E83907F2048D00FFA8BD;
-			A415E83A07F2048D00FFA8BD = A415E83A07F2048D00FFA8BD;
-			A415E83E07F204A600FFA8BD = A415E83E07F204A600FFA8BD;
-			A415E84107F204A600FFA8BD = A415E84107F204A600FFA8BD;
-			A415E86707F2059000FFA8BD = A415E86707F2059000FFA8BD;
-			A415E86807F2059000FFA8BD = A415E86807F2059000FFA8BD;
-			A415E86E07F2059000FFA8BD = A415E86E07F2059000FFA8BD;
-			A415E87007F2059000FFA8BD = A415E87007F2059000FFA8BD;
-			A415E87107F2059000FFA8BD = A415E87107F2059000FFA8BD;
-			A415E87307F2059000FFA8BD = A415E87307F2059000FFA8BD;
-			A415E87407F2059000FFA8BD = A415E87407F2059000FFA8BD;
-			A415E87A07F2059000FFA8BD = A415E87A07F2059000FFA8BD;
-			A415E89207F2079100FFA8BD = A415E89207F2079100FFA8BD;
-			A415E89407F2079100FFA8BD = A415E89407F2079100FFA8BD;
-			A415E89C07F208BD00FFA8BD = A415E89C07F208BD00FFA8BD;
-			A415E89E07F208BD00FFA8BD = A415E89E07F208BD00FFA8BD;
-			A415E89F07F208BD00FFA8BD = A415E89F07F208BD00FFA8BD;
-			A415E8B707F20CB600FFA8BD = A415E8B707F20CB600FFA8BD;
-			A415E8BD07F20D8500FFA8BD = A415E8BD07F20D8500FFA8BD;
-			A415E8BE07F20D8500FFA8BD = A415E8BE07F20D8500FFA8BD;
-			A415E90007F210E400FFA8BD = A415E90007F210E400FFA8BD;
-			A415E92107F2130600FFA8BD = A415E92107F2130600FFA8BD;
-			A415E93607F213D000FFA8BD = A415E93607F213D000FFA8BD;
-			A415E93C07F2148D00FFA8BD = A415E93C07F2148D00FFA8BD;
-			A415E93D07F2148D00FFA8BD = A415E93D07F2148D00FFA8BD;
-			A415E93F07F2148D00FFA8BD = A415E93F07F2148D00FFA8BD;
-			A415E96907F2188800FFA8BD = A415E96907F2188800FFA8BD;
-			A415E9D507F21EE000FFA8BD = A415E9D507F21EE000FFA8BD;
-			A457E72B07EF8D620026933F = A457E72B07EF8D620026933F;
-			A457E74F07EF92130026933F = A457E74F07EF92130026933F;
-			A457E75307EF92410026933F = A457E75307EF92410026933F;
-			A457E7C907EFA0800026933F = A457E7C907EFA0800026933F;
-			A457E7CB07EFA0800026933F = A457E7CB07EFA0800026933F;
-			A45A618D07F0AABB00639167 = A45A618D07F0AABB00639167;
-			A45A619307F0AABB00639167 = A45A619307F0AABB00639167;
-			A4822C9A07F8461700578954 = A4822C9A07F8461700578954;
-			A4822CEA07F8514300578954 = A4822CEA07F8514300578954;
-			A4822DF307F86B6F00578954 = A4822DF307F86B6F00578954;
-			A4822DFE07F86BE200578954 = A4822DFE07F86BE200578954;
-			A4822E1E07F86E0C00578954 = A4822E1E07F86E0C00578954;
-			A4822E8307F9E6C600578954 = A4822E8307F9E6C600578954;
-			A4822ED407F9F06000578954 = A4822ED407F9F06000578954;
-			A4822EFA07F9F56100578954 = A4822EFA07F9F56100578954;
-			A48FA51407FD82EE00C4EDC5 = A48FA51407FD82EE00C4EDC5;
-			A48FA51707FD837500C4EDC5 = A48FA51707FD837500C4EDC5;
-			A48FA53907FD87F300C4EDC5 = A48FA53907FD87F300C4EDC5;
-			A48FA53A07FD87F300C4EDC5 = A48FA53A07FD87F300C4EDC5;
-			A48FA64807FDA13700C4EDC5 = A48FA64807FDA13700C4EDC5;
-			A48FA65107FDBB0D00C4EDC5 = A48FA65107FDBB0D00C4EDC5;
-			A48FA66507FDBB8900C4EDC5 = A48FA66507FDBB8900C4EDC5;
-			A49469A7081278B100F4C312 = A49469A7081278B100F4C312;
-			A49469A8081278B100F4C312 = A49469A8081278B100F4C312;
-			A4946AAA08127B1D00F4C312 = A4946AAA08127B1D00F4C312;
-			A4A8ADA307EDFD1E00A44F81 = A4A8ADA307EDFD1E00A44F81;
-			A4A8ADA407EDFD1E00A44F81 = A4A8ADA407EDFD1E00A44F81;
-			A4A8ADBD07EDFFDF00A44F81 = A4A8ADBD07EDFFDF00A44F81;
-			A4A8ADCD07EE01B600A44F81 = A4A8ADCD07EE01B600A44F81;
-			A4A8ADDC07EE038B00A44F81 = A4A8ADDC07EE038B00A44F81;
-			A4A8ADDF07EE038B00A44F81 = A4A8ADDF07EE038B00A44F81;
-			A4A8ADE007EE038B00A44F81 = A4A8ADE007EE038B00A44F81;
-			A4A8ADF007EE055C00A44F81 = A4A8ADF007EE055C00A44F81;
-			A4A8AE4C07EE0BF700A44F81 = A4A8AE4C07EE0BF700A44F81;
-			A4B0657F081EFE88001BCF4F = A4B0657F081EFE88001BCF4F;
-			A4B0659908222BD4001BCF4F = A4B0659908222BD4001BCF4F;
+			A41F26D308266093009DC990 = A41F26D308266093009DC990;
+			A41F26D408266093009DC990 = A41F26D408266093009DC990;
+			A451F1060825B485007BD225 = A451F1060825B485007BD225;
+			A451F1070825B485007BD225 = A451F1070825B485007BD225;
+			A451F10B0825B485007BD225 = A451F10B0825B485007BD225;
+			A451F10D0825B485007BD225 = A451F10D0825B485007BD225;
+			A451F10E0825B485007BD225 = A451F10E0825B485007BD225;
+			A451F10F0825B485007BD225 = A451F10F0825B485007BD225;
+			A451F1100825B485007BD225 = A451F1100825B485007BD225;
+			A451F1110825B485007BD225 = A451F1110825B485007BD225;
+			A451F1120825B485007BD225 = A451F1120825B485007BD225;
+			A451F1150825B485007BD225 = A451F1150825B485007BD225;
+			A451F1180825B485007BD225 = A451F1180825B485007BD225;
+			A451F11A0825B485007BD225 = A451F11A0825B485007BD225;
+			A451F13D0825BABC007BD225 = A451F13D0825BABC007BD225;
+			A451F13E0825BABC007BD225 = A451F13E0825BABC007BD225;
+			A451F13F0825BABC007BD225 = A451F13F0825BABC007BD225;
+			A451F1400825BABC007BD225 = A451F1400825BABC007BD225;
+			A451F1410825BABC007BD225 = A451F1410825BABC007BD225;
+			A451F1430825BABC007BD225 = A451F1430825BABC007BD225;
+			A451F1440825BABC007BD225 = A451F1440825BABC007BD225;
+			A451F1450825BABC007BD225 = A451F1450825BABC007BD225;
+			A451F1460825BABC007BD225 = A451F1460825BABC007BD225;
+			A451F1560825BABC007BD225 = A451F1560825BABC007BD225;
+			A451F15B0825BABC007BD225 = A451F15B0825BABC007BD225;
+			A4B38D3508265E8D00663957 = A4B38D3508265E8D00663957;
+			A4B38D3608265E8D00663957 = A4B38D3608265E8D00663957;
+			A4B38D3708265E8D00663957 = A4B38D3708265E8D00663957;
+			A4B38D3808265E8D00663957 = A4B38D3808265E8D00663957;
 			A4B906570823E95F00746AC2 = A4B906570823E95F00746AC2;
-			A4B906580823E95F00746AC2 = A4B906580823E95F00746AC2;
 			A4B906590823E95F00746AC2 = A4B906590823E95F00746AC2;
-			A4B9065A0823E95F00746AC2 = A4B9065A0823E95F00746AC2;
-			A4B906620823EB2100746AC2 = A4B906620823EB2100746AC2;
-			A4C06F2E0806BD8F002A3382 = A4C06F2E0806BD8F002A3382;
-			A4D7CEAA07EAD2820074C189 = A4D7CEAA07EAD2820074C189;
-			A4D7CEBF07EAEA580074C189 = A4D7CEBF07EAEA580074C189;
-			A4DA328907EF6AA9005B7998 = A4DA328907EF6AA9005B7998;
-			A4DA329207EF6B90005B7998 = A4DA329207EF6B90005B7998;
-			A4DA329307EF6B90005B7998 = A4DA329307EF6B90005B7998;
-			A4DA32BB07EF71FC005B7998 = A4DA32BB07EF71FC005B7998;
-			A4DA331207EF7ABE005B7998 = A4DA331207EF7ABE005B7998;
-			A4DA331D07EF7C26005B7998 = A4DA331D07EF7C26005B7998;
+			A4B9066F0823F62D00746AC2 = A4B9066F0823F62D00746AC2;
+			A4B906700823F62D00746AC2 = A4B906700823F62D00746AC2;
+			A4B906740823F62D00746AC2 = A4B906740823F62D00746AC2;
+			A4B906750823F62D00746AC2 = A4B906750823F62D00746AC2;
+			A4B906A30825A85300746AC2 = A4B906A30825A85300746AC2;
+			A4B906A70825A85300746AC2 = A4B906A70825A85300746AC2;
+			A4B906A80825A85300746AC2 = A4B906A80825A85300746AC2;
+			A4B906A90825A85300746AC2 = A4B906A90825A85300746AC2;
+			A4B906C00825A9F300746AC2 = A4B906C00825A9F300746AC2;
+			A4B906C20825A9F300746AC2 = A4B906C20825A9F300746AC2;
 		};
 		sourceControlManager = A4AA161007BE4770000DDE36;
 		userBookmarkGroup = A4A3D17A07E6048300AAC902;
@@ -414,25 +367,25 @@
 	};
 	2A37F4ACFDCFA73011CA2CEA = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {453, 16674}}";
-			sepNavSelRange = "{1158, 0}";
-			sepNavVisRect = "{{0, 461}, {453, 156}}";
+			sepNavIntBoundsRect = "{{0, 0}, {734, 14756}}";
+			sepNavSelRange = "{4961, 0}";
+			sepNavVisRect = "{{0, 2388}, {734, 195}}";
 			sepNavWindowFrame = "{{15, 439}, {750, 558}}";
 		};
 	};
 	2A37F4AEFDCFA73011CA2CEA = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {558, 1385}}";
+			sepNavIntBoundsRect = "{{0, 0}, {793, 1386}}";
 			sepNavSelRange = "{1767, 0}";
-			sepNavVisRect = "{{0, 588}, {558, 366}}";
+			sepNavVisRect = "{{0, 170}, {793, 474}}";
 			sepNavWindowFrame = "{{84, 376}, {750, 558}}";
 		};
 	};
 	2A37F4B0FDCFA73011CA2CEA = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {498, 352}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRect = "{{0, 0}, {498, 352}}";
+			sepNavIntBoundsRect = "{{0, 0}, {810, 474}}";
+			sepNavSelRange = "{941, 0}";
+			sepNavVisRect = "{{0, 0}, {810, 474}}";
 		};
 	};
 	32DBCF750370BD2300C91783 = {
@@ -466,16 +419,6 @@
 			sepNavVisRect = "{{0, 12}, {558, 366}}";
 		};
 	};
-	A407D5C507ECAD17006F11D2 = {
-		fRef = A407D5C607ECAD17006F11D2;
-		isa = PBXBookmark;
-	};
-	A407D5C607ECAD17006F11D2 = {
-		isa = PBXFileReference;
-		lastKnownFileType = folder;
-		refType = 4;
-		sourceTree = "<group>";
-	};
 	A407D68607ECB70F006F11D2 = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {558, 405}}";
@@ -490,49 +433,9 @@
 			sepNavVisRect = "{{0, 166}, {558, 366}}";
 		};
 	};
-	A409340207ED001100837FB7 = {
-		fRef = A466E7D307E34684000B6585;
-		isa = PBXTextBookmark;
-		name = "XineKit.h: 23";
-		rLen = 0;
-		rLoc = 935;
-		rType = 0;
-		vrLen = 958;
-		vrLoc = 0;
-	};
-	A409340707ED001100837FB7 = {
-		fRef = A466E7D307E34684000B6585;
-		isa = PBXTextBookmark;
-		name = "XineKit.h: 23";
-		rLen = 0;
-		rLoc = 935;
-		rType = 0;
-		vrLen = 958;
-		vrLoc = 0;
-	};
 	A409341207ED004200837FB7 = {
 		fRef = A4D7CEB607EAEA440074C189;
 		isa = PBXBookmark;
-	};
-	A40934A207ED0A2300837FB7 = {
-		fRef = A493D69A07BF7FAE00F4FC04;
-		isa = PBXTextBookmark;
-		name = "XPDVDDocument.h: gotoDVDMenu:";
-		rLen = 0;
-		rLoc = 1042;
-		rType = 0;
-		vrLen = 650;
-		vrLoc = 623;
-	};
-	A40934C507ED0E6900837FB7 = {
-		fRef = A42FF56607E364730038B422;
-		isa = PBXTextBookmark;
-		name = "video_out_cocoa.m: 82";
-		rLen = 0;
-		rLoc = 2305;
-		rType = 0;
-		vrLen = 737;
-		vrLoc = 2792;
 	};
 	A409388607ED9FDB00837FB7 = {
 		uiCtxt = {
@@ -564,14 +467,6 @@
 			sepNavWindowFrame = "{{15, 439}, {750, 558}}";
 		};
 	};
-	A40938C707EDCB7500837FB7 = {
-		fRef = A409388307ED9FCC00837FB7;
-		isa = PBXBookmark;
-	};
-	A40938CD07EDCB7500837FB7 = {
-		fRef = A409388307ED9FCC00837FB7;
-		isa = PBXBookmark;
-	};
 	A415E81B07F2036C00FFA8BD = {
 		activeExec = 0;
 	};
@@ -581,64 +476,6 @@
 			sepNavSelRange = "{179, 0}";
 			sepNavVisRect = "{{0, 0}, {558, 366}}";
 		};
-	};
-	A415E83507F2048D00FFA8BD = {
-		fRef = A415E83107F2043E00FFA8BD;
-		isa = PBXBookmark;
-	};
-	A415E83607F2048D00FFA8BD = {
-		fRef = A407D3F707EC8CFA006F11D2;
-		isa = PBXTextBookmark;
-		name = "\t<key>NSMainNibFile</key>\n\t<string>PrefPane</string>\n\t<key>NSPreferenceIcon</key>\n\t<string>icon</string>\n\t<key>NSPrincipalClass</key>\n\t<string>GeneralPreferencePane</string>\n";
-		rLen = 174;
-		rLoc = 629;
-		rType = 0;
-		vrLen = 820;
-		vrLoc = 0;
-	};
-	A415E83807F2048D00FFA8BD = {
-		fRef = A415E83107F2043E00FFA8BD;
-		isa = PBXBookmark;
-	};
-	A415E83907F2048D00FFA8BD = {
-		fRef = A415E82307F203C900FFA8BD;
-		isa = PBXTextBookmark;
-		name = "Info.plist: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 633;
-		vrLoc = 0;
-	};
-	A415E83A07F2048D00FFA8BD = {
-		fRef = A407D3F707EC8CFA006F11D2;
-		isa = PBXTextBookmark;
-		name = "\t<key>NSMainNibFile</key>\n\t<string>PrefPane</string>\n\t<key>NSPreferenceIcon</key>\n\t<string>icon</string>\n\t<key>NSPrincipalClass</key>\n\t<string>GeneralPreferencePane</string>\n";
-		rLen = 174;
-		rLoc = 629;
-		rType = 0;
-		vrLen = 820;
-		vrLoc = 0;
-	};
-	A415E83E07F204A600FFA8BD = {
-		fRef = A409388607ED9FDB00837FB7;
-		isa = PBXTextBookmark;
-		name = "en_GB: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 30;
-		vrLoc = 0;
-	};
-	A415E84107F204A600FFA8BD = {
-		fRef = A409388607ED9FDB00837FB7;
-		isa = PBXTextBookmark;
-		name = "en_GB: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 30;
-		vrLoc = 0;
 	};
 	A415E84407F204C800FFA8BD = {
 		uiCtxt = {
@@ -661,281 +498,45 @@
 			sepNavVisRect = "{{0, 303}, {558, 366}}";
 		};
 	};
-	A415E86707F2059000FFA8BD = {
-		fRef = A415E84407F204C800FFA8BD;
+	A41F26D308266093009DC990 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
 		isa = PBXTextBookmark;
-		name = "en_GB: 1";
 		rLen = 0;
-		rLoc = 26;
+		rLoc = 4961;
 		rType = 0;
-		vrLen = 26;
-		vrLoc = 0;
 	};
-	A415E86807F2059000FFA8BD = {
-		fRef = A415E82307F203C900FFA8BD;
+	A41F26D408266093009DC990 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
 		isa = PBXTextBookmark;
-		name = "Info.plist: 24";
+		name = "XPDocument.m: 173";
 		rLen = 0;
-		rLoc = 781;
+		rLoc = 4961;
 		rType = 0;
-		vrLen = 808;
-		vrLoc = 0;
-	};
-	A415E86E07F2059000FFA8BD = {
-		fRef = A415E84407F204C800FFA8BD;
-		isa = PBXTextBookmark;
-		name = "en_GB: 1";
-		rLen = 0;
-		rLoc = 26;
-		rType = 0;
-		vrLen = 26;
-		vrLoc = 0;
-	};
-	A415E87007F2059000FFA8BD = {
-		fRef = A415E86107F2052500FFA8BD;
-		isa = PBXTextBookmark;
-		name = "DVDPreferencePane.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 220;
-		vrLoc = 0;
-	};
-	A415E87107F2059000FFA8BD = {
-		fRef = A415E86207F2052500FFA8BD;
-		isa = PBXTextBookmark;
-		name = "DVDPreferencePane.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 215;
-		vrLoc = 0;
-	};
-	A415E87307F2059000FFA8BD = {
-		fRef = A4B2976707EC811300AEB13F;
-		isa = PBXTextBookmark;
-		name = resizeWindowOnFrameChange;
-		rLen = 25;
-		rLoc = 1715;
-		rType = 0;
-		vrLen = 790;
-		vrLoc = 1011;
-	};
-	A415E87407F2059000FFA8BD = {
-		fRef = A407D68607ECB70F006F11D2;
-		isa = PBXTextBookmark;
-		name = "/* DesktopManager -- A virtual desktop provider for OS X\n* Adapted for XinePlayer -- A OS X multimedia player\n* \n* Copyright (C) 2003, 2004, 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/\n\n#import <Cocoa/Cocoa.h>\n#import <PreferencePanes/PreferencePanes.h>\n\n@class XineEngine;\n\n@interface GeneralPreferencePane : NSPreferencePane {\n}\n\n@end";
-		rLen = 1044;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1040;
-		vrLoc = 0;
-	};
-	A415E87A07F2059000FFA8BD = {
-		fRef = A407D68707ECB70F006F11D2;
-		isa = PBXTextBookmark;
-		name = "/* DesktopManager -- A virtual desktop provider for OS X\n* Adapted for XinePlayer -- A OS X multimedia player\n* \n* Copyright (C) 2003, 2004, 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
-		rLen = 892;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1123;
-		vrLoc = 0;
-	};
-	A415E89207F2079100FFA8BD = {
-		fRef = A415E82D07F2041D00FFA8BD;
-		isa = PBXBookmark;
-	};
-	A415E89407F2079100FFA8BD = {
-		fRef = A415E82D07F2041D00FFA8BD;
-		isa = PBXBookmark;
-	};
-	A415E89C07F208BD00FFA8BD = {
-		fRef = A466E7D107E34684000B6585;
-		isa = PBXTextBookmark;
-		name = "- (id) configurationEntryForKey: (NSString*) key;\n- (void) setConfigurationEntry: (id) value forKey: (NSString*) key;\n";
-		rLen = 118;
-		rLoc = 1763;
-		rType = 0;
-		vrLen = 727;
-		vrLoc = 1159;
-	};
-	A415E89E07F208BD00FFA8BD = {
-		fRef = A466E7D207E34684000B6585;
-		isa = PBXTextBookmark;
-		name = "XineEngine.m: 121";
-		rLen = 0;
-		rLoc = 3259;
-		rType = 0;
-		vrLen = 458;
-		vrLoc = 1261;
-	};
-	A415E89F07F208BD00FFA8BD = {
-		fRef = A466E7D107E34684000B6585;
-		isa = PBXTextBookmark;
-		name = "- (id) configurationEntryForKey: (NSString*) key;\n- (void) setConfigurationEntry: (id) value forKey: (NSString*) key;\n";
-		rLen = 118;
-		rLoc = 1763;
-		rType = 0;
-		vrLen = 727;
-		vrLoc = 1159;
-	};
-	A415E8B707F20CB600FFA8BD = {
-		fRef = A4B2976807EC811300AEB13F;
-		isa = PBXTextBookmark;
-		name = "XPPreferencesController.m: 119";
-		rLen = 0;
-		rLoc = 4281;
-		rType = 0;
-		vrLen = 620;
-		vrLoc = 3864;
-	};
-	A415E8BD07F20D8500FFA8BD = {
-		fRef = A407D68607ECB70F006F11D2;
-		isa = PBXTextBookmark;
-		name = "/* DesktopManager -- A virtual desktop provider for OS X\n* Adapted for XinePlayer -- A OS X multimedia player\n* \n* Copyright (C) 2003, 2004, 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/\n\n#import <Cocoa/Cocoa.h>\n#import <PreferencePanes/PreferencePanes.h>\n\n@class XineEngine;";
-		rLen = 981;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1040;
-		vrLoc = 0;
-	};
-	A415E8BE07F20D8500FFA8BD = {
-		fRef = A407D68707ECB70F006F11D2;
-		isa = PBXTextBookmark;
-		name = "#import \"XineKit/XineKit.h\"\n#import \"Preferences/XPPreferencesController.h\"\n\n#define XPPreferencesController NSClassFromString(@\"XPPreferencesController\")\n";
-		rLen = 155;
-		rLoc = 928;
-		rType = 0;
-		vrLen = 817;
-		vrLoc = 601;
-	};
-	A415E90007F210E400FFA8BD = {
-		fRef = A415E86107F2052500FFA8BD;
-		isa = PBXTextBookmark;
-		name = "DVDPreferencePane.h: 16";
-		rLen = 0;
-		rLoc = 800;
-		rType = 0;
-		vrLen = 1022;
-		vrLoc = 0;
-	};
-	A415E92107F2130600FFA8BD = {
-		fRef = A415E86207F2052500FFA8BD;
-		isa = PBXTextBookmark;
-		name = "DVDPreferencePane.m: 35";
-		rLen = 0;
-		rLoc = 1382;
-		rType = 0;
-		vrLen = 709;
-		vrLoc = 952;
-	};
-	A415E93607F213D000FFA8BD = {
-		fRef = A42D7B7607E39AC200955C78;
-		isa = PBXTextBookmark;
-		name = "QuartzYUVOutput.h: 37";
-		rLen = 0;
-		rLoc = 1166;
-		rType = 0;
-		vrLen = 544;
-		vrLoc = 840;
-	};
-	A415E93C07F2148D00FFA8BD = {
-		fRef = A466E7D207E34684000B6585;
-		isa = PBXTextBookmark;
-		name = "XineEngine.m: 114";
-		rLen = 0;
-		rLoc = 3095;
-		rType = 0;
-		vrLen = 458;
-		vrLoc = 1550;
-	};
-	A415E93D07F2148D00FFA8BD = {
-		fRef = A4B2976807EC811300AEB13F;
-		isa = PBXTextBookmark;
-		name = "XPPreferencesController.m: 146";
-		rLen = 0;
-		rLoc = 4739;
-		rType = 0;
-		vrLen = 506;
-		vrLoc = 4601;
-	};
-	A415E93F07F2148D00FFA8BD = {
-		fRef = A4B2976707EC811300AEB13F;
-		isa = PBXTextBookmark;
-		name = "XPPreferencesController.h: _defaultEngine";
-		rLen = 0;
-		rLoc = 1310;
-		rType = 0;
-		vrLen = 748;
-		vrLoc = 708;
-	};
-	A415E96907F2188800FFA8BD = {
-		fRef = 8D15AC360486D014006FF6A4;
-		isa = PBXTextBookmark;
-		name = "Info.plist: 16";
-		rLen = 0;
-		rLoc = 459;
-		rType = 0;
-		vrLen = 663;
-		vrLoc = 287;
-	};
-	A415E9D507F21EE000FFA8BD = {
-		fRef = A409387D07ED9FA300837FB7;
-		isa = PBXBookmark;
-	};
-	A42D7ABF07E38F2700955C78 = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {697, 980}}";
-			sepNavSelRange = "{1148, 0}";
-			sepNavVisRect = "{{0, 315}, {697, 285}}";
-		};
+		vrLen = 424;
+		vrLoc = 4832;
 	};
 	A42D7B7607E39AC200955C78 = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {558, 741}}";
+			sepNavIntBoundsRect = "{{0, 0}, {697, 728}}";
 			sepNavSelRange = "{1166, 0}";
-			sepNavVisRect = "{{0, 266}, {558, 366}}";
+			sepNavVisRect = "{{0, 347}, {697, 285}}";
 		};
 	};
 	A42D7B7707E39AC200955C78 = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {558, 3234}}";
+			sepNavIntBoundsRect = "{{0, 0}, {810, 3150}}";
 			sepNavSelRange = "{5510, 0}";
-			sepNavVisRect = "{{0, 2542}, {558, 380}}";
+			sepNavVisRect = "{{0, 761}, {810, 474}}";
 		};
-	};
-	A42FF55C07E363AE0038B422 = {
-		activeExec = 0;
 	};
 	A42FF56607E364730038B422 = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {558, 6341}}";
-			sepNavSelRange = "{2753, 0}";
-			sepNavVisRect = "{{0, 0}, {558, 380}}";
-			sepNavWindowFrame = "{{38, 418}, {750, 558}}";
-		};
-	};
-	A42FF57607E3652E0038B422 = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {498, 3570}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRect = "{{0, 12}, {498, 352}}";
-		};
-	};
-	A42FF57707E3652E0038B422 = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {498, 1889}}";
-			sepNavSelRange = "{943, 0}";
-			sepNavVisRect = "{{0, 266}, {498, 352}}";
-		};
-	};
-	A42FF63007E3674C0038B422 = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {558, 2645}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRect = "{{0, 0}, {558, 379}}";
-			sepNavWindowFrame = "{{15, 439}, {750, 558}}";
-		};
+		fileEncoding = 30;
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc;
+		name = video_out_cocoa.m;
+		path = /Users/rjw57/Developer/XinePlayer/VideoOut/video_out_cocoa.m;
+		refType = 0;
+		sourceTree = "<absolute>";
 	};
 	A42FF82907E36AD60038B422 = {
 		uiCtxt = {
@@ -980,88 +581,248 @@
 			sepNavWindowFrame = "{{15, 439}, {750, 558}}";
 		};
 	};
-	A457E72B07EF8D620026933F = {
-		fRef = A466E7D907E34684000B6585;
+	A451F1060825B485007BD225 = {
+		fRef = 2A37F4B0FDCFA73011CA2CEA;
 		isa = PBXTextBookmark;
-		name = "XineVideoView.h: _notificationTimer";
+		name = "main.m: 25";
 		rLen = 0;
-		rLoc = 1241;
+		rLoc = 941;
 		rType = 0;
-		vrLen = 661;
-		vrLoc = 1059;
+		vrLen = 941;
+		vrLoc = 0;
 	};
-	A457E74F07EF92130026933F = {
+	A451F1070825B485007BD225 = {
+		fRef = A4948CCD07C160C00094CBF9;
+		isa = PBXTextBookmark;
+		name = "XPDocumentWindow.h: 20";
+		rLen = 0;
+		rLoc = 845;
+		rType = 0;
+		vrLen = 1050;
+		vrLoc = 0;
+	};
+	A451F10B0825B485007BD225 = {
+		fRef = A493D69B07BF7FAE00F4FC04;
+		isa = PBXTextBookmark;
+		name = "XPDVDDocument.m: 22";
+		rLen = 0;
+		rLoc = 889;
+		rType = 0;
+		vrLen = 700;
+		vrLoc = 1404;
+	};
+	A451F10D0825B485007BD225 = {
+		fRef = A466E99507E3485F000B6585;
+		isa = PBXTextBookmark;
+		name = "FixInstallName.sh: 22";
+		rLen = 0;
+		rLoc = 733;
+		rType = 0;
+		vrLen = 1694;
+		vrLoc = 355;
+	};
+	A451F10E0825B485007BD225 = {
+		fRef = A493D69A07BF7FAE00F4FC04;
+		isa = PBXTextBookmark;
+		name = "XPDVDDocument.h: gotoDVDMenu:";
+		rLen = 0;
+		rLoc = 1042;
+		rType = 0;
+		vrLen = 1169;
+		vrLoc = 50;
+	};
+	A451F10F0825B485007BD225 = {
+		fRef = A493D69B07BF7FAE00F4FC04;
+		isa = PBXTextBookmark;
+		name = "XPDVDDocument.m: 22";
+		rLen = 0;
+		rLoc = 889;
+		rType = 0;
+		vrLen = 745;
+		vrLoc = 1404;
+	};
+	A451F1100825B485007BD225 = {
 		fRef = A489FD0007BE61AD00DE41B2;
 		isa = PBXTextBookmark;
-		name = "XPController.m: 62";
-		rLen = 0;
-		rLoc = 1859;
+		name = newDocument;
+		rLen = 11;
+		rLoc = 2961;
 		rType = 0;
-		vrLen = 523;
-		vrLoc = 1460;
+		vrLen = 1207;
+		vrLoc = 1891;
 	};
-	A457E75307EF92410026933F = {
+	A451F1110825B485007BD225 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 60";
+		rLen = 0;
+		rLoc = 1767;
+		rType = 0;
+		vrLen = 708;
+		vrLoc = 1424;
+	};
+	A451F1120825B485007BD225 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 118";
+		rLen = 0;
+		rLoc = 2740;
+		rType = 0;
+		vrLen = 608;
+		vrLoc = 1738;
+	};
+	A451F1150825B485007BD225 = {
 		fRef = A489FCFF07BE61AD00DE41B2;
 		isa = PBXTextBookmark;
-		name = "XPController.h: openDisc:";
+		name = "XPController.h: sharedController";
 		rLen = 0;
-		rLoc = 1001;
+		rLoc = 1084;
 		rType = 0;
-		vrLen = 667;
-		vrLoc = 528;
+		vrLen = 789;
+		vrLoc = 623;
 	};
-	A457E7C907EFA0800026933F = {
-		fRef = A4D7D17607EB73EA0074C189;
+	A451F1180825B485007BD225 = {
+		fRef = A4948CCD07C160C00094CBF9;
 		isa = PBXTextBookmark;
-		name = "XinePorts.m: videoPortForDriver:fromEngine:forView:";
+		name = "XPDocumentWindow.h: 20";
 		rLen = 0;
-		rLoc = 2313;
+		rLoc = 845;
 		rType = 0;
-		vrLen = 725;
-		vrLoc = 1915;
-	};
-	A457E7CB07EFA0800026933F = {
-		fRef = A4D7D17607EB73EA0074C189;
-		isa = PBXTextBookmark;
-		name = "XinePorts.m: videoPortForDriver:fromEngine:forView:";
-		rLen = 0;
-		rLoc = 2313;
-		rType = 0;
-		vrLen = 725;
-		vrLoc = 1915;
-	};
-	A45A618D07F0AABB00639167 = {
-		fRef = A409388C07EDA00100837FB7;
-		isa = PBXTextBookmark;
-		name = "en_GB: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 125;
+		vrLen = 1050;
 		vrLoc = 0;
 	};
-	A45A619307F0AABB00639167 = {
-		fRef = A409388907ED9FF100837FB7;
+	A451F11A0825B485007BD225 = {
+		fRef = 8D15AC360486D014006FF6A4;
 		isa = PBXTextBookmark;
-		name = "en_GB: 1";
+		name = "Info.plist: 40";
 		rLen = 0;
-		rLoc = 0;
+		rLoc = 958;
 		rType = 0;
-		vrLen = 314;
-		vrLoc = 0;
+		vrLen = 818;
+		vrLoc = 151;
+	};
+	A451F13D0825BABC007BD225 = {
+		fRef = A489FCFF07BE61AD00DE41B2;
+		isa = PBXTextBookmark;
+		name = "XPController.h: sharedController";
+		rLen = 0;
+		rLoc = 1084;
+		rType = 0;
+		vrLen = 809;
+		vrLoc = 603;
+	};
+	A451F13E0825BABC007BD225 = {
+		fRef = 8D15AC360486D014006FF6A4;
+		isa = PBXTextBookmark;
+		name = "Info.plist: 35";
+		rLen = 0;
+		rLoc = 949;
+		rType = 0;
+		vrLen = 900;
+		vrLoc = 595;
+	};
+	A451F13F0825BABC007BD225 = {
+		fRef = A4948CCE07C160C00094CBF9;
+		isa = PBXTextBookmark;
+		name = "XPDocumentWindow.m: 39";
+		rLen = 0;
+		rLoc = 1212;
+		rType = 0;
+		vrLen = 1139;
+		vrLoc = 1770;
+	};
+	A451F1400825BABC007BD225 = {
+		fRef = 2A37F4AEFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.h: 60";
+		rLen = 0;
+		rLoc = 1767;
+		rType = 0;
+		vrLen = 857;
+		vrLoc = 623;
+	};
+	A451F1410825BABC007BD225 = {
+		fRef = A493D69A07BF7FAE00F4FC04;
+		isa = PBXTextBookmark;
+		name = "XPDVDDocument.h: 12";
+		rLen = 0;
+		rLoc = 620;
+		rType = 0;
+		vrLen = 993;
+		vrLoc = 280;
+	};
+	A451F1430825BABC007BD225 = {
+		fRef = A466E99507E3485F000B6585;
+		isa = PBXTextBookmark;
+		name = "FixInstallName.sh: 45";
+		rLen = 0;
+		rLoc = 1904;
+		rType = 0;
+		vrLen = 1603;
+		vrLoc = 355;
+	};
+	A451F1440825BABC007BD225 = {
+		fRef = A489FD0007BE61AD00DE41B2;
+		isa = PBXTextBookmark;
+		name = "XPController.m: 184";
+		rLen = 0;
+		rLoc = 5687;
+		rType = 0;
+		vrLen = 1018;
+		vrLoc = 4903;
+	};
+	A451F1450825BABC007BD225 = {
+		fRef = 2A37F4ACFDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "XPDocument.m: 189";
+		rLen = 0;
+		rLoc = 5419;
+		rType = 0;
+		vrLen = 1654;
+		vrLoc = 6069;
+	};
+	A451F1460825BABC007BD225 = {
+		fRef = A466E7D107E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineEngine.h: configurationEntryForKey:";
+		rLen = 118;
+		rLoc = 1763;
+		rType = 0;
+		vrLen = 878;
+		vrLoc = 1008;
+	};
+	A451F1560825BABC007BD225 = {
+		fRef = A4D7CEB707EAEA440074C189;
+		isa = PBXTextBookmark;
+		name = "XinePostProcessor.m: 101";
+		rLen = 0;
+		rLoc = 3416;
+		rType = 0;
+		vrLen = 985;
+		vrLoc = 2365;
+	};
+	A451F15B0825BABC007BD225 = {
+		fRef = A466E7D107E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineEngine.h: configurationEntryForKey:";
+		rLen = 118;
+		rLoc = 1763;
+		rType = 0;
+		vrLen = 878;
+		vrLoc = 1008;
 	};
 	A466E7D107E34684000B6585 = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {558, 853}}";
+			sepNavIntBoundsRect = "{{0, 0}, {793, 840}}";
 			sepNavSelRange = "{1763, 118}";
-			sepNavVisRect = "{{0, 473}, {558, 366}}";
+			sepNavVisRect = "{{0, 366}, {793, 474}}";
 		};
 	};
 	A466E7D207E34684000B6585 = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {558, 4101}}";
-			sepNavSelRange = "{3095, 0}";
-			sepNavVisRect = "{{0, 770}, {558, 366}}";
+			sepNavIntBoundsRect = "{{0, 0}, {793, 4046}}";
+			sepNavSelRange = "{2092, 0}";
+			sepNavVisRect = "{{0, 1020}, {793, 474}}";
 			sepNavWindowFrame = "{{15, 439}, {750, 558}}";
 		};
 	};
@@ -1081,9 +842,9 @@
 	};
 	A466E7D607E34684000B6585 = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {558, 5837}}";
-			sepNavSelRange = "{8202, 0}";
-			sepNavVisRect = "{{0, 4561}, {558, 366}}";
+			sepNavIntBoundsRect = "{{0, 0}, {734, 5614}}";
+			sepNavSelRange = "{9519, 5}";
+			sepNavVisRect = "{{0, 5006}, {734, 195}}";
 			sepNavWindowFrame = "{{15, 439}, {750, 558}}";
 		};
 	};
@@ -1104,220 +865,58 @@
 	};
 	A466E99507E3485F000B6585 = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {498, 447}}";
+			sepNavIntBoundsRect = "{{0, 0}, {810, 980}}";
 			sepNavSelRange = "{818, 0}";
-			sepNavVisRect = "{{0, 68}, {498, 379}}";
+			sepNavVisRect = "{{0, 0}, {810, 474}}";
 		};
-	};
-	A4822C9A07F8461700578954 = {
-		fRef = A493D69B07BF7FAE00F4FC04;
-		isa = PBXTextBookmark;
-		name = "XPDVDDocument.m: 22";
-		rLen = 0;
-		rLoc = 889;
-		rType = 0;
-		vrLen = 908;
-		vrLoc = 50;
 	};
 	A4822CE607F8512D00578954 = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {558, 1946}}";
-			sepNavSelRange = "{2056, 0}";
-			sepNavVisRect = "{{0, 1580}, {558, 366}}";
+			sepNavIntBoundsRect = "{{0, 0}, {810, 1946}}";
+			sepNavSelRange = "{231, 0}";
+			sepNavVisRect = "{{0, 0}, {810, 474}}";
 		};
-	};
-	A4822CEA07F8514300578954 = {
-		fRef = A4822CE607F8512D00578954;
-		isa = PBXTextBookmark;
-		name = "en_GB: 1";
-		rLen = 0;
-		rLoc = 134;
-		rType = 0;
-		vrLen = 402;
-		vrLoc = 0;
-	};
-	A4822DF307F86B6F00578954 = {
-		fRef = A493D69A07BF7FAE00F4FC04;
-		isa = PBXTextBookmark;
-		name = "XPDVDDocument.h: gotoDVDMenu:";
-		rLen = 0;
-		rLoc = 1042;
-		rType = 0;
-		vrLen = 650;
-		vrLoc = 623;
-	};
-	A4822DFE07F86BE200578954 = {
-		fRef = A42D7ABF07E38F2700955C78;
-		isa = PBXTextBookmark;
-		name = "FixInstallName.sh: 8";
-		rLen = 0;
-		rLoc = 154;
-		rType = 0;
-		vrLen = 1030;
-		vrLoc = 0;
-	};
-	A4822E1E07F86E0C00578954 = {
-		fRef = A466E7DA07E34684000B6585;
-		isa = PBXTextBookmark;
-		name = "XineVideoView.m: 214";
-		rLen = 0;
-		rLoc = 6593;
-		rType = 0;
-		vrLen = 967;
-		vrLoc = 5731;
-	};
-	A4822E8307F9E6C600578954 = {
-		fRef = A409388007ED9FB100837FB7;
-		isa = PBXBookmark;
-	};
-	A4822ED407F9F06000578954 = {
-		fRef = A489FCFF07BE61AD00DE41B2;
-		isa = PBXTextBookmark;
-		name = "XPController.h: sharedController";
-		rLen = 0;
-		rLoc = 1084;
-		rType = 0;
-		vrLen = 690;
-		vrLoc = 625;
-	};
-	A4822EFA07F9F56100578954 = {
-		fRef = A4948CCD07C160C00094CBF9;
-		isa = PBXTextBookmark;
-		name = "XPDocumentWindow.h: 20";
-		rLen = 0;
-		rLoc = 845;
-		rType = 0;
-		vrLen = 998;
-		vrLoc = 0;
 	};
 	A489FCFF07BE61AD00DE41B2 = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {558, 643}}";
+			sepNavIntBoundsRect = "{{0, 0}, {793, 644}}";
 			sepNavSelRange = "{1084, 0}";
-			sepNavVisRect = "{{0, 194}, {558, 366}}";
+			sepNavVisRect = "{{0, 162}, {793, 474}}";
 		};
 	};
 	A489FD0007BE61AD00DE41B2 = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {453, 5670}}";
-			sepNavSelRange = "{10462, 0}";
-			sepNavVisRect = "{{0, 5452}, {453, 156}}";
+			sepNavIntBoundsRect = "{{0, 0}, {734, 4970}}";
+			sepNavSelRange = "{5717, 0}";
+			sepNavVisRect = "{{0, 2514}, {734, 195}}";
 		};
-	};
-	A48FA51407FD82EE00C4EDC5 = {
-		fRef = A409388907ED9FF100837FB7;
-		isa = PBXTextBookmark;
-		name = "en_GB: 9";
-		rLen = 0;
-		rLoc = 314;
-		rType = 0;
-		vrLen = 314;
-		vrLoc = 0;
-	};
-	A48FA51707FD837500C4EDC5 = {
-		fRef = A4948CCE07C160C00094CBF9;
-		isa = PBXTextBookmark;
-		name = "XPDocumentWindow.m: 39";
-		rLen = 0;
-		rLoc = 1212;
-		rType = 0;
-		vrLen = 711;
-		vrLoc = 356;
-	};
-	A48FA53907FD87F300C4EDC5 = {
-		fRef = A466E7D507E34684000B6585;
-		isa = PBXTextBookmark;
-		name = XineStreamTitleName;
-		rLen = 19;
-		rLoc = 1530;
-		rType = 0;
-		vrLen = 857;
-		vrLoc = 818;
-	};
-	A48FA53A07FD87F300C4EDC5 = {
-		fRef = A466E7D607E34684000B6585;
-		isa = PBXTextBookmark;
-		name = "XineStream.m: 327";
-		rLen = 0;
-		rLoc = 8202;
-		rType = 0;
-		vrLen = 863;
-		vrLoc = 7825;
-	};
-	A48FA64807FDA13700C4EDC5 = {
-		fRef = A4822CE607F8512D00578954;
-		isa = PBXTextBookmark;
-		name = "en_GB: 139";
-		rLen = 0;
-		rLoc = 2056;
-		rType = 0;
-		vrLen = 355;
-		vrLoc = 1701;
-	};
-	A48FA65107FDBB0D00C4EDC5 = {
-		fRef = 8D15AC360486D014006FF6A4;
-		isa = PBXTextBookmark;
-		name = "Info.plist: 16";
-		rLen = 0;
-		rLoc = 459;
-		rType = 0;
-		vrLen = 663;
-		vrLoc = 287;
-	};
-	A48FA66507FDBB8900C4EDC5 = {
-		fRef = A409388C07EDA00100837FB7;
-		isa = PBXTextBookmark;
-		name = "en_GB: 4";
-		rLen = 0;
-		rLoc = 104;
-		rType = 0;
-		vrLen = 125;
-		vrLoc = 0;
 	};
 	A493D69A07BF7FAE00F4FC04 = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {558, 559}}";
-			sepNavSelRange = "{1042, 0}";
-			sepNavVisRect = "{{0, 180}, {558, 366}}";
+			sepNavIntBoundsRect = "{{0, 0}, {793, 560}}";
+			sepNavSelRange = "{620, 0}";
+			sepNavVisRect = "{{0, 78}, {793, 474}}";
 		};
 	};
 	A493D69B07BF7FAE00F4FC04 = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {558, 1609}}";
+			sepNavIntBoundsRect = "{{0, 0}, {793, 1568}}";
 			sepNavSelRange = "{889, 0}";
-			sepNavVisRect = "{{0, 14}, {558, 366}}";
+			sepNavVisRect = "{{0, 686}, {793, 474}}";
 		};
-	};
-	A49469A7081278B100F4C312 = {
-		fRef = A4948C9B07C0F1E50094CBF9;
-		isa = PBXBookmark;
-	};
-	A49469A8081278B100F4C312 = {
-		fRef = A4948C9B07C0F1E50094CBF9;
-		isa = PBXBookmark;
-	};
-	A4946AAA08127B1D00F4C312 = {
-		fRef = 2A37F4ACFDCFA73011CA2CEA;
-		isa = PBXTextBookmark;
-		name = "XPDocument.m: 618";
-		rLen = 0;
-		rLoc = 20962;
-		rType = 0;
-		vrLen = 490;
-		vrLoc = 20736;
 	};
 	A4948CCD07C160C00094CBF9 = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {558, 447}}";
+			sepNavIntBoundsRect = "{{0, 0}, {810, 474}}";
 			sepNavSelRange = "{845, 0}";
-			sepNavVisRect = "{{0, 0}, {558, 366}}";
+			sepNavVisRect = "{{0, 0}, {810, 474}}";
 		};
 	};
 	A4948CCE07C160C00094CBF9 = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {558, 1889}}";
+			sepNavIntBoundsRect = "{{0, 0}, {793, 1862}}";
 			sepNavSelRange = "{1212, 0}";
-			sepNavVisRect = "{{0, 88}, {558, 366}}";
+			sepNavVisRect = "{{0, 727}, {793, 474}}";
 			sepNavWindowFrame = "{{38, 418}, {750, 558}}";
 		};
 	};
@@ -1331,92 +930,6 @@
 	};
 	A4A3D23707E6438B00AAC902 = {
 		fRef = A42FF56607E364730038B422;
-		isa = PBXBookmark;
-	};
-	A4A8ADA307EDFD1E00A44F81 = {
-		fRef = 2A37F4ACFDCFA73011CA2CEA;
-		isa = PBXTextBookmark;
-		name = "XPDocument.m: 205";
-		rLen = 0;
-		rLoc = 12484;
-		rType = 0;
-		vrLen = 908;
-		vrLoc = 5586;
-	};
-	A4A8ADA407EDFD1E00A44F81 = {
-		fRef = 2A37F4AEFDCFA73011CA2CEA;
-		isa = PBXTextBookmark;
-		name = "XPDocument.h: _noficiationWindow";
-		rLen = 0;
-		rLoc = 1725;
-		rType = 0;
-		vrLen = 642;
-		vrLoc = 1043;
-	};
-	A4A8ADBD07EDFFDF00A44F81 = {
-		fRef = A4948CCD07C160C00094CBF9;
-		isa = PBXTextBookmark;
-		name = "XPDocumentWindow.h: 23";
-		rLen = 0;
-		rLoc = 996;
-		rType = 0;
-		vrLen = 897;
-		vrLoc = 0;
-	};
-	A4A8ADCA07EE00CF00A44F81 = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = NSView.h;
-		path = /System/Library/Frameworks/AppKit.framework/Versions/C/Headers/NSView.h;
-		refType = 0;
-		sourceTree = "<absolute>";
-	};
-	A4A8ADCD07EE01B600A44F81 = {
-		fRef = A4A8ADCA07EE00CF00A44F81;
-		isa = PBXTextBookmark;
-		name = "- (NSRect)convertRect:(NSRect)aRect toView:(NSView *)aView;\n";
-		rLen = 60;
-		rLoc = 5884;
-		rType = 0;
-		vrLen = 850;
-		vrLoc = 5418;
-	};
-	A4A8ADDC07EE038B00A44F81 = {
-		fRef = A4948CCE07C160C00094CBF9;
-		isa = PBXTextBookmark;
-		name = "XPDocumentWindow.m: 24";
-		rLen = 0;
-		rLoc = 996;
-		rType = 0;
-		vrLen = 867;
-		vrLoc = 528;
-	};
-	A4A8ADDF07EE038B00A44F81 = {
-		fRef = A466E7D907E34684000B6585;
-		isa = PBXTextBookmark;
-		name = "XineVideoView.h: _cursorHideTimer";
-		rLen = 0;
-		rLoc = 1169;
-		rType = 0;
-		vrLen = 645;
-		vrLoc = 843;
-	};
-	A4A8ADE007EE038B00A44F81 = {
-		fRef = A466E7DA07E34684000B6585;
-		isa = PBXTextBookmark;
-		name = "XineVideoView.m: 123";
-		rLen = 0;
-		rLoc = 4456;
-		rType = 0;
-		vrLen = 578;
-		vrLoc = 3806;
-	};
-	A4A8ADF007EE055C00A44F81 = {
-		fRef = A409388007ED9FB100837FB7;
-		isa = PBXBookmark;
-	};
-	A4A8AE4C07EE0BF700A44F81 = {
-		fRef = A409387D07ED9FA300837FB7;
 		isa = PBXBookmark;
 	};
 	A4AA160E07BE4766000DDE36 = {
@@ -1446,6 +959,601 @@
 		shlibInfoDictList = (
 		);
 		shlibInfoDictList_v2 = (
+			{
+				level = 0;
+				path = /usr/lib/system/libmathCommon.A.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /usr/lib/libSystem.B.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /usr/lib/libicucore.A.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /usr/lib/libauto.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /usr/lib/libobjc.A.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /usr/lib/libz.1.2.2.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Security.framework/Versions/A/Security;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/DiskArbitration.framework/Versions/A/DiskArbitration;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CFNetwork.framework/Versions/A/CFNetwork;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/WebServicesCore.framework/Versions/A/WebServicesCore;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /usr/lib/libbsm.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /usr/lib/libcrypto.0.9.7.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/CoreText.framework/Versions/A/CoreText;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /usr/lib/libcups.2.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/FindByContent.framework/Versions/A/FindByContent;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/Resources/libJPEG.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/Resources/libJP2.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/Resources/libGIF.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/Resources/libRaw.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/Resources/libTIFF.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/Resources/libPng.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/Resources/libRadiance.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /usr/lib/libmx.A.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/vImage;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvMisc.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvDSP.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLAPACK.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/vecLib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/CoreAudio.framework/Versions/A/CoreAudio;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CarbonSound.framework/Versions/A/CarbonSound;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /usr/lib/libiconv.2.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /usr/lib/libxml2.2.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/PrivateFrameworks/DesktopServicesPriv.framework/Versions/A/DesktopServicesPriv;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SpeechRecognition.framework/Versions/A/SpeechRecognition;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/AudioUnit.framework/Versions/A/AudioUnit;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/AudioToolbox.framework/Versions/A/AudioToolbox;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /usr/lib/libsqlite3.0.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/CoreData.framework/Versions/A/CoreData;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/OpenGL.framework/Versions/A/OpenGL;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLImage.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Cocoa.framework/Versions/A/Cocoa;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/ImageCapture.framework/Versions/A/ImageCapture;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SecurityHI.framework/Versions/A/SecurityHI;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Ink.framework/Versions/A/Ink;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Help.framework/Versions/A/Help;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/OpenScripting.framework/Versions/A/OpenScripting;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Print.framework/Versions/A/Print;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HTMLRendering.framework/Versions/A/HTMLRendering;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/NavigationServices.framework/Versions/A/NavigationServices;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CommonPanels.framework/Versions/A/CommonPanels;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/Carbon.framework/Versions/A/Carbon;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/vecLib.framework/Versions/A/vecLib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/QuickTime.framework/Versions/A/QuickTime;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/SecurityFoundation.framework/Versions/A/SecurityFoundation;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/SecurityInterface.framework/Versions/A/SecurityInterface;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/PreferencePanes.framework/Versions/A/PreferencePanes;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/PlugIns/XinePlugins/libxine.1.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/MacOS/XinePlayer;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/CoreGraphics.framework/Versions/A/Resources/libCSync.A.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/PlugIns/XinePlugins/libdvdcss.so.2;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/PlugIns/XinePlugins/plugins/1.0.1/xineplug_inp_cdda.so;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/PlugIns/XinePlugins/plugins/1.0.1/xineplug_inp_dvb.so;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/PlugIns/XinePlugins/plugins/1.0.1/xineplug_inp_dvd.so;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/PlugIns/XinePlugins/plugins/1.0.1/xineplug_inp_file.so;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/PlugIns/XinePlugins/plugins/1.0.1/xineplug_inp_http.so;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/PlugIns/XinePlugins/plugins/1.0.1/xineplug_inp_mms.so;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/PlugIns/XinePlugins/plugins/1.0.1/xineplug_inp_vcd.so;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/PlugIns/XinePlugins/plugins/1.0.1/xineplug_decode_a52.so;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/PlugIns/XinePlugins/plugins/1.0.1/xineplug_decode_real_audio.so;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/PlugIns/XinePlugins/plugins/1.0.1/xineplug_decode_real.so;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/PlugIns/XinePlugins/plugins/1.0.1/xineplug_decode_ff.so;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/PlugIns/XinePlugins/plugins/1.0.1/xineplug_decode_sputext.so;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/PlugIns/XinePlugins/plugins/1.0.1/post/xineplug_post_goom.so;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/PlugIns/XinePlugins/plugins/1.0.1/post/xineplug_post_tvtime.so;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Developer/Applications/Xcode.app/Contents/PlugIns/GDBMIDebugging.xcplugin/Contents/Resources/PBGDBIntrospectionSupport.A.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/PlugIns/XinePlugins/libintl.1.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Users/rjw57/Developer/Builds/XinePlayer.app/Contents/PlugIns/XinePlugins/libxine.1;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /Library/InputManagers/SIMBL/SIMBL.bundle/Contents/MacOS/SIMBL;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/CoreGraphics.framework/Versions/A/Resources/libCGATS.A.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/CoreGraphics.framework/Versions/A/Resources/libRIP.A.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = "/Library/Application Support/DivXNetworks/liblame3.92.dylib";
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = "/Library/Application Support/DivXNetworks/libMPAEncode0.1.dylib";
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /usr/lib/libcrypto.0.9.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /usr/lib/libssl.0.9.dylib;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = "/Library/Application Support/DivXNetworks/libdpus10.dylib";
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = "/Library/Application Support/DivXNetworks/libdpv10.dylib";
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = "/Library/Application Support/DivXNetworks/libPSIKey.dylib";
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = "/Library/QuickTime/DivX 5.component/Contents/MacOS/DivX 5";
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Frameworks/AGL.framework/Versions/A/AGL;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/QuickTime/QuickTimeComponents.component/Contents/MacOS/QuickTimeComponents;
+				whenToLoad = 0;
+			},
+			{
+				level = 0;
+				path = /System/Library/Components/DictionaryService.component/Contents/MacOS/DictionaryService;
+				whenToLoad = 0;
+			},
 		);
 		sourceDirectories = (
 		);
@@ -1462,26 +1570,6 @@
 		indexTemplatePath = "";
 		isa = PBXCodeSenseManager;
 	};
-	A4B0657F081EFE88001BCF4F = {
-		fRef = 2A37F4AEFDCFA73011CA2CEA;
-		isa = PBXTextBookmark;
-		name = "XPDocument.h: 60";
-		rLen = 0;
-		rLoc = 1767;
-		rType = 0;
-		vrLen = 509;
-		vrLoc = 1424;
-	};
-	A4B0659908222BD4001BCF4F = {
-		fRef = 2A37F4AEFDCFA73011CA2CEA;
-		isa = PBXTextBookmark;
-		name = "XPDocument.h: 60";
-		rLen = 0;
-		rLoc = 1767;
-		rType = 0;
-		vrLen = 509;
-		vrLoc = 1424;
-	};
 	A4B2976707EC811300AEB13F = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {558, 769}}";
@@ -1491,10 +1579,47 @@
 	};
 	A4B2976807EC811300AEB13F = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {654, 4885}}";
-			sepNavSelRange = "{4173, 0}";
-			sepNavVisRect = "{{0, 1528}, {654, 261}}";
+			sepNavIntBoundsRect = "{{0, 0}, {734, 4816}}";
+			sepNavSelRange = "{6578, 0}";
+			sepNavVisRect = "{{0, 3130}, {734, 195}}";
 		};
+	};
+	A4B38D3508265E8D00663957 = {
+		fRef = A466E7D207E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineEngine.m: 83";
+		rLen = 0;
+		rLoc = 2092;
+		rType = 0;
+		vrLen = 1258;
+		vrLoc = 1741;
+	};
+	A4B38D3608265E8D00663957 = {
+		fRef = A4D7CEB707EAEA440074C189;
+		isa = PBXTextBookmark;
+		rLen = 0;
+		rLoc = 1433;
+		rType = 0;
+	};
+	A4B38D3708265E8D00663957 = {
+		fRef = A466E7D207E34684000B6585;
+		isa = PBXTextBookmark;
+		name = "XineEngine.m: 83";
+		rLen = 0;
+		rLoc = 2092;
+		rType = 0;
+		vrLen = 1258;
+		vrLoc = 1741;
+	};
+	A4B38D3808265E8D00663957 = {
+		fRef = A4D7CEB707EAEA440074C189;
+		isa = PBXTextBookmark;
+		name = "XinePostProcessor.m: 33";
+		rLen = 0;
+		rLoc = 1433;
+		rType = 0;
+		vrLen = 1302;
+		vrLoc = 818;
 	};
 	A4B906570823E95F00746AC2 = {
 		fRef = A4D80DDD07E6011000B775A2;
@@ -1506,10 +1631,6 @@
 		vrLen = 607;
 		vrLoc = 0;
 	};
-	A4B906580823E95F00746AC2 = {
-		fRef = A466E99507E3485F000B6585;
-		isa = PBXBookmark;
-	};
 	A4B906590823E95F00746AC2 = {
 		fRef = A4D80DDD07E6011000B775A2;
 		isa = PBXTextBookmark;
@@ -1520,45 +1641,113 @@
 		vrLen = 607;
 		vrLoc = 0;
 	};
-	A4B9065A0823E95F00746AC2 = {
-		fRef = A42D7ABF07E38F2700955C78;
+	A4B9066F0823F62D00746AC2 = {
+		fRef = A42D7B7607E39AC200955C78;
 		isa = PBXTextBookmark;
-		name = "FixInstallName.sh: 30";
+		name = "QuartzYUVOutput.h: 37";
 		rLen = 0;
-		rLoc = 1148;
+		rLoc = 1166;
 		rType = 0;
-		vrLen = 1121;
-		vrLoc = 736;
+		vrLen = 473;
+		vrLoc = 920;
 	};
-	A4B906620823EB2100746AC2 = {
-		fRef = A42D7ABF07E38F2700955C78;
+	A4B906700823F62D00746AC2 = {
+		fRef = A42D7B7707E39AC200955C78;
 		isa = PBXTextBookmark;
-		name = "FixInstallName.sh: 30";
+		name = "QuartzYUVOutput.m: 208";
 		rLen = 0;
-		rLoc = 1148;
+		rLoc = 5510;
 		rType = 0;
-		vrLen = 1121;
-		vrLoc = 736;
+		vrLen = 1004;
+		vrLoc = 1671;
 	};
-	A4C06F2E0806BD8F002A3382 = {
-		fRef = A489FD0007BE61AD00DE41B2;
+	A4B906740823F62D00746AC2 = {
+		fRef = A42D7B7607E39AC200955C78;
 		isa = PBXTextBookmark;
-		name = "XPController.m: 90";
+		name = "QuartzYUVOutput.h: 37";
 		rLen = 0;
-		rLoc = 2742;
+		rLoc = 1166;
 		rType = 0;
-		vrLen = 895;
-		vrLoc = 2376;
+		vrLen = 473;
+		vrLoc = 920;
 	};
-	A4D7CEAA07EAD2820074C189 = {
-		fRef = A42D7ABF07E38F2700955C78;
+	A4B906750823F62D00746AC2 = {
+		fRef = A42D7B7707E39AC200955C78;
 		isa = PBXTextBookmark;
-		name = "FixInstallName.sh: 23";
+		name = "QuartzYUVOutput.m: 208";
 		rLen = 0;
-		rLoc = 824;
+		rLoc = 5510;
 		rType = 0;
-		vrLen = 899;
-		vrLoc = 41;
+		vrLen = 1004;
+		vrLoc = 1671;
+	};
+	A4B9069408259E7A00746AC2 = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.c;
+		name = video_out_opengl.c;
+		path = "/Users/rjw57/Developer/xine-lib-1.0.1/src/video_out/video_out_opengl.c";
+		refType = 0;
+		sourceTree = "<absolute>";
+	};
+	A4B906A30825A85300746AC2 = {
+		fRef = A4B9069408259E7A00746AC2;
+		isa = PBXTextBookmark;
+		name = "video_out_opengl.c: 169";
+		rLen = 0;
+		rLoc = 4796;
+		rType = 0;
+		vrLen = 654;
+		vrLoc = 1034;
+	};
+	A4B906A70825A85300746AC2 = {
+		fRef = A4B9069408259E7A00746AC2;
+		isa = PBXTextBookmark;
+		name = "video_out_opengl.c: 169";
+		rLen = 0;
+		rLoc = 4796;
+		rType = 0;
+		vrLen = 654;
+		vrLoc = 1034;
+	};
+	A4B906A80825A85300746AC2 = {
+		fRef = 2A37F4B0FDCFA73011CA2CEA;
+		isa = PBXTextBookmark;
+		name = "main.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 941;
+		vrLoc = 0;
+	};
+	A4B906A90825A85300746AC2 = {
+		fRef = A4948CCE07C160C00094CBF9;
+		isa = PBXTextBookmark;
+		name = "XPDocumentWindow.m: 39";
+		rLen = 0;
+		rLoc = 1212;
+		rType = 0;
+		vrLen = 1012;
+		vrLoc = 356;
+	};
+	A4B906C00825A9F300746AC2 = {
+		fRef = A4822CE607F8512D00578954;
+		isa = PBXTextBookmark;
+		name = "en_GB: 10";
+		rLen = 0;
+		rLoc = 231;
+		rType = 0;
+		vrLen = 572;
+		vrLoc = 0;
+	};
+	A4B906C20825A9F300746AC2 = {
+		fRef = A4822CE607F8512D00578954;
+		isa = PBXTextBookmark;
+		name = "en_GB: 10";
+		rLen = 0;
+		rLoc = 231;
+		rType = 0;
+		vrLen = 572;
+		vrLoc = 0;
 	};
 	A4D7CEB607EAEA440074C189 = {
 		uiCtxt = {
@@ -1569,21 +1758,11 @@
 	};
 	A4D7CEB707EAEA440074C189 = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {558, 5417}}";
-			sepNavSelRange = "{3726, 0}";
-			sepNavVisRect = "{{0, 1544}, {558, 379}}";
+			sepNavIntBoundsRect = "{{0, 0}, {793, 5320}}";
+			sepNavSelRange = "{1433, 0}";
+			sepNavVisRect = "{{0, 260}, {793, 474}}";
 			sepNavWindowFrame = "{{38, 418}, {750, 558}}";
 		};
-	};
-	A4D7CEBF07EAEA580074C189 = {
-		fRef = A42D7B7607E39AC200955C78;
-		isa = PBXTextBookmark;
-		name = "/* XineKit - Objective C wrapper for xine-lib.\n*\n* Copyright (C) 2005 Richard J Wareham <richwareham@users.sourceforge.net>\n* This program is free software; you can redistribute it and/or modify it \n* under the terms of the GNU General Public License as published by the Free \n* Software Foundation; either version 2 of the License, or (at your option)\n* any later version.\n*\n* This program is distributed in the hope that it will be useful, but \n* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY \n* or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License \n* for more details.\n*\n* You should have received a copy of the GNU General Public License along \n* with this program; if not, write to the Free Software Foundation, Inc., 675 \n* Mass Ave, Cambridge, MA 02139, USA.\n*/";
-		rLen = 816;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 990;
-		vrLoc = 0;
 	};
 	A4D7D17507EB73EA0074C189 = {
 		uiCtxt = {
@@ -1607,65 +1786,5 @@
 			sepNavVisRect = "{{0, 0}, {697, 285}}";
 			sepNavWindowFrame = "{{61, 397}, {750, 558}}";
 		};
-	};
-	A4DA328907EF6AA9005B7998 = {
-		fRef = A42D7B7707E39AC200955C78;
-		isa = PBXTextBookmark;
-		name = "QuartzYUVOutput.m: 208";
-		rLen = 0;
-		rLoc = 5602;
-		rType = 0;
-		vrLen = 706;
-		vrLoc = 5122;
-	};
-	A4DA329207EF6B90005B7998 = {
-		fRef = A466E7D507E34684000B6585;
-		isa = PBXTextBookmark;
-		name = "\n- (XineStreamError) lastError;\n";
-		rLen = 32;
-		rLoc = 2832;
-		rType = 0;
-		vrLen = 753;
-		vrLoc = 1519;
-	};
-	A4DA329307EF6B90005B7998 = {
-		fRef = A466E7D607E34684000B6585;
-		isa = PBXTextBookmark;
-		name = "XineStream.m: 76";
-		rLen = 0;
-		rLoc = 2395;
-		rType = 0;
-		vrLen = 469;
-		vrLoc = 1526;
-	};
-	A4DA32BB07EF71FC005B7998 = {
-		fRef = A493D69B07BF7FAE00F4FC04;
-		isa = PBXTextBookmark;
-		name = "XPDVDDocument.m: 22";
-		rLen = 0;
-		rLoc = 889;
-		rType = 0;
-		vrLen = 910;
-		vrLoc = 50;
-	};
-	A4DA331207EF7ABE005B7998 = {
-		fRef = A42FF56607E364730038B422;
-		isa = PBXTextBookmark;
-		name = "video_out_cocoa.m: 93";
-		rLen = 0;
-		rLoc = 2753;
-		rType = 0;
-		vrLen = 1028;
-		vrLoc = 0;
-	};
-	A4DA331D07EF7C26005B7998 = {
-		fRef = A42D7B7707E39AC200955C78;
-		isa = PBXTextBookmark;
-		name = "QuartzYUVOutput.m: 208";
-		rLen = 0;
-		rLoc = 5510;
-		rType = 0;
-		vrLen = 745;
-		vrLoc = 4607;
 	};
 }
