@@ -185,7 +185,6 @@ NSString *XineVideoViewFrameSizeDidChangeNotification = @"XineVideoViewFrameSize
 	{
 		[[self window] removeChildWindow: _notificationWindow];
 		[_notificationWindow orderOut:nil];
-		[_notificationWindow release];
 	}
 	_notificationWindow = nil;
 	_notificationTimer = nil;
@@ -200,21 +199,23 @@ NSString *XineVideoViewFrameSizeDidChangeNotification = @"XineVideoViewFrameSize
 	{
 		_notificationWindow = [[[NSWindow alloc] autorelease] initWithContentRect:[self notificationRect] styleMask:NSBorderlessWindowMask backing:NSBackingStoreBuffered defer:NO];
 		[_notificationWindow retain];
-		if([self isFullScreen]) 
-		{
-			[_fullScreenWindow addChildWindow:_notificationWindow ordered:NSWindowAbove];
-			[_notificationWindow setLevel: CGShieldingWindowLevel()];
-		} else {
-			[[self window] addChildWindow:_notificationWindow ordered:NSWindowAbove];
-		}
+	
 		[_notificationWindow setBackgroundColor: [NSColor clearColor]];
 		[_notificationWindow setOpaque:NO];
 		[_notificationWindow setIgnoresMouseEvents: YES];
 		[_notificationWindow setContentView: _notificationView];
 		[_notificationWindow setResizeIncrements:NSMakeSize(1,1)];
-		[_notificationWindow orderFront:nil];
 	}
 	
+	if([self isFullScreen]) 
+	{
+		[_fullScreenWindow addChildWindow:_notificationWindow ordered:NSWindowAbove];
+		[_notificationWindow setLevel: CGShieldingWindowLevel()];
+	} else {
+		[[self window] addChildWindow:_notificationWindow ordered:NSWindowAbove];
+	}
+	[_notificationWindow setFrame:[self notificationRect] display:YES];
+	[_notificationWindow orderFront:nil];
 	[[_notificationWindow contentView] setNeedsDisplay: YES];
 	
 	if(_notificationTimer)
